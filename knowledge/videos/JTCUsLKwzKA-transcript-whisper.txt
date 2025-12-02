@@ -1,0 +1,54 @@
+Hi everyone, welcome back to the playlist of the RPA best practices series and today
+we are discussing something about the hard coding.
+Let us take an example, for example I am writing an automation where I have to read something
+from an excel.
+So, usually I go and take an excel application scope, we will pass the path of the excel
+where we have to read the data.
+Next let us say I have to read the data from some sheet, so I go and I take a read range
+and then we read the data that is one scenario.
+Consider one more automation where you have to go and you just have to log into a website.
+So, what we usually do, we take an activity called open browser, we drag and drop it here,
+we provide the URL something like let us say gmail.com.
+And then to log into the browser, I have to provide the credential, so we usually use
+an activity called get credentials.
+In the get credential, we provide the name of the asset, what is the asset name, orchestrator
+folder, what is the asset name, let us say my asset name is gmail and then we do the next
+set of operations.
+Now what is the best practice and what is wrong with this automation?
+The first thing first, you have to always think what happens, if I publish this automation
+to the orchestrator and the file is not available at d data excel file.
+Mukesh has a folder of d data excel file, but the client or the customer you are giving,
+the customer do not have the d data and the excel file, what would happen, the automation
+will break and always you have a rework of changing all these bits.
+The second thing what might happen, the location is available, but the sheet name is different.
+Same thing goes for the open browser, today the URL is gmail.com, tomorrow let us say
+the URL changes something like this gmail.com backslash login, you do not want to rework
+on your automation again and again, so what is the best practice, the best practice is all
+these things such as the name, the sheet name, the URL or even the name of the asset should
+not be hard coded in the workflow.
+Now the question arises, if I do not hard code it, where should I put this files?
+The answer to that question is a config file, whenever you are working on a real time automation
+you have to make your automation configurable.
+Now when I say config file, the best example is the robotic enterprise framework config file.
+You can also keep this value in assets.
+You can create your own config file in JSON, but the overall idea is that the thing should
+be made configurable, there should be no hard coding of anything in your workflow.
+You have to think it just like this, that let us say I am writing this automation, what
+happens in future, this sheet name changes.
+Then you would have to change the complete automation, but if you put the things in a config
+file, you would actually be able to accommodate the change by just changing the configuration
+file.
+It might sound a hectic task, but yes, that is the best practice and that save you a lot
+of time when there is a change which comes to the automation.
+So best practice for today is that we are not hard coding anything in the automation.
+Everything should be configurable.
+When we talk about the configuration file, it is not always necessary that you need to
+have a project in RIF framework.
+You can use a config file in a sequence or a flowchart as well.
+Now in case you are new to UIPa development and you do not know how can I use a config
+in a sequence or a flowchart, I would recommend you to watch this video where I am explaining
+all these details in a step-by-step manner.
+So that was the best practice.
+So that was the best practice for today.
+I hope you like this video.
+Thank you for watching and happy automation.

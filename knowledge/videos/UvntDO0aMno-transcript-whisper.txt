@@ -1,0 +1,690 @@
+Hey listeners, Harika here, and I am super excited to welcome you to Uptalk.
+If you are ready to learn and get your hands worked wonders in the world of information
+technology, then you are in a right place.
+When I say Uptalk, we are not just another headache company, consider we are your learning
+partner committed to unlocking your full potential, whether you are stopping into the world
+of technology for the first time or looking to advance your career, we provide top 10 hands
+on courses to build up your career.
+Let's take our first step towards learning here and explore it.
+Now I am just going to talk a little bit technical.
+That is what we call this RPA architecture.
+That is Uipata architecture.
+Uipata architecture.
+When I say Uipath architecture means you should understand what are the tools we are going
+to use it.
+If I ask you to store the data in Excel means what application you needed adjust.
+I am asking you a question.
+I want you to put the data in the form of intersection of rows and columns, which application
+use it.
+I am asking you the question, I have a data like this, put a data in the intersection of
+rows and columns and generate a pivot chart.
+Which tool you will ask me Excel?
+You should you to work with Uipath.
+I am asking you to design a process mean you should know which tool to use it.
+Yes correct.
+That is why I am going to teach you about Uipath architecture.
+How we do?
+What are the components?
+We can say components of Uipath.
+When I talk about just to make you understand, just giving you normal layman definitions,
+one layer I am not going to talk to you.
+More technical also.
+One is orchestrator.
+One is Uipath assistant.
+And one is Uipath studio studio, studio X.
+Anything anything, you can use Uipath studio or you can use Uipath studio.
+But these are the three main components and one.
+Now when you talk about these three components, well I can see this three component, Manchela.
+What I want to tell you in a common example, it works in the form of it works generally
+the architecture, the architecture of Uipath.
+Works in the form of works in the client server technology mode.
+What do you mean with client and what is server?
+I think you know, I think a little bit more technical.
+You know what is the client and what is the server?
+Server data.
+We already put the data and that is basically stored.
+Why you are putting in the server?
+Why can't you keep it in your own machine?
+What is the reason you are keeping the data?
+Basically this is one of the reason is that the data is stored and I mean there is analyze
+and all server is done and then safety also and security point of also.
+Maybe there is the safety security.
+Very important one point why you are keeping in server.
+All the data, your data from the all machine is collected there.
+What is the reason why you are keeping in server?
+Why can't you keep it in your own laptop?
+That is my question.
+Laptop means a server also.
+Have a big database means memory also and in my laptop may be the limited memory.
+One simple question I will ask you.
+You have some finance data.
+You didn't keep it in server.
+You've gone for some vacation.
+Now some emergency purpose finance data is required by your manager.
+I understood.
+What will happen?
+Please come and don't take leave.
+Come back.
+We want some finance data.
+That can I say it is nothing but server is a central location.
+Central location.
+Correct.
+Understood.
+Got it.
+Everything.
+You want to keep it in a server base.
+Not only for security and this one.
+You want to keep it where the every user can access it.
+Can access it.
+Correct.
+Yes or no?
+That is what we call this like that in your path.
+I'm making you to understand I automation anyway.
+Your path works in the form of client server technology.
+When I let me take a pic.
+I hope you can see my screen.
+Yes.
+Sure.
+If you want, you can take a screenshot of this also.
+But I'll tell you when to take a screenshot.
+I'm just making into two layer.
+One is client and one is server.
+I'm just putting a line here.
+This is my what we'll do.
+This is the server.
+And this is my client.
+Yes or no?
+When I'm talking about client, client is nothing but our laptop.
+Oh no.
+The client, every user of the client.
+This is a laptop.
+This is a manual and laptop.
+This is like x person, y person, z person.
+All these people are being there.
+Oh no.
+Each one laptop.
+Now this is the client where the client we connect.
+So in your path, we won't call the word call server.
+We call the word call orchestrator.
+What we call this and when you control it, it is like a control all the time.
+All the clients will connect to the server connect to server.
+This all this user or connect to this server understood.
+We won't use a word called orchestrator.
+What we call this?
+What is the word we are using in UI path?
+Orchestrator.
+Orchestrator.
+And I want to tell you, it is a web-based application.
+It is a web-based application.
+It is a web-based.
+Can you see?
+There is an orchestrator.
+I'm using ipad cloud.
+I'm using it.
+AI path given me a slot for me.
+That is what we call this tenant.
+I got a rent.
+I got a rent from you know, cloud is a huge memory space.
+You may be heard about Amazon workspace Azure.
+These are the different cloud architecture.
+We have it.
+Now they gave me your path, given me a tenant name call.
+When I go and click on here, you can see that where I'm moving it.
+I'm moving to my own orchestrator.
+Can you see?
+Can you see the term orchestrator?
+Can you see some data here?
+Can you see some?
+When I go on click on tenant, you can see a lot of information.
+Can you see?
+Like some, you can see something.
+Something I created.
+When I go to my training, you can see one process I created.
+One trigger, I have one user, I have one mission, some data I created.
+I just what type of application it is.
+It's a window-based application, or it is a web-based application.
+It is web-based, I think.
+It's a web-based.
+But manjoa, you did something, no.
+But I can see one process, one trigger, one user, something.
+You have some data.
+But where is this data substitute?
+Whatever I did, no one process I created, one trigger I created, one user I created.
+You know Ajay, this is just the user interface.
+Oh no.
+User interface means what?
+Just we'll click on it.
+But where this data is stored, you take a SAP application itself.
+You enter some data.
+So where did it stored?
+What server?
+Which server?
+Client server we say.
+Whatever you entered in the SAP application, where it is going stored, SAP is a web-based application.
+Where it is stored, whatever data invoice detail accounts, detail, something you entered, no.
+Where the details are stored?
+We know it is stored, I don't know.
+Correct.
+But it is, we call them as database support.
+It is called, what is called data server?
+No, this is different.
+We call them as esculer server.
+You heard about or not.
+Esculer server.
+The esculer server is connected with you.
+This is my front end application and this is my back end application.
+This is front end.
+Front end means what?
+Just we will enter the data.
+But where it is stored?
+It is stored in your database.
+From client and orchestrator is the front end.
+In the server side itself, orchestrator is one server.
+In the orchestrator we have two component edges.
+In the orchestrator we have two components.
+One is orchestrator, one is esculer server, as a cuver.
+But why I need this component?
+Because this orchestrator is what type of application?
+What type of application I do?
+Base.
+Web base is nothing but user interface, user interface.
+Whatever, I am doing it here where it is stored in server.
+Circular server.
+In the server itself, we have two components.
+What are the two components?
+One is orchestrator, one is esculer server, as a cuver.
+Now see they won't directly give an access.
+Did they?
+Will they see the user who creating a bot can directly go and store it in esculer server?
+In this interface only they can do it, orchestrator, orchestrator only.
+Now what we can do with orchestrator but I am telling you, add it, you won't do it.
+I am talking about RPA developer, RPA citizen developer.
+They won't give an access to this machine.
+This will be taken care by a technical people.
+I take guys technical sure, cool this one.
+Server server.
+Who are highly rich technical guys?
+Can you take care of it?
+Now in all your machine what they will install it?
+They will install only UI path.
+Let me go back.
+Where is my diagram?
+Look up.
+What are the components we talk about?
+Orchestrator.
+And one more thing, one more component.
+I told you.
+What are the things?
+Server SQL Server.
+Sorry, these are the, let me take.
+On the server side we have two component.
+What are the two component?
+SQL Server and orchestrator.
+I'll just connect like this.
+Let me put it like this.
+SQL Server is connected.
+SQL Server is connected to orchestrator.
+Now this is the two component on the server side.
+When you talk about the client side, which tool they will install.
+In the client side, it's nothing but user.
+Which are the user?
+Who are the user?
+When you talk about user, they are different type of user.
+Appier developer.
+Appier citizen developer.
+Attended bot.
+Runner attended.
+Attended.
+On attended.
+And then one is called production.
+These are license based.
+Adject.
+These are the client.
+Now I want ages to create a bot using studio.
+What license I will give it to you?
+I want Adject client client citizen developer.
+No, I want to be an Appier developer.
+Developer developer technical.
+Technical.
+That means I will give you this license.
+Technical developers.
+I want ages because ages is from finance background.
+He is not technical background.
+He want to use.
+I'll just put you technical developer.
+What license it is called?
+Studio.
+But for Appier citizen developer.
+Studio.
+No, Adject.
+Let me take.
+These are the two user who created a lot of process.
+Adject.
+You imagine you created 20.
+Which department you are working on.
+Your finance department.
+Adject.
+These are the 10 process I want to automate.
+They're giving to you.
+You created the process.
+Technically, you created using studio or studio x.
+Forget about that.
+Now we're all the process of storage.
+Orchestrators.
+Orchestrators.
+Now I'll take you.
+This is my studio.
+Adject.
+This is my studio.
+Can you see Ipa's studio community?
+Now can you see some of the process I created here?
+Let me take you through this thing.
+Age it.
+Super.
+It is studio.
+It is studio is what type?
+I think my laptop.
+What type of application should age it?
+First, you understand it is a window application or it is a web based application.
+It is window.
+It's a window note.
+Whatever you do in window application, where it is stored.
+In my local drive, can I tell you where it is?
+Now I'm asking you a question.
+You created process for your team department.
+Now you want to run the process.
+You each user see you created 20 process for different your department.
+Do you think that if they will come to your laptop and run the process, every process?
+No, that is not possible.
+Then your work will be disturbed.
+Yes sir.
+Everybody cannot come and touch your home.
+Age it move, I want to run my process.
+Some people, I want to run the process.
+Completely entire will go for that one.
+You cannot do your work.
+Or your process.
+Whatever you create, it will be in your local mission.
+Now you want to run it on other mission.
+Let me go back to my diagram.
+Now who is?
+This is your mission.
+Now you created a process.
+This is your laptop.
+Now now this is.
+Let me put your name.
+Then you will understand this is mission.
+And this is...
+Now Manjula want to run the bot which is created by age it.
+What do you do?
+You will transfer the file here.
+Logically I will transfer.
+Now logically you should not do this.
+I would say what I were doing, we are transferring the file.
+And then, but this is a process.
+This is application.
+You cannot run it in.
+You cannot copy this that UI path folder to this Manjula's folder.
+Will they allow pin driving your mission?
+No, they don't allow.
+How can you transfer the file from age mission to Manjula's mission?
+We will save some web application.
+You will put it somewhere in the shared drive and sharing the shared.
+Which is our shared drive here.
+Imagine tell you which is my shared drive.
+That is nothing which is a server here.
+So tell me that word which is a server here.
+Orchestrator and SQL Server.
+Now now forget about SQL Server is a database.
+You have a face about orchestrator.
+What you will do?
+You will upload the bot when you go to your IPath.
+See when I take this process.
+Imagine this is transaction process.
+I created a chip.
+Now this process.
+You can see there is a button called publish.
+Can you see?
+There is the open this button.
+You know where it will go.
+That it will move with the orchestra.
+Can you see?
+There is an orchestrator and personal workspace.
+Oh no.
+Orchestrator for tenant workspace.
+Automatically it will go to where?
+Click on next.
+And if you click publish button, you know what will happen.
+It will go on. Push it there.
+Where it will go?
+It will go to my orchestrator.
+Where is my orchestrator?
+It will go here.
+Can you see?
+There is a word called automation.
+Automation.
+When I go who I am, I am a tenant.
+Ten.
+You can see there is a package.
+Can you see all the process here?
+Automatically comes here.
+You got it.
+It is come as what?
+Package.
+Now if I want now what happened?
+Let me go back again diagram.
+Once you create a process, you are uploading here.
+It will come to the orchestrator.
+Once you come where it is stored now.
+It is stored as a packet.
+I will put it.
+It is stored as a package.
+Now you want to run the bot in which machine?
+Who want to run the bot?
+Man.
+Manjula want to run the bot means I cannot directly run the bot in the manjula mission.
+In manjula mission also, I need UI path.
+Correct?
+No.
+Because computer cannot understand.
+I need manjula also.
+What type of manjula user is?
+A cheat.
+I will give you as a license.
+What license I will give you to you is RPA developer.
+RPA developer.
+Developer license.
+I will give it to you.
+Got it.
+A cheat.
+You are a developer.
+You are going to create a bot.
+RPA developer or RPA citizen developer.
+RPA citizen developer.
+But manjula manjula is she is not from technical background.
+She don't know how to create a bot.
+She is not interested in development.
+But she want to run the process.
+Got your point.
+Now what license I will give it to Manjula?
+RPA citizen developer.
+She don't want to create a bot at all.
+She don't want to create a process.
+She doesn't know about UI path.
+She will only view you would say.
+She will only run it.
+Run it.
+Only run the process.
+Attend and attend use.
+Yes exactly.
+Let me go back to my notepad.
+I will give Manjula as attended or unattended.
+But when I will give attended.
+When I will give unattended.
+Tell me.
+I think from the word itself clear as it.
+You try to tell me.
+Then you will.
+When I say means I told this answer.
+Manjula corrected me this answer.
+Tell me what you mean by attended.
+What do you mean by unattended?
+Who can work on it?
+That means there is some user input is required for you.
+You are going to run the bot.
+Manjula want to run the bot.
+Then I will give her a license.
+What license?
+Attend it.
+I cannot go and run whatever.
+I want to run in my own time.
+See, I want to run when I come to the office.
+I want to run at evening time.
+That's it.
+Evening time is based on my mood understood, understood.
+I am not fixing any time.
+Whenever I need, I want to run the bot means.
+Manjula will give what license.
+Attend it license.
+But I want to run the bot every day
+without the presence of Manjula at 9 o'clock.
+Or every Monday morning I want to execute it.
+Or every monthly I want to execute it.
+Or every day 12 o'clock I want to execute it.
+Without Manjula's presence.
+Please underline the word.
+Without Manjula's presence attended.
+It's a presence here.
+Which license I will give it to Manjula.
+It is unattended.
+That's it.
+If Manjula, if you want to run the bot,
+if you want to run the process
+with the presence of presence of humans,
+then I need what life of license I will give it to.
+Attend it attended.
+You can run the process without human intervention
+at specific time schedule.
+Time schedule.
+I think you know about,
+maybe whether you know about scheduling the event.
+Scheduling background job.
+I think we call them a trigger.
+Trigger.
+Trigger means at specific time.
+In SAP we already scheduled the background job.
+That's work.
+Work type of license I will give it to Manjula.
+Unended.
+Say I want to run the bot every day 12 o'clock in the night.
+But I cannot come to office at 12 o'clock
+and go open my laptop.
+Open UI Math Assistant and I'll run it edge it.
+See when I you know that how Manjula,
+how I will run my bot manually means see,
+I don't have an Orchistrator control.
+Can you see there is one?
+Can you see one icon edge it?
+I can see when you open it you can.
+Can you see the library process?
+I can go and run it.
+This is called attended automation.
+What we call this?
+Attended automation.
+Why attended automation?
+Because it is run by someone.
+Exactly.
+I am opening my UI path assistant and I am selecting.
+You can see the list of bot automatically.
+You can see a list of process.
+All the process you can select and you can run it.
+Got it.
+This is what we call the satellite license.
+But I want to show you automatically.
+See when I go to my Orchistrator you can.
+When I go to my training you can see an automation.
+Automation.
+Can you see trigger?
+I can select it.
+Add a new trigger.
+Now can you see what option I did?
+Disimple.
+Disimple.
+If I go and say enable means it automatically run it.
+You can see that if I want I'll show you add new triggers.
+Can you see that?
+What is the process?
+All the inputs I need to give.
+Which process I want to execute it?
+What time I want to execute it?
+Whether you want run every five minutes,
+one every two hours, one every day, every weekly, every monthly.
+Like just various options you can see.
+Which type of automation it is.
+On it ended.
+That's it.
+One time should leave.
+I missed it.
+That is what we call this.
+When I come to the Orchistrator or diagram you understood.
+Now Manjula again, she will connect it.
+Now what type of license she will create it.
+She will get either attended or unattended.
+Unattended but remember Manjula.
+Now I'm asking the question again what type of application it is.
+This is your window based.
+Window based.
+This is window based.
+You may be thinking in logical.
+Imagine how window is connecting to my web based.
+Did you have the thought with you?
+How this is connecting?
+Manjula, when you go and click on publish,
+how it is connecting to server?
+How it is connecting to server Manjula?
+See when I go and click on publish.
+I understood when I go and click next, next, next and I click publish button.
+You know it is, can you see this compiling activity?
+It is building.
+Can you see what message I'm getting?
+What type of publish it is?
+It is published now.
+Where it is published?
+Where it is gone?
+Where this process gone?
+It is gone to where?
+Where we are.
+Where we are?
+It is gone here.
+Ajit.
+When you go and come, where is my where I can see tenant?
+Ten in the package.
+What is the file I updated?
+Transaction.
+Let me see whether let's see based on the published.
+See these are the published I published by two years,
+but two, three years a year ago.
+Let's see whether today is some five months ago, a year ago.
+That's it where it is published.
+Go to my workspace.
+Can you see a transaction?
+This is the transaction.
+Why it is published here?
+Ajit.
+Because how it is connected?
+When I go and click on publish, how it comes to my orchestrator?
+Through web, I think web technology.
+Know through this, I path assistant.
+Yeah, path assistant.
+When I go on, can you see what color I'm getting?
+It dream.
+When I go and click on this thing, preference, click on preference or orchestrator setting.
+Can you tell me what is this man?
+This is your path.
+This is the orchestrator where you can see.
+You all are.
+This is my you all.
+What I'm saying is when I go back to my diagram,
+when I go back to my diagram, where is my diagram here?
+I path studio.
+Your laptop is not connected through your thing.
+In each and every machine, what is the other thing is installed?
+Or I path studio is installed and the path assistant is installed.
+I path studio.
+I path assistant.
+This path assistant is a small software.
+It's a small window application.
+It's a small service.
+Your laptop is not connected.
+Your ipad assistant is connected.
+You are path through ipad assistant.
+Only you are connecting it.
+Between ipad studio and orchestrator, who is in between?
+As a ipad assistant, we call them as an agent.
+I think what you are.
+I think I find that you are using the frequently using the word called robot.
+Robot.
+It is when your path comes in the beginning they use a word called eipath robot only.
+Now only they change the word called eipath assistant.
+You are path assistant.
+In that eipath assistant, we have a two component agent in your path.
+Where is my not path?
+In your ipad assistant, where is it?
+In your path assistant, we have a two component.
+What is called eipath agent and the ipad executor?
+Agent and robot is same.
+Executor and robot is the same.
+Agent, you know what is the work of agent?
+Agent what he will do?
+He will be an intermediate.
+He will be between orchestrator and studio or the studio.
+When I am publishing it, you know when I am publishing it here.
+Agent will work.
+Now I told you know agent, I want to run the bot in manjolars machine.
+Where the bot is here?
+Orchestrator package.
+Orchestrator, you know what will happen.
+When it is running the bot on manjolars machine,
+from here I can tell you one more word called process.
+What is that word called?
+Up.
+Sheet, I want to tell you we can.
+When I explain you, you will understand.
+We cannot directly execute the package.
+We cannot directly execute the package.
+What we will do?
+We will convert the package into process.
+We will convert package into process.
+Now when I running the process in manjolars machine,
+you know what will happen.
+When it when I am running here on manjolars machine,
+it download the package agent.
+Download all the packages.
+Once it is downloaded,
+who will you, which one will link you bypass,
+which component will you use?
+That is my notepad.
+When I am downloading the package,
+which tool will you help me?
+Then we execute agent we use.
+In this case, I will execute.
+Agent we use.
+Agent agent agent.
+When I am uploading,
+when I upload or download from
+more orchestrator to e-path,
+e-path client,
+we will tell e-path client.
+Or we can call them as e-path client.
+That time, who will you help us?
+But when I execute,
+when I execute the bot,
+who will work?
+Because you know whatever we are creating,
+which is in high level language.
+Yes my agent?
+Do you think that your computer
+will understand high level language?
+Now we need a translator.
+No translated.
+Yes, for that we need LiPath executor.
+Understand, this is an architecture.
+We talk about the component.
+What are the four, five components we have?
+A School of Server,
+Ipath assistant and Ipath studio host your ex.
+In the client side,
+we are called them as a user,
+but we need studio and studio ex.
+But for this we need what like.
+What is the thing we need?
+Manjai, one thing I want to tell you,
+that means,
+do I need to install e-path assistant separately?
+When you are installing,
+when you are downloading studio know,
+assistant already downloaded.
+This is what this is the architecture of your Ipath.
+Please do like, share and subscribe to our channel.
+For more information,
+contact us sales at the rateuptalk.com.

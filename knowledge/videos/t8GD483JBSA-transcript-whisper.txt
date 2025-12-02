@@ -1,0 +1,3259 @@
+You
+Hey guys, welcome to this full course on RPA UI Path.
+This full course video will cover the core topics of RPA UI Path.
+RPA is in demand and highly growing field.
+UI Path is a leading robotic process automation tool for large scale end-to-end automation.
+For an accelerated business change, it provides solution for business to automate routine
+of its activities.
+So if you are interested in RPA and tools like UI Path, then you are in the right place.
+This video will help you understand the concepts of RPA UI Path.
+So here is the list of topics covered.
+We will first understand what is RPA.
+Then look at the top 10 reasons to learn robotic process automation.
+We will see some of the real-time RPA examples followed by which we will look at the comparison
+between RPA tools like UI Path, Automation Anywhere and Blue Prism.
+Proceeding further we will understand what is UI Path and then learn how UI Path is
+installed in the device.
+Then we will see the UI Path tutorial for business.
+Good by which we will go through UI Path Orchestrator, UI Path Robotic Enterprise Framework,
+UI Path Web Automation.
+And then we will see Excel Automation in UI Path as to how Excel is used in UI Path.
+Lastly, we will see RPA developer salaries, skills, resume, roles and responsibilities.
+And finally, UI Path Interview Questions that will help you crack the interview with
+it is.
+I am sure you are excited to begin with full course.
+But before we begin, make sure you have subscribed to our YouTube channel and click on the bell
+icon so you never miss an update from simply learn.
+So without wasting any further time, let's get started.
+This is Jim.
+He is an accountant in a multinational company.
+He handles several invoices and other financial records like monetary transactions, liabilities,
+checks and ledgers on a daily basis.
+One of his tasks is to copy all the relevant information from these invoices, such as the
+name of the company, invoice ID and data processing into a spreadsheet, and mail the sheet
+along with other financial reports to a superiors by the end of the day.
+As any prompt employee, he transfers all the information to the sheet, attaches the reports
+and sends them over to his boss via email every day.
+But over a period, he starts finding this task to be time-consuming and repetitive.
+Frustrated, Jim looks for a way to reduce the time and effort it takes to complete the
+task.
+And Voila!
+He stumbles across robotic process automation, aka RPA.
+Using robotic process automation, he builds a simple bot that extracts information from
+several invoices into an Excel sheet, attaches all the necessary financial reports, and sends
+them over to his superiors via email at a specific time every day.
+So what exactly is robotic process automation?
+Robotic process automation, RPA, is the use of software with artificial intelligence and
+machine learning capabilities to handle high volume repetitive tasks that previously required
+humans to perform.
+Some of these tasks include addressing queries, making calculations, maintenance of records,
+and performing transactions.
+There are several misconceptions about RPA.
+RPA is not a humanoid robot, it does not have a physical form and no resemblance to humans.
+RPA cannot replace humans or replicate human cognitive functions, it does not have a brain
+of its own, and cannot perform logical or critical thinking as humans do.
+The working of RPA includes four crucial phases.
+One, the planning phase typically involves gathering the processes to be automated, identifying
+the test objects, and finalizing the implementation approach.
+Two, the development phase includes the creation of automation workflows as per the agreed
+plan.
+Three, deployment and testing is a vital phase.
+Since it uncovers any unexpected outages and ensures a bug-free product, four, lastly,
+there's the support and maintenance phase, which ensures that the product is continuously
+updated with smooth deployment across the user base.
+To meet the objectives of RPA, tools are used.
+These RPA tools are software applications that can configure tasks and automate them.
+Some of the popular RPA tools in the market are UI Path, Automation Anywhere, Blue Prism,
+Work Fusion, Pega, and Redwood among others.
+When it comes to quality, RPA ensures consistent error-free output, leading to reduced
+operational risks.
+This in turn improves customer satisfaction.
+In the area of delivery, RPA can help decrease the average handling time, and this enhances
+the customer experience and ensures 24-7 business continuity.
+With respect to cost, according to NASCOM, domestic businesses can reduce the cost by up
+to 65% through RPA.
+It offers a higher ROI by driving positive returns within quarters, as opposed to years.
+Other advantages of RPA include reduced training costs, minimal utilization of IT resources,
+and easier software migration.
+Today, many domains and industries like banking and finance, IT integration processes,
+human resources, insurance agencies, marketing and sales, and customer relationship management
+readily deploy RPA.
+RPA service adoption has been showing tremendous growth since 2016, and will continue to increase
+beyond 2020.
+According to McKinsey's research, knowledge and work automation could have an economic
+impact of 5-7 trillion dollars by the year 2025.
+It will impact more than 230 million knowledge workers, which constitute 9% of the global
+workforce.
+Any company which is labor-intensive where people are performing high-volume, high-transaction
+functions, stand to benefit the most with RPA adoption, boosting their capabilities, and
+saving money and time.
+Now that we've discussed what RPA is and isn't, here's a question for you.
+Which of the following is not an RPA use case?
+1.
+Email Query Processing 2.
+Data Extraction 3.
+Image Recognition 4.
+Payroll Processing
+Give it a thought and leave your answers in the comment section below.
+RPA offers the ability to automate business processes quickly and easily.
+It paves the way for digital transformation by placing automation tools at the user's
+disposal.
+So, what are you waiting for?
+It's certified and become an RPA developer to build a bright future in the field of automation.
+10.
+Reasons Why You Should Learn RPA
+But before jumping into it, let me give you a brief insight into what exactly RPA
+is.
+Now, do you remember the time you used the digital calculator in maybe your calculus class?
+It made it so much easier for you to arrive at an answer.
+It has undoubtedly helped you solve complex mathematical problems which previously required
+a lot of time.
+And of course, doing manual calculations have inherently several errors.
+But does calculation account for automation?
+Well, no.
+A conventional calculator requires manual input, so this is partial automation.
+Using the usage of a calculator that requires zero human intervention is what RPA does.
+So, what exactly is RPA?
+Rebotic process automation is the use of software with artificial intelligence and machine
+learning capabilities to handle high volume repeated tasks that previously required humans.
+Now, some of these tasks include addressing queries, making calculations, maintaining records
+or even making transactions.
+So, why is RPA gaining popularity so rapidly and why do companies and techies have RPA
+perspectives?
+So, here are the 10 reasons why one should learn RPA.
+So, number 10, fast implementation.
+Now, getting data entry bots up and running goes quickly.
+Implementing a new RPA software system certainly happens much faster than training a new person.
+You can have these data entry bots up and running in just days.
+In contrast, if you wanted to hire a new human employee, you would be taking a lot of time
+in sorting out resumes, conducting interviews, going through the entire boring hiring process,
+and then finally, when you find the right person, you would have to spend time and energy on
+training them.
+However, in case of RPA, all of this is countered.
+And number 9, we have no training time.
+So, now this is an important one.
+If your process changes and the bots need to learn something new, you can either replace
+them with new bots or alter their programming.
+Now, that again goes much faster than training employees for new tasks.
+In terms of costs, training an employee for a new task will pan out to be way more expensive
+and time consuming.
+Next up, the bots will never quit.
+Now, with RPA, you don't have to worry about employees quitting or dealing with the turnover.
+Bots don't care how hard they're working or how boring their job is or how repeatedly
+they're doing the same tasks.
+Again, yes, it would be ironic if the bots got tired.
+Software bots can work all the time, 24 hours a day, every single day of the year, at 100
+percent capacity.
+Now, RPA doesn't take holidays, it doesn't have sick needs, and of course they do not
+have unproductive days at all.
+Well, isn't that a treat to have someone who never retires or decides it's time to move
+to a different job?
+Next up, minimal IT resources.
+Maintenance software bots require minimal IT resources.
+In some cases, it doesn't IT doesn't need to get involved at all.
+Your RPA systems will be managed by the software provider.
+The responsible for maintenance and updates, all of that.
+It completely takes the burden off IT and saves your company a whole lot of money.
+ROI is visible.
+Now every organization wants to quantify their gains.
+Many of these organizations do not know how they should determine their ROI.
+But when it comes to adopting robotic process automation, ROI is visible.
+It defines a clearer path to demonstrate its risk returns.
+Complex problems can be solved.
+Now as our data sources and analytical capabilities have grown, so has the time required to build
+various reports.
+Robotic process automation system is ideal for solution to solve these types of problems.
+The system stores the information and can also remember and transform this information
+very easily.
+That means this makes you auditable and tax ready.
+Software migration.
+Now, it's a fact that software migrations are time consuming and costly.
+Starting to a new software could take months and cost could turn out to be tens or thousands
+of millions of dollars.
+What's even more frustrating is that at all times, certain features and functionalities
+which may have functioned in a particular way in a previous version may not even be present
+in the updated version.
+So RPA helps with data migration with accuracy, speed and continuous updating of software.
+RPA has a free tier.
+Many RPA vendors offer free tiers.
+Some of these vendors are blue prism, automation anywhere, UI path among others.
+These RPA software vendors are offering high RPA software, notably UI path with the community
+edition and work fusion with their RPA express.
+This helps lower the total cost of ownership.
+There's no rip and replace.
+Now RPA doesn't jeopardize an employee's job, but helps with the growth of new jobs.
+To do your work, you'll need some additional software, yes, and virtual machines to deploy
+fully independent digital bots.
+But you may not need to rip and replace your existing infrastructures.
+Also there's a common misconception that RPA could steal our jobs.
+Well, that's not true.
+Monitoring and controlling these bots are completely the responsibilities of the developer.
+As a result, RPA does not pull down your existing systems, but it leverages them.
+Lastly, popularity and high salary.
+According to Glassdoor, the average salary of an RPA developer in the US is $77,000.
+And in India, the beginning salary for an RPA developer is around 4.65 lakhs per annum.
+Top tier companies like Dell, IBM, Accenture, Capgemony, Cognizant among others are readily
+hiring RPA developers.
+Now with that, let's move on to the growth projections of RPA.
+Now looking at the graph here, both RPA software and services increased by huge amounts during
+the 2016 and 2020.
+According to McKinsey Research, knowledge and work automation could have an economic impact
+of $5-7 trillion by the year 2025.
+It will touch more than two 30 million knowledge workers which constitute about 9% of the global
+workforce.
+Any company which is labour intensive, where people are performing high volume, high transaction
+functions will boost their capabilities and save money and time with RPA.
+Now this is all you need to know about why one should learn RPA.
+But if you are looking to become a developer, let's look at some of the job roles and
+responsibilities.
+RPA developers are responsible for the creation, design, development and implementation
+of RPA systems.
+An RPA developer is expected to provide guidance with process design, design, develop test
+automation workflows, deploy RPA components, be it bots, robots or development tools, support
+the implementation of RPA solutions, create process documentation and also assure the
+quality of the automation.
+In this video, we will be looking at the robotic process automation example.
+Let us consider a discussion between John and Jamie.
+John is very curious and wants to know how and where RPA is used in different fields.
+Jamie being a developer helps John in understanding the RPA examples.
+When if you are curious to know the applications of RPA, then you are at the right place.
+So let's get started.
+The first example is customer service.
+Let's look at the problem statement.
+A customer representative must understand and solve the customer queries, carry out
+the necessary actions by switching between the various softwares and applications and inform
+the customer.
+This must wait while the representative is busy dealing with data, sometimes asking for
+information that has already been requested.
+This tends to decrease customer satisfaction and extends call duration.
+The solution requires identifying frequently asked customer questions, assessing customer
+representative actions in response to those questions and developing RPA solutions to
+facilitate those questions.
+When several sets of information need to be coordinated across systems, the customer
+service representative can launch a bot.
+The bot completes all actions in seconds with the press of a button.
+For frequently asked questions, a dashboard can be created.
+A customer service representative will fill out the necessary information to receive the
+queries and bots will use that data in multiple systems to complete the transaction.
+Let's look at an example.
+Consider a scenario where a company was providing support to the client and the company was
+supposed to handle a large number of calls, approximately 20,000 calls per month, which
+required a significant amount of time spent in the supporting.
+Because of the system's complexity and executives average time was about 10 minutes.
+This system was inefficient and slow, resulting in a poor customer service.
+With the RPA solution, the organization gained a virtual team that can complete the task
+in less than a minute, resulting in a drastic reduction in an execution time.
+The RPA bot performs the following tasks.
+Loading a comprehensive customer profile, obtaining a detailed building information, user preferences
+and other user information are being updated.
+Resolving common but simple customer issues.
+Let's look at the second example, Financial Service.
+Financial service involves compiling and combining financial information from various departments
+and storing the records in a system.
+Data is manually extracted from a bank statements to reconciled documents and link them to
+its forms using detailed spreadsheets.
+To complete the reports, business rely on Excel, legacy software and manual labor, which is
+tedious and time consuming.
+Solution.
+Robots can generate invoices in seconds prompting clients to pay more quickly.
+RPA in financial services, tracks and standardizes and validates payments.
+Process orders and avoid errors and is always on top of things such a disciplined assistant
+makes the customer's experience less stressful adding value to the service provider.
+RPA in finance eliminates a need for endless email correspondence and ensures a smooth payment
+approval process, matches invoices to responsible parties and sets deadline reminders.
+Automated data entry speeds up the process and relieves human employees of huge tasks,
+this enables precise and structured invoice processing.
+Consider a financial service company that's having difficulty extracting data from financial
+documents efficiently and accurately in order to generate ratings.
+Using RPA, company implemented an application that recognized and processed data, this enable
+decline to quickly and cost effectively automate.
+The tasks performed by RPA bots in financial service are investment management, reconsolation
+of bank statements, organizing the finances, record of accounts receivables and paid.
+The third example is HR service.
+This operation includes numerous routine steps such as interview scheduling, record keeping,
+resume screening, candidate shortlisting, induction training and onboarding, airing and
+firing plays a significant burden on HR and other support functions such as IT, security
+and facilities management, particularly for medium and large businesses.
+While it is expensive to build a solution that encompasses all of these functions and
+completes the necessary task for new or departing employees, some employees can be sloppy
+with recording, absences, vacation or in general using the existing absences management system.
+So the possible solution for this is, RPA can be used to collect and screen resumes and
+online application forms contact through background checks and compare the information
+to all relevant job requisitions.
+This allows the best candidates to be shortlisted.
+RPA can be used quickly to create offer letters for new employees that are both personalized
+and accurate and also validate records across checking data such as absentee reports against
+time logged in the corporate network and alerting when information is missing or inconsistent.
+The entire acquisition team of a company automated aspects of onboarding process for new
+employees.
+Previously, the onboarding paperwork was completed manually by one person, consuming a significant
+amount of employee's time that could have been spent on more valuable work.
+This type of work that no one wants to do day after day.
+The company understands that an HR department wants to provide a digital and state-forward
+experience.
+The task required a lot of copy and paste activities.
+With the implementation of RPA, the board completed the onboarding paperwork in less time, allowing
+HRs to spend more time on corporate social responsibilities, hiring talent, initiatives
+and improving a company's reputation.
+The task performed by RPA bots in HR service are screening resumes, onboarding of new
+hire, attendance management, induction and training, employment management and survey report.
+The fourth example is telecom service.
+The telecommunications industry involves high frequency of manual, repetitive, rules-based
+processes, all of which are critical for providing appropriate service delivery.
+Thus, the foundation of telecommunications is made up of process that are highly amenable
+to automation.
+For telecommunication companies, looking to improve their customer service, high reliability
+and accuracy of process outcomes are required.
+Solution.
+The use of robotic process automation in telecom reduces error rates to close to zero.
+Improves data quality, improves customer service and increases operational efficiency, all
+while contributing significantly to cost reduction.
+RPA technology can capture the business process task performed by telecom companies'
+employees.
+Based on the employee's action, a well-structured workflow can be generated, which serves
+as the foundation for automated process.
+By mapping each process step with its significant cost for manual execution, it is simple
+to determine which action should be automated to maximize return on the investment.
+After an example, a telecommunications and media company decided to automate its order
+creation and service removal process to cut cost associated with the company's speed
+boosted discount service, and deal with a massive amount of transactional data.
+With the implementation of RPA, it becomes simple to automate the order, build process
+and service removal activity.
+The task performed by RPA bots in telecom service are, it checks on the credit and sim card
+swapping.
+The solution of customer complaints, porting customer phone numbers, responding to questions
+from partners.
+The fifth example is healthcare service.
+Healthcare systems contain numerous burdens and tasks that involve significant resource
+allocation such as claim management.
+This results in high operational cost and slow process.
+Every industry has inefficiencies, but few face the healthcare industry's challenges.
+Set regulations regarding patient data and lack of resources to deal with such rules.
+Building takes time after a healthcare service is provided due to manual and repetitive
+task in the management process.
+Management process includes document and data input processing and evaluation in addition
+to the automating time consuming task.
+Reports can schedule appointments without intervention of hospital employees, credit to RPA
+technology.
+Along with eliminating the need of resource allocation for scheduling, we are allowing
+patients to reschedule appointments more quickly, this application can improve customer
+relations.
+RPA allows healthcare providers to track and document each process step, in structured
+log files, to comply with external audits.
+RPA improves data confidentiality because bots handle this process.
+Let's consider an example.
+Delhi, a healthcare organization deals with the process of patient transaction data,
+customer detailed recording, claims to the process, and data reconciliation for healthcare
+schemes, or some of the manual process they must streamline Delhi.
+The primary goal was to increase the efficiency of existing approaches to achieve greater
+accuracy with reduced turnaround time.
+Robotic process automation was implemented at the most significant possible impact was obtained.
+The peer platform handled claims processing and held data reconciliation program.
+Healthcare was able to reduce turnaround time with this solution.
+The task performed by RPA bots in healthcare service are appointment scheduling, regulatory
+compliance, data entry, and supporting analytics to improve treatment.
+In this video, we are going to compare the most commonly used RPA tools, namely Blue
+Brism, UI Path, and Automation anywhere.
+So what's in it for you?
+First, we learn why exactly RPA came into picture, and then what exactly RPA is?
+Lastly, we'll compare the tools based on trial version, based technologies, process
+designer, accessibility, macro recorders, architecture, learning, robots, accuracy,
+reusability, pricing, and then certification.
+So without further ado, let's begin and understand why was RPA introduced?
+Consider the process of onboarding a recruit your organization.
+The whole process will involve tasks like creating a new user account, a new email address,
+access rights, documents retrieval, and so on.
+So instead of doing all of this manually, one can automate the process.
+So with RPA, the user can automatically activate a template for the onboarding workload.
+RPA can help assess, prepare, and create new join-e data, initiate mailing of offer letters
+and streamline the information across different systems.
+So what is RPA?
+Robotic process automation is the use of software with artificial intelligence and machine
+learning capabilities to handle high volume repeated tasks that previously required
+humans to perform.
+Now some of these tasks could include addressing queries, making calculations, maintaining records
+or even making transactions.
+Now RPA tools are the software through which one can configure tasks that are to be automated.
+So some of the widely used tools are UI part studio, automation anywhere, blue prism,
+work fusion among others.
+Now assuming you have a basic understanding of RPA, let's go on and compare the popularly
+used tools.
+First up is trial version.
+Every tool generally offers a trial version for its users to get acquainted with the
+tool.
+This helps the users understand the tool better and decide if they want to proceed with
+using the tool.
+Blue prism offers a free trial version, which is available in two options either on the
+cloud or on the local computer.
+UI part also offers a free edition.
+Both trial and license versions are available.
+Automation anywhere offers a free community version and both trial and license versions
+are available.
+Next up is based technologies.
+Based technologies define the technology with which the software was built.
+Blue prism is based on Fishar.
+UI part is based on Microsoft vendors like SharePoint, Kibana and Elasticsturch.
+While automation anywhere is based on modern Java technologies.
+The third feature of comparison is process designer.
+Blue prism enables you to create, design, edit as well as test business processes
+from the visual business object.
+Now a VDO is like an adapter provided by Blue prism for communicating with an application.
+Each visual business object implements a specific subject operations on an application's user
+interface.
+So these are basically like objects that encapsulate a particular functional logic.
+UI part on the other hand acts as a visual process designer with developer friendly options.
+Now a visual process designer is a dashboard consisting of various tools through which the
+developer can define the automation tasks.
+Automation anywhere is developer friendly with the visual interface built for business
+users along with advanced features for developers.
+Business users and developers can work side-by-side to build works.
+They can see the visual interface and code in a single screen.
+The next feature of comparison is accessibility.
+Blue prism offers browser-based access only.
+UI part and automation anywhere on the contrary offer both application-based and browser-based
+accessibility.
+In case of automation anywhere, the control room can be accessed with a browser or mobile
+application.
+This is the only platform where users can create bots on any device or any operating system.
+Now in case of blue prism, the user should have the necessary knowledge of programming.
+He should be able to create business objects and manage them in the control center.
+UI part enables you to design automation processes visually through diagrams.
+The developer need not know a programming language in particular.
+When it comes to automation anywhere, it is developer friendly and offers both visual
+and programming features.
+Business users can build bots with the help of tracking drop features, beginners benefit
+from the built-in product work through.
+Next up is robots.
+Now before jumping, let's discuss what the different types of bots are.
+There are two types of bots.
+They have the front of his bots, whose deployment isn't the user's control.
+He also has a back of his bots that can run on locked machines from an orchestrator.
+The user may not be actively involved in its working.
+So moving on to the comparison, blue prism offers back of his automation only.
+UI part an automation anywhere, offer both front and back of his automation.
+In case of automation anywhere, the HBC or the human bot collaboration feature enables
+humans and bots to work together to complete a task and also to manage exceptions and
+escalations.
+Moving on, the next feature is macro recorder.
+Now the macro recorder allows you to record keyboard activities and mouse events to generate
+automation scripts.
+These activities are arranged based on the order or sequence of actions being performed
+on the screen.
+So moving on to the comparison, blue prism does not use a macro recorder.
+UI part makes use of a macro recorder to enable fast process mapping.
+Automation anywhere offers a universal recorder so that the user may not select different
+recorders for different tasks.
+Moving on to the next feature, architecture.
+An application that runs on the client's site and accesses the remote server for information
+uses a client server architecture.
+Whereas an application that runs entirely on a web browser uses the web architecture.
+In case of a client server architecture, the user interaction with the server is always
+through a user interface or application on the client's site.
+On the other hand, in a web application, the user interaction is thoroughly through
+a web browser.
+Now blue prism and UI part port incorporate a client server architecture.
+It is the only platform that provides a complete digital worker solution on the web.
+Users with any skill level can instantly start building robots on a browser without any
+heavy installation.
+The next feature is accuracy.
+Blue prism is accurate for desktop, web and Citrix automation.
+UI part shines in Citrix automation designed for BPO automation.
+An automation anywhere shines in Citrix automation with AI's and Steknology.
+Well, any automation solution built using a virtual desktop or built to work in virtual
+desktops is called Citrix automation.
+Moving on to the next feature, reusability.
+Blue prism consists of a library of business objects that can be reused across multiple methods.
+It also offers high reliability.
+In the case of UI part, the processes can be used for various synthesis services,
+with several workflow modules.
+As a result, UI part offers a high degree of usability and moderate reliability.
+In the case of automation anywhere, apart from the standard common library,
+users can develop custom actions, upload and manage packages in their enterprise control room.
+Every port created an automation anywhere,
+it can be used for various synthesis services with several workflow modules.
+As a result, UI part offers a high degree of usability and moderate reliability.
+The bot store has hundreds of pre-configured bots and digital workers to kickstart a user's RPH journey.
+Next up is pricing.
+Blue prism has a high cost of acquisition.
+It also offers restricted training.
+UI part offers effective pleasant entry-level pricing.
+Automation anywhere offers attractive entry-level pricing.
+Its users also experience the lowest total cost of ownership
+because of its native capabilities and web-based architecture.
+Moving on to the last feature, certifications.
+Blue prism offers several certifications like Blue Prism Professional Developer,
+Blue Prism ROM Architect among others.
+UI part provides pre-on-line training and certification programs like RPA Developer Advanced Certification.
+Automation anywhere university offers pre-on-line training and certification programs
+for both students and advanced practitioners.
+Professions can also avail job roles specific certifications.
+There are several RPA tools in the market today.
+However, Blue Prism Automation anywhere and UI part are leading the market.
+Let's get started with what is UI part.
+UI part is a robotic process automation tool for large-scale end-to-end automation.
+For an accelerated business change, it provides solution for business to automate routine of its activities.
+It uses a variety of methods to transform tedious tasks into automated process.
+Daniel Dines and Maria Stirka, Romanian entrepreneur, founded UI part in Bucharest in 2005.
+The first UI part desktop automation product line was launched in 2013,
+giving business RPA tools to automate manual and repetitive back-off its tasks.
+Let's look at the features of UI part.
+Drag-and-drop workflow.
+The user of UI part will develop visual process steps by dragging and dropping related tasks onto the graphical workspace.
+Then, with the user interface properties, they can transform those process steps into a visual workflow.
+Users may also use the recorder wizard in the UI part tool to build web-based or application workflows.
+The next feature is record and playback.
+The user can use this function to record actions and transform them into automated process series.
+UI part has the following types of recording options.
+Basic recording.
+It focuses on automating single task and is commonly used to develop each activity's complete selector.
+Rest of recording, it can be used for a variety of actions as well as actions development.
+Web recording, it is a common tool for viewing and recording web page activities.
+So it takes recording, it is very widely used for recording stuff like pictures and virtualized environment automation.
+Next, we have inbuilt activities in UI part.
+UI part comes with over 300 built-in activities covering a wide range of process automation and application integration design tasks.
+These activities are found in an activity span which covers most design tasks such as data extraction, data entry and automation.
+Next, we have advanced scraping options.
+Scraping data from web pages and applications is easier with UI part screen scraping.
+Furthermore, the data screen scraping wizard helps in scraping of data with a repetitive structure.
+Scraping solution works flawlessly with any program, including .NET, Java, Flash, PDF, Legacy and Sam.
+Next, we have high security and robustness.
+We can create super smart durable robots with UI part.
+With a simple visual canvas, everyone in the company can use bots.
+UI part offers high security autolog in functionality to run the bots and operates with a log screen allowing automated process to run in complete privacy.
+Let's look at the components of UI part.
+The first component we have UI part studio, UI part robot and UI part orchestrator.
+Let's look at them one by one.
+This is how a UI part studio looks like.
+UI part studio is a user flinty interface inside the tool that allows user to visually plan and design various automation process through diagrams using drag and drop functionality.
+These diagrams are merely a structural reflection of specific tasks that must be completed.
+This is the activity pane in the UI part studio.
+It consists of project activities and snippets.
+This is the ribbon tab.
+It consists of saving options, opening new files, debugging files, recording screen shaping, data shaping and many more.
+We will explore this in the demo section.
+Next, we have output pane, where output is being displayed.
+And we have the properties pane, where the properties of each activity is shown here.
+The next component is UI part robot.
+After you have built your process, the next move is to put into action in the UI part studio.
+UI part robots are used to translate the process into tasks, which are then executed.
+These robots are used to assign various tasks and carry them out in the same manner as humans, but without human interference.
+When given operation occurs on the computer, UI part robots are programmed to begin executing task automatic.
+Next, we have UI part orchestrator.
+The orchestrator is a web based application in UI part.
+It has features like deploying, monitoring, scheduling and controlling automated bots and process.
+It's a centralized forum for managing and controlling all software bots.
+Let's look at the architecture of UI part.
+It consists of two sections, the client side and the server side and the three layers.
+Let us look at them one by one.
+We will first look at the client side and the server side.
+Clients and UI part components are those that the user or developer can communicate with directly.
+UI part studio, UI part robot, browser and UI part agent are usually included.
+UI parts back and operation are considered server side.
+The task and workflows that a user produces are saved in the databases.
+UI part orchestrator chooses the necessary function and software robots to carry out the code task.
+The robots logs and statistics are stored in the backend.
+Logs are useful for analyzing robot performance and detecting errors.
+In them, the two elements comprise the UI part robot.
+Agent support for UI part and the executor service for UI part.
+The agent support for UI part is the service in UI part that serves as the mediator between the client side and the server side of UI part.
+All of the information and data are conveyed via the handler.
+Messages are also logged into the orchestrator before being moved to the SQL server.
+The service can be used to search all of the currently available tasks in the device tray.
+It also can change device settings and start and stop the current task.
+Execute a service for UI part.
+In this the software robots use this service to carry out the task specified in the window session.
+Now let us look at the three layers.
+First one is the presentation layer.
+This UI part components that are open to the users make up the client layer.
+UI part studio robots browsers, UI part agent and executors.
+For example, a user or a developer may use this components to design and create different tasks that can be automated.
+Computer robots are commonly used to complete this task.
+The client layer is another name for the presentation layer.
+Let us look at the service layer.
+The UI part architectures most significant sheet.
+The cloud layer shows all server information.
+The UI part orchestrator is the most significant part of the server layer.
+When the robots can perform the task, the entire project is periodically uploaded to the server.
+Within the aid of an orchestrator, the project is often carried out through several structures.
+The orchestrator is in charge of the whole band.
+It keeps track of the project development, schedule software robots for execution and produces summary reports based on the filtered parameter.
+It assists in the synchronization of software robots so that they can continue to perform routine tasks.
+It helps our project meet project requirements, service levels and deadlines thanks to its web-based management system.
+Now let us look at the persistence layer.
+Database servers make up the bulk of this sheet.
+During this layer, all of the robots configuration information is saved.
+Users insert data, robots assign tasks, logging information and assets.
+Among the other items into the orchestrator's configuration data.
+Furthermore, persistence layer is in charge of keeping the log information updated by the UI part agent services.
+Elasticsearch is used to store these logs.
+The logs are primarily useful for locating and correcting errors.
+Process level data is usually saved in relational database management system such as SQL Server.
+This makes processing logs from the vast volume of data a lot simpler.
+Hence, the queues task are often taken care by the persistence layer.
+Let us look at some of the applications of UI part.
+In sales, in sales UI part is used to generate invoice.
+This is an example of data replication in action.
+Both CRM and accounting systems must have the same sales details.
+Bots can update accounting records, prepare and send invoices from the appropriate email addresses instead of manually replicating data.
+It is also used in keeping scorecards up to date.
+Companies that do not have HR and CRM systems, integrated can use RPA bots to ensure that CRM adjustments are submitted to scorecards in real time, allowing sales reps to track their progress.
+It is used in CRM updating.
+A new class of solution is evolving to incorporate their email, call and other contact data into CRM.
+A simple bot could be returned to update your CRM records with customer contact information if you can't find a suitable solution for using the CRM systems.
+Next, it is used in banking.
+In banking, it is used to check KYC.
+Though dedicated KYC solutions are evolving, RPA bots can be used to automate portions of the KYC process if your organization does not want to use one.
+A case may be referred to an employee in the event of an edge case that requires human involvement.
+It is used in sanction of loans.
+Like most document process activities, this method is appropriate to RPA automation because complex business logic can be embedded in bots, which can partially automate loan decisions and the manual process that follow.
+It is used in execution of trade.
+RPA bots may be useful in situations where legacy systems are incapable of storing complex limit orders.
+However, this is more a banned solution.
+In the long run, switching to a sophisticated and competent trading system will certainly be a smart investment considering how it could increase trading and minimize trader workload.
+Next, it is used in healthcare.
+In healthcare, it is used for appointment scheduling.
+The RPA bot makes appointment for patient based on their diagnosis, doctor availability, location and other factors such as financial statement and insurance details.
+It is used in supporting analytics to improve patient treatment.
+RPA bots may collect a variety of medical information.
+RPA bots, for example, can use patient data to a third-party healthcare and analytics provider to provide more reliable diagnosis and better patient care without violating any confidentiality regulations.
+Let's look at the benefits of UI parts.
+In case productivity, UI parts automate with quick speed and accessibility.
+Consider an RPA bot that allows a worker to produce a monthly report in 20 minutes instead of manually taking 4 hours.
+The company's productivity could increase as a result of process automation.
+Next, we have high efficiency.
+RPA software does not need a break. It can operate 24 hours a day.
+A single RPA robot may replace 2 to 5 full-time workers.
+If not more, robots can do the same amount of work in less time or more work at the same time than humans.
+Customer experience.
+In RPA, adopted business, routine and repetitive and boring tasks are assigned to robots, allowing employees to focus more on customer service.
+Company may meet consumer needs with the help of professional and knowledgeable employees.
+Highly secure. There is no risk of information leakage from one component to another because it performs single tasks.
+As a result, data access is strictly monitored and reported.
+Cost effective. UI path has minimal operating cost and more efficient use of IT resources.
+Let's look at the top companies hiring UI part developers.
+Infosys, IBM, Deloitte, EY, KPMG, Tata, Tecmahindra and Capgemony.
+Let's look at the salary trends for UI part developers.
+The average base scale for a UI part developer in India is 5.45,000 rupees.
+UI part developer salary ranges from 362,000 rupees to 1 million.
+In USA, the UI part developer salary ranges from $58,000 to $107,000 and the average salary is $76,000.
+Let's look at the demo.
+Consider a scenario where you have multiple Excel files you want to combine the data in single file.
+In this demo, we will merge two Excel files into a single Excel file and send it over an email.
+Let's create automation to merge two Excel files using UI path.
+From here, we can open a new project or existing project stored locally or on version control system.
+With the click, we can open a new project or create a new project from a template.
+UI path offers many templates depending on what you're trying to do.
+For now, let's start with a blank project.
+So, we'll open a blank project here.
+So, we'll open a main workflow.
+Then we'll go to a new and select a new sequence.
+We can do it using a flowchat as well, but for now, I'll show you doing a sequence.
+So, we'll open the sequence and we'll name the sequence.
+Since we are merging two files, I'll name it as merging files.
+And I'll create.
+So, we'll go to the activities pane.
+Firstly, we need to drag and drop a read CSV activity.
+So, search for read CSV.
+So, drag and drop read CSV activity.
+Since we are using two Excel files, so we need two read CSV activities.
+And read from the file, we need to select the file location.
+So, we'll select the file location, sample CSV file one.
+And at the file two, we'll select another file location.
+Sample CSV file.
+At the output side, we'll create a variable and name it as excel underscore file one.
+Similarly, for another read CSV, we'll create a variable and name it as excel underscore file two.
+So, this much is done.
+Now, we need an assign activity.
+So, we'll search for assign activity.
+So, we'll drag and drop.
+Assign activity has two parameters, two and enter an expression.
+So, in the two, we'll create a variable name it as merged excel.
+And in the expression, write an expression, say excel underscore file one dot clone.
+Why are we using a clone function?
+The clone function creates a new data table with same structure but does not copy the data.
+Oops, it's showing an error here.
+So, what's the error?
+So, we need to assign the variable type to be system dot data or data table.
+Here we go, error has gone.
+So, after using the assign activity, we need to merge the data table.
+So, we need merge data table activity.
+So, search for merge data table.
+Here we go, drag and drop it.
+We need two merge data table activities.
+So, drag and drop.
+And specify the destination and source here.
+The destination is the merged excel.
+And the source is the excel underscore file one for the first data merge table.
+Similarly, for second merge data table destination remains same.
+Source will change to excel underscore file two.
+So, this is done.
+So, next we need to drag and drop a write csv file.
+Write csv file creates an output file in which you want to merge the two files.
+So, search for write csv.
+Here we go, drag and drop it.
+So, choose the path create the file.
+So, you can see there is no output file here.
+So, we'll create the output file now which is an empty file.
+So, output dot csv.
+So, we have created an output file.
+So, write from will write it as merged excel.
+We need the data from merged excel.
+So, the output file is created.
+So, now we need to send the file over and mail.
+So, for that we need to drag and drop a get password activity.
+So, we'll search for get password activity.
+Here we go, drag and drop it.
+And once you get this get password activity enter the password here.
+Enter your password email id password.
+So, there is a prerequisite when you use get password.
+To receive a mail go to your Google account.
+Google account go to your security option.
+And in security there is an option called less secure app access.
+Turn that on.
+I'll repeat turn on the less secure app access.
+Once the get password is done go to the result section.
+The result section right click and create a variable.
+Name it something maybe sss.
+So, I've created a variable there.
+So, we need an last activity now.
+That is smt mail message.
+smtp mail message.
+The drag and drop it.
+So, in the host port and enter this server.
+So, the server you have to enter it as smtp.gmail.
+Call should be in the double quotes.
+smtp.gmail.com.
+And enter the port number as 587.
+And enter your email id here.
+Which is your own email id.
+I'll enter mine.
+Once you enter the email id enter the password.
+What we have created.
+So, that's done.
+So, enter the email id here.
+Enter the subject whatever you want.
+So, I'll enter it as merged data.
+merge Excel files.
+Enter the body.
+So, we'll attach the file.
+So, what is the file which we are attaching.
+So, we are attaching the output file.
+What we have named it as output.csv file.
+So, that's it.
+I'll run the program.
+I'll run the code.
+Sample execution has started.
+And within the 10 seconds sample execution has ended.
+So, we'll go and check if we have received the mail.
+So, this is my email id.
+Here we go.
+We have received the email here.
+Let's open this.
+Let's open the output file.
+Here we go.
+You can see the data has been merged.
+And if you go to the file where the documents were stored.
+Here you go.
+This way the two files, the sample file 1 and sample file 2.
+And this is the merged file which was created.
+Let me show you the sample file 1 and sample file 2.
+So, this is the sample file 1 with 10 rows.
+And this is sample file 2 which also has 10 rows.
+So, this is file 2 with 10 rows and file 1 with 10 rows.
+And here we go.
+This is the output file which has both 10 rows merged here.
+Here we go.
+It is sent over and made.
+In this video, we will be looking at the installation of UI path.
+So, let us see the requirements.
+We will first look at the hardware requirements.
+The CPU should at least have a processor of 1.4 GHz 32-bit configuration.
+Or it is recommended to have a 1.8 GHz 64-bit configuration.
+The device is recommended to have a RAM of 8 GB, if not at least a minimum of 4 GB.
+Let us look at the software requirements.
+If you are using a Windows operating system, then Windows should be of version 8.1 or 8.1N or 10 or 10N.
+And the Windows server should be of 2012 R2 2016 or 2019 versions.
+Other prerequisite is to have .NET framework of minimum of 4.5.2 version installed.
+Let us look at the editions.
+The different editions that UI path offers.
+UI path offers two types of editions.
+Community Edition and Enterprise Edition.
+Community Edition is for the developer and small teams who are just starting on their automation journey.
+The Enterprise Edition is further classified into three types.
+Enterprise Studio Edition, Enterprise Cloud Edition, and Enterprise Server Edition.
+So Enterprise Studio Edition is for individual enterprise developers who want to experiment with UI path studio.
+Price Cloud is a cloud-based deployment of entire RPA enterprise platform for any size business.
+Enterprise Server on premises deployment for entire enterprise automation platform for large scale business.
+Let us look at the different profiles in UI path.
+UI path studio X, UI path studio, and UI path studio pro.
+UI path studio X is for business users.
+If you are not a developer, but if you want to automate a simple task, then it is easy to use a studio X.
+UI path studio, it is for RPA developers.
+Build complex automation that is run by attended or attended robots.
+UI path studio pro, it is for the specialized developers.
+Automate with AI, advance RPA features, testing tools, and sophisticated coding services.
+So we will look at the installation.
+Let us install UI path.
+Go to any one of the browser and search for UI path.com.
+This will take you to the official UI path website.
+Here you can see try UI path for free.
+Click here.
+Since I have already registered before, it is showing as continued to existing organization.
+If you are visiting this website for the first time, then you might have to register for signing using an email account.
+After signing in and filling all the details, you can continue.
+Here you can see download UI path studio.
+Click on this and download the UI path studio.
+Here you will, the UI path studio setup file is getting downloaded.
+Once the UI path file is downloaded, run the setup file.
+And here you can see the UI path is getting installed.
+After installation, it will ask for a license.
+Select community license which is free.
+After selecting the license, you need to choose a profile.
+Here are three profiles, UI path studio pro, which is the advanced studio IDE.
+It has features like testing tools, advanced RPF features, and coding services.
+Another profile is UI path studio.
+It is for developers who have clear programming experience.
+And the last profile is the UI path studio X.
+It is for the people who don't have any programming experience.
+So we will select UI path studio X for now.
+Next UI path will ask you to update the channel.
+You can either select the stable version or preview version.
+We will select the stable version for now.
+After you select the versions, you need to select the source control plugins.
+You can enable gate version control system or Apache subversion and Azure DevOps Server.
+UI path provides a short introduction video, tutorials to learn how to build automations
+following step-by-step instructions and an academy to take free training on the UI path academy.
+So that's it.
+You have successfully installed UI path studio.
+From here, you can open a new project, new template and start building the first automation.
+In this video, we will learn about UI path studio in-depth and understand it's working with a demo.
+So what is UI path?
+Now, RPA is a technology with which human tasks can be automated.
+To facilitate this, a tool is required.
+UI path is one such tool among others that are used to create bots with the help of visual process and diagrams.
+It provides complete end-to-end automation calling it hyper-automation.
+UI path was founded by Daniel Dines and Maria Sturker in 2005.
+UI path is specially used for Windows process automation.
+It automates repetitive tasks and lastly, UI path offers drag and drop functionalities to make it easy to use.
+Now, since there are so many other tools like blue prism, automation anywhere in the market, what makes UI path stand out?
+So let's look at the advantages of UI path.
+First, UI path has an activity library.
+This library has several built-in activities and features like display message, input box and so on.
+This improves the customer experience.
+We will deal with these activities in the demo later.
+Next up, is security.
+RPA deals with a variety of information like credit card numbers, financial information and passwords.
+UI path offers extensive security since all the information can be encrypted and stored on a centralized server.
+Up next, we have recorders.
+So, UI path uses a micro recorder to record the user actions such as mouse clicks and keystrokes.
+Once the actions are recorded, they can be emulated using emulators for quick automation.
+Third party integration.
+UI path can be integrated with third party plugins like IBM Watson and Google plugins.
+Then we have powerful debugging.
+UI path studio comes with a debug component that helps find and locate problems easily in complex workflows.
+This is useful for viewing the execution of each activity to verify what data it gets and if there are errors in producing outputs.
+Now, let's understand the various UI path products.
+First up, is UI path studio.
+This is the platform to create the bots.
+This product consists of all the necessary drag and drop activities and a robust UI to help develop bots of your choice.
+Now, the UI path studio consists of the GUI dashboard.
+It offers a visual dashboard with activities like send email, display message and so on.
+Then, we have types of recorders.
+UI path studio offers various types of recorders to record actions on multiple platforms.
+Then we have logging and exception handling.
+It offers various options for debugging and exception handling such as debug, open logs, slow step, etc.
+And finally, we have reusable components.
+The user can create reusable components to publish them together as libraries.
+Next, we have the UI path robots.
+All the automation tasks that created are run by UI path robots.
+There are two types of robots.
+Attended robots and unattended robots.
+Attended robots work with you to speed up service task and help task.
+It is used in activities where human involvement is the key.
+Unattended robots operate without human touch, maximizing cost and performance benefits for any variety of back of his tasks.
+Lastly, we have the UI path orchestrator.
+The orchestrator is like a centralized entity where you can deploy, secure, manage all your automation tasks.
+Here are the steps involved.
+First, you create a bot.
+Now you create a project and publish it as a process for further use.
+Once a process is created, it is assigned to a specific robot to execute in an environment.
+This collectively constitutes a job.
+Now, let's move on to the architecture of UI path.
+So on the top, you have the client layer consisting of UI path studio and the UI path robot.
+Now, the UI path robot has two parts.
+One is the UI path agent service which displays all the available jobs in the system tree,
+and the other one is the UI path executor service which is used to run the jobs in one window session.
+The server layer receives the robot once it is ready for execution.
+With the help of the orchestrator, you can run the project on different PCs.
+The orchestrator monitors the deploys, configures, queue management and logging.
+Lastly, we have the persistent layer which consists of the databases.
+It takes care of the queues and holds information about the robot configuration and the assigned processes.
+Now that we know what UI path is, let's acquaint ourselves with its user interface and understand its components better.
+So this is what the typical interface looks like.
+First, we have the ribbon.
+It consists of three tabs, home, design and debug.
+Home is where you start a new project from predefined templates or open a project you recently worked on.
+By default, the projects are created in the location shown below.
+Next is the design tab.
+Design tab adds sequences, flow charts and state machines to your project.
+It installs and manages activity packages.
+It builds interactions with UI elements and then publishes your work to orchestrator.
+Finally is debug.
+It debugs your workflow by using debugging tools to set up breakpoints, monitor the execution of activity step-by-step and adjust the debugging speed.
+Next on the screen is tools.
+So the tools tab can be used for installing extensions from Chrome, Firefox, Edge, Java, Silverlight, Citrix and Windows Remote Desktop.
+And is also used for launching the UI Explorer and Project Dependencies Mass Update tool.
+Then we have settings.
+The settings tab has options for changing the interface language, theme, setting global preferences and managing activity feeds.
+So you have general settings, then there are settings for design, locations, manage resources and finally license and profile.
+Up next you have help.
+The help tab directs you to product documentation, release notes, online resources, the community forum and the RPA academy.
+After that you have the recorder.
+The recorder component in UI path studio allows the user to record UI mouse movements and keyboard activities to generate automation scripts.
+After that you have scraping.
+So UI path studio supports two types of scraping.
+One is screen scraping and the next one is data scraping.
+So screen scraping is programmatic collection of visual data and data scraping is the extraction of structured data from an application.
+Then you have user events.
+User events records events such as mouse clicks and keystrokes.
+Then you have variables.
+So variables hold different types of data.
+These variables can change over time.
+UI path makes an easy provision to create and remove unused variables.
+On the bottom left you have project.
+So the project panel enables you to view the components of the current project, add folders, open the file location, manage dependencies,
+and adjust project settings.
+Beside it, you have activities panel.
+So the activities panel shows available activities that can be added to the current workflow.
+Users can use the search box to find activities, navigate through them using navigation keys and press.
+You also have the snippets panel which enables you to easily reuse automation.
+It includes by default multiple samples and snippets.
+To the bottom right you have the properties panel which is contextual and enables you to view and change the properties of a selected activity.
+You also have the outline panel which displays the project hierarchy or available variables and nodes.
+You can highlight activities in this panel by selecting them in the designer panel.
+The output panel enables you to display the output of the log message or right line activities, among other things.
+Exceptions for packages are also displayed in this panel.
+So now that we have understood the interface of UI path, let's look at the companies using UI path.
+So you have Accenture, CapJumini, Cognizant, Etos and Deloitte to name a few.
+Now, we'll do a demo to automate a task using UI path studio.
+So here is what we are going to do in the demo.
+We'll create an automated process to fetch data from a website wherein the bot would extract data like the name of the person, the phone number and the email ID.
+This data will store it in an Excel sheet and send it over an email. Now let's get started.
+Now to do this demo, we'll be using the fake name generator website to generate random data of people and store this data set in an Excel sheet.
+Now, if I had to do this manually, I would first create an Excel sheet. So let me open an Excel book.
+I'll create a blank workbook.
+So this is where I'll put my data if I had to do it manually.
+So now let me take you to the fake name generator website.
+So I'll search for fakenamegenerator.com.
+So this is the website where you can generate fake names.
+Now, if I had to store this data in Excel, I would manually copy paste each and every detail and paste it onto the Excel sheet.
+So for that, first I had to create columns like name, then phone number and this in the email.
+After that, I had to come back to this and copy each of these fields.
+So name, I had to take the phone number, so I would copy this and similarly for the email address as well.
+For one record, it is fine.
+What if if I were asked to fetch 100 records or say 200 records, then this method is not at all feasible.
+It is time consuming and inefficient.
+You need to find a way where you can automate this task of fetching records.
+UI path is a solution for this.
+So let's see how we can automate this task using the UI path studio.
+So I'll click on open main workflow.
+First, we need to direct UI path to go to the fake name generator website.
+For that, we need the sequence activity.
+So let me search for sequence here.
+So under activities, I'll search for sequence and I'll drag it here.
+After that, I need to open the website in a web browser.
+So for that, let me search for another activity called open browser.
+So under activity, I'll look for open browser.
+So I'll drag it on the sequence itself.
+Now, it is asking you to insert the URL of the website and it must be within double quotes.
+So I'll go to my website, copy paste the URL.
+I have to give this URL within double quotes, then I'll paste it.
+Now, we need to select the name of the browser where you want to open this website.
+So under input and browser type, I'll choose chrome.
+Now, let me go ahead and run this file.
+So under debug, I have run file.
+I'll click on it.
+So as you can see, the website is automatically opened in a new window on chrome.
+I'll close this.
+The next step in the process is to tell the program how many records we want to fetch from the website.
+For this, we will create an input dialog box.
+So under activities, I'll search for input.
+So here you get the input dialog box.
+I'll drag and drop it on the top.
+Now, it is asking us to give the details.
+So I'll put it within double quotes, say enter the details of customers or say people.
+And then here, I'll enter the number of records you want to fetch.
+Now, I have to store this information in a variable.
+So under variables, I'll create a variable and name it as total.
+Is the total number of records I want to fetch?
+Similarly, under output result, I'll give the same variable name as total.
+Now we need to fetch the details a number of times repeatedly, say for 10 times or 20 times of 50 times.
+To do this operation, I'll be using a do-while loop.
+So to use a do-while loop, I'll first search for do-while.
+And I'll drop it to the do section of the sequence.
+As you can see, do-while has two components.
+One is the body, the other one is condition.
+The body has the things that you want the program to do.
+The condition is where you evaluate certain conditions every time when the program has to do it ask.
+So for every step or iteration, it will check if the condition is true or not and go inside the body of the loop.
+Now for doing this, we need to assign a variable.
+So let's name the variable as val.
+And I'll change the variable type to integer.
+And I'll make the scope to sequence.
+I'll also assign a default value of 0.
+Now we'll compare this val to the variable total.
+So the condition I'll give is check if val is less than total.
+So under condition, I'll give val less than total.
+So every time the value of val is less than the total, it will keep fetching the records from the website.
+You can see it has thrown some error.
+Now this is because a total variable is of type string while the val variable is of type integer.
+So you can't compare an integer with a string variable.
+So that would be absurd.
+We need to convert the total variable to an integer using the cint function.
+So here itself, I'll write cint which is convert this total variable to integer.
+You can see the error is gone.
+The next thing I want to do is if the value of the val variable is less than total,
+I'll increment the value of val to 1.
+So to do that, I'll use an activity called assign.
+So I'll check for assign and I'll drag it onto the body.
+So here I'll give val equals to val plus 1.
+This will make sure the value of val increases by 1 every time there is a new record inserted.
+It will continue until the value of val no longer matches the total.
+So the next job is to extract information from the website.
+To do this, we will use the get full text activity.
+So I'll search for get full text here and I'll drag it right below the assign activity.
+Now you need to select the information which you want.
+So first I want to get the name.
+I'll click on the indicate element inside browser and then select the name of the person.
+So I'll click on this and I click on the name.
+There you go.
+Now we need to store this name in a variable.
+So I'll create a variable.
+So under variable, I'll create a variable called name.
+And in the output also, I'll give the same variable name.
+Next, I want to fetch the phone number of the person.
+So I'll again select get full text and I'll drag it here.
+I'll click on indicate element inside browser.
+So I'll scroll down and I'll select the phone number of the person.
+So we have selected the phone number.
+Similarly, I'll store this phone number in a variable.
+I'll create a variable called phone underscore number.
+And the output text box also will give the same variable as phone underscore number.
+After that, I want to get the email address of the person.
+So I'll continue with the same drill.
+I'll select the activity once again which is get full text and I'll drag it right here.
+I'll click on indicate element inside browser.
+And now, we'll select the email address which is this one.
+Similarly, I'll store the email address in a variable called email underscore ID.
+And in the output also will give the same variable name which is email underscore ID.
+Now, we need to store the names, phone numbers and email IDs into an Excel sheet.
+For that, we need to create a data table.
+So I'll search for data table under activities.
+Let me go ahead and do that.
+So I'll choose build data table and drag it right below the input dialog box.
+Now this table has to be assigned to a variable.
+So let me do that.
+Let me give a variable name as fetch underscore data underscore table.
+Similarly, the output also will give the same variable name which is fetch underscore data underscore table.
+One thing I need to tell you here is we change the variable type.
+So I'll select browse for types and look for data table which is system.data
+and drill down and search for data table which is this one.
+Click OK.
+We need to assign the column names to this data table.
+So let me now do that.
+I'll uncheck all this and select the columns.
+So we'll give the first column name as name itself.
+Click on OK.
+Select one more column.
+Give it as phone number.
+Click OK.
+And then we need the email address.
+I'll hit OK.
+So we are done.
+So first the data table is created and then we'll write this data to an Excel file.
+After that we need to create rows for the data table.
+For that I will search for row under activities.
+I'll search for row and I'll select add row.
+I'll select add data row.
+I'll place it right below where we have created all the variables.
+Now I want to add a row for the name phone number and email address.
+So under input I'll select array row.
+I'll expand this and within curly braces I'll give my variable names.
+So those would be name, give a comma and then phone underscore number,
+comma email underscore ID.
+Click OK.
+I made a mistake.
+It should be within curly braces.
+Now to tell the table to which it should write the rows to we need to assign under the data table name.
+So under data table I'll give fetch underscore data underscore table.
+For every iteration a record will be added to the table.
+Then we need to refresh the page to extract the next set of information.
+So for that I will add another activity called click and drop it right below the add data row.
+So under activities I'll search for click and I'll select mouse click and I'll drop it right below this one.
+Now we need to indicate where do we want to click from the browser.
+So click on this go on top and select generate.
+So we want to click on generate.
+Next I will write the data to a CSV file.
+So I'll search for write CSV under activities and I'll drop it was the end of the sequence right here.
+Now you need to give the location where you want to place this file on your system
+and give the source from where it will take the information.
+So let's give the location where you want to place this file I'll place it on my desktop itself.
+I'll name this as fetch save it and for the source I'll give fetch underscore data underscore table.
+We are all set now let's run it.
+So under debug file I'll select run file I'll enter the number of records.
+So let me fetch 10 records click on OK.
+This might take some time.
+I believe it has run successfully now.
+Let me check for my CSV file that should ideally be on my desktop.
+There you go.
+If we have the CSV file let me open it.
+You can see it has extracted 10 rows of data and three columns namely name of the person the phone number and the email address.
+So we are done with the first task of automatically generating data from a website.
+The next task is to send this file over email.
+Now to send an email you need the SMTP activity.
+So under activities I'll search for SMTP.
+I'll drag it right below here.
+Now we need to configure this.
+I'll be actually sending this email from someone else's email ID to my email ID.
+So under 2 I'll give my email address which is within course I'll type abichit.biswal at simplylearn.net.
+I'll give a subject as automatic data extraction under body.
+I'll give something like high please find a task.
+Now we have to attach the file.
+We have to give the location of the file here.
+So let me go to properties and I'll select this cancel.
+Paste this here followed by the file name which is fetch.csv.
+I'll click on OK.
+After that I have to give the host port number which is 465
+and the server name which is SMTP.gmail.com.
+Under log on I'll give the sender's email ID.
+I have to give the password as well.
+Under the receiver it's my email ID which is abichit.biswal at simplylearn.net.
+For the sender I'll give the email ID as chinmy. they span day at simplylearn.net.
+And I'll give a dummy name chinmy.
+So we are almost done.
+Let me now go to debug file and run this.
+It is asking to enter the number of records.
+I'll give 5, click on OK.
+This will take some time so let's just wait.
+So we have successfully run our program.
+Now let me check my inbox if I've got any mail from chinmy.
+So there you go.
+I've got this email and below you can see the fetch.csv file attached and it has 5 rows.
+What is UI path orchestrator?
+UI path orchestrator is a web application that allows you to orchestrate the execution of repetitive business process by UI path robots.
+Orchestrator manages the creation, monitoring, scheduling and controlling of automated bots and process.
+It serves as a point of integration for third party solutions and applications.
+It's a centralized forum for managing and controlling all software bots.
+It can manage the entire robot fleet.
+Let's look at the orchestrated capabilities.
+Provisioning establishes and maintains the connection between the robots and the web application.
+Deployment.
+Deployment ensures that the correct package versions are delivered to the assigned robots for execution.
+Configuration.
+Configuration looks after the maintenance and delivery of the robot environments and process configuration.
+Cuse.
+Cuse ensures that the workload is distributed automatically across robots.
+Monitoring.
+Monitoring manages user permissions and keeps track of robot recognition details.
+Logging.
+Logging logs are stored and indexed in a SQL database.
+Interconnectivity.
+Interconnectivity functions as a centralized contact point for third party solutions or applications.
+Let's look at the orchestrator use cases.
+The strength of UI path orchestrator comes from its ability to control the entire robot fleet.
+Let's look at the different use cases.
+The first is attended.
+This type of robot is activated by user events and operates at the same workstation as a human.
+Orchestrator is used with attended robots to provide a centralized process deployment and logging medium.
+Unattended.
+In virtual environments robots can run unattended and automate a variety of process.
+The orchestrator is in charge of remote execution, control, scheduling and support for work cues in addition to the attended robot capabilities.
+Studio or StudioX.
+They have unattended robot capabilities, but it should only be used to connect your studio or studioX to the orchestrator for creation purposes.
+Non-production.
+Robots are similar to unattended robots, but they can only be used for research and development.
+Attended, unattended, non-production, studio and studioX robots can all be operated from a single location.
+Let's look at the orchestrator user interface.
+Dashboard enables us to see charts and statistics illustrating usage information for all the orchestrator components like process.
+Access, assets, cues, schedules, robots, jobs and transactions.
+Let's look at the tenant context.
+To view and control the tenant level entities in your orchestrator, pick tenant from the sidebar menu.
+With only one instance of the orchestrator, multi-tenancy allows you to isolate data.
+These features help you to automate various departments within your organization,
+while also ensuring that orchestrator data is approved according to your preferences.
+Please bear in mind that all of the information is contained in the same database.
+Let's look at the components one by one.
+Robots.
+A robot is an execution host that runs UI pass studio process.
+You can add robots, edit them, display the status and license state, adjust the environment they are assigned to,
+and change their runtime settings on the robot's stack.
+You can also see the logs that a single robot has created.
+Process can be downloaded and executed automatically by robots using custom settings.
+While building or editing a robot, you can configure automatic process downloading, logging level,
+font smoothing and resolutioning the settings stack.
+Folders.
+Folders give you a fine grain control over automation and their associated organizations,
+as well as staff through the entire organization.
+In the orchestrator, there are two types of folders, classic and modern.
+Classic folders functionality is allowed by default, while modern folders functionality must be enabled by the host or the tenant administrator.
+Users.
+A user is an individual with access dependent capabilities whose view and control of the orchestrator are determined by the access slides granted.
+Users can be developed and managed either locally in the orchestrator or an external directory.
+Rolls.
+In orchestrator, the Rolls tab help you to handle user permissions.
+The orchestrator view that a consumer has is defined by the role they have been assigned.
+A function allows you to control view, edit, create and delete permissions on all orchestrator pages and modules.
+Machines.
+A machine page allows you to provision and control machines in preparation for registering robots with the orchestrator.
+It lists all of the machines that are currently in operation as well as their forms.
+It allows you to create a computer whether it's standard or a template.
+Packages.
+All projects published from UI Part Studio and those manually imported are displayed on the Packages tab.
+You can display all available versions of any package on the Packages tab as well as the status, claims and release notes if they are available.
+ML Skills.
+ML Skills retrieves and requests machine learning skills from the AI fabric service.
+It authenticates the robot that is running the machine learning skills.
+Audit.
+The audit page shows the audit trail for all acts taken by orchestrator entities.
+Several criteria including component, user, action and time can be used to filter the data on the audit page.
+Credential stores.
+A credential store is named location inside a safe store, such as cyber arc, where you can get robot credentials and credential assets when you need them.
+At the tenant stage, orchestrator encourages the users of several credential stores.
+Webhooks.
+Webhooks make it easier to integrate your UI Part automation with the rest of your app ecosystem.
+You can subscribe to the orchestrator events and have them sent to the external DCM, BPM or CRM solutions to notify various users about the new Q items that can be processed, cost failures or process updates.
+License.
+Robot licensing is available both at the host and the tenant level in the orchestrator on the license list.
+This enables you to shorten your deployment time and handle activation from a single location.
+Within a single click, you can trigger, renew, delete and delegate licenses.
+Alerts.
+Notifications for robots, queue objects, triggers, tasks, procedures and activities are shown on the alert staff.
+You will receive updates from all of your folders on the staff and you will not be able to choose more granular options.
+Alerts are sent in real time and can be categorized as info, success, warn, error or fatal.
+Settings.
+You can adjust various settings on the setting tab, including the time zone, email warning information, account information, package feeds and interactive authentication.
+Now let us look with respect to the folder context.
+From the sidebar menu, pick any available folder to view and control the entities within that folder.
+Automations.
+Contains the following tabs.
+Process, jobs, triggers and logs.
+The process page allows you to build new process from uploaded packages.
+Manage existing process and keep all of your process up to date with the latest package versions.
+This allows you to spread packages through the entire organization uses and robots and execute process more quickly from the jobs task.
+Jobs.
+On a new and path robot, a job represents the execution of a procedure.
+The execution of a job can be started in either attended or unattended mode.
+On attended robots, you can't run a job from the orchestrator and they can't run under a locked computer.
+Triggers.
+Triggers allow you to run jobs in a predefined sequence.
+I pre-determined intervals and if a new products are added to your cues.
+Logs.
+The log space shows you all of the robot logs in all of the folders you have access to.
+To access the logstab, you must have view permission on the logs.
+Logs are kept in the local database if the orchestrator is inaccessible.
+Monitoring.
+Monitoring contains the following tabs.
+Machines.
+Process.
+Cues.
+And SL.
+Machines.
+Displace information about all the existing runtimes on an aggregate basis and allows you to check the overall help of each runtime.
+Process.
+The process page allows you to build new process from the uploaded packages.
+Managing existing process and keep all of your process up to date.
+Cues.
+A queue is a storage container that can accommodate an infinite number of objects.
+Multiple types of data, such as invoice information or customer information, may be stored in queue objects.
+Other systems such as SAP or Salesforce can be used to process this data.
+By default, the data stored in and output from the queue items is in free form.
+SL.
+Displace SLA and risk SLA information for all queues in the current folder with SLA predictions allowed.
+This allows you to determine if the newly added queue items will be processed all time,
+and if so, what resources you will need to devote to ensure that their SLA is not violated.
+When the SLA is in danger of not being reached, you will be adequately informed so that you can make the required changes.
+Cues.
+Cues contains the following tabs, queues and review request.
+In the queue pages, click on the review request tab to show revision request.
+The page shows items in different queues that have been allocated for revision.
+Assets.
+Assets are usually shared variables or credentials that can be used through several automation projects.
+They allow you to store unique information that the robots can easily access.
+Storage buckets.
+RPA developers may use storage buckets to provide a perfect storage solution when building automation projects.
+The storage buckets page shows you your current bucket configuration
+and allows you to build as many new storage buckets as you need.
+Testing.
+Testing contains the following tabs.
+Test Sets.
+Test cases, test execution, test schedules and test data queues.
+Test set.
+A test set is a collection of any number of individual test cases.
+Each intended to serve a specific function.
+The test sets page list of you currently available test sets and allows you to build new tests,
+updating existing ones and run them.
+Test cases.
+The test cases page shows all of your test cases from all of your projects and app versions in one place.
+These are the test cases that are used in and to make up your test sets.
+Test executions.
+Your previously executed test sets and their information are shown on the test execution tab
+since test sets are often subject to change.
+Test executions act as an immutable record of any given test sets execution at a given point in time.
+Test schedules allow you to run test at pre-determined intervals and in a scheduled manner.
+Test data queues.
+Using test data queues, you can store and manage your test data.
+The test data queue serves as a container for queue items that are ready to be consumed via various activities.
+The test data queue items are uploaded or deleted based on the first in first out concept.
+Action catalogs.
+Task catalogs are task containers that allow you to categorize your task using a variety of criteria.
+The catalog where a task is stored is defined when the task is created using Studio's build type task operation.
+In orchestrator, the catalog must be specified first.
+If you mention a catalog that has not been generated in your orchestrator, the task is created in orchestrator without a catalog.
+Settings.
+Setting contains two tabs, permissions and machine.
+Permission.
+A user is an individual with access dependent capabilities.
+Whose view and control of the orchestrator are determined by the roles assigned to them.
+Users may be installed locally in the orchestrator or an external director.
+Machines.
+You can use the machine's page to provision and manage system entities which you can then use to bind UI path robots to the orchestrator.
+It lists all of the machines that are currently in use as well as their types.
+Machines are global tools which means they can be accessed from any folder.
+Let's look at the damage.
+In this demo, we will see how to connect UI path robot with the orchestrator.
+How to run work flow using the orchestrator.
+Let's go to the browser.
+In the browser, enter platform.
+What UI part.com.
+This will take you to the UI part.com website.
+You have already an account sign-in enter the password.
+We can sign-in.
+Meanwhile, open the UI path assistant.
+This is the UI path assistant.
+UI path robot is a kind of representative which runs the workflow.
+We create a workflow in the UI path studio.
+Then we upload it on the cloud orchestrator.
+Then we configure different robots to run this workflow.
+Now that we have logged in to the orchestrator.
+Go to the admin.
+You need to click here to add tenant.
+For the UI path community free addition, you can add only one tenant.
+I have already created an tenant.
+This option is disabled for me.
+When you click on the add tenant for the first time, the tenant window will be displayed.
+Then fill the tenant name password and confirm the password.
+It will ask you for name, surname and email address which is optional.
+After filling the details, click on provision.
+The tenant and tenant admin are created and displayed in the tenant space.
+As you can see, the tenant is created.
+There is an option here, users and groups.
+You can go to the users and you can see the different users.
+This is my user.
+Now you can go to the groups and see the different groups allocated and their licenses.
+Now that we have created a tenant, I have named it a tenant as admin.
+Let's open it.
+Meanwhile, you can open UI path assistant.
+Open UI path assistant.
+This is the UI path robot.
+There are two different ways to connect robot to the orchestrator.
+One is signing in the UI path assistant.
+It will take the token from the UI path orchestrator by user authentication
+and it will directly connect machine and the robot.
+And the other way is to manually connect.
+So, we will sign in.
+Enter the password.
+Now you can see here, robot is connected to the orchestrator.
+So, when you sign in, the robot will get connected to the orchestrator.
+You can go here in the preferences.
+Go to the orchestrator settings and you can see connected and license.
+So, let's go to the orchestrator.
+The orchestrator go to the tenant context.
+And here you can see the robot is connected.
+It's enabled.
+If you go to the machines, you can see the machine is also connected.
+So, you can see here, there is an unattended robot here.
+So, to get this unattended robot, what you have to do is go to the users.
+Select the user which you are using.
+This is my user name.
+Go to edit.
+And here, you should enable this unattended robot.
+Enable this option and enter the user name.
+To get the user name, you can open the command prompt and enter who am I?
+So, you will get the user name, copy paste the user name, enter the password and click on update.
+And the unattended robot will get created.
+So, that is how you create the unattended robot.
+Now that we have connected robot to the orchestrator, let's open the UI patch studio.
+We'll create a workflow and then we'll run it using the robot.
+So, now we have opened the UI patch studio.
+Let's open a blank process.
+After opening the UI patch studio, click on open main workflow.
+First, we'll drag and drop a sequence.
+Then we need an input dialog box.
+We'll drag and drop an input dialog box.
+Enter a title.
+We'll enter it as UI patch orchestrator.
+Enter the input label.
+We'll enter it as enter your name.
+Let the input type B as text box.
+Let's create a variable.
+Say, we'll name it as name.
+And let the variable type B string and scope as in the SQL scope.
+We have created the variable.
+So, the value entered should be the variable name.
+Now we'll drag and drop message box.
+The message should be displayed.
+So, we'll enter a caption for the message, say, the welcome.
+And enter the text.
+Let's say, high.
+And we need to concatenate it with the variable names.
+We'll say thanks for watching this video.
+So, here we go.
+We have created a workflow.
+Now, we need to publish this in the orchestrator.
+So, you can see an option here called publish.
+Click on the publish button.
+So, you can see the package name, diversion, the new version,
+and all the other things.
+Click on the publish button.
+So, the workflow is successfully published.
+So, the name is blank process 3 and version is 1.0.60.
+So, let's go to the orchestrator.
+In orchestrator, go to the my workflow.
+Holder context in this, go to my packages.
+If you go here, you can see the equation.
+So, here you can see blank process 3.
+What we did now?
+It was published 3 minutes ago.
+Let's go to the process.
+And the version, what we published was 1.0.16.
+So, the name was blank process 3.
+Let's start the job.
+You can change the job priority.
+We'll keep it as normal.
+The other things is default.
+The process is normal and the job type.
+Let's execute this process one time.
+We can start.
+As you can see, command send for blank process 3.
+So, here you can see, it is getting run.
+Here you can see.
+It is asking for UI part for the stator.
+What we entered title.
+And enter your name.
+Let's enter some name.
+Say Sam.
+It's like, okay.
+So, hi Sam.
+Thanks for watching this video.
+There you go.
+The message has been displayed.
+Like normally in UI patch studio, we click on the run button and run the workload.
+But here, we have published it in the orchestrator.
+And through the orchestrator, through the robot, we are running it.
+And the message is displayed.
+What is framework?
+And its purpose.
+The framework is intended to serve as a blueprint for users to create process that
+provide at a bare minimum a way to store, interpret and easily change project configuration
+data as well as robot exception handling scheme and event logging for all exceptions and related
+transaction information.
+The system locks messages at each relevant stage in the process of re-solving a business
+transaction and sends those logs to the orchestrator server.
+This in turn can be linked to the ELKStack, which is elastic search, logStack and Kibana
+platform, which allows for data storage and a variety of different ways to represent
+the data.
+The purpose of our framework is to resolve a set of business transaction.
+A transaction is a small amount of data and the steps needed to process it to complete a
+segment of business process.
+The treats a single email from a mailbox and extracts data from it is a good example.
+What is a business process?
+The sum of actions by which the data required for a series of transactions is collected,
+processed and input into or out of an IT resource is referred to as a business process.
+We can classify business process into three groups based on the steps involved and how
+they are repeated.
+Linear.
+The steps of linear process are only done once, and if different data needs to be processed,
+the automation must be run again.
+iterative.
+The steps of iterative process are repeated several times, but different data and items are
+used every time.
+Transactional systems like iterative process have steps that replicate several times over various
+data objects.
+What is RE framework?
+The robotic enterprise framework is a state machine based project template.
+The template includes several ready to use state containers for launching applications,
+retrieving data, processing it and closing the transaction.
+These states are linked together by a series of transactions that cover almost every
+requirement in a typical automation scenario.
+Several workflows have been triggered each of which deals with a different aspect of
+project.
+It's designed to incorporate all of the industry's best practices for logging, exception management,
+application initialization and other areas showing it to a handle even the most complex business
+situations.
+Let's look at the features of RE framework.
+The three features are settings, logging and business application exception.
+Settings.
+During the initialization phase of several process, some configuration settings and configuration
+values are frequently read.
+Like URLs to develop application or a straighter few names and default logging messages.
+The RE framework maintains the track of this information by reading it from a configuration
+file and storing it in a different dictionary object shared by all states.
+Instead of updating workflows directly, this provides a simple way to manage projects by
+adjusting values in the configuration file.
+Logging.
+The built-in locking mechanism is another helpful feature of RE framework.
+The majority of system workflows use log message activities to output information about
+what is happening at each stage of execution.
+This can be used to not only identify problems and aid in the debugging process, but also
+to generate visualization and reports about the process execution like how many invoices
+are handled every day, how many failures occur, and what are the critical causes of this
+failure.
+Business and application execution.
+There may be conditions that occur during the execution of most process that are not part
+of the usual execution flow and must be resolved to achieve more efficient automation.
+If the issue can be resolved by restarting application, the framework will do so automatically
+and attempt to process the transaction again.
+Search exceptions are known as application exception.
+If the issue is with the data or an underlying business requirement, the system skips the
+transaction and moves to remakes, such exception are known as business exception.
+Let's look at the RE framework architecture.
+The ARM framework is implemented as a stake machine, which is a form of workflow with
+two advantages characteristics, states and transitions.
+Actions to be taken in response to the stated input are described by states.
+Transitions that switch the execution from one stake to another based on the results of
+the state.
+There are four key states in RE framework, i.e. initial state, get transaction data, process
+transaction, and end process.
+Initial state, initialization, this is the point at which the procedure begins.
+It's an event where the process initializes the settings and runs application tests to ensure
+that all of the prerequisites for the process start are met.
+So initialization transitions.
+So there are two transitions, system exception and successful.
+When system exception, when a system error is not nothing, it gets transition to the end process.
+If we have an application exception during the initialization phase, we don't have enough
+details to start the process.
+As a result, we are going to the end process state to wrap it up.
+Successful, when a system error is nothing, it gets transition to get transaction data.
+If during the initialization, we have no error, then we go to the get transaction data.
+The next state is the get transaction state.
+This state retrieves the next transaction object.
+This can be a Q item or a collection item.
+Transuction items are Q items by default, but this can be modified to meet your needs.
+This is also the state where the developer can set the condition to exit the state when
+there are no items to process.
+Get transaction data transitions.
+There are two transitions, no data and new transaction.
+No data, if the transaction item is nothing, then we are at the end of our data collection.
+So we go to the end process.
+New transaction data.
+If the transaction item contains data, then we process it.
+Next state is the process transaction state.
+The process transaction state, for the transaction item obtained in the previous step,
+it performs actions and applies logic in various applications.
+If a transaction item has been processed, the process moves on to the next transaction item that is available.
+So there are three process transaction transitions.
+Success, business exception and system exception.
+In success, if the condition is business rule exception is nothing and system error is nothing,
+then the transition to get transaction data.
+If there is a business rule exception, it is logged and we move on to the next transition.
+Business exception.
+If the business rule exception is not nothing, then it gets transition to get transaction data.
+If we have a business rule exception, we log it and move to the next transaction by going to the get transaction data state.
+System exception.
+If we have an application exception, we close all programs.
+Kill them if they fail to complete.
+If they fail to complete, take a skin shorter demo, the exception happen and go to init,
+where we initialize our working environment and begin a new form of transaction that has failed.
+And finally, we have the end process state.
+The procedure is completed and the application open during the automation are closed in the end process state.
+Since this is the last state, the final state, there are no transition available in the end process state.
+We will explore each one of the states in data in the demo.
+Let's see the demo note.
+In this demo, we will see how to dispatch data from the Excel file.
+Then we will create queue items and process these items.
+And then we will understand the working of each state in the robotic enterprise framework in detail.
+So let's get started.
+First, we will go to the orchestrator and create a queue.
+The cloud platform dot y.
+Sign up then go to the orchestrator, the tenant which you have created.
+Select the folder context, go to the folder context and you can see queues here.
+Go to the queues and you can see an option to add here.
+Click on add and enter a queue name.
+I'll enter it as rf.
+Enter any description if you want.
+Give unique reference s and add.
+And you can see a queue has been added.
+So you can add an asset as well.
+To add an asset, you can go to add.
+Click here add and enter the asset name.
+And select the type whatever is required.
+Say boolean.
+And by default, be it as false.
+We'll create.
+So this is how you create an asset.
+So let's go to the UI patch studio.
+So what we are basically doing is we are building two process.
+One to feed a queue in the orchestrator that is a dispatcher process
+and one to process transaction from the queue.
+That is using the robotic enterprise framework.
+So in dispatcher process, what we do is we get entries from an Excel file
+and add them as a queue items in the orchestrator.
+We have already created a queue.
+We started project as a sequence and added a try catch.
+We started with the sequence added a try catch activity in the try block.
+We use the return activity to read first 10 lines from a1 to c11
+from an Excel file and store them in a newly created data table variable.
+We used for each row to loop through the rows of the data table variable
+and add each of them in a queue using the add queue item activity.
+Then we used a log message.
+Use log message activity to log the fact that the dispatching process was successful.
+That is how we created the dispatcher process.
+Now we'll create a performer using robotic enterprise framework.
+What it does is we get titles from the queue and processes.
+In the dispatcher process, let's go to the initialization state first.
+So we'll understand initialization state in detail.
+So the entire init block is kept inside the try catch.
+If you go to the documents here,
+and if you go to the data folder, you can see a config file here.
+So config file, this is the file we use in the init state.
+It has three sheet settings, constants and assets.
+You can give any values whatever you want.
+For maximum data number, the value should be zero.
+When you're working with the orchestrated queue, the value should be zero.
+So this config file is stored in the data folder.
+And it has three sheet settings, constants and assets.
+This is the queue name process ABCQ.
+Oh, let's get back to the framework.
+So we are initializing system error.
+If the error is nothing, it will go to the next state.
+If first run read local configuration file.
+You can see by default, there are many variables created.
+You should know them and utilize them whenever required.
+The config variable, the value type is dictionary type.
+Config is nothing.
+If you go here, you can see a config is nothing.
+Initially, there is no value.
+So initially, config is nothing.
+Then it will invoke init all settings workflow.
+Let's open this first run.
+So it will invoke init all settings workflow.
+To see this workflow, click on open workflow.
+It has three arguments.
+Has three arguments in config file, in config sheets and out config.
+This is of type string, type string and out config is of type dictionary.
+And direction, this is both our input and this is out.
+Let's open the workflow and understand.
+So basically what this workflow does is,
+this workflow outputs a setting dictionary
+with the key value pairs to be used in the project.
+Settings are referred from the local config file
+and then fetch from the orchestrator assets.
+Assets will overwrite the config file settings.
+In init all settings workflow,
+invoke to initialize all settings and data for application
+and process use.
+In this part, the setting consent and assets in the config
+file from the data folder are read in the initialize all settings.
+So, let's go back to the orchestrator queue name
+from the in configuration file in the argument case
+specified and it provides a backward compatibility.
+Next, we have invoke kill process.
+If we go to the arguments here,
+we can see the orchestrator queue name.
+You can assign a queue name here if you have created a queue.
+So invoke kill process.
+Next, we have invoke kill process.
+It is a logging activity called killing process.
+Depending on the project, you can add activity.
+It is a logging activity called killing process.
+Depending on the project, you can add activities.
+Add log fields.
+In add log fields, if you want to add any details in the log file,
+you can do it using all log fields in it all applications.
+Workflow in this workflow invoke open apps
+and check the status credentials and so on.
+And there are two transitions in this.
+When it is successful, it gets transition to get transaction data.
+When there is a system exception, it goes to the end process.
+So, in short, what initialization state does is,
+at the end of this workflow, that is initialization state,
+it reads the config file and stores the key and value inside the dictionary.
+That is the outconfig.
+Outconfig dictionary variable has all config Excel file data.
+Let's see the get transaction data.
+When you are in the orchestrator and you want to immediately stop a job from
+for some reason when a job is stopped, this activity gets activated.
+There is a variable created should stop.
+If it's a Boolean variable, by default it's false.
+When it gets activated, the value becomes yes.
+Then it will go to the log stop message as stop process requested.
+And it will end the process when the transaction item is nothing.
+Else it will go to the try get transaction data.
+Here it has seven arguments.
+And let's see the workflow.
+Involve get transaction data workflow.
+We call open workflow.
+It gets the data from the spreadsheets, data basis, email, web API or UI path server tools.
+If no new data items, that set out data section item to nothing.
+If a new transaction item is retrieved, then it gets additional information about it.
+It gives the condition where out transaction item is not nothing.
+Then it will add the transaction information to the log feeds.
+It is about detect transaction data workflow.
+The process transaction state, the process is a sequence with a try catch activity,
+set to catch both system exceptions and business exceptions.
+Inside the try block, the process transaction workflow,
+Involve that has simple process, like to attach the UI demo application
+and three type window activities to fill in and click accept button.
+And if you see look at data transitions, it has three transitions.
+System exception, whose destination is the initialization state,
+business exception, goes back to the get transaction data and success goes to the get transaction data.
+Finally, the end process state where the application is closed.
+What is web automation?
+The concept of allowing software robots to do predefined actions, activities and procedures on a web browser
+or an online application is known as web automation.
+Web automation can help with the operations like,
+form filling, screen scraping, data extraction and transfer across apps, websites
+and testing and periodic report preparation.
+Features of web automation in UI path.
+UI path is compatible with all web.
+It is compatible with HTML, Ajax, Java, Silverlight and PDF.
+Automated data entry.
+Data entry from an Excel spreadsheet to website can be automated in UI path.
+It provides simple web testing.
+Without any programming knowledge, UI path helps in designing a valid test.
+No coding is required.
+We can create automation with a simple to use graphical workflow designer.
+Playback precision.
+UI path provides 100% playback precision.
+Web automation can be done regardless of the browser version, screen position or size.
+How does web automation work in UI path?
+A built-in recorder in UI path web automation can read and implement web based activities.
+It uses attributes to identify web items and manipulate them accurately while keeping up with paid changes.
+It can be used with any website, no matter how sophisticated and can be installed remotely through the network.
+The graphical workflow editor is simple to use and does not require any coding knowledge.
+It's something that any user with no programming experience can do.
+You save time and money by automating web based workflows with UI path.
+Let's look at the demo.
+In this demo, we will scrape data from the simple learns website.
+We'll go to simple learns website.
+Consider a scenario where a customer wants to know details about a particular course.
+Suppose if I want to know all the UI path related resources that are present on the website.
+Search as UI path and select all free resources that are available on the website.
+Here you can see there are 27 results, 27 free resources available on the simple learns website.
+I'll scrape all of this data.
+Using data scraping option in UI path, I'll scrape the resource name along with the type, whether it's an article or video tutorial.
+Along with that, I'll scrape the URL.
+I'll scrape all these three things and copy it in an Excel sheet and the Excel sheet over and mail.
+I'll send it to the customer.
+Let's get started.
+Let's jump into UI path studio and get started with the demo.
+Let's create a new flowchart.
+We'll name the flowchart as web automation.
+Since we are showing this demo under web automation.
+A new flowchart is created.
+In this flowchart, we will drag and drop a sequence activity.
+Right-click.
+Right click and select as set as start node.
+Open the sequence and drag and drop an open browser activity.
+In the open browser activity, select the browser time.
+Select the which browser you want.
+I'll select chrome.
+One more thing you need to do is go to home, go to tools and install the UI path extensions.
+Click on chrome and if you want to continue installing UI path extension for chrome,
+please close all your chrome process.
+Then click on OK.
+Then click on OK and your UI path extension for chrome will get installed.
+Since I've already installed, click on cancel.
+After installing when you open chrome, your screen will look like this.
+So where you have to enable the extension, click on enable extension and the chrome extension will be installed in your device.
+Let's come back to the UI path studio.
+Select the open browser.
+Select the browser where you want to get it installed.
+Let's create a variable here.
+Let's create a variable as website URL.
+Let's go to variable and enter the URL.
+Let's go to the simple lunch website and copy the URL.
+Once the URL is copied, this open browser activity is a container that enables you to open a browser at a specified URL
+and execute multiple activities within it.
+So we have selected the open browser.
+Inside the open browser activity, we will drag and drop maximize window activity.
+Maximize window, it maximizes the indicated window.
+So after this, next we need to drag and drop type into activity.
+So we will drag and drop type into activity.
+Bring it outside the open browser, indicate on the screen.
+The first thing is we need to select the search bar.
+So we'll select the search bar and what we are entering here is UI path.
+Since we are searching for UI path course.
+So enter UI path and after entering UI path, we need to click on enter.
+So we need to enter to search the UI path related resources.
+So click on this plus button and select the enter option.
+So separate this concatenated.
+Okay, so this is done.
+So once in the browser after entering UI path, the next thing we need to do is click on this free resources.
+Click on this all option, check this box.
+So for that, what we have to do is search for click option.
+Click activity and select this click activity.
+Indicate on screen and select this click.
+So this is done.
+Next thing what we need to do is when we click here on all, we find 27 results.
+So when we do it automatically when the board does this, when the robot does this thing,
+it does not go down and refresh all the results.
+What it does is when it opens this page without loading the below results,
+how much our results are available, some 10 results, it will copy only those 10 results.
+It will not refresh and copy the results which are below.
+So for that what we have to do is we will go to UI path studio.
+We will select drag and drop one more type into activity and we will indicate on screen.
+We will scroll down till the bottom and we will simply select this blank screen.
+Just because so that the every time the robot comes into this page,
+it goes till the bottom and copies all the results.
+That is why we select simply a blank screen here.
+And it is showing an error.
+We have to enter something here.
+So we will select the command say, since we are scrolling it down, we will select down.
+And this much is done.
+So go back to the flow chart.
+We have created automation and we will drag and drop a new sequence.
+So till here it is done, where we are opening the simple learns website and searching for UI path.
+Next what we will do is we will scrape the data.
+So we will rename it as data scraping.
+We will open the sequence.
+So data scraping is something where we extract structured data from a browser,
+application or a document to a data table.
+So we will click on data scraping.
+So we will open the browser.
+So we have opened the browser.
+Now we will select the data which we want to extract.
+So click on next.
+Scroll up.
+So first we will select the resource name.
+So we will select top UI path interviewing questions.
+To create a pattern, we need to indicate a similar field.
+Preferably the last in the collection or the second one.
+So what we will do is we will select this second one.
+And we can create a column and we will name the column as resources.
+If you want you can take the URL.
+We will take the URL before that we will take the type.
+So these are the resources, 27 resources.
+If the maximum number of results it will go to is 100 if we enter 100 here.
+If you want more than 100 you can remove this 100 and keep it as 0.
+So it will select all 0 for all.
+So after this we will extract correlated data.
+This time we will extract the type whether it is an article or it is the video tutorial.
+Click on article and indicate the similar field for the next one.
+We will select video tutorial.
+So this column will name it as type.
+And we will extract the URL of each resource.
+And we will name the column as link links of next.
+And we are done.
+So enter on finish.
+This data spanning multiple pages.
+In our case there is no multiple pages.
+There is only one page.
+In case if there are multiple pages you can click on s here.
+Press s to indicate it.
+Scroll down and select the next pages.
+But since in this page there is only one page so we will click on no.
+Okay this much is done.
+We have scraped data.
+So after the data scraping is done we want to copy this scraped data into an excel sheet.
+So to copy it in the excel sheet we need excel application scope.
+So we will search for excel application scope activity.
+So excel application scope activity opens an excel workbook providing a scope for excel activities.
+When this activity ends the workbook and excel applications are closed.
+If the specified file does not exist a new excel file is created.
+So for this excel application scope.
+So we will go to desktop, go to new and create a new Microsoft excel worksheet.
+We will name it as uipart.
+Uipart details.
+So we have created a file.
+We will go back to the uipart studio.
+Now we will select the file which we had created.
+We will go to desktop and select defy uipart details and we will click on open.
+Next we will drag and drop right range activity.
+We search for right range activity.
+Ring it inside the do.
+And by default it is sheet 1 and A1.
+So right range activity writes data from a data table in a spreadsheet starting from the cell.
+If the starting cell isn't specified the writing begins at A1 cell.
+So once that is done.
+Now we need to enter the variable that is extract data table variable which we extracted here.
+That is this variable extract data table.
+We need to enter this variable.
+Go here and search for extract data table variable.
+So this much is done.
+We have scraped data from the simple lunch website.
+Then using the excel application scope we have written the data in the excel sheet.
+So let's run till here and see whether it's scraped in the data and writing in the excel sheet.
+So we will save it and click on run.
+So let's see.
+We will close this.
+Here you can see it's opening the simple lunch website entering UI path.
+Oops, we have made an error.
+Okay, let's go and let's stop here.
+So we had made an error here.
+The bracket was missing.
+That is why.
+We have corrected it.
+Let's save and run for that.
+Close this.
+So opening the simple lunch website it will enter UI path.
+Select all the free resources.
+Then it will copy this in the excel sheet.
+Then see it's copying.
+So let's open the excel worksheet which we created and let's check if it has copied.
+So you can see in the excel file which we are created the data has been scraped and copied
+here.
+In the first column it is the course name or the resource name which we had copied.
+In the second column it is the type whether it is an article or video tutorial.
+In the third column it is the urn.
+There are no headers here.
+Right.
+We can give the headers.
+So we will go to the UI path studio and if you click on excel application scope or right
+range here you can see add headers.
+So click here and the headers will be added in the excel sheet.
+So this much is done.
+Now next step is we need to send this excel file over and mail.
+So to send this excel file over and mail let's go to activities.
+Let's drag and drop a new sequence.
+We'll use a separate sequence to send the activities over our mail.
+Sorry not here.
+We'll connect this.
+We'll name this activity as mail since we are sending it over our mail.
+Open this sequence.
+The first activity we need here is get password activity.
+So search for get password.
+Drag and drop it.
+Get password activity encrypts a password by associating it with the current user.
+Only workflows running under the current user context can decrypt the password.
+So go to the password and enter your email id password.
+And in the result create a new variable and store the password in a variable.
+So that your password is encrypted.
+And name the variable as password short form something password.
+And next activity we need is send SMTP mail message.
+So double click on send SMTP mail message.
+So this activity basically sends an email message by using the SMTP protocol.
+So go to the port and enter the port which is 587 and go to the server and enter the server.
+SMTP.gmail.com
+And enter the email id to which you want to send the mail.
+Enter the password, the password variable which we had created.
+Enter that and enter the email id here as well.
+So enter the subject of the mail what you want to subject to be.
+So I will name it as course details and enter the body.
+So I will enter as simple hello.
+Hello.
+Here are the details.
+Okay.
+So there is a prerequisite for this.
+You have to receive or to send an email.
+You have to go to your Google account.
+That is the email account security option.
+And there you have to turn on secured access.
+Go to the option called secured access and turn it on.
+Okay.
+Next we need to attach the file.
+The file which we want to send it over a mail.
+Attach the file in which we had scraped the data from the simple and Web site.
+So let's go to Web Automation, the previous sequence and copy the file path.
+From the Excel applications group.
+So we will copy this file path and go back in the attached file.
+And we will paste this path.
+Move one double code.
+Okay click on okay.
+Next we will drag and drop a message box.
+Just for like our reference to show a message so that the process is completed.
+So we will enter a simple message in the message box like the course details have been made successfully.
+So correct.
+Let me correct this spelling details.
+Okay.
+So now there are no errors.
+So now the project is complete.
+So what I have done is I have taken a flowchart in the flowchart.
+I have taken a first sequence.
+In this sequence I am opening the browser.
+Simply launch browser.
+I am maximizing it.
+Then I am not using the type into activity.
+I am recording the search bar.
+In the search bar I am entering the UI path and clicking on enter.
+So after clicking on enter I will select the all option where I will select all the resources in the first sequence.
+Then in the second sequence I am scraping the data.
+In scraping data option I will scrape the data, I will scrape the course name, the type and the URL.
+Then in the Excel application scope I will copy all the scraped data in an Excel file.
+So I will use an Excel application scope, I have created a file.
+So in that file I will write the scraped data in the second sequence.
+Then finally in the third sequence I am using the get password activity
+and send SMTP mail message and I am sending it over an email.
+I am sending the Excel file as an attachment with an email to the customer.
+This message box simply indicates that the mail has been successfully sent.
+Now let me save and click on run.
+So I will close the previous browser.
+Let me save and click on run.
+A automation execution is started, it is going to the browser.
+It is going to simply learn website.
+Search for UI path, click on all resources and it is copying the resources in an Excel sheet.
+After copying the resource in an Excel sheet it is sending over an email.
+So it has sent over an email and the message has been displayed.
+Now the course details have been successfully made.
+Let me go to my email in box and check whether I have received it.
+So let me click on course details have been made successfully.
+Let me refresh and here you can see I have received the mail.
+Let me open this file.
+So here you can see I have received the file which consists of resources, the type and the link.
+What is Excel automation?
+Excel automation is a task automation involving Excel files.
+StudioX enables the creation of automation project involving various types of data from an Excel file using various specialized activities.
+To create an Excel automation we must use Excel file resource when creating a new project that includes Excel.
+An Excel file must be specified within it so that all of the subsequent actions can access the data contained within that file.
+Why use an Excel automation?
+Your path allows you to automate Excel in various ways such as Excel application scope activities and workbook activities.
+Excel automation simplifies your application by performing tasks such as formatting cells, updating values and running macros automatically.
+Excel tasks in automated process can also be integrated with several other functions across the enterprise using an RPA solution.
+The benefit of Excel automation in general is that it can save people many hours spent manually completing tasks.
+Advertises of Excel automation.
+Productivity Excel automation provides higher production rates and increased productivity, efficiency.
+Some of the functions of Excel can easily create automated tasks and custom logic with functions like macros.
+Macros are an excellent way to save time on predictable repetitive tasks hence Excel automation is efficient.
+Better product quality.
+Excel automation improves quality in several ways including eliminating human error, increasing consistency and accuracy.
+The ability to create more complex projects and detection of mistakes along the way.
+Improved safety. Excel allows you to protect your work whether it's to prevent someone from opening a workbook without a password
+to grant read-only access to a workbook or to simply preserve a worksheet so you don't delete any data.
+Reduced labor. Excel automation will perform all the repetitive tasks more accurately and productively than humans.
+Thus reduces labor.
+Reduced lead time. A lead time is the amount of time that elapses between the start and finish of a process.
+Excel automation reduces the lead time.
+Let's look how to install an Excel package.
+Let's jump into the UI Park studio.
+To install an Excel package, go to the Manage Packages.
+You can see the packages that are installed. Go to all packages and search for UI Path Excel activities.
+By default, an updated version will be installed. If the Excel package is not installed, you can install it from here.
+So in my device, this activity is already installed.
+This is the place from where you can install any activities or any packages.
+Let's see some of the commonly used Excel activities.
+These are some of the commonly used Excel activities.
+Lead range, select range, save workbook, auto field range, copy page train, insert and delete columns.
+So, inserting a column are a specified location in a sheet or a table or a range.
+And to delete a column, you can delete it from a specified range or readable.
+There are filters, filter tables.
+So, what filters does is, you can use the filter action to create a filter in a range table or a sheet based on the values in a single column.
+We also have Vlookup.
+Vlookup, which stands for vertical lookup, is an Excel feature that when enabled, searches and retrieves data from a specified column.
+We will explore all of these activities in the demo section in detail.
+Let's look at the demo.
+In this demo, we have an Excel sheet that has a record of COVID cases in five states of India in 2021.
+So, we will create an Excel automation to represent the number of cases in charts.
+It's easy to understand looking at the charts rather than looking at the huge numbers.
+Then we will upload the file on the drive.
+So, let's jump into the UI part studio and get started.
+This is the Excel file which I have created.
+It has all the number of cases in these five states.
+In the year 2021, Nimal Babjan, Fab, March and April.
+All this record, I have taken it from a website called PRSIndia.ORG.
+So, I have two sheets, sheet 1 and sheet 2.
+So, let's jump into the UI part studio.
+To start off with the demo, we need to have the three packages installed.
+One is the UI part, Excel activities package.
+The other one is UI part gsood.activities.
+This activity, this package is used for drive.
+Copy it on the drive.
+Then, the other package is Balarava Excel activities.
+This package is used for bar graph and pie chart.
+So, after installing these three packages, we will get started.
+So, let's create a new sequence.
+Name it as sequence 2.
+So, first we will drag and drop an Excel application scope.
+So, Excel application scope, what it does is it opens an Excel workbook and sets the scope for Excel activities.
+When this activity is completed, specified workbook and Excel applications are closed.
+When the workbook application variable is specified in the output,
+workbook activities feel the spreadsheet is not closed.
+After this drag and drop, create table activity.
+So, by default, we have sheet 1 and enter the range.
+So, the range is in this Excel sheet.
+The range is from A1 to F5.
+So, enter the range.
+For this, we need to enter the file path.
+So, we will select the file.
+We have selected the file.
+We have entered the table name, say a number of cases.
+So, once this much is done, next we will drag and drop a bar chart.
+Drop it outside the Excel applications scope and select the file path.
+So, select the file.
+So, select the file.
+Select this cell range, where is the same range, what we had entered earlier.
+A1 to F5.
+So, once that is the 50 chart title, say cases.
+And you can select the chart type, bar stat, 3D cluster, 3D stand, whatever is required.
+For now, we will select bar cluster.
+There are many other options to explore.
+Data label type will keep it in show value.
+So, that shows the value.
+And select show value.
+We want show percentage.
+We will select percentage.
+We will select show legend.
+And size can vary in size accordingly, how much ever you want.
+So, I will keep the size as 350.
+Go to 350.
+You can change the width.
+So, the bar chart is done.
+And you can enter the sheet, which sheet are you using?
+So, it is sheet 1.
+Then we will drag and drop by chart.
+Select the file.
+Similarly, enter the options here.
+Enter the cell range, the same range.
+A1 is to F5.
+Show percentage.
+We will show value.
+Show legend.
+Select show value.
+And select the sheet, which you want.
+So done.
+So, we have completed it here.
+Next, we need to upload this on the Google Drive.
+So, we select this option, upload file.
+Select defy.
+So, we have selected defy.
+So, select the destination folder.
+For that, go to your Google Drive account.
+So, we will go there.
+So, in my drive, I have created a folder called Excel Automation.
+So, I will copy this URL.
+Till here, go to the entire copy this.
+And go to your UI patch store here.
+And paste it in the destination folder.
+Till here, double quotes.
+Then create a variable.
+Create a variable as file.
+Oops, there is an error.
+We have forgotten to use a G Suite application.
+This can be only used inside a G Suite application.
+So, try and drop a G Suite application.
+And inside G Suite application,
+we will write this.
+So, error is gone.
+So, we will run the file now.
+We will save it.
+And run.
+You can see the file is getting run.
+So, the execution is ended.
+We will navigate to the drive.
+So, here you can see the file is successfully uploaded.
+We will open the file.
+So, working on the graph.
+Here you go.
+Here you can see the bar graph.
+For the sheet one,
+there are three values,
+number of values,
+and each state one.
+And for sheet two,
+we create a file chart.
+So, here you go.
+Let's begin by understanding
+who is an RPA developer.
+Now, generally speaking,
+an RPA developer is someone who works cross-functionally
+with business operations and business analysts
+to create an optimized workflow processes.
+However, this is a relatively new career path,
+and many organizations formal titles for RPA developers differ.
+Now, other similar positions make two titles
+like Process Designer or Automation Architect.
+But no matter the title,
+the role of a successful RPA developer
+involves to design,
+develop and implement RPA systems.
+In order to automate a business process,
+an RPA developer will be required to create workflow diagrams
+and strategically document the implementation.
+He's also responsible for bug fixes,
+so coding skills are important.
+Now, in order to be a successful RPA developer,
+you must have the ability to navigate various appropriate technologies
+such as UI path or automation anywhere.
+Next up is RPA's work projections.
+Now, looking at the curve,
+both RPA's software and services increased by huge amounts
+between 2016 and 2020 and beyond.
+According to next-generation research,
+knowledge and work automation could have an economic impact
+for about 57 trillion US dollars per year 2025.
+It will touch more than 230 million knowledge workers,
+which constitute up to 9% of the global workforce.
+Now, any company which is labor and genesis,
+where people are performing high volume,
+high transaction functions,
+will boost their capabilities
+and save money and time with RPA.
+Now that we've established
+that RPA has this deep growth curve,
+let's look at the RPA job roles that you should look out for.
+We have the RPA developer,
+Senior RPA developer,
+RPA process architect,
+RPA developer senior consultant,
+project manager,
+deep developer,
+business analyst,
+and RPA data analyst.
+Now, these job roles come with specific responsibilities
+depending on the designation.
+However, there are a few common responsibilities
+of an RPA developer.
+Let's go ahead and check them out.
+Now, the first one is strategic planning phase.
+Now, planning is a crucial phase
+in any development life cycle.
+The RPA developer,
+regardless of the designation,
+should possess the attitude
+to ensure strategic planning.
+Planning includes the design,
+development and implementation of RPA assistance.
+This also helps streamline the business.
+Next up is strong analytical skills.
+Now, to understand the client's requirements
+in theater to the needs of accordingly is crucial.
+Analytical skills are also important
+to predict or identify potential bug
+and error and rectify them.
+Now, this skill is especially required
+if you are involved in the overall development.
+Next, we have strong problem-solving skills.
+Now, this again is extremely crucial
+to predict any outages
+and they could the entire unit
+to overcome any unforeseen interruptions.
+From the business perspective as well,
+problem-solving skills
+play a significant role
+in ensuring smooth conduction of tasks.
+Experience in any programming language,
+such as C, P++,
+Python, Ruby, Java,
+or .NET is also important.
+Hands-on experience in RPA
+tools and cognitive platforms
+such as blue prism,
+automation anywhere,
+UI path,
+open spam,
+etc. is necessary.
+Communication skills are pivotal
+for any organization.
+The developers should be outspoken
+and articulate any new ideas.
+We should also be confident
+in today's concerns
+and be as transparent as possible.
+In the long run,
+this only proves to be helpful
+to the organization.
+Lastly,
+we have exposure to SQL.
+Now, experience with database,
+be it SQL or more SQL,
+is highly preferred.
+It's always an added advantage
+if you have the knowledge
+about accessing
+and managing databases.
+Next up,
+we have our paid developer,
+charities.
+Now, the salaries will differ
+depending on the location,
+your experience,
+and also the designation.
+Now, in the US,
+here are the job salaries
+and the roles.
+According to GlassDore,
+an RPA developer in the US
+earns around $76,000 per year.
+An RPA developer senior consultant
+earns around $99,000 per year.
+An RPA process architect
+earns an average salary
+of $95,000 and a senior RPA developer
+earns an average salary of $92,000.
+An RPA project manager earns
+around $73,000 per annum
+US dollars per annum.
+An RPA developer earns an average salary
+of $99,000 per annum,
+an RPA business analyst
+earns around $68,000 per annum,
+and a data analyst earns around $62,000 per annum.
+Moving on to India,
+the average salary of an RPA developer
+is around $5,90,000 rupees.
+That of senior consultant,
+a senior RPA developer
+and an RPA lead developer
+is around $14,000 per annum.
+And the average salary of an RPA business analyst
+is around $5,40,000 rupees.
+Now, let me quickly
+run you through
+a sample resume
+of an RPA developer.
+Now, this is just a template
+and you can alter it
+according to your needs.
+First up is your general information
+like name, phone number
+and your email ID.
+Then you can get
+a quick description
+about yourself and your strengths.
+You can also mention the objective
+as to why you're applying
+and what you're looking for
+in the organization.
+You can include your LinkedIn profile
+link and your GitHub link.
+One look at your LinkedIn profile
+is enough for anybody
+to gather all the information necessary.
+So make sure that it's updated.
+Moving on, you could
+mention your experience.
+Now, here you would have to mention
+the names of your previous organizations
+along with your designation
+and the 10R.
+You could also include
+your key responsibilities
+in these organizations.
+Along with your responsibilities,
+you could also mention the awards
+that you've received
+in your organizations.
+Next up is your education
+with background.
+You can mention the university
+that you graduated from
+and this required that you have
+a degree in computer science.
+You can also go ahead
+and mention your GPA.
+The next section is skills.
+Now, this is pretty crucial.
+In the technical skills section,
+you could mention about the punate tools
+that you've worked on.
+If you're good at a particular
+programming language,
+go ahead and mention that as well.
+As mentioned earlier,
+any experience
+and database management
+is an added advantage.
+If you have any experience,
+go ahead and mention that.
+Moving on to non-technical skills,
+you could mention
+any extracurricular activities
+that you're proud of.
+Some soft skills
+that you feel worth mentioning
+can be added in the section.
+Mentioning the languages
+that you know can also
+boast your resume.
+Now, given all this,
+it's fundamental
+that you do not lie on your resume.
+All right then.
+With that,
+we conclude this session.
+I hope it gave you a clear understanding
+of this subject.
+UI Path assists business
+in successfully automating
+their business process.
+If you're planning to attend an interview
+for an RPA or UI Path developer role,
+here is a comprehensive list
+of most frequently asked UI Path
+interview questions
+with answers.
+What is UI Path?
+This question looks simple,
+but people most of the time
+end up giving around definition.
+UI Path is a robotic process
+automation tool
+for large-scale end-to-end automation.
+For an accelerated business change,
+it provides solution for business
+to automate routine office activities.
+It uses a variety of methods
+to transform tedious tasks
+into automated process.
+What are the different components
+in UI Path?
+UI Path consists of three components,
+mainly UI Path Studio.
+UI Path Studio is a user-friendly interface
+that allows users
+to visually plan
+and design various automation
+process through diagrams,
+using the drag-and-drop functionality.
+These diagrams are merely
+a structural reflection of specific task
+that must be completed.
+UI Path Robot
+After you have built your process,
+the next move is to put into action
+in the UI Path Studio.
+UI Path robots are used
+to translate the strategies
+into tasks which are then executed.
+These robots are used
+to assign various tasks
+and carry them out
+in the same manner as humans,
+but without human interference.
+When given a operation occurs
+on the computer,
+they program UI Path robots
+to begin executing task automatically.
+UI Path Orchestrator
+The orchestrator is
+of a based application in UI Path.
+It has features
+for deploying,
+monitoring,
+scheduling,
+and controlling automated bots and process.
+It's a centralized forum
+for managing and maintaining
+all software bots.
+What are the different work flows in UI Path?
+Sequences
+A sequence is a small type of project
+that is best suited for linear process.
+It enables developers
+to transition from one activity
+to another easily.
+They can be reused numerous times.
+Flu chat
+It can be used for larger small projects
+that help in development of complex business
+and connecting activities
+in a variety of ways.
+Flu chat assists in the presentation
+of multiple branches of logical operators.
+State Machine
+A state machine is a machine
+that uses a certain number of states
+for automation during execution.
+It will only change states
+if an action is performed on it.
+Let's look at the next question.
+What is a UI Path robot?
+The robot is a UI Path's execution agent.
+Allowing you to run process
+created in the studio.
+In order to execute process,
+robots must be connected to the orchestrator
+or license locally.
+What are the different components
+of UI Path robot?
+Service
+The robot service is the primary controller
+for all operations.
+It communicates with studio,
+the robot agent,
+and the robot command line interface
+by an inter-process communication channel
+to receive and process information.
+Executor
+The robot executor is the component
+that is directly responsible
+for process execution.
+The robot service creates
+a robot executor
+instance every time a job is started.
+Command line interface.
+The robot command line interface
+is a console application
+that starts jobs and waits for their results.
+UI Path assistant
+is a tool designed specifically
+to improve the user's interaction
+with our robots from the comfort of the desktop.
+It is where users can easily access,
+manage and run automation
+with a few clicks.
+What is the difference between
+attended and unattended robot?
+Attended robots are supervised robots
+that humans operate.
+They work on the same workstation
+as a human user
+and triggered by user events.
+Unattended robots
+Unattended robots are those
+that do not require human supervision
+to perform tasks.
+They run in virtual environments
+without human control
+and can automate any number of process.
+What are the features of UI Path?
+Drag and drop workflow.
+The UI Path user will develop visual process steps
+by dragging and dropping related tasks
+onto the graphical workspace.
+Then with the user interface properties,
+they can transform these process steps
+into a visual workflow.
+Users may also use the recorder wizard
+in the UI Path tool
+to build web-based or application workflow.
+Record and playback.
+The user can use this function
+to record actions
+and transform them into an automated process series.
+Inbuilt activities in UI Path.
+UI Path comes with over 300 built-in activities
+covering a wide range of process automation
+and application integrated design tasks.
+You can find these activities in Activity Spain,
+which covers most design tasks
+such as data extraction, data entry, and automation.
+Advanced Scraping Options.
+Scraping data from web pages
+and applications is more accessible
+with UI Path screen scraping.
+Furthermore, the data scraping wizard
+helps in the scraping of data
+with a repetitive structure.
+Scraping solution works flawlessly
+with any program, including .NET, Java, Flash,
+PDF, Legacy, and SAP.
+High security and robustness.
+You can create super smart durable robots
+with UI Path.
+Visual Canvas, everyone in the company
+can use these bots.
+UI Path offers high security,
+auto login functionality to run the bots
+and operates with a log screen,
+allowing automated process to run in complete privacy.
+What are the different recording options
+in UI Path?
+Basic recording.
+It focuses on automating single task
+and is commonly used to develop
+each activity's complete selector.
+Desktop recording.
+It can be used for a variety of actions
+as well as application development.
+Web recording. Web recording is a standard tool
+for viewing and recording web activities.
+Citrix recording.
+It is very widely used for recording stuff
+like pictures and virtualized environment automation.
+What is a managed package in UI Path?
+The package manager functionality
+allows to download activities, packages, libraries,
+frameworks, wrappers, and others
+and view and update the ones already installed for the project
+and add and remove it.
+It displays the list of available packages
+per feed and a list of dependencies
+for the current project.
+The managed package windows
+always opens with the project dependencies list.
+How to publish a project in UI Path?
+To publish a project in UI Path,
+first create a new project.
+Then in the design ribbon tab,
+click publish,
+the publish window will open.
+In the package properties tab,
+enter the name for package,
+then click next.
+In the publish option,
+tab select the location
+where you want to publish your project,
+and finally,
+the information dialog box displaced.
+Let's see a demo.
+How is it done?
+Let's jump in the UI Path Studio.
+Here we are in UI Path Studio.
+Let's open overflow.
+I'll drag and drop a simple message box
+just to show,
+enter a message say,
+hey,
+so I've created a simple overflow
+just to show you how to publish project in UI Path.
+Here you can see the publish option.
+Once you have created the project,
+go to the ribbon tab
+and click on the publish.
+When you click the publish window opens.
+Here you can change the package name
+if you want,
+you can see the version,
+new version,
+package icon,
+and release notes.
+So let's click on next,
+where you will get the custom URL,
+where you want to publish to,
+then click on publish.
+Here you go,
+you can see publishing package.
+So I infer dialog box appears,
+project published successfully,
+if you want, you can copy to the clipboard.
+So this is how the project is published in the UI Path.
+What is data scraping and screen scraping?
+Data scraping is the process of extracting
+structured data from a browser,
+location or document,
+and saving it to a database,
+or a .csv file or even an Excel spreadsheet.
+Screen scraping methods are activities
+that allow data to be extracted
+from a specific UI element or document,
+such as a .pdf file.
+Explain the different types of automation in UI Path.
+Excel automation.
+Excel automation is a useful tool
+for sorting, deleting, retrieving,
+and analyzing data.
+It is simple to migrate and integrate data into platforms.
+StudioX has a strong integration with Microsoft Excel
+and ships with several activities that automate Excel task.
+Mail automation enables task automation with emails
+from the Outlook desktop application,
+Gmail and Outlook 365.
+Add the activities that use data from the account
+inside the resource activity,
+after adding the account to the automation,
+as a resource using a user Outlook 365.
+Use Gmail or use desktop Outlook app activity.
+Word automation.
+In the Word automation,
+add the Word document to be worked
+on by using Word file activity,
+and then add the Word activities
+to automate within the Use Word file.
+Powerpoint automation.
+Powerpoint automation allows the user
+to automate the most common task in Powerpoint presentation.
+Add the presentation to work
+with the Use Powerpoint presentation activity,
+and then inside the Use Powerpoint presentation,
+add the presentation activities to automate.
+File automation.
+It refers to the automation of task
+performed on your computer with files and folders,
+such as creating, copying or renaming files and folders.
+StudioX includes several activities
+that automate tasks that you perform
+with files and folders.
+CSU automation.
+In CSU automation,
+add the CSU activities inside the Use Excel file activity,
+where the Excel file is defined to move data
+between CSU and Excel.
+Explain a few read and write activities.
+Retrain.
+Retrain reads the values of an Excel range
+and stores in a data table variable.
+Read cell reads the values of an Excel cell
+and stores in a variable.
+Read CSV.
+Read all entries from a specified CSV file.
+Write range writes data
+from a data table variable to a spreadsheet.
+Write cell writes a value or formula
+into a specified spreadsheet cell.
+Write CSV over writes a specified data table
+to a CSV file.
+What is an Excel application scope?
+Excel application scope opens an Excel workbook
+and sets this scope for Excel activities.
+When this activity is completed,
+the specified workbook and Excel application are closed.
+What is an orchestrator?
+Do I path orchestrator is a web application
+that orchestrates the execution of repetitive process?
+It manages the creation,
+monitoring scheduling and controlling of bots and process.
+It can manage the entire robot fleet.
+Name some orchestrator capabilities.
+Provisioning.
+Provisioning establishes and maintains the connection
+between the robots and the web application.
+Deployment ensures that it delivers the correct package versions
+to the assigned robots for execution.
+Configuration looks after the maintenance and delivery
+of robot environments and process configuration.
+Queues ensure that it automatically
+distributes the workload across robots.
+Monitoring manages user permissions
+and keeps track of robot recognition details.
+Logging.
+Logs are stored and indexed in an SQL database.
+Explain process, job, asset and queue.
+The process page allows you to build new process
+from uploaded packages,
+managing existing process,
+and keep all of your process up to date
+with the latest package version.
+Jobs.
+On a UI path robot,
+a job represents the execution of procedure.
+It can start the execution of job
+in either attended or unattended mode.
+Queues.
+A queue is a storage container that can accommodate
+an infinite number of objects.
+Multiple types of data,
+such as invoice, information or customer data,
+are stored in queue objects.
+Other systems such as SAP or Salesforce
+are used to process this data.
+Assets.
+Assets are usually shared variables or credentials
+that can be used through several automation projects.
+They allow you to store unique information
+that the robots can easily access.
+How to connect a robot to the orchestrator?
+Step 1.
+Open UI path assistant.
+Step 2.
+Sign in the UI path orchestrator.
+Step 3.
+Create a tenant.
+Step 4.
+Connect the robot to the orchestrator.
+And step 5.
+Check the status.
+It shows connected and licensed.
+So, let's see a demo of how to do this.
+So, let's jump into the UI path studio.
+Open step 1.
+Open UI path assistant.
+So, we'll open UI path assistant.
+After opening UI path assistant,
+log in to the UI path orchestrator.
+So, go to the browser.
+Go to the browser and type platform.UIpart.com.
+This will take to the UI path website.
+So, sign in.
+If you're new to this,
+if you don't have the account,
+then you can enter all the details and log in.
+Since I've already created an account and sign in.
+After logging in the UI path orchestrator,
+go to the admin.
+Here, you can create a new tenant.
+You can add a tenant here and create a new tenant.
+Since I've already created a tenant named admin.
+So, after creating a tenant,
+connect the robot to the orchestrator.
+Go to the UI path assistant.
+Go to preferences.
+Go to orchestrator settings.
+Here, you can see the status.
+It is offline.
+Click on the sign in button.
+Once you click on the sign in button,
+allow this opening UI path.
+Here, you can see it is connected.
+And you can see it is connected and licensed.
+So, the UI path robot is now connected with the orchestrator.
+What is a tenant context and folder context?
+In tenant context,
+to view and control tenant level entities in the orchestrator,
+pick tenant from the sidebar menu
+with only one instance of the orchestrator,
+multi-tenancy allows isolating data.
+For the folder context,
+from the sidebar menu,
+pick any available folder to view and control the entities within the data folder.
+So, I'll show you.
+Let's go to the orchestrator.
+So, let's go to the orchestrator.
+Here, you can see this is the tenant context.
+To view and control the tenant level entities in orchestrator,
+you can pick the tenant from the sidebar menu.
+From the sidebar menu, pick any available folder.
+So, these are the folders.
+Pick any available folder to view and control the entities within that folder.
+So, this is with respect to the folder context.
+What is an RE framework?
+The robotic enterprise framework is a state machine based project template.
+It allows to handle even the most complex business situations,
+which design to incorporate all of the industry's best practices
+for logging, exception management, application initialization, and other areas.
+What are the features of RE framework?
+Settings.
+During the initialization phase of several process,
+some configuration settings and configuration values are frequently read,
+like URLs to a web application,
+or the stateal queue names, and default logging messages.
+Logging.
+The built-in logging mechanism is another helpful feature of the framework.
+The majority of the system's workflows use log message activities
+to output information about what is happening at each execution stage.
+Business exception.
+If the issue is with the data or any underlying business requirement,
+the system skips the transaction and moves on to the next.
+Search exceptions are known as business exceptions.
+Application exception.
+If the issue can be resolved by restarting applications,
+the framework will do so automatically and attempt to process the transaction again.
+Search exceptions are known as application exceptions.
+How to merge two Excel files into a single Excel file?
+First, we need to create a sequence.
+After creating a sequence, we need a few activities like a read CSV activity,
+assign activity, data table activity, and write CSV activity.
+We'll drag and drop all these activities and do the process,
+then we'll run the sequence and see the output.
+Let's jump into the UI patch studio and start with the workflow.
+We are in the UI patch studio.
+I have already created a sequence.
+You can go to new and create a sequence or press Ctrl L.
+After starting a sequence, first we'll drag and drop read CSV activity.
+Since we are using two Excel files,
+so we need two read CSV activity.
+We'll drag and drop another read CSV activity.
+We'll select the location of the first Excel file.
+Select the first Excel file.
+I'll show you both the Excel files which we are merging.
+This is the first Excel file.
+It has five rows, five names.
+This is the first Excel file.
+This is the second Excel file.
+This Excel file has five different names,
+and the other Excel file has five different rows.
+These are the two Excel files.
+We'll merge both these Excel files into a single new Excel file.
+We'll close these Excel files.
+In the first read CSV activity,
+we have copied the location of the first Excel file.
+In the output two, we'll select this and create a variable.
+Right click and create a variable,
+and let's say name the variable as Excel underscore five word.
+We have named a variable.
+Now we'll go to another read CSV file.
+Select the location of the second file.
+I've downloaded the sample Excel files from the Internet.
+Just for the demo.
+Right click and create a variable.
+Let's say name this variable as Excel underscore five two.
+Now that we have drag and drop two reads CSV activities,
+now next we need assign activity.
+So drag and drop assign activity.
+So assign activity has two parameters,
+as you can see, two and enter a VB expression.
+In the two parameter, in this,
+right click and create a variable,
+and name the variable.
+Let's say merged as Excel.
+After naming the variable enter an expression here.
+So enter the expression as Excel underscore five one,
+which is the variable for five one.
+Select this and enter the expression dot clone.
+What this clone function does is,
+the clone function creates a new data table with the same structure,
+but does not copy the data.
+So we are creating a new Excel file,
+that is the third file in which we are merging the data tables of both the Excel file.
+So the third Excel file, which we are creating,
+will have the same structure as the file one.
+So this clone function creates a third Excel file with the same structure as the file one.
+So it's showing an error.
+So select this assign.
+Let's go to variables.
+Here you can see variable type string.
+Change it to system.data.data table.
+Here you go, the error is gone.
+So now we have drag and drop the sign activity.
+The next activity, which we need,
+is merge data table activity.
+Let's search for merge data table activity.
+Drag and drop, merge data table activity.
+We need two merge data table activity,
+since we have two Excel files.
+Select the first merge data table activity.
+Go to the destination and enter the destination,
+which is the variable which we created in the assign activity.
+The merge is so, enter this.
+And enter the source file,
+that is the variable which we created in file one.
+That is Excel underscore file one.
+Similarly, go to merge data table
+and enter the same destination.
+But here the source will be the second file.
+Now that we have drag and drop two merge data tables,
+the next activity we need is write CSV file.
+So we will search for write CSV file.
+After dragging and dropping write CSV activity,
+go to file path and create a file.
+Say one will name it as file three.
+Save the file.
+Now that we have created defy,
+we will write from the data table.
+That is, we need to copy the merge data table.
+So we will enter.
+Now that we have finished the program,
+the file is created,
+let's save and run it.
+Process execution has started and ended.
+So let's go to the file.
+So this is the file which we created.
+Let's open this file.
+And here you can see,
+both the Excel files have been merged into a single Excel file.
+Let's go to the next question.
+How to send a file over a main?
+So first create a sequence and create a file.
+After you have created a file,
+drag and drop get password activity.
+Then drag and drop a SMTT main message activity.
+So basically these two activities are used to send a file over a main.
+Then run the sequence.
+So we will jump into the UI patch studio and see.
+So this was the previous question which we answered.
+How to merge two Excel files?
+So the same file we will send it over a main.
+So we need a get password activity.
+So we will drag and drop a get password activity.
+So if you go to the property section, enter the password.
+To whichever email you are sending this file,
+enter the password of that mail ID.
+After entering the password in the result,
+go and create a variable.
+So that password is stored in that variable.
+So name the variable.
+See anything randomly.
+So I have named the variable.
+After this,
+you need a SMTP mail message activity.
+So drag and drop send a SMTP mail message.
+In SMTP mail message,
+under the property span,
+under the host,
+enter the port value for the port number,
+which is 57.
+So after entering the port number,
+go to the server and enter it as SMTP.gmail.com.
+Okay.
+Now after entering the email ID,
+go to your email and enter your email ID
+to which you want to send this file.
+Don't forget to use double quotes,
+otherwise it will show an error.
+Enter the password.
+So we had so the password in the variable.
+See the CSS.
+So we will write that.
+So after that,
+enter the email ID here,
+under the two option.
+And enter the subject,
+say, it has demo.
+So we are showing a demo.
+We will enter the subject as demo.
+This is the subject and body.
+This is the subject and body of the mail.
+Now let's attach the file,
+which we have created.
+Copy the file location.
+So we will go to the file
+and copy this file location.
+After attaching the file,
+let's save and run.
+The process has started and the process has ended.
+Here you can see the output.
+The process has started and the process has ended.
+Let's go over the mail and check if we have received.
+Here we go.
+We have received the file.
+Let's open the file.
+And here you go.
+The same, this is the same file,
+which had merged the data.
+So the file has been sent over the mail.
+One thing you have to keep in mind,
+when you use the get password activity,
+go to your Google account in the security section.
+Go to this secure app access and turn it on.
+You have to turn it on to receive the file over a mail.
+Explain the different states and transitions in RE framework.
+There are four key states in RE framework.
+The first state is initial state.
+This is the point at which the procedure begins.
+It's an event where the process initializes the settings
+and runs application test to ensure that all of the prerequisites
+for the process start are met.
+Next we have get transaction state.
+This state retrieves the next transaction object.
+This can be a queue item or a collection item.
+Transection items are queue items by default,
+but this can be modified to meet your needs.
+This is also when the developer can set the condition
+to exit the state when there are no items to process.
+Process transaction state.
+For the transaction item obtained in previous step,
+it performs actions logic in various applications.
+If a transaction item has been processed,
+the process moves on to the next transaction item available.
+End process state.
+The procedure is completed and the applications
+opened during automations are closed in the end process state.
+Let's jump into the UI path studio and see the different transitions
+in robotic enterprise framework.
+This is the robotic enterprise framework.
+This is the initialization state in the first step.
+So it has two transitions,
+system error, that is system exception and successful.
+When it shows system exception,
+when a system error is not nothing,
+it gets transition to the end process.
+Suppose if you have an application exception
+during the initialization phase
+and we don't have enough details to start a process,
+then as a result we are going to end process state to wrap it up.
+And the successful is when a system error is nothing,
+it gets transition to get transaction state.
+If during initialization we have no error,
+then it goes to the get transaction data.
+The get transaction data has two transitions.
+No data and new transaction.
+No data is when if the transaction item is nothing,
+then we are at the end of our data collection.
+So it goes to the end process.
+And in new transaction, if the transaction item contains data,
+then it processes it.
+The process transaction data has three transitions.
+Success, business exception and system exception.
+Success is when if the condition is business rule exception is nothing
+and system error is nothing,
+then the transition to get transaction data.
+If there is a business rule exception,
+it is logged and we move on to the next transaction.
+And rule exception is if the business rule exception is not nothing,
+then it gets transaction to the get transaction data.
+And the end process does not have any transitions
+since the end process is the final state.
+So there are no transitions.
+What is a G Suite activity?
+The UI path G Suite activity package
+helps in the automation of Google workspace applications
+such as Google Calendar, Google Drive, Google Sheets,
+Gmail, Google Docs.
+You can create and modify Google Calendar events,
+manage Google Drive files, read and send Gmail messages,
+and create new Google Sheets, Spreadsheets and Google Documents
+with the Google G Suite activity package.
+What are selectors and wildcards in UI path?
+Wildcards are the symbols that enable you to replace
+zero or multiple characters in a string.
+This can be quite useful when dealing with dynamically changing attributes
+in a selector.
+Selectors.
+UI path should here use us what we call selectors.
+This store the attributes of graphical user interface element
+and its parents in the shape of an XML fragment.
+The selector aids in the automatic generation of the selection
+by utilizing wildcards.
+What is a machine?
+Explain standard machine and machine template.
+The machine page allows you to provision and manages machines
+to use them to register robots with orchestrator.
+It displays the types of machine that we currently in use.
+It enables you to design your machine
+whether standard or template.
+Standard machine.
+It should be used when the name of the machine on which you want
+to define robots is the same every time you connect to it.
+You define the machine once and then you can connect to
+as many robots as you want from the robot's page.
+Machine template.
+It should be used whenever the name of the machine on which you want
+to define robot changes.
+You represent this entity once and then you use a unique
+active directory user name to connect to any number
+of attended floating robots.
+Explain delay, do, if, and switch activities in UI path.
+The delay activity allows you to pause the automation
+for a specified amount of time.
+This activity is beneficial in projects that require precise timing
+such as waiting for a specific application to start
+or for some information to be processed before using it
+in another activity.
+The due activity allows you to run a specific piece of automation
+while the condition is met.
+The project exits the loop when the specified condition
+is no longer completed.
+This activity can be used to iterate through all the array
+elements or execute a specific action multiple times.
+If activity, the if activity includes a statement
+as well as two conditions.
+If the statement is true, the first condition is executed.
+If the statement is false, the second condition is executed.
+If activities can be used to make decision based on variable values.
+Switch activity.
+The switch activity allows you to choose one of the several options
+based on the value of specified expression.
+The switch activity uses an integer argument by default.
+But you can change it in the properties panel under the type
+argument list.
+The switch activity can be used to categorize data based
+on predefined number of cases.
+How to create start in Excel.
+Step 1, create a new sequence.
+Go to the UI path studio and create a new sequence.
+And then drag and drop the following activities.
+To create a chart, we need to use Excel application scope,
+create table activity and bar chart and pi chart activity,
+depending on which type of charts you want to create.
+Then at last, after completing, then run the sequence.
+We will see a demo of this in the UI path studio.
+How to upload a file on Drive.
+So create a new sequence and drag and drop a g-shoot application.
+Then inside g-shoot application, drag and drop
+upload file activity, fill in the details,
+and finally run the suite.
+Let's go and see a demo to how to create charts in Excel file
+and how to upload a file on the Drive.
+So let's jump into the UI path studio.
+This is the Excel file which I have created.
+It has all the number of cases in these five states.
+In the year 2021, Nemal.jad, Fab, March and April.
+All this record, I have taken it from a website called
+prsindia.org.
+So I have two sheets, sheet 1 and sheet 2.
+So let's jump into the UI path studio.
+To start off with the demo, we need to have three packages installed.
+One is the UI path Excel activities package.
+The other one is UI path g-shoot.activities.
+This activity, this package is used for drive,
+upload on the drive.
+Then the other package is Valarava Excel activities.
+This package is used for bar graph and pie chart.
+So, opt-and-solving these three packages will get started.
+So let's create a new sequence.
+Name it as sequence 2.
+So first we'll drag and drop an Excel application scope.
+So Excel application scope, what it does is it opens an Excel workbook
+and sets the scope for Excel activities.
+When this activity is completed,
+the specified workbook and Excel applications are closed.
+When the workbook application variable is specified in the output,
+workbook activities feel the spreadsheet is not closed.
+After this drag and drop, create table activity.
+So by default we have sheet 1 and enter the range.
+So the range is in this Excel sheet.
+The range is from a1 to f5.
+So enter the range.
+For this, we need to enter the file path.
+So we'll select the file.
+We have selected the file.
+We have entered the table name, say a number of cases.
+So once this much is done,
+next we'll drag and drop a bar chart.
+Drop it outside the Excel applications scope
+and select the file path.
+So select the file.
+So select the file, select this cell range,
+where is the same range what we had entered earlier.
+A1 to f5.
+So once that is done,
+select the chart title, say this is.
+And you can select the chart type,
+bar stack, 3d cluster, 3d stack, whatever is required.
+For now, we'll select bar cluster.
+We have many other options to explore.
+Data label type will keep it in show value.
+So that it shows the value.
+And select show value.
+You want show percentage, then select percentage.
+We'll select show legend.
+And size can vary the size accordingly,
+how much ever you want.
+So I'll keep the size as 350 to 350.
+You can change the width.
+So the bar chart is done.
+And you can enter the sheet which sheet are you using.
+So it's sheet 1.
+Now we'll drag and drop by chart.
+Select the file.
+Similarly enter the options here.
+Enter the cell range.
+The same range.
+A1 is to f5.
+Show percent will show value.
+Show legend.
+Select show value.
+And select the sheet which you want.
+We'll select the sheet 2.
+So done.
+So we have completed it here.
+Next, we need to upload this on the Google Drive.
+So we'll select this option of node 5.
+Select defy.
+So we have selected defy.
+So select the destination folder.
+For that, go to your Google Drive account.
+So we'll go there.
+So in my drive, I have created a folder called Excel Automation.
+So I'll copy this URL.
+Till here, call the entire copy this.
+And go to your UI patch store here.
+And paste it in the destination folder.
+It will be double quotes.
+Then create a variable.
+Create a variable as 5.
+Oops, there is an error.
+Oh, we have forgotten to use a G Suite application.
+This can be only used inside a G Suite application.
+So drag and drop a G Suite application.
+And inside G Suite application, we'll write this.
+So error is gone.
+So we'll run the file now.
+We'll save it.
+And run.
+You can see the file is getting run.
+So the execution is ended.
+We will navigate to the drive.
+So here you can see the file is successfully uploaded.
+You'll open the file.
+So working on the graph.
+Here you go.
+Here you can see the bar graph.
+For the sheet 1, there's the values, number of values,
+and each state 1.
+And for sheet 2, we created a pie chart.
+So here you go.
+So with that, we have come to the end of the RPA UI path full course tutorial.
+If you enjoyed watching it, make sure to hit the subscribe button
+and press the bell icon to never miss an update.
+Thank you so much for being here.
+Watch out for more videos from us.
+Until then, keep learning and stay tuned to simply learn.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.
+Thanks for watching.

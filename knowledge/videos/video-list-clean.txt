@@ -1,0 +1,43 @@
+# UIPath Best Practices & Tips Videos - Cleaned URLs
+# Format: One URL per line, comments with #
+
+## UiPath Architecture
+# UiPath Architecture | Learn Core Architecture
+https://www.youtube.com/watch?v=UvntDO0aMno
+
+## Best Practices - Individual Videos
+# UiPath RPA Developer Best Practices | Workflow Type
+https://www.youtube.com/watch?v=LKI12wdXaxw
+# UiPath RPA Developer Best Practices | Hard Coding
+https://www.youtube.com/watch?v=JTCUsLKwzKA
+
+## Long-Form Courses
+# RPA UiPath Crash Course | 7-Hour Training
+https://www.youtube.com/watch?v=A16dfZeVdUs
+# Complete UiPath RPA Developer Road Map
+https://www.youtube.com/watch?v=UWI0a5pFj1U
+# RPA UiPath Full Course (Simplilearn)
+https://www.youtube.com/watch?v=t8GD483JBSA
+
+## Architecture & Deployment
+# Deployment architecture and Installation Best Practices
+https://www.youtube.com/watch?v=t60A2f6RjXI
+# Architecting Success: UiPath Solution Architecture
+https://www.youtube.com/watch?v=lkrS9ZJ_LiE
+
+## Quick Tips
+# 90 Seconds – UiPath Tips and Tricks
+https://www.youtube.com/watch?v=u5JQ2iaxerM
+# UiPath Learn RPA in 10 Mins
+https://www.youtube.com/watch?v=DjcilDjdvqw
+
+###############################################################################
+# HINWEIS: Playlists werden vom Script nicht unterstützt
+# Die folgenden Playlists müssen manuell durchgegangen werden:
+# 
+# UiPath Best Practices Playlist (13+ Videos):
+# https://www.youtube.com/playlist?list=PLEYSwx3duQ2AHgOVD8tDxJaN3J6VRcI_2
+#
+# QA Automation Lab Tutorial Playlist (51 Videos):
+# https://www.youtube.com/playlist?list=PLkkGqdBS1r0_tot9kcpoU2AGM6w5w8DkO
+###############################################################################

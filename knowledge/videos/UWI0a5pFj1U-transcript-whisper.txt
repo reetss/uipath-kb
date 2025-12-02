@@ -1,0 +1,385 @@
+You are absolutely new to UI path.
+And as a developer, you need to understand what should be your roadmap.
+How do you start your learning?
+From where do you start your learning?
+And what are the topics that you should cover one after the other?
+I'm going to show you the entire roadmap for the UI path developer.
+For this, come to academy.uipath.com.
+Once you are on this page, click on learning plans.
+And once you are on the learning plan, scroll down and select your preferred language.
+So here I'm going to select English.
+Once you've selected the preferred language, the next is roles.
+So if you expand this particular section, there are many roles that you can plan for.
+So this particular video is specifically for the developers.
+For the developers, you would be selecting this particular option, automation developer.
+So once you have selected automation developer as the role, you would see there are a couple of plans available here.
+Automation explorer, automation developer, automation developer, professional.
+Automation developer associate training, automation explorer, so there are many things.
+Now out of this, what you do, select the professional training.
+In the future, the version might change.
+Right now, while I'm recording this video, it is 2023.10.
+The version might change.
+Doesn't matter.
+Look for the professional training.
+I'm going to click on this professional training.
+So out of all this, this one is the professional training.
+I'm going to click on this.
+Now once you click on this, there is something called learning plan structure.
+Click on learning plan structure.
+Now all I'm doing, I'm going to minimize everything.
+If you minimize, there are three important areas that you have to study.
+The very first one is automation explorer.
+The version in the future might change.
+Automation explorer, your first thing to start with.
+Then comes automation developer associate training.
+This is your second thing.
+And the third thing is the automation developer professional training.
+The first one, the R that is mentioned here is 10 R 30 minutes.
+This might slightly change up and down based on the version.
+However, this is where you would start.
+Next is 32 hours.
+And the third one, the professional training, is around 40 hours.
+Now in the automation explorer, expand this.
+And check out all the courses one by one.
+The first one is a pre-training survey.
+And the second one is explore automation development with UI path.
+Now for this, you first log in.
+You need to sign in to academy.uapa.com,
+so that all the progress that you are making will be tracked.
+So signing in is important part.
+Now you start with the each one by one.
+So you would start with explore automation development with UI path.
+Then you would get into build your first automation process with studio.
+Variables constant arguments in studio.
+Control flow in studio.
+Excel automation with modern experience in studio.
+User interface UI automation with modern design.
+So all of this courses, once you have completed,
+that means you have completed the automation explorer course,
+which is of around 10 hours, 30 minutes.
+Now as a beginner, you can take help of many YouTube channels there.
+One is my channel.
+So in this, for example, you would like to start as a beginner.
+So my first recommendation is to go to my homepage.
+Or search for this particular video.
+UI path tutorial for beginners.
+This one I have made for 2024 edition.
+However, most of the concepts and things would remain the same.
+Here and there, there could be slight changes in the user interface of the studio
+because of the version.
+Otherwise, most of your concepts would remain the same.
+Once you are done with this, go to the playlist channel.
+In the playlist, if you scroll to the bottom of the playlist,
+it will take some time to load.
+Now, there are many, many, many playlist that I have created.
+UI path tutorial for beginners, build data table, mobile activity, email automation.
+UI path, RIFM, UI path, Excel automation, regular expressions,
+orchestrate a storage bucket.
+There are many videos, actually.
+So what do you do?
+Go through the courses.
+For example, you got doubt around variable constant arguments studio.
+So you can search for videos.
+For example, you can search UI path variables and arguments, for example.
+So there will be ample of videos present.
+Here, you would see.
+So I also have one video.
+You have a tutorial example of variables in UI path automated with Rakesh.
+So you can take benefit of many such videos available on YouTube to clarify your doubts
+and get some practical examples in case the topics that is explained here,
+you need additional help, you can take.
+So like that, you first complete the automation explorer.
+And once you are done.
+So there is something, automation explorer assessment completed.
+So once you have completed the assessment and scored, good score.
+That means you are now good knowledge on the very first area.
+Second thing what you do, get onto automation developer associate training.
+Now, this would have little advanced topics.
+For example, data manipulation with strings in studio, data manipulation with list and dictionaries,
+UI automation synchronization.
+So for all of these topics, you can search on YouTube and find a lot of videos
+and directly come to my channel, search there.
+So for example, if you are on my channel, you want to search a particular topic.
+For example, I want to search for let's say data manipulation with strings.
+So you can come here, go to the video, use this search option.
+So the topic is data manipulation with strings.
+So I'll simply say, for example, strings search.
+So here, you can see you have a tutorial string manipulation with the VV.NET playlist.
+I have an entire playlist with a lot of practical examples, a lot of videos you can directly see, watch and clarify your doubts.
+This is one thing.
+If you still have doubts, there is something called forum.uapad.com.
+So there are already like you, many people might have already called doubts
+and they might have already asked questions.
+You can search here in the forum and look for the answers.
+If it is not there, you can always post a question and get answer from the community.
+So these are the couple of things.
+Similar way, once you have gone through all of this, look at the topics.
+UI Automation Descriptor in Studio, Selectors in Studio, Debugging in Studio.
+For example, Debugging in Studio, I'll show you.
+Debugging. So I'll use this.
+Type Debugging.
+And here you can see UI path remote debugging.
+This is not the one.
+Debugging steps, UI path debugging steps.
+So there will be certain videos you would definitely find on the channel to get help from.
+So likewise, you complete all the courses, PDF automation, email automation.
+For all of this, also, I have a lot of videos.
+For example, PDF automation.
+I think there's a playlist I have created long back.
+Let me show you.
+You can document understanding action center scroll down.
+Excel or say, here it is.
+UI per tutorial on PDF automations.
+Excel automations like that.
+Slightly, as I said, this was created long back.
+So the version, the couple of things might slightly change.
+But again, your overall concepts would remain to my knowledge.
+Most of the things would remain conceptually same.
+Bit of features, properties, how it works.
+Activities might slightly change.
+But it will help you to understand how it works.
+Then you can easily explore.
+So likewise, you go object repository in Studio, version control, workflow analyzer,
+RPA testing with Studio.
+So for all of this topics, I have playlist created.
+Just search and see for the playlist.
+In case you don't find it, there are also other channels on YouTube where you can also take help from.
+Now, once you have completed this, finally, there is an assessment.
+Now, never forget to give the assessment.
+Always give the assessment.
+Once you give the assessment, you truly know how many things that you know,
+how many things you missed out.
+So you can always go back, refer, correct yourself, learn that thing.
+Again, you can give the assessment in number of times.
+So you have given the assessment.
+And the final one is the automation developer professional training.
+Now, this is what, if you are looking for a job, completing these three things are important.
+What are the three things?
+The automation explorer, automation developer associate training,
+and the professional training is also absolutely required.
+Because most of your job questions will be from you, from the professional training.
+For example, RIFM work concepts.
+How would you design a dispatcher board?
+How do you design a Baltimore board?
+So all of these are mentioned here.
+Introduction to RIFM work, building RIFM work project, building RIFM project with tabular data,
+practice with RIFM work, orchestrated triggers and monitoring.
+So most of the professional work that we do is you would learn from this.
+Those are foundations that is definitely needed.
+Now, these are the actual professional work that you will be doing.
+You will be developing projects.
+So going through this state machine, RIFM are very important ones.
+Very, very important.
+All of these that is here are very, very important.
+AI, computer vision, remote debugging, invoke method.
+For all of this, you would see courses playlist in my channel.
+Code automation for testing.
+Build automation with sedition accelerator.
+Automation developer professional training.
+So try to see and take help from all the available resources that I have shown you.
+First is your academy.
+You have YouTube.
+You have forum and a lot many other sources on the Internet
+to learn from.
+So this is what the complete guide that you have to follow as a road map
+to complete your learning as a developer.
+So once you have done this, what is next?
+Once you have done, what is next, you should appear for the certification.
+For example, if I go to certification,
+so here you have something called UAPAT certified professional automation developer associate.
+So here also if you look at automation developer learning plan,
+if I click on the learning plan, it will show you those two important ones.
+One is automation explorer developer associate training.
+So once you have completed these two trainings,
+you can also plan to appear for this exam.
+Similar way, once you have completed all the three,
+for example, if I click on this learning plan,
+learning plan structure, if I minimize everything,
+you see the same two are there and the third one is professional training.
+Now for this, go to certification and you can also schedule your certification for this one.
+UAPAT certified professional automation developer professional.
+This is the certification name.
+And this is how your exam description document is there.
+Free online practice test is there.
+Schedule your exam.
+All these buttons are there.
+You just have to go and follow the instructions to schedule your exam.
+Give your exam.
+Now for example, you're planning for certifications.
+You would find on my channel,
+I have created a certification playlist as well.
+Let me show you.
+So associate associate exam,
+there is a certification,
+13 videos that I've created.
+Not completed this playlist, but again, yeah,
+you have few videos there.
+But for professional one,
+you can see I have 99 videos this one.
+Okay, so new exam UAPAT certified professional automation.
+So this is what you can complete and you can appear.
+This is a additional help to clarify your conceptual things.
+It will help you this video.
+99 videos I have created that you can take help from.
+Okay, so let's say you have done all of this.
+What is next as a developer?
+Okay, as a next thing as a developer is nothing but this one.
+UAPAT certified professional specialized AI associate.
+And then UAPAT certified professional specialized AI professional.
+So these are the next thing.
+Once you got certified as a professional,
+then the AI part comes into picture for sure in 2025.
+Now for this,
+if you want to go with the learning plan,
+you can directly also click here.
+Specialized AI associate training and click on the learning plan structure.
+You would get to see see automation developer.
+Then you have the same similar topics introduction to AI powered automation.
+Explore automation development with UI path,
+build your first automation position studio.
+So many things you must have already covered.
+So this would be a cakewalk for you.
+Simply you can go through data manipulation and all this.
+Okay, the important part is starts from here.
+Introduction to specialized AI,
+UI path AI center,
+UI part document understanding,
+UI path communication mining.
+So these are the courses that you have to complete one by one.
+So if you click on any of these course,
+it will take you the course and you can start.
+Okay, so this is the next planning associate training.
+After that, specialized AI associate this one.
+And then the next one is.
+Okay, this is done.
+You can schedule your exam.
+Okay, this is the same same structure you follow.
+Next thing is specialized AI professional.
+So here again,
+if you click on this.
+Click on learning plan structure.
+And it would have the similar structure,
+UI path AI center specialized AI document understanding,
+specialized AI training,
+UI path communication mining,
+UI path AI center.
+So like this,
+you have additional professional areas on with respect to AI.
+So when you complete this entire course,
+then you can go ahead and apply for the certification.
+When you are confident,
+you can go ahead and apply for the certification.
+Okay, schedule your exam and give the certification.
+So this is the next thing next level thing.
+Okay, after that,
+let's say I have got specialized AI professional certification.
+Then you are also planning you have got good experience.
+And then as a developer,
+now you want to look for a solution architect role.
+You would like to improve.
+Then as a solution architect again,
+there is a plan here.
+Okay, automation solution architect learning plan.
+So as a developer,
+once you have had some experience,
+then you can become architect.
+You can't become architect as a beginner.
+As a beginner, you can't.
+You have to spend some time as a developer,
+gain some more work experience.
+Then you can look for a next promotion or next role is
+a solution architect role.
+Okay, so automation solution architect role.
+Again,
+if you click on the learning plan structure,
+you have everything here.
+Introduction implementation methodology deep dive,
+meet the components of your platform.
+So as a solution architect,
+you have knowledge on all these various areas.
+Because this is all needed as a solution architect.
+Okay, so these are the topics for you.
+Getting it.
+So let's say,
+you know,
+solution architect is considered as the
+one of the highest role in the development part.
+Okay,
+so AI professional solution architect professional.
+So your question could be,
+okay, I don't do.
+I need to go through AI.
+I would say with 2025 and the AI progress
+are being happening around the world.
+Definitely AI.
+Learning plan is a must,
+I would say.
+With the current.
+Development that are happening in the market.
+So having the AI knowledge,
+I would say,
+would become a must.
+As the progress is are happening in 2025.
+Okay, so I would say go for it,
+solution architect professional.
+And then there are other areas,
+right?
+People who are coming from a testing background.
+So test automation,
+engineer professional.
+There is a learning plan.
+Okay,
+people who are coming from infrared background.
+That is again,
+there is a learning plan for them.
+Okay, like,
+like there are many other aspects.
+But as a developer,
+these are the important areas.
+One is you prepare the associate planning,
+as I said,
+from here you can start.
+The very first important part for you would be
+developer associate learning plan.
+You complete plan for the certification.
+Second,
+certification is not a must.
+But having the certification
+would give you that boost and confidence.
+When anybody taking an interview
+and you say,
+I already acquired this certificate,
+this certificate.
+So definitely it tells to the interview.
+This person knows about the platform quite well.
+And he's certified.
+Right?
+So you gain that confidence.
+So having is a,
+you know, I would say it is good to have.
+I would say,
+I would recommend you to have the certifications.
+Okay?
+Not just learning,
+but prove yourself that you really have the knowledge
+and you have certified.
+So developer associate is the first one.
+Developer professional is your second step.
+Your third step is
+specialized AI associate.
+Your fourth step is AI professional.
+And once you have experienced few years of experience,
+then go with solution architect.
+So that could be your futuristic plan.
+So that's all as a developer.
+This should be your roadmap.
+And this is how you should start learning.
+Let me know in the comments section
+if you have any additional questions.
+I generally may not get time to reply,
+but I do read.
+And I would come back with certain videos
+to help you.
+So thank you guys for watching.
+Please do like and subscribe to my channel.
+We will meet once again in the next video.

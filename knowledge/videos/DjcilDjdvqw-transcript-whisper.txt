@@ -1,0 +1,810 @@
+I am not going to cover any parts of RPA basic things but I will start with what is an
+RPA lifecycle and stuff like that okay.
+The other things I think we have already discussed much in the introduction so I am not
+going to go with the basic introduction of what is RPA and what are the use cases and
+stuff like that.
+I am just going to start with the RPA lifecycle.
+So what is the lifecycle?
+The lifecycle is going to be when you require to implement a particular, but as a process automation
+right.
+So when I say a process automation what could be fitting under a process automation is
+what we need to first understand right.
+Not every project might fit under it will have its own reasons and it will have its
+own you know feasibility is that it may be developed into an automation project or it
+may not be into an automation project right.
+So if you say so that is what we have in we discuss and we do all these things in our
+discovery phase.
+So when you get an idea of what you are going to do or when you get an idea of your requirement
+then we are going to go ahead and start with the requirement understand the requirement
+and go ahead with to see what is the feasibility of the solution that we can do it as a process
+automation.
+So most of the things that we are talking about is an existing process that is already
+in place which is executed by humans right.
+So we are going to make that only into a process automation.
+So it could be a business process.
+It could be just a part of the process or it could be any kind of you know a detailed
+process which is which is going to be like they might be you know a kind of process which
+might be linking between several systems or several domains like not domain several streams
+of your thing.
+So it could be you know you know linking with sales it could be from there we might take
+it for the marketing from there we might take it for another set of customer demand data
+so all those things we might be doing into one single process or you could you know I
+follow the same process that is manually done and we could do the automation.
+So who are the people involved here we have the client or your subject matter expert
+who will be your product owner right.
+So that particular product owner or the process owner so that particular person is going
+to talk about all the existing ways that they are doing this automation.
+Then you have if the process owner is not available then we might have a business analyst
+who is there.
+Okay.
+A business analyst who is more of a techno functional role and who would go hide and understand
+the requirement and then transpose that particular requirement into a technical aspect
+to the technical team and then we have an architect or whoever is your senior lead right.
+So these three people will be the ones who will be discussing where the architect or the
+technical people will be understanding the requirement and understanding the feasibility.
+So even before this there is something called an opportunity assessment if the requirement
+is not coming from the customer then you are going to talk about an opportunity assessment
+where you go and see if there is an opportunity for automation in any of the projects but
+if the requirement is coming from the customer then there is no an opportunity assessment.
+Right.
+Right.
+So what happens in the feasibility?
+So what happens in your discovery state.
+So you see whether it is a feasible solution whether a feasibility analysis will be done
+whether the solution is feasible what kind of automation are we going to do whether it
+is an unattended or an unattended automation what is the complexity of the automation we
+have a scale of high very high medium high medium then you have low and low medium something
+like that I think there was there is one more thing which will be this is pertaining to
+your company where you work.
+Okay.
+Then we do a dependency as to what are the other dependent systems that we are going to
+touch base or where the data will be going or where we are going to send our output or
+send our employment give receiver inputs and stuff like that then we have the usability
+analysis usability analysis is again a place where you understand what what is the outcome
+of my process automation how many people are going to use it or how many hours am I going
+to say or how we are going to talk about both tangible as well as intangible figures right.
+So we talk all this in your we we understand all this as once we feel okay this is a feasible
+solution that we can do it as a process automation then we are going to create a process design
+document or a process definition document which is a PDD and you capture everything.
+So here we are going to capture everything in the form of either you for you capture it
+in the form of functional wordings or you for you capture it in the form of a process map
+right then we get into the automate stage.
+So in the discovery phase itself you will have estimations and everything so usually there
+will be a 30% or a 20% because a process automation is something that we are working on an
+existing system.
+So there is always a chance that the existing system may not be completely in sync working
+with the tool that we are working right whether it is UI path or any other automation
+tool.
+So we always give for any project we always give for 20% buffer so that we see all the
+scenarios are working or things like that so the estimations will be calculated in that
+way.
+So the recommended is 10 to 15% depending on the companies and depending on whichever project
+you are the complexity of the project you are the buffer percentage increases.
+So all this is done and then we are getting into the automate state where we are actually
+going for the development where the budget the allocation of the resources what is the
+tool and then we have a solution document all those things are going to be configured and
+we are going to have something called a solution design document okay.
+So who is going to be involved the actually this is the place where you are going to talk
+about a source management system or a source control system also which means your product
+or your process is first time going to be created in a UI path studio.
+So who will create it your architect or your technical lead will be creating it in your
+SVN or in your GitHub or in your TFS and then access will be given to you guys or given
+to the developers.
+And then we will start with the working and who is going to work on what what is the
+number of hours that we are working these are all kind of you know the project management
+will be tracking but otherwise is a developer some some people who are in a senior role
+right anybody is who are in the senior developer roles will be able to track this information
+as well.
+And then once your development process starts so you are going to always have a as
+a solution which is the current human operated solution and to be proposed solution which
+should be the process automation that we do it with a tool right with a bot.
+So you do all those things and once your product is almost you have done with your you
+know individual files or individual you know team has been working.
+So then you come with your optimized state your optimized state is where you actually integrate
+your workflow.
+So when you integrate who is having a problem or which file is having input related
+issues then you do a lot of the bugs then you do a lot of exception handling all those
+things will be done and finally you will have an integrated workflow right one single
+project.
+So every time in this automated state if you are if you are practicing an automated state
+of two months you might be actually having a lot of time also available for the integrated
+workflow.
+So somebody will be integrating the code and the basic operation of the source control
+system where you do a check in check out every day and your code is automatically updated
+into the source control system and then we go into the automated state where you integrate
+the workflow we do the unit testing and that's when the quality team will be coming into
+the picture to go out to create your test cases and then we are going into our monitor state
+where in our monitor status where we are going to show case R product to the customer or
+to the process owner.
+So this is when along with the UIT we capture all the users recommendations there might be
+a lot of you know information that the user might be saying no this was not this is expected
+or we wanted you know you can do an add on to this particular feature.
+So all those things will be coming so if there is a new requirement then we call it as
+a new scope right so we have it as a change management.
+So that comes into the picture and the UIT keeps happening while the developer also creates
+all the you know in case there are additional changes then the developer will be additionally
+modifying their code to you know withhold that particular changes and then we are going
+to also have in case you are having issues with the in the testing then you will talk about
+the effect management.
+So the defects gets fixed it goes back to the developer and the tester to and for multiple
+rounds of testing will be done and the most important state is your monitor state where
+you are actually testing the product and you are showing it to the process owner so that
+everything is ready and is visible into the hands of the process owner or your customer
+right.
+And then once everything is done we calculate a lot of metrics and we plan for the goal
+I.
+So goal I was going to be what is a number of issues that are the number of efforts that
+we have planned the metrics is going to be your effort variance, your schedule variance
+and all the stuff that will be coming what was the defect analysis we did how many defects
+was it coming.
+So as per you know as per your company's thing you might be agreed for a 10% sorry defects.
+So in case you have more number of defects so what is the defects ratio all those things
+will be coming into the picture okay.
+So where are we in line with the basic figures that we actually have your company might be
+having a figure of say 10% of defects but you might be touching in this particular project
+if it touches to a 15% of defects and you will talk about your project is not the right
+project okay somewhere you have to correct a lot of steps so that for the next project
+we do not have a similar situation right.
+We do a lot of metrics analysis and they will be reporting most of the metrics will go
+you know in terms of efforts and everything might not go but some you know metrics which
+in terms of defects and things like that might also go to the customer it is not a mandatory
+step it is between the relationship that the company has along with the customer based
+on that you get your information passed on right whatever is the information that needs
+to be passed on it goes on and then we plan for a goal I was nothing but on to the customer's
+mission.
+So usually most of the time we might not be dealing with individual missions of the user
+so we might give them the one server which is the orchestrator installation and we might
+just install it there and from there most of the companies from there if we give the document
+or we give a deployment guide they take it from there to the because they might be having
+when you are running a process automation for a particular customer they might be having
+somebody from their side who is aware of the automation okay most of the companies now has
+an automation person who is aware of how to run process how to actually you know if there
+is a process having a problem or how to deploy it on multiple missions and things like
+that multiple end users okay so most of the time especially when you are talking about
+any unattended thing you are going to talk about only orchestrator deployment which is
+goes into the company server or the company's mission or something and then we are going
+to talk about deployment into the end users mission so the goal I will be planned and
+then we have the control state so the control state will be monitoring of your what happens
+so far we created the process automation in an environment which was a replica of the
+actual production environment right so now we have since we have deployed it into our
+actual production data you might be dealing with the actual production data that is coming
+in or the actual live data that is actually coming in and then we are going to monitor it
+is your process the automation process that you did is it working as in stake with the actual
+requirement that we have or is there any issues or is it hanging down anywhere or is the data
+getting processed most of the time right so we might be there there might be cases of like you
+put it in a face manner or you put it as one shot you might put it as a goal I mean all those
+things that that depends on what kind of project you are and stuff like that and then we do all
+the metric stacking and finally after your post implementation support or during your post
+implementation support even the number of errors that you received during the support that
+you are giving for your product even those will be calculated so that only actually defines what
+was the intense of your project that you have done as it been working the same way that you know
+what was the bettering that you have done what was the sorry what was the betterment you have done
+have you increased the execution time or have you decreased the execution time all those things
+will be tracked and then you have the post implementation support and your total metrics and
+with this we close the project there might be somebody called a bot controller from either from
+the customer side or from the you know the from the actual development side who will be monitoring
+the thing if the company if the customer requires somebody from the technical team to be available
+we have shared resources will be available the the role name might be the bot controller who will be
+actually working on multiple processes just controlling the process and monitoring the processes
+onto that customer's mission or onto if it is on the you know on the mission that we have access
+then they might be accessing that particular mission so this is what we have as an RPA lifecycle
+so any RPA tool that you are going to use the same lifecycle will be followed and the same
+set of documents will be followed you have an opportunity assessment you have a process design
+or a definition document you have a solution design document then you have a PDF which will be the
+instruction that says okay this is how I'll be clicking from this page I'll go to this button
+I'll go from this button to this this page will open up it is a kind of a navigation walkthrough
+okay for any kind of a tool a process design instruction and then you have a software and hardware
+requirement as is and the proposed solution a summary report a summary report is the execution report
+that your bot has done for a particular execution so suppose if you're doing a data processing
+then it will say I did this many data's process this many was an application exception this many
+was an a business exception this many data process through this is the final result so all the for
+a particular execution if it runs today you have a summary report if it runs tomorrow another
+summary report and you have a unit test case and a UID tracker and a deployment guide and finally
+a user guide as to if in case it involves and use it and how are we going to do it okay this
+will be the overall picture this is going to be very much important when you're going to talk about
+you're going for a job interview or you have an interview asking what is your role and stuff
+you're going to go ahead and talk about all these things irrespective of whatever is your role
+you can talk about your PDD or your SDD this is what you have updated or this is what I have done
+so this was the mail automation we had this many issues so we captured it in an
+effect management tracker and all those things you will be able to capture and I mean you will be
+able to talk about all those things right and then we also okay these are the roles and
+responsibilities so who does what right so you have the process owner and the SME or the
+business analyst who will be documenting all those things and then the developer will actually
+do all those things and then we do our testing and deployment and finally there will be a
+testing sign-off and a deployment on the production where the automation solution will be used
+by the end users right by now this one you are aware right we have a studio to actually
+work on the workflow then we have a bot which is inbuilt which will be executing the workflow
+that you have designed and then we have an orchestrator which will actually monitor and deploy the
+process in stuff like that right so this is something that we are already aware of
+okay then we were talking about what are the available the overview of the UI path studio right
+so when I say the overview of this studio it is going to be
+yeah so when I say it is an overview of this studio you have a lot of project templates
+you have the first the basic flow is going to be a sequence and a flow chat right a sequence is
+going to be more linear right one box after another is going to be a sequence suppose you want
+to connect or make branching or you want to make decisions and we have something called a flow chat
+right so which will have decision making which will have branchable branches okay one second
+so we are going to talk about a flow chat which will have multiple branching that will be available
+so a flow chat sequence is going to be the smallest form of a project a flow chat will be like you
+can do it for even larger projects you will be able to use a flow chat okay so which means you can
+go ahead and connect or you can go ahead and see multiple branching that will be available then the
+next one is going to be a state mission a state mission uses a concept where flow chat will not
+be able to connect to itself a state mission you will be able to connect to the same box again and again
+in the state mission we have a concept called state at the final state each state which means
+from one box you can jump to any other box that is what is a basic idea of state mission okay so
+which means you are going to uncertain conditions this the similar statement as a go to statement
+so you might be writing a piece of code and you will say on this particular scenario go to
+this particular statement right so the similar thing you can actually using a state mission
+so we have on each state okay we have something called an entry exit and a transition so which
+means on entry or into that particular box what we are supposed to do when we are moving out of
+that particular activity what are we supposed to do and on what condition am I going to move out
+of the box that will be coming under the transition so the robotic enterprise framework works on
+the state mission so we are going to cover what is state mission when we are doing the robotic
+enterprise framework and whenever you want to do error handling so when you want to do an error
+handling we are going to talk about the global exception handler so a single project will be
+having one global exception global handler okay so global exception handler will be just one
+particular file per project so this will be actually this will actually define the project's
+behavior that is need to that the project need to behave when it encounters an error so which
+means if there is an exception that occurs then you are going to move the particular project the
+flow will be moved and going on to the control will go on to the global exception handler from
+there it will say okay this particular error you can redrive or you can go ahead so instead of you
+writing it in the catch block in the catch block you will be calling the global exception handler okay
+from there the control will go on there it will gather or it will describe the project's behavior
+and from there it will come back to the project back again to the price section okay so based on
+those particular things you can do global handler is going to be one single fight which will
+work across all the projects I mean all the all the example files okay then we were talking about
+the different project templates one is going to be the basic process template which is the basic
+template okay remember all the templates are all the project templates however you define your
+project templates everything is going to be deployed in the orchestrator only so everything will
+be at one point will be converted to an orchestrator process template okay so always whether you
+have it as a trigger based automation or whether you have it as a process it's going to move on to
+the orchestrator only at the end of the day right so don't confuse yourself can I have only if it
+is an orchestration process template only I need to deploy it an orchestrator if it is a background
+process then I will not have it in the orchestrator no it's not like that every project that you
+every process automation that you do is going to be in the orchestrator only okay and then we are
+going to say the simple process was a simple process automation that you are doing and even if it
+is a simple process automation you can drag and drop multiple flowchats multiple sequences multiple
+sample files and all those things and you can create a full-fledged bigger complex project also
+end of the day that also will go into the orchestrator for deployment right so what is the difference
+between each of the project when you're dealing with a very high-level project we will have
+you will be designing the or you will be deciding the what is your project template that you'll be
+working so all right so anything that you are going to work on you know a very
+detailed kind of a framework where you have multiple data processing or the transactions
+are going to be there so multiple data processing that you might be doing might fit under the
+robotic enterprise framework most of the projects now are into a robotic enterprise framework only
+but when we are when you are understanding robotic enterprise framework you will get to know it
+better okay most of the data projects are most of the transaction based vases for our projects are
+going to be fitting under the robotic enterprise framework and then we have an orchestration process
+orchestration process is nothing but the a process which is deployed on the orchestrator so that
+it it supports human intervention as well as an unattended automation okay so which is
+anything that whether you want it as an user-based operation project or which is an
+attended automation or an unattended automation long-term transactions can be deployed as an
+orchestration process template you can create a similar process that you are doing with the
+basic process template the same thing you can do it in the orchestration process template also
+and you can deploy it whether it is unattended or an attended automation then we have something
+called a background process a background process is basically going to be an unattended automation
+only okay which means it runs at the background so which means you are not going to have any user
+interaction okay so when you don't have an user interaction then it is going to be running at the
+background whether user might not be aware of so those kind of process only we call it as a
+background process so which means you are not going to have any activity which deals with user
+interaction no message boxes no error handling has to be perfect so that no error handling is
+displayed as a pop-up box to the customer or to the end user so those kind of processes we have
+it as a background process and then we have a transactional process a transactional process is
+similar to an orchestration process but it is going to have more kind of transactions it will be
+based on a flowchart methodology okay even a simple process can be worked as a transactional
+process if you click and drag a flowchart inside a process then it is going to become a transactional
+process okay this is also a basic automation process that we have right and then we have a trigger
+based automation a trigger based automation is something which will be different from the other
+project templates right so trigger based automation is nothing but you have a trigger which means it
+is going to be an attended automation so it is an attended automation where the user has to have
+a interaction with the project or with the process automation so trigger based automation is going
+to have certain triggers like you have mouse click you have an application trigger and you have a
+non application trigger so let's talk about now that we are aware about user interfaces and everything
+so you have any user interface trigger and you have a non user interface trigger okay a user
+interface trigger is categorized into you have an application which is open that is your user
+interface so anywhere in your application when you are going to have a mouse click or a keyboard
+that you press okay anywhere in this particular corner of the application on the top right corner
+of the application I go into double clicks so that is a mouse click event on the application so
+similarly you have a keyboard event on that particular application okay you have the application
+you have the user interface open and you are going to do a keyboard press so at that time you are
+going to have the application the trigger happening okay so a certain set of operations will be working
+sorry so this is based on the user interface then the next trigger the third trigger that we have
+is a general trigger which is not based on the user interface which means if you have a system
+opened anywhere you press a control key or a control enter or a shift enter or whatever
+keyboard that you actions that you do if you set it there will be a set of events that will be
+done so this is an important interview interview question that we ask so what is the what kind
+of activities you can perform in a trigger based automation okay so base one will be user interface
+based on inside the user interface if you do a mouse action or a keyboard action okay
+and outside the user interface so with where you do not have an user interface even if you have
+any application open you do that particular operation which is a keyboard event only so you do
+that particular operation then at that time your events are going to be triggered or your
+corresponding actions are going to be triggered so most of the times you can use a trigger based
+automation when you have certain files or when you say okay I am going to run ad hoc processes
+when I receive a particular email I am going to trigger a trigger based I can press a keyboard
+trigger and I'll say okay run this particular set of automation so that particular bot will be looking
+at the email that you got and then it will start so rather than you creating a process automation
+which you know you have to start every time anybody who is using that particular system will be
+able to start the trigger based automation so these kind of scenarios you go mostly trigger based
+automation is not a widely used one the other templates yes most of the time we'll be using the
+robotics and apprised framework only so the robot and apprised framework is a template where
+you're going to have it is a much easier template which is going to be which is developed or which
+is formed to help the developers so just for the ease of working for the developers and so that
+you follow a proper methodology of writing your code or writing your flowchart that is why we
+have the robotic enterprise framework so the robot enterprise framework will actually list you
+okay this is your first set of actions that you need to do after this in your project compulsively
+you have to do these set of operations and then the third thing will be another set of compulsively
+operations and then you will go for transaction processing and then you will go and end the process
+so you will have an order in which you will be executing your code okay so that any order fails
+you will be seeing that okay this this particular area we have got a fail so probably this is the
+exception that it has occurred so you go and log the exception or you go and you know handle
+that particular exception right so this particular framework allows all the best practices for
+the developer so which means you're logging mechanisms you're retry mechanisms how do you
+actually log into an application how do you actually log out into an application how do you close all
+your sessions sometimes you might just be opening and we might not log out itself so you have to
+go and log out of the application right so those kind of scenarios you have to manually do
+this particular in this particular framework even if there is a chance that you might be missing
+in all the things because you do not have a framework design decided right here it will not be the case
+you have the framework so there is no chance that you will be missing because the framework will not
+work if you don't log out the entire project will not work so you have to go and manage to
+rely to your log out functionality okay so that is how you will be actually that is how the framework
+is designed we are going to see more in the coming classes so you will be able to understand right
+and then we saw what was variables right the basic programming information so whenever you are
+going to have data processing or whenever you're going to have information coming and going out
+of your program you're going to hold it inside of the box and you're going to use that
+only if the name of the box is available you will be able to go and refer the data
+if you don't have the box available then the data cannot be referred the data will be lost
+this is what we call it as variables variables are the boxes which is going to hold the data right
+so we have different kinds of information that we are going to hold you could hold text information
+which is if the basic names numbers special characters and all those things you can you can hold
+it in a box called string then we have integer which is going to be all the number information
+then we have volume which is going to be true of all information then we have array array list
+dictionary these are all collection objects array is going to be list of array is going to be
+the same set of you know instead of holding just one data you'll have multiple values of the same
+data you go inside the library you take 10 books under your name 10 books will be written this is a
+concept of value okay so always remember that where you can use an array whenever you have
+limited set of data you can go and use the array when you know that you're going to have deal
+with only 10 information then you go ahead and deal with areas so suppose you do not know
+what is the set of information what is the count of the information that you put to have then you
+use the concept of list the difference between array and list again a very important question
+in terms of certification and in terms of interviews what is the difference between an array and a
+list when you do not know the count of the information or when you need to modify the content of
+the information then you're going to have lists right so arrays and list are most are the same
+it could be array of string list of integer list of booleans or array of boolean it could be any
+kind of information right so when we are dealing with most of the time if you remember in the mail
+automation we said list of emails list of mail messages right because we do not know what is a
+content of the email or we do not know what we what we will be doing with the mail you might be
+modifying the content of the email and things like that there are on those kind of scenarios you're
+not going to use arrays so we are going to use a list only okay so anywhere when you when you're
+dealing with smaller amount of data you use arrays when you're dealing with bigger amount of data which
+needs to be modified or which needs to be worked on then you're going to use list so which means if
+you're modifying any physical folders okay then you're going to have list of folders if you're
+modifying emails and you're going to have list of mail messages if you're doing any kind of
+automation where you're going to capture all the information from multiple excel sheets then you
+want to have list of excel sheets right so these are the different information that you will be
+capturing in terms of list then we have dictionary dictionary we'll anyway cover dictionary is an
+object where you're going to you're going to load pairs of values right and then we have another
+information called date and time date and time is simply going to have date and time information
+so you can have it in the whatever format that you have whether you want it as a month first date
+first date second and the year so you can re-change the order in the way that you require then we
+have the data table so data table is going to be when you have bigger pieces of data right so when
+you have bigger chance of data and you're going to talk about maru and columns and you have two
+dimensional data that is available so anything which is in the format of excel sheet which is in
+the format of a table in the webpage which is in the format of a data grid in the webpage which is
+in the form of a database table any ms access tables all those things are going to be in the format
+of data table so blindly you can just convert that into a data table and you can start processing
+your data okay so that will be the data table information then to do the conversions right so always
+we have conversions that we need to do so you add a dot two string if you want to convert it into
+a string information you add a C in top if you want to convert it into an integer information
+then you had a C date of a prefix you had a prefix of C date if you want to convert it into a date
+information right so you're going to have C date of the variable name so which means that
+particular variable name will be converted into a date format so these kind of conversions also
+you can do so you define in the variable panel suppose you define it as a string and you're storing
+a date information you can convert this into a date format wherever you need to make comparisons
+or wherever you need to make some date functionality operations you can convert at that particular
+scenario you can convert it into a C date of and then do the particular operation and then your box
+will still be of the string type only you can also do a multiple processing after conversion
+once you convert it you can put it into a different variable and store it or you can
+use it inside your application or during processing and then you can you know just leave it
+so there are scenarios where you might be individually required to convert the convert the
+variable types right so these kind of conversions are still explicitly allowed in UI path
+but suppose your project involves too much of conversion like you do not know what kind of
+information is going to come in so the safety factor what they did was a proprietary variable was
+defined which is the generic value variable which is proprietary only to UI path so it cannot be
+used elsewhere this is a UI path owned variable type okay so the generic value variable is going
+to be something where automatic conversions happen so you can convert from one kind of data to any
+any kind of data so even if you store it as a string and you want to do an integer operation you
+will be able to do it on that particular automatically okay so that is the generic value and then we
+have another proprietary variable which is the q item these two are only the proprietary variables
+other variables will if you need to refer Microsoft.net and you can and you are working on some
+complex projects which requires.net then you can use the same.net concepts.net variables and you
+can go ahead okay but that may not be required but usually the set of variables will be allowed
+the final proprietary variable is going to be the q item so the q item variable is going to be used
+whenever you are going to use orchestrator q's okay with that we are going to cover when we are
+doing orchestrator okay another important certification or an interview question what is the
+conversion usually you will have this at least one question in the certification so what will be
+the conversion so if you are converting from an integer to a string format then it will do the
+addition okay the same thing if you are going to have a string format first double course
+followed by a concatenation symbol and a 10 it is going to do a concatenation that is what it does
+okay a generic value always you need to make sure what kind of information you are passing based
+on the base information only the operation will be performed not only for generic value even in a
+message box if you type if you have a string information followed by something it will do the
+concatenation operation only so if you want to write something it will ask for sure it will ask the
+double course value that needs to be specified okay that is the overall picture of the variables
+and stuff like that so the variable panel is something you are already aware by now what we do
+in the variable panel you have the variable name the type and the scope where your variable is
+going to be used precisely you have to define it based on your project requirement this would be
+identified when you are doing the SDD document itself most of the time your variables and your
+names and what because you will be following a certain naming convention and all those things
+will be defined so these are the number of variables these are the number of exceptions that will be
+creating these are the invalid scenarios so everything will be identified in your SDD document
+itself and you can just follow that particular information so there you will be identifying until
+where this particular variable needs to be available do I need it for the entire login functionality
+or for the entire application to be running so everything you will define and then we have a
+default field default is the basic field which will have in case you have a default value that
+the particular need variable need to hold okay this is our optional field mandatory you are not
+supposed to give this particular thing you care for this only we have the option of instead of
+you writing in the default only we bring it from outside the project we bring it from the configuration
+file okay but it is it is no harm if you are having some counters that you want to do if you are
+doing some beta mechanism if you initiate the value with 0 so those kind of information you can
+still go and give it in the variable pattern okay that should also work or the ideal way is bring
+it from the configuration file most of the variables that you feel that might be changing bring it from
+the configuration file okay then we had something called the control flow control flow or the
+activities which is going to control the flow of the operation so repetitive actions if you want
+to say you want to go ahead and do some equations if you want to assign a particular counter so those
+kind of operations only which you control the flow of the operation the execution is called the
+control flow activities so you have an assign activity which is going to be assigning certain
+information to another information so it could be equations it could be simple numbers or it could
+be adding numbers or it could be anything that you want to assign right so you can use an
+assigned statement and then you have condition checking which is if and a flow decision if it is
+going to be the basic understanding between an if and a flow decision is make sure that you
+precisely define here it is going to be visually appealing when you are using a flow decision
+both has two choices only if true if false so it is if then else right so similar to a flow
+decision also you will be having if sorry a flow decision true and a false but the only point
+where we go ahead and use a flow decision is say suppose you are doing in the if section you're
+writing a piece of code for the then okay or the else block you're writing a piece of code if in
+the else block at the certain step suppose you're writing 10 steps and in the eighth step or in
+the tenth step you want to connect back to the box before the if means you won't be able to do
+so it is a sequence only which will be written inside the if statement I hope you are understanding
+people might not be aware what is the definition what is the difference between a flow decision
+and an if so in case you're going to write
+so in case you have two things say here you're having two boxes inside this two boxes
+from here if I want to connect to the from here if I want to connect to the second step I won't
+be able to connect from here if I want to connect to the second step inside this if I'll section
+I want to be able to connect because if you see this is a sequence you won't be able to connect
+automatically if you drag more activities a sequence will be created this is not just for
+if it is going to be working in the same way for switch also okay so everywhere you create the
+cases in the switch will be the similar to a sequence only so sequence is more linear so you
+won't be able to perform multiple connecting to the previous box but in case you're going to use
+a flow decision then you're going to have the same thing in case you're going to have a flow decision
+on the false side you will still be able to go ahead and connect so this is the basic understanding
+of where you need to use a flow decision and where you need to use a if statement if is going to be
+used when you don't have when you have very simple operations so here after this if you want to
+connect back to the first step then you're going to connect back it here okay this you won't be
+able to allow to this you won't be able to or you're not allowed to do it in the if basic if
+operation so your if is going to be the the either it is a then section R and L section is going to
+be more linear okay but here in a flow decision you will have the same condition you can still go
+ahead so precisely same thing will be working for your switch and a flow switch as well okay so you
+have to precisely define whether you have options to reconnect elsewhere or you are making conditions
+that you need to jump from one thing to another okay at that time you're going to have a flow decision
+or a flow switch this is a basic difference between a flow decision and a flow switch between an
+if and a switch the normal switch right so a flow decision and if is going to perform the same
+set of operations two choices and if the choice is to if the choice is not so you way you make sure
+the condition is met and accordingly your program will be branching across two things
+similarly you have a switch and a flow switch so when you have multiple cases when you have
+multiple choices okay if you have three choices you can stick to one flow decision with the
+you know a flow decision a flow decision inside a flow decision so you can have another flow decision
+here and then capture it so you can also do like that which is a nested if okay all all you can
+prefer a flows switch or a switch which will have multiple information going across you know
+different branches you have multiple options right and then we have the looping methodology
+so the looping methodology is going to be used whenever you're going to have repetitive actions
+so when you want to process the same data again or when you want to process or repetitively
+perform same actions again so those type of scenarios you're going to have a looping methodology
+if you are receiving mails 10 emails and you want to loop through all the 10 emails then you're
+going to use the looping methodology if you're going to have a couple of file folders then you want to
+say you're searching for a particular file inside it you want the file which is going to be with
+this particular name only so what you'll do you'll go for the first thing see whether it has
+that particular name second file see whether that it has a particular name third file yes the third
+file has so probably searching for the file name one by one right so this is where we'll be using
+the looping methodology where the same action is repeated multiple number of times so those
+kind of scenarios where you're going to use the looping methodology so based on the kind of
+action that you're going to perform whether you want to do it irrespectively for all the data
+or for all the files or for all the information okay then you're going to use a forage okay whether
+it is going to be data processing or a file processing or a mail processing if you're going to do
+it for all the files for all the data for all the information then you're going to use a forage
+which means it will scan the entire data together and it will do okay if it performs for the first
+data it will perform for the last data also the same way right but if you want to perform
+sorry but if you want to perform for a limited set of actions say a limited set of files so if you
+want to perform only from the third file to the 10th file or the third data to the 10th data
+then you are going to have a while or a do well okay so this condition you always need to remember
+when you are supposed to introduce a while or a do well and when you are supposed to introduce
+for each right so which means when you have for it is going to be for all data
+if you want to scan through all data if you want to scan through all files every time you are
+going to use for each so for each again you have two operations for each data table for each
+control anything specific to data table data then you are going to have explicitly data table
+for each row in data table okay so which means it will take the first row which will be the active
+row then the third a second row which will be the active row so it will have only one row active
+at a time when you use for each only one row will be active at a time okay then you are going to
+have for each control so anything other than data table then you are going to have a for each
+control so here you have to specify what kind of data you are processing so this is going to be
+type argument is going to be available in the properties field where you go and say okay I am
+processing file folders I am processing mail messages so when we were doing when we were doing
+actually the the mail automation we were saying we are processing a for each control for
+mail messages and we went and selected type argument system.net.mail.mail messages right so
+that particular thing you have to give whenever you are good doing other than a data table you need
+to because this is a generic for each control you need to say to UI path studio what exactly data
+what kind of data you are going to process in the for each so that is why we have a type argument
+so similarly the type argument is going to be available in the switch or type of data you are going
+to pass through the switch what type of information you are going to pass through the switch right
+so you have a for each control right and similarly you are going to have a while and a do while
+while will be used for a specified part of your automation you are also a specified part of your
+automation that you want to repeatedly process okay this is for all the data this is going to be
+first specified information that you want to process the difference is going to be while
+is going to have the condition first and then execute the iteration okay so if you say process
+information between row count 1000 to 2000 to 2000 then it that will be the condition and only
+that condition is satisfied it will go in loop through that particular information or do while
+is going to be if you see process the information from 2001 to 2000 even whether the condition
+or not it will process at least once because in the do while the body is going to be first and then
+the condition will be in the while the condition will be first and then you want to have a body
+when you can use a do while you can use a do while whenever you want to perform any kind of
+operation whether the auto whether the condition is successful or not you want to perform it once
+okay if you are searching for file folders whether the thing is there or not you might be going
+and marking yes this particular is executing log file track the log file you might be say log I'm
+executing this particular thing at least once time and you will be writing in a do a log this
+particular execution happen so those particular scenarios you can go ahead and say do while loop
+irrespective of whether the condition needs to be met or not you want to execute the condition
+once you want to you want to execute the operation once at that time you go ahead and do do while
+when you have a while you're just going to go and only if the condition is satisfied it will go
+inside the iterating action otherwise it will not do an iteration at all this will do at least once
+okay then we have something called a break a break is going to be can be used only inside the
+forest activity similar to a do while when based on a condition you want to come out of the loop
+then you can have a break statement and you can put it so you can also check it as
+the first time you want to run and you want to put a break it will run the first time it will
+do a break and it will come out so usually you can also define it as inside a forest you can
+put it as when the data comes like this so you can put an if statement and in the do session
+you can put a break and it will just come outside the thing okay so those type of scenarios you
+will be you will be allowed usually a break is going to be inside the forest only so you put
+a forest and a break it will just come out of that particular scenario come out of that particular
+for loop okay so this is one the control flow routes then we actually went into excel automation
+right the excel automation again is going to be very very important part of processing
+when you are dealing with a lot of data processing so when you have data most of the projects that
+might be coming will be manual intervention where they do a lot of data processing so you need to
+convert it into an excel automation either you generate it in other port format or you get it in
+the excel format and you want to do some data entries okay so those kind of all scenarios
+you can do it appraisal process sales process any kind of reporting that you want to do or any kind
+of you know data collection that you want to do all those things will be coming in the format of
+excel okay so you have two options even a CSV data which is an unstructured format right so it is
+not in the CSV format is a comma separated value format right it is not in terms of
+for rows and columns even that format you will be able to convert it into a data table okay so how
+you will do it is you can there is an option called generate data table even the unstructured data
+will be converted into a generate data table which will be converted into a data table structured format
+so you can also use it was CSV files okay so any unstructured data also you can go ahead and use
+it into a data table any structured data that you have any bigger pieces of information then you
+are going to have data table to some of the operations and you will be able to do it with the data
+table you can create your own data table you can add values inside your own data table you can
+add data columns you can add data rows okay you can club to data tables which is merge data table
+you can take the data based on certain conditions between two data tables that is going to be
+joining data tables okay so in case you want to just filter a particular data table you can use a
+filtering method another important question in terms of interviews and in terms of certifications
+what is the alternate method of using the filter wizard so without using the filter wizard how can
+you actually filter on a particular column see suppose you have a column called employee ID
+and some other value experience if you want to filter based on employee ID column and which is
+equal to this particular value or 1001 if I want to filter based on that particular employee ID1
+and the experience okay I should still be able to do it so how will I do it you have the select
+option I will give you this syntax you have the select option okay so usually it will be the
+data table dot select of the column name and the value and you put an and or an or condition
+and then again you can put a column name and the value I will give you the syntax okay so this
+is another alternate method okay so this particular alternate method also could be used whenever
+you are whenever you are not using the filter method usually we go in for this particular thing
+and we bring it from the configuration file okay so that the conditions will never be
+even if the conditions need to be modified at any time you can go and modify it if in case you
+need to fill get it from the configuration file otherwise you can just code it inside your program
+and you can just put a select and the column names right so this is alternate method of a filter
+wizard so you can similarly you can check between duplicate rows you can add or remove data columns
+you can add or remove data rows okay so anywhere when you are processing excel we always process
+row wise only so that is why we also do a row wise operation only with a far each row here okay
+90% of the project we will be doing row wise operation only we won't be doing a column wise operation
+right so those kind of scenarios only we achieve it through a far each row inside a data table
+so you have a filter method you have a saw data table remove duplicate rows and join data table
+so based on the data that is available between two or three tables you can
+between two tables you can go ahead and join so you have an inner join outer join and a full join
+so those particular actions will be done right then we have something called when we are doing
+excel automation so we had two different varieties of excel right so excel activities are going to
+be inside the package for dy path dot excel dot activities right so you have excel activities
+which will be under app integration and next we have the system file workbook dot activities
+so what are the differences I have defined it to you so one is going to be like
+more specific when the application is available excel application is installed in your system
+in your working system right and the other one is when excel is not installed so which means when
+excel is installed you will be allowed to use the more you know complex operations inside excel
+like doing graphical representations all those things you will be allowed to use when you are when
+you are using workbook dot system dot workbook operations it will be the basic operations which
+will be working based on the plugin that is already installed in your system you may not have an
+excel but it might be talking in terms of Microsoft plugins that might be there okay so anywhere that
+you do not have so when you are doing a basic operation on the excel like you are reading and then
+you are doing simple operations like data table processing and then you want to update then go ahead
+and use a workbook dot read range or workbook dot activities if you are doing complex operations
+right then you can go ahead and write it inside the excel applications go so usually one other
+differences if you write another difference between an excel operation is always you need to write
+your code inside an excel application say suppose you are going to write it here okay always
+you need to write if you are doing in your excel application scope if you are writing anything
+whatever you are going to perform inside the excel which means a read range a for each data table
+write range app and range filter data table whatever you are going to do needs to be inside only
+inside the do block if you come outside of this and you write your piece of code will not work okay
+this is you can take it as an advantage or you can take it as a disadvantage also okay so always
+you need to write information so here also we have it as a sequence so you won't be able to connect
+back to any any other previous information okay so that may be a drawback as certain scenarios
+right for that only we just simply use a workbook dot read range and we simply go ahead
+okay so that is why here when you see this particular read range the excel dot read range
+will not have the the file information because you are writing always this inside the open file
+only so that is why you don't have this read range or write range or app and range know where
+you will have the file name it will just have the sheet name alone so you will be directly
+since you need to write it only inside the do block assuming the page is already on the workbook
+is already open that is why they have given according like this always you are supposed to use it
+inside the excel application scope you cannot touch base and connect it to the previous blocks
+or previous activities so that is you can take it as a drawback but most of the scenarios you might
+not be involved in a condition like that okay so the other rearrange that you are going to do is
+you are going to see the because you are not using the excel application scope it is a direct
+workbook dot read range that is why you would be seeing the information of what is the workbook
+name and then the sheet name okay so that is a major difference between using integration app
+integration excel activities and a workbook system workbook dot activities okay so the basic
+differences you need to put all your code inside the excel application scope only because you are
+anything will not have the workbook name because you have already it is assumed that you have already
+specified that to the excel application scope right so this is the information then there are
+other differences also that you will be doing based on whatever you know whether it is a password
+protected you can have the excel application scope the sheet might still be open for you it will not
+throw an error here it will throw an error so all the differences I have already explained you can
+verify the information that I have already explained right so back to our excel automation so what
+actually happens what kind of data that you are going to have so anything that you are having as a
+data that is inside the excel always needs to be converted into a data table and from the data
+table only you are going to do all the processing why you need to do it from the data table it's going
+to be more faster so the moment you do loaded into the data table and you're having it inside the
+memory it's going to be more faster for you to do a lot of processing whether I mean when compared to
+you connecting to the excel taking the values and then doing the processing there every time the
+focus shift will be there from here it will be shifting to excel do some processing then again
+it will shift to UI part studio there are too many focus shifts right so when these kind of operations
+cause a memory leakage so for those reasons only we try to load the entire data table do all the
+processing in the data table and then finally you do the updated data into an excel sheet so there
+are two ways of update you can write the updated information if there's a requirement that you need
+to take the data from the excel and updated back based on certain processing you can update the
+data directly into an excel or if you have too much of data that you need to update then you update
+into the data table and copy the entire data table into the excel sheet so override the excel sheet
+with the updated data so it depends on your project requirement how you want to do so both the ways
+there are advantages there are disadvantages however you have to wisely choose between what is your
+data what is your kind of requirement this and accordingly you do your writing or you do your
+processing okay the general method if you're just working on certain columns then you can do
+direct excel update if you're working on multiple data and you want to do multiple updates and do a
+data table full data table update so you're going to do a write range and you will or an up and
+range and you will directly come in override the existing data okay so that particular information
+you can do right so now coming back to your data right so you have couple of ways that you can
+process your data so when you have when you know the information the location of your information
+or sorry when you do not know the location of your information right so
+you're going to scan the entire data which means search the entire data and then only you need to
+identify right so those kinds of information you can go ahead and you can use a forage row which
+means you need to scan through the data and fetch the values okay when you know the location of
+the data you use the direct row index and the column index information so you can simply say
+data table rows of row index and the column index it'll directly give you because why you cannot
+use a row index and a column inside here because you just have one active row so in case in case
+this has 10 rows the data table has 10 rows if you want to fetch the 9th row the first column
+the data table structure itself will be of 10 rows so you can directly go and fetch it but inside
+the forage row you only have the one single row so it is always row of 0 you cannot even the 9th row
+will be appearing as the row of 0 only so you cannot use a row index and the column index
+methodology here okay so it is not that you cannot use it is not the best practice it will still
+allow you to use okay but it is not the best practice that you're supposed to use because you
+already have the data table open and you already have one data table row only so you need not go
+and specify the row index and the column index by default itself you have only 0 at the
+row index and the column index only will be changing so that you can take it as the row of one
+or row of the column name and you can go ahead so that is a difference right and one another thing
+that is there is get row item okay maybe we might have not used it in the examples there is something
+called a get row item so in your data table operations you have a get row item so for example
+get row item is something that you can use it only inside a for each row okay so suppose you're
+using a for each row and inside the for each row which means you have one active row okay say
+suppose the first row is there so if you say get row item okay it will do the same information
+as you're doing an design operation so what you need to give is you need to give the data table
+row so if you have the row if you're if you're going to have the particular say if you want to take
+the column that particular thing the employee name or the vendor tax ID is in the second column
+you can give that particular column name and you are the index or the column name and you can go
+ahead and get the fetched value this will instead of you using an assign and you will be putting
+right as an STR first name is equal to row of you will be writing right row of name dot
+two strength you might be writing it like this right so instead of this you can simply specify
+the row of name so name will be the column name so you can simply go and specify the name
+and you can create an output called STR first name automatically do that okay so it will
+automatically get that particular item which is under the column called row of name so you can use
+this also this is an alternate method okay if you don't want to create here also you create variable
+here also you create variable however is a method you can go ahead and use that particular method
+okay so get row item yeah then we saw examples of excel so we saw most of the 90% of your projects
+will be coming in these kind of scenarios only where you are involved with doing data processing
+so you know the location of the data and you don't know the location of the data so when you say
+you just want to repeat the certain actions so irrespective of the location you want to repeat
+the same set of actions for all the data then you are going to use a forage so what we did we
+concatenated so the concatenation was something that we are repeating for all the data so we copied
+this and this and then we concatenated we copy this copy this and concatenate copy this copy this
+and concatenate right so here what we are doing a repetitive action is performed where this repetitive
+action is performed as an iterative action so you keep this instead of writing it for 10 times
+you are putting it inside a forage loop and you're just writing it as a looping operation so it
+take this information take this information right at here take this take this right at here
+so the iterative action is performed again and again for all the rows this was one set of data
+where you are just performing iterative action or repetitive action for all the data the next kind
+of data that we actually saw was a nested information where you have multiple shades and you're
+going to compare the data here also you do not know where the data is so which means you're
+you're taking this particular data and you're searching it here you're taking this this particular
+data and you're searching it here right that was the example we saw so you do not know the exact
+location of your data so those kind of scenarios again you're going to search or scan the data for all
+data only you're going to do the searching right so at that time also you have to use a forage now
+when you are talking about multiple workbooks or multiple work sheets then you're going to have
+how many number of sheets you have that many number of forages you're going to talk okay again
+here the catches you do not know the location of the data and you're going to scan across all the
+data whether it is one sheet or multiple sheet if you have one sheet put out one forage if you
+have multiple sheets put multiple forages so how your program will be working this will be your
+base base sheet which will be the master sheet which you're going to compare so this will be one
+forage so inside this you're going to compare here so inside this you're going to put a forage
+for this and in case you're comparing it like from here to here also you're going to put a forage
+three inside the forage one that is what we might have done so you did a sheet one forage a sheet
+two forage and then the sheet one under sheet one only you're doing a sheet three forage so based
+on what kind of operation suppose you're going to compare this with this and then this with this
+then you're going to have forage then forage two which will be inside forage one and then
+you're going to have forage three which will be inside forage two okay so based on whatever kind
+of logic you are going to have that many forages you are going to have right so here you do not know
+the location of the data and you're just going to scan across all the data and you're going to
+search those kind of scenarios you're going to have a forage and when you want to write back to
+the information you're going to have a right to right range or right cell basically then you're
+going to if you're going to have right cell then you're going to have something called
+excel counter so you will be defining the excel counter so if you want to write it in C2
+then your end excel counter is equal is equal to two so you when you are finishing your forage
+okay always before forage you write this increment okay so that you will not forget
+so when you're writing it to say right cell in C2 right so you say right cell in C2 whatever is
+your full name then what you're going to do before you finish it you're going to increment the
+excel counter is equal to end excel counter plus one so from two it will change to three okay so like
+this every time it will be incrementing and finally it will come out so the writing also will
+happen in a in a incremented manner okay so if you're writing is not happening in an incremented
+manner then you're going to go ahead and increment the excel counter just before the end of forage
+so that it will work perfectly okay now this is when you have just one sheet your incrementing
+is going to be fine okay but when you have multiple sheets okay I'm not in that okay so when you
+have multiple sheets so when you have multiple sheets what is going to happen is your increment counter
+will just be so how many times it will be comparing one will be compared with four two will be
+compared with four three will be compared with four four will be compared with four so which means
+you're incrementing it four into four so it is 16 times you're going to increment right but if
+you see you're going to write back only in the four columns that you're having or four information
+that you're having so always you increment it and again when you come out of the forage you are
+going to change it back to the actual value so you will re-initialize the value so when you're
+dealing with multiple worksheets and you're just having a limited set of data your row count will
+be just incrementing as such when you're doing the comparison okay I'm not sure if you're remembering
+so what will happen is this will be coming as row one with asha row two or in texel two then this
+will be in texel three then in texel four now this will be asha with ramesh will be in texel five which
+means it will be writing the data as c five that is not supposed to happen so then it'll be c six then
+it'll be c seven then it'll be c eight no it is not that way that we are supposed to do so what
+we'll do when it does the first time done it sir we are going to re-initialize back to two so what
+we do we re-initialize it back to two and we are going to say when it comes to asha then again it will
+start from c two c three c four c five upon again c two c three c four c five so whenever you're
+handling with multiple excel sheets you have to re-initiate otherwise it will be writing at the
+wrong indexes right so that that way you have to go ahead and write it in a different
+term i mean in the same location so you can re-initialize so when you know when you do not know the
+content of the data or the location of the data and you want to scan across all the data and you
+want to iterate operations then you go ahead and use the for each look okay now when you know
+the location of the data right so this was the second operation i said so you go ahead and say
+sheet one so suppose sheet one you're comparing with sheet two then you go and write a for each
+or sheet one a for each for sheet two this one you want to compare with sheet three then you put a
+for each inside the sheet three sheet two okay so you put a for each inside the sheet two so this
+is also based on whatever is your requirement you can go ahead and write now the third thing is
+the method one where you know the location of the data whenever you want to compare a master data
+sheet and a and a different data sheet so whenever you want to do sheet comparisons when you have a
+mobile number updated or not address updated or not you might be checking right so based on the
+checking on the comparisons you might be going and updating the information so those kind of scenarios
+what we are going to do is we are going to go ahead and compare the same column number with a different
+column okay maybe the content of the column will be different but the indexes might be the known
+indexes which means you might be comparing 10 with 70 you might be comparing 20 with 55 you might
+be comparing 10 with some other value here so which means this index also is known this index is also
+known so those times you are going to use this simply directly the row index information so you
+go ahead and say give the data table or rows of row index and the column number indexes so when
+you use this you cannot use a forage right by default if you use this particular method
+if you use this particular method then you cannot use a forage a forage can be used only
+without this particular method so don't always remember this concept you cannot use this method
+best practices you cannot use this method instead of forage so which means if you have this
+particular operation then you have to trigger your own loop so when I have to trigger my own loop
+I will be putting a while loop and say if it is a row count information if you want to say
+I want to perform this particular operation between these rows only so you can give the row count
+information if you want to say between row count is equal to 1000 and 2000 then that also you
+can define it as a condition okay so when you know the content or the location of the data
+and you are going to do it for a specific set of data so if you want to do it only for these
+query information then you can say while loop mean row count between this and this you can
+specify it here okay and you can also do an automatic row count so this is what we saw with the
+excel information so most of the excel will be falling under this criteria only whether you know
+the location of the data and you do not know the location of the data wisely you just go ahead and
+do the operations.

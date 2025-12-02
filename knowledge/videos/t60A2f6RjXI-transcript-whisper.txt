@@ -1,0 +1,1085 @@
+So once, you know, we have done the discovery phase, we have done the solution design and
+we have started development also, we have started the development of the scripts also.
+Now, clients, you know, they started asking me, they started asking me, they started
+asking us, what is the infrastructure I need, what is the infrastructure I need to set
+up the RPA, you know, infrastructure.
+So, what kind of infrastructure we need, what is the infrastructure process I need to
+select, how to install the boards, where to install the boards, how do I add up and integrate
+the process with the security requirements of the client, how do I add up and integrate
+the process with the technology requirements of the client, you know, this will be especially
+today's session is little bit tricky and difficult session.
+I need, you should have minimum understanding on the RPA process and tools, those people
+only eligible.
+If it is, if it is your first class, if you are not attended in a tool, then definitely
+it will be confusing to you.
+So, when we go to this stage, we got the project, RPA project, we have done some POCs, we selected
+the use cases, we have done the tools comparison, we have installed the tools, we have had multiple
+RPA developers, they are working on multiple POCs, now, next client question is, how these
+scripts are going to be executed in production environment, for example, I have developed
+one script in my laptop, if I resent to the company, who will execute that script,
+how you script, somewhere you have to schedule those scripts, somewhere you have to install
+those scripts, somewhere you have to deploy the scripts.
+So, how many scripts we have, how many boards we have taken, so which script is running
+from which board, what is the architecture, client server architecture, what kind of infrastructure
+we need, what is the server operating system, what is the client operating system, so where
+to install, can we install the physical server, or do we need to install any cloud environment,
+so what is virtual machine, where why we are talking about virtual machine, this kind
+of architecture and infra, I am going to talk about two points today, architecture, infrastructure,
+architecture, infrastructure, right, so and most of the interview questions that for RPA
+developer will come from today's session, so these are the questions from the client,
+what is the infrastructure I need, what is the infrastructure, process I need to select,
+let me tell you one live example, recently you know for one of the client we have selected
+some use cases, 10 use cases, we developed some 10 scripts and we said you have a client
+server architecture, so that we deploy all the scripts in client, so that you know you
+can execute from the server, so some kind of discussion we had, then first of all from
+the project team is you know tell me can we deploy all these scripts in local machine
+or not, can we deploy these scripts in local machine or not, so do we need a server
+setup, if we need server setup, do we need it, is it in VLAN or what kind of communication
+process, you know in MNC to get the access for server, to host the physical server, it
+is 90 days, talk time they need, so completely today I am going to talk about kind of an
+administrative perspective, administrative perspective of RPA, so these are the questions
+from the client, because you cannot deploy like that, you know you cannot setup a, you
+cannot setup blue grisme like that or automation away, you have to follow client security guidelines,
+so where to deploy, how to deploy, how many bots you have to deploy, what is the server
+architecture, client architecture, you can we deploy in the laptop, Windows 7, Windows 10,
+is it VM, if it is VM, how different bots will communicate, how bot to server communication,
+how bot will talk to control room, so lot of things I am going to, you know discuss,
+so now this is the, I can say the agenda, technology architecture principles, so just
+I will go with one tool, you know high level application architecture, understanding the
+production environment, so how many environments we need in RPA and environment setup, okay,
+so this kind of in depth knowledge may not require but pressures, so then 17% but for
+experienced people today class is most important for pressures least important, okay, so let
+us begin with the first question, okay, so if you if I want to set up the client server architecture
+for RPA, either for automation anyway, either for automation anyway, or for blue grisme, if you
+want to set up you know client server architecture for RPA, you are an admin, let's go with this mind
+mindset, your RPA admin, it is a separate skill, RPA admin, so what are the points you have to
+remember before going to set up RPA infrastructure, okay, so you need to understand these principles,
+if you are already from admin background, you know the session will be easy to use,
+you cannot from admin background, it will be difficult, so these are the, you know some of the
+points you need to remember, first principle is scalable, scalable, what do I mean by scalable,
+scalable means, scalable means the RPA system must be able to grow and scale to meet the performance
+goals, see, let me give you an example before going to see this definition and all, okay,
+initially we hide 5 RPA developers, each developer has
+blue grisme software, by using the blue grisme software, they developer the scripts,
+now they have 5 scripts, which are executing 5 different processes of the client,
+these 5 scripts know where we have to deploy, because already development is completed,
+we have to execute the scripts, the scripts are working, somewhere you have to deploy,
+so that, so these 5 scripts will execute a tiny bit layer monthly whatever it is, the scheduling,
+without done, so now how many scripts we have, 5 scripts, okay, each script is deployed in one bot,
+each script is deployed in one bot, so I will, I will dry a diagram, so that you will understand,
+so that you will understand, say this, I have, so this is laptop 1 or computer 1,
+this is computer 1, so let us go with this small example, I have two computers,
+so where we have deployed, your RPA software blue grisme, so any software, it can be any two,
+blue grisme, so it is executing script 1, so for me this is bot 1, so this is executing script 1,
+this is executing script 2, so for me this is bot 2, for me this is bot 2,
+okay, so bot 1, bot 2, no script 1 and script 2 we have, now this bot executing 20,
+this bot 1, 24 by 7 is executing it and it is, it is, it has automated, you know,
+daily it is running 50, 1500 tickets or applications, per day in 24 by 7, it is processing 1500
+loan applications, so that process is automated, so what is the volume, bot 1 is handling per day
+1500 tickets, bot 2 is also like this, it is a different process, it is a process 2,
+so it has automated process 1, you know, it has automated process 2, it has automated,
+it is process 1 and it is process 2 and this process 1, you know volume is 1500, this is the
+different process, it is solving some 200 tickets per day, this is the current scenario,
+now suddenly, you know, earlier for month only 1500 customers are applying the loan,
+so I have one bot which is executing the script is enough for me, now suddenly we have,
+my client is expanded the branches, they started the more branches, they got the juice volume,
+so suddenly per day my client is getting 15,000 applications,
+earlier how many applications were had, we are having 200, now my client is getting 15,000 applications,
+we are getting 15,000 applications, but same process, the process, there is no change in the process
+steps, there is no change in the process steps, no need to modify your automation script,
+the same script you can run script to only sufficient, but by already my bot 1 is busy from
+24 by 7, it is already executing throughout the day, it is handling 1500 applications,
+already it is handling 1500 applications, now suddenly increase in the volume,
+suddenly increase in the volume, so what we have to know, see, what we have to do, so question 1,
+so question 1, you know question 1, can bot 1 or can bot 1 execute 15,000 applications,
+can bot 1 execute 15,000 applications, no, because so it is not having time,
+question 2, do we need to modify the script not required, because there is no change in the process,
+so modification to script is not required, question 3, do we need additional, any additional
+implementation cost, development cost, no, no additional development cost, so there is no
+additional development cost, so there is no additional development cost, but what how to
+solve this problem, hope you try to understand the problem first, okay, so what we have to do,
+you need to take one more blow prism runtime license, in blow prism there are two type of
+clients, one is interactive client, second one is runtime client, even same thing applies to
+automation anyway, so you have two types of bots in any RPA technology, one type of bot is to
+develop the script, see in your laptops, you installed in your current computers,
+you have installed your blow prism, or automation in your UI part,
+what you people are doing, you are developing it, you are testing it, you are running it,
+you are executing it, but so at your level it is done, now it has to be deployed into the
+server, so that server will continuously execute daily or weekly, so always RPA technology,
+they comes with two types of bots, one bot you develop test and execute, other bot is only to
+execute, so that the second category, first category is called interactive client, second
+category is called runtime resource, runtime resource advanced is you cannot use it for development,
+you cannot use it for testing, but you can only use it for only execution, but they give
+you cheaper license cost, they give it with the cheaper license cost, so my point is, now
+now I want to add more bots, so one bot can handle 1500 applications, but now how many applications
+I have, 15000 applications, so how many additional bots we have to take, 10, 9 more,
+9 more additional bots we have to take, so you have paid amount to blow prism company,
+you have taken the software, so they give 9 blue prism runtime resources software, where you
+install, somewhere you have to install, so you can install, so now you need to purchase 9 laptops
+or computers and 9 blue prisms of waste, are you getting my point, so you need to purchase,
+see now I have two laptops and two computers, now I have two computers and two blue prisms of
+waste are installed, they are executing the processes, they are executing the processes,
+because of the increase in the volume, because of the increase in the volume, I need additional bot,
+not only additional bot, you need additional bot, somewhere you have to install that, so 9 more
+computers you need and 9 more bots you need, very simple topic in my email, very simple,
+so I have how many scripts I have now, two scripts, two scripts, so let us forget about this scenario,
+let us forget about this scenario, so we will talk only about this scenario,
+we will talk only about this scenario, so how many scripts I have, one, how many bots I have,
+one, in how many systems I installed, one, very simple, that is what we are doing,
+but it is not in real time, in real time my client has 10 bots, which are installing 10 computers,
+which are executing one script, in all bots how many scripts I have installed, one script,
+are 10 bots, 10 computers, 10 scripts, it can be, no see 10 bots, 10 computers, 10 scripts,
+are one bot, 10 computers, 10 bots, so when we get the complexity,
+when we get the complexity, so I have one script, which is installed in 10 bots,
+each bot is installed in one computer, which 10 computers,
+it increases your infrastructure cost, because you need to purchase 10 laptops or 10 computers,
+each computer you have to install windows 7 or above,
+each computer you have to install windows 7 or above,
+so always infrastructure setup should be easy to scalable,
+always what you have to remember infrastructure setup should be easy to scalable,
+means instead of installing these bots in 10 different computers, you do one thing,
+you have a server, one computer you call it as a server, you call it as server,
+in the server you install 10 virtual machines, one computer is a server to me now,
+in the server how many virtual machines I have, 10 virtual machines, we call it as a VM,
+10 virtual machines, in 10 each virtual machine you deploy one bot,
+so how many computers you need to purchase, one, that is going to be server,
+in the server how many VMs you are about to install, 10 each VM have a one bot,
+so have a VM image with you, suddenly trying to got 15 lakhs applications,
+now I want to add more bots, so install one more VM at bot, install one more VM at the bot,
+this is called scalability, this is called scalability, people who are not able to understand
+this concept, you will not get job in 90, I am trying my developers to simplify their statements,
+something is gap is there, so please try to understand, so what do you mean by scalability,
+not only in RPA, if you are installing any client server architecture,
+administrator of that infrastructure has to consider this point,
+point is low infrastructure cost, minimum maintenance, easy to add more clients,
+easy to add more clients, this is basic architecture principles, in any project not only in RPA,
+so always how you set up, how you install the bots, so have a server, have a computer,
+install VMs in the computer, install bots in the VM, so that no need to spend more time and money
+for infrastructure, and easy to scale up, now you treat the definition,
+I think I have not seen the online chart, we will see, this is done,
+if I increase the capacity of the my computer, like increase the processing units,
+will there be improve in the performance of the bots, see, the question is related to infrastructure,
+so question is related to infrastructure, the question is, the question is,
+for example, so one computer, how many VMs you installed, 10, if I can I install 1000 VMs
+in one computer, it depends upon the memory, RAM or disk, it depends upon the some number of parameters,
+it depends upon different parameters, so this is the question even we are facing from,
+so at least whenever we ask for a VM setup, so last week I worked on the same of exactly,
+so when we ask for a VM setup, their question is, tell me in which server you are installing the VM,
+what is the server capacity, second question is, is this server, physical server or cloud server,
+third question, if whatever it is, physical or cloud server, what is the hot disk, what is the RAM,
+and what you installing that physical server, what is the VM capacity you want,
+so all these points you have to keep in mind, we are going for RPA implementation,
+it is not just like developing the script, all your scripts has to be installed in one or multiple
+bots, your bots you have to install in one or multiple computers, so then how many see,
+to answer this question, we need to go for, let us say, one server, I have installed 10 VMs,
+if the server is not capable to handle more than 10 VMs, go for second server,
+so like this, definitely bot performance also depends upon the VM capacity, right,
+so yeah, Anku Shagarwal, hope this answers your question,
+so currently if one bot is performing 1500 applications, then by increasing the resources,
+will be bot able to complete, you know, CC, no, no, bot performance is, you cannot measure only on VM
+capacity, bot performance is different, VM capacity is different, but bot performance also depends
+upon VM capacity, it is not like, you know, if you increase the capacity of the resources,
+bot performance will be improved, what has some limitation, what has some limitation,
+so that will discuss slowly in coming chapters, coming, coming principles, you may some time,
+so let us move on to, you know, so that is why, now if you see, now any image, any, any RPA
+architecture image, this is RPA developer workstation, this is RPA developer workstation,
+you know, where, where you, you develop the strips, where you test the strips,
+these are called as interactive lines in groupism, the similar world is given in automation event,
+here, here, you see, these are the VMs, this box indicates all the VMs are in one server,
+are one computer, so that computer is installed in the VMs, each VM has a bot,
+each in each VM what we installed, one bot, if you want more bots, what you want to do,
+just add one more VM, if you have more bots, add one more VM, so how to configure VM,
+it is admin talks, don't think too much about what is VM, how it will be configured,
+that is not at all related to RPA class, you send an event to admin saying that,
+I need these many VMs, should be configured on this server, each VM capacity should be like this,
+okay, and each VM, no each VM should be installed with sponsors off way,
+or blue prism or automation, if you are, if you are, that is why you can see clear,
+this is the RPA architecture diagram, this is RPA architecture diagram, these are the interactive
+lines, where you develop the scripts, so how many interactive lines we need for one project,
+how many interactive lines we need for one project, depends upon the RPA developer,
+strength, you have five developers in your company, have five interactive lines,
+you have five blue prism developers, each developer must have a workstation, in each workstation,
+interactive plan should be installed, it is a very simple question, but how many runtime
+resources we have to install, it depends upon different parameters, that is what we discuss it in
+you know, what is difference between interactive plan can runtime resource,
+interactive plan is to develop test and execute, but runtime resource can only execute,
+these are the executing processes in, you know, real time, your production environment,
+bots, all these bots are installed in the VM, your VMs are configured in one computer,
+where you call it as a server, any confusion, what is the actual point, actually if you remember
+our discussion, the actual point is no scalability, scalability, so what is scalability, RPA systems,
+if you are not, if it is not visible to you, so I am reading the statement,
+so if you are an admin to RPA, the RPA systems must be able to grow and scale to meet performance goals
+based in the expected increasing, in the volume of the robot transactions, data volume
+and concurrency of the development, because see this year we are having 10 bots in my project,
+next year we have had 20 bots, when it is 30 bots, because we are automating different processes,
+and each process volume is increasing, right, so last year, so when we worked for one client,
+so we started with 5 bots, now we have 60 plus bots, because client is happy with the RPA
+implementation, he has the return on investment, so he is adding more and more bots, he is giving
+more and more work to us, so definitely when setting up a RPA infrastructure, you need to remember
+that in future it should be scalable, so any questions are confused on what is scalability,
+what is scalability, sometimes we need to add more bots, why we are more bots,
+because one bot may execute more processes, or one bot may execute more, more number of applications,
+that that is the reason we need to add more bots, so one bot may fail to handle,
+now all this volume, so I know it is not visible to you, so I will give you notes on this,
+first I understand the architecture principles,
+and this may not be enter you percent to RPA developer, you have to remember this
+things by going to set up a reconstruction, so first difficult part in RPA, use a selection,
+second difficult part, technical design, third one script development, fourth one scripted
+deployment with the proper architecture and infrastructure, scripted deployment with the
+proper architecture and infrastructure, okay, in a bit, fine, can I want to know next topic,
+few more questions, where we can install the control room component, control room also you can
+install in the same server, so control room also just a client application, so you can install
+and control room also in the same server, or if you want control room you can install in a different
+server, so next principle, next principle, performance, RPA system must be able to
+meet throughput and efficiency goals, you have a dramatic improvements in accuracy, see,
+while setting up the infrastructure, while setting up the infrastructure, you have to understand,
+you have to understand, you know, performance also, you have to consider performance,
+that means, which is the correct wise to see, all your VMs are in some machine, right,
+some server or machine or computer or laptop, somewhere you installed your VMs, that VM,
+VM infrastructure and that you know the server which boasted the VM, server must have the VM,
+that infrastructure also you need to consider for better performance,
+so lot of questions that one team will ask us, how many ports you install, 10 or 20,
+what is the job of the each port, how many applications each port will execute per day,
+we need to provide such data, based on that they come up with both the, okay, so go with this
+much RAM, go with this much, you know, hard disk, server capacity, so you need to consider
+and the third one will be, you know, security, see, this is the most important topic in all the
+principles, because especially banking projects, you know, any client, RPN tools are going to
+interact with the production systems and going to work on the production data, RPN tools are going
+to work with the production systems, means, so we have automated loan tracking process in SBA,
+your bot is going to get your, your original data, customer original data will be accessed
+by bot, bot is a third bot is software to bank, blue person is a third bot is software to bank,
+so definitely if you go to any sensitive clients or big dependencies, they will rise this concern,
+so yes, we are ready to implement RPA, but that RPA implementation should be
+aligned with our security standards, so each client has its, their own security standards,
+each client has their own security standards, example, example, if you go to bank of America,
+JP Morgan, that's for both, those are the banking clients, those are the banking clients,
+what they do, so what they do, they give loans, they process credit cards, they handle with
+pin numbers, so lot of, you know, sensitive data they handle, earlier, so bank employees
+used to handle their sensitive data, now some of the scenarios, we automatically buy bots,
+and bots is going to handle their sensitive data, so for just for RPA infrastructure,
+see, they have lot of so many questions on security aspect, how bot will log into my web application,
+how bot will log into my web application, from where you will install the bot, is it in banking
+server, or other than banking network, so I am not going to touch this point now, I have a
+separate one hour, today 6 to 7 I will talk only about security, just try to understand,
+so while setting up a RPA tool selection, RPA architecture design, RPA infrastructure setup,
+you have to consider scalability, performance, security, the next feature is maintainability,
+what you mean by maintainability, maintainability means, we have developed the script,
+we have deployed the script in the bot, so bot is installed in VM,
+your bot is executing now, so your bot is executing, suddenly, you know your source
+are target application modified, process is modified, in simple process is modified,
+so we need to repair the script, so we have to do some repair of the script, so suddenly,
+our process is modified, so we need to repair of the script, process can be modified, or you know,
+trying this, expecting more performance improvements to RPA scripts, so some changes,
+so if any new changes comes, your RPA infrastructure should be easy to, you know, deploy the new scripts,
+easy to deploy the new versions of the same script, that is called maintainability, script
+to modification should be easy process, the new version of the script should be deployed in
+dev environment, testing environment, you have to reproduction, production in easy way,
+support should be easy, support should be easy, so maintainability, so this is all important
+features, maintainability, change control, so what do you mean by change control, any new version
+of the script should be easy to add, easy to deploy, how we do that we will discuss,
+next availability, so availability, see availability means, let us say if you go on top of the
+client, so you can propose what is difference between human process execution, human process execution
+and RPA execution, what is the difference between, execution between human and RPA,
+generally we will tell, if it is human execution, one human can one FDA can execute 8 hours per day,
+but robot can execute 24 by 7, this is a statement with you, it is a wrong statement,
+because your bot also requires some downtime, for no refresh, for depth to load the new data,
+to deploy the new script, to deploy the new script, so always you have to propose bot an
+executive process, you know 22 hours, 223 hours of downtime is expected for a day,
+223 hours of downtime is expected for a day, so your bot may not execute 24 by 7,
+but try to see, bot should be available most of the time, may not be 24 hours,
+but it should not be less than 20 hours, only 22 hours of downtime is allowed,
+for bot refresh, so always bot should be, bot's availability is important,
+even they ask questions about disaster recovery, disaster scenario, what even the disaster scenario,
+let us say all your bots are installed in VMs, all your VMs are deployed in one computer,
+that computer is crashed, or server crash, and all the bots are executing critical processes,
+suddenly the server crash, suddenly the server crash, so then what happens,
+so while setting up infrastructure, you need to go with active scenario crisis scenario,
+so we need to have a separate infrastructure setup, so we call it as a disaster recovery,
+so we discuss the disaster recovery from 526 as part of availability, that we discuss as part of
+availability, surrounding one bot is not running, all the bots are not running,
+server crash, bot crash, internet failed you, virus on it, some virus is blocking our bots,
+not to execute, so what happens, we call it as a availability, so that is now you will discuss one
+one more, then you know, so one more principle is, so operability,
+so what kind of you know, so you can install all your bots in any virtualization technology,
+you can install by using VM web, storage, next, gen desktop, hyperb, hyperb is from Windows,
+so while configuring your VM, so go with virtualization technology, so that you know,
+if you go with this kind of thing, it is easy to scale up, so all your bots are installed in the VM,
+VM has to be configured with VM web or it is done desktop or hyperb, so this all of them,
+we call it as in admin language, we call it as a mounting software, or we call it as a
+configuration tool, it is a VM configuration, this topic is some central VM configuration,
+so these are eligible, VM web, Citrix, gen desktop, hyperb, so even I will touch this one,
+and this recoverability, so when a server crash happens, how fastly this can be recovered,
+so what is the recoverability scenario, and one more important topic is presentation layer automation,
+what will be presentation layer automation, presentation layer automation means these bots interact
+with the source and target application UI layer only, so what is the bot job, so you are writing
+script right, so you are extracting the data from excel interface, you are extracting the data
+from out loop, you are extracting the data from web loop, so you are extracting the data from
+different different user interfaces, so all these tools work on presentation layer only,
+so these are the known some of the principles, technology, architecture, principles in our team,
+at least, so write down the major points, what are the technology, architecture, principles,
+scalable, performance, security, maintainability, availability,
+operability, recoverability, presentation layer automation,
+so this class you know mainly we address this kind of points only right, so with more practical
+approach, so at least see just for time being, no need to write this description,
+at least what are the technology, architecture, principles in our team,
+scalable, performance, security, maintainability, availability, operability, recoverability,
+presentation layer automation, now, now we are going to know technology, architecture, assumptions,
+so there are also assumptions also, you know, you have to remember, you know, at your admin,
+your project, RPA admin has to remember, you know, these assumptions,
+while setting up the infrastructure, the first assumption is,
+training may be normal, always you know, training may be normal, we will run on the developer
+workstation, so you know, we should have a training may be normal for RPA, it's a new technology,
+so our our advisor new to this technology, so any kind of RPA and training can happen
+only on the developer workstation, developer workstation, set key assumption, so don't use your
+testing environment, the UIT environment, production environment for training, RPA training,
+then robot failover, failover scenario means, we have 10 bots,
+suddenly one bot is not executing, or two bots are failed, three bots are failed, you have to
+hardware crash, internet failure, whatever it is, if some number of bots are failed, if some number
+of bots are failed, it is better to have an additional 25% of additional bots, so while giving
+quotation to client, you need to remember that, let's say, actually you need 10 bots, but better
+add, you know, 25% extra to 10, so 10%, so 10% to 10%, 25% more bots, you know, you give that,
+that means, further we need to set up 14 bots, so this is one assumption,
+so virtualize the desktop, so there is an IT support model in place for virtualize the desktop,
+so because we are going to install all our software in VMs only, so your company should have
+no VM setup, our professionals who knows how to set up the VM by using different technologies,
+Windows VM is hyper VM, so Windows VM, they call it hyper slash VM, our Citrix gen desktop,
+that is from Citrix, like this there are different providers, VM providers are available in the market,
+and you know, even in RPA project, it is better to have a testing system,
+always testing environment should be available, because most of the times we see in real time,
+the steps which we develop in development, RPA developer documentation are failed in production,
+so it is better to have the no separate test system,
+and you need to do enough volume of the test data, test data volume is also important,
+unfortunately this is one of the current RPA scenario in real time, I know some companies where
+they started RPA implementation, they failed in RPA implementation, they got very negative
+feedback on the lines, because they have not tested that script with enough volume,
+they kept it with the testing with 1,2 scenarios, 1,2 samples of data, they developed directly
+in the client environment, so bought failed to execute, so always while going up to set up the
+infrastructure, so we need to load enough test data to test the script you developed,
+for example, one script you developed is copy the data from excel sheet, load into
+SAP server, or copy the data from excel sheet, load to out loop, that is what you automated,
+you tested with two records in excel sheet, it is working fine, but when it is copying one
+that records from excel sheet, it might fail, that is what I am talking, so try to understand
+the scenario, you have automated, what is the process you automated excel copy data from excel to
+out loop, you tested with two records excel and it is working very high speed, but in real time
+the scenario tested by the client in your real time copy one that records from excel sheet,
+load to out loop, it will fail, so unfortunately so many RPA developers are not testing in
+testing environment, not testing with the enough test data, not testing with the enough test data,
+okay, so then one more thing, business, application, test instance, as will be used for
+robot development, so again the same point, separate environments are important for
+level test and innovating, and robots IDs can be set up in global active directory, see if
+this robot ID, I will talk about robot ID security, so robot ID means, you know sometimes, you know
+let us say we have multiple bots, so each bot should have a login details, user ID and
+password, bot ID and password, we should be integrated to active directory, so that you know
+if it gives you better security, you will detect this point in security class, so need
+name and concurrent developer, how is estimated to be 100 total developers, you know see,
+so how we view access to users, disaster recovery, configuration management, robot operating
+uptime, so what is availability of the time, like this, no you need to, you need to
+provide some assumptions by setting up the infrastructure, so these are some kind of assumptions,
+you know we should have a testing environment, that is the robot failover, all these robots
+should be deployed in the virtual desktop, VMs, testing data should be available, separate
+environment should be available, each bot should be given with the ID, so access control,
+disaster recovery, okay, so these are the some of the key assumptions in RPA project, RPA
+administration, sir an RPA developer, go and remember all this is not required, just for
+knowledge and tell, why I am conducting all this classes again and telling, if you attend
+interview, so interview or interviewer, it should give a very good story, I have done the life cycle,
+I have done the infrastructure, then you will get job very easy, that is why I am trying to govern
+more and more points about architecture and all this topics, see assumptions know not so important,
+but key requirements, key requirements, see always assume 99.5% excluding the normal maintenance
+window, your bot should have 99.5% days of optile excluding the maintenance window,
+excluding the maintenance window, so your bot should be always running,
+except down, except maintenance, maintenance means refresh debt, new script deployment,
+and this is one key requirement, see, now we have implemented, okay, let me tell you one process,
+you know, for one of the client, one key process is automated or for one of the client,
+one key process is automated, that key process is, there is that process purposes,
+it will, you know, it will run the job, the job running will take one and a half hour time,
+and that the job will talk to multiple systems during the running, once this job is successful,
+then only, you know, so server is going to credit to employees, and that process generally runs on
+every month last day, finally day of the monthly calendar, if your job finds that company employees
+will not get the salaries, total number of employees are freelance, so we automated, earlier,
+you know, the process was some, some kind of manual process, no, we automated, see,
+we automated monitoring of the process execution by using RPA, but it is a critical process
+to business, it is a very critical process to bank, now your parts are executing it,
+but there should be a dedicated team, there should be dedicated RPA support,
+the team should be available, because due to any reason, whether it is no exception,
+or it is unknown exception, whether it is known exception, or unknown exception,
+we bought failed to execute that process, immediately bought and sent a email to the
+support team, so that support team will at least execute the plan well, for that instance,
+so later RPA developer will fix the problem, or if it is my point, it is a critical process,
+which is linked to SLE, we call in real time, linked to timeline,
+at any cost, what has to complete that process execution by January 30th, February 28th,
+kind of it, if bought failed to execute that process, at least employees has to execute it,
+so even though you automate your process, if it is based on the
+support team are required for RPA, trust me, by next year this time, at least
+millions of RPA support teams will be in IT industry, currently RPA is in POS states,
+then it will be in implementation, that then all the implemented projects requires RPA support
+to projects, again the same story, support records and all those things, so here you see the key
+requirement is, you know, if for 30% of the boards, which are critical to the business,
+24 by 7 support team is required, but 35% of the boards, which are not so critical,
+5 days per week, you know, 16 hours of support is required, two shifts, first shift and second shift,
+for, you know, there are, so not so critical, not medium, very less significant processes,
+so 5 days have been 8 hours of support is required, so in my, in my project,
+if board fails to execute any task, do any result, it will send email to support RPA support
+to team and RPA development team, RPA support to team, they will run it manually, the process
+they will do it manually, or they initiate the world, world way of doing and development
+team fix the stream, at least for next time, so what is the key requirement, all your
+boards should be 99.5% available, no, no downtime, so except maintenance, support hours,
+so even for RPA projects, we need to form a RPA support to team, third one, you know,
+integration, inventory of applications that will be accessed by robots, so your board must
+have access to all the source and target application, otherwise you are scripting or
+developing correctly, but due to access issue, your entire process may be, you know, may not complete,
+but may not complete the process, so you need to ensure the key requirement is, see,
+your board, you know, so has to interact with the 10 source systems, so your board should have
+login details of all the 10 source systems, it should be able to access data from the 10 source
+systems, that is the third point, fourth point again, security, so again I am not talking about
+security, where we work as active directory integration and all, all the boards should be
+configured in VM, so that easy to scale up on a more availability, you form what is fine,
+other boards must be able to shape the work which has to be done by the board one, which is fine,
+even that one I will talk about the availability, see, hope you understand, these are the
+points, if you are an RP admin, sir, I want to join RP admin course, I want to become RP admin,
+earlier I was like, again, admin guy, I want to become a group rhythm admin, I want to become
+automation admin admin, even without the jobs, but so as RP admin, you need to, you need to understand
+some principles, assumptions and clear requirements, so these are the theoretical part you should know,
+regarding RP admin station, so based on these points, based on these points, we will start
+the discussion about the RP architecture, so above you understand the bit picture,
+so lot of concepts you need to understand, setting up your RP infrastructure is not easy,
+last one week we are trying to set up your RP infrastructure for one of the lines,
+lot of emails were sending from admin team, security team, in my company we have admin team,
+where they set up the admin infrastructure, server, cloud server, physical server, VM configuration,
+VLAN, maintaining in the LAN, enable the port, all these things will not be admin team,
+second team is security team, second team is security team, so we have to get approval from
+the security team, otherwise you know it is not easy to install the VM, because if you see this
+diagram, so last week they raise it this person to me, from now how many VMs you want,
+two VMs, one computer you want two VMs, that they told me from now, one computer how many
+IP addresses you have, one IP address, how many VMs you are installing, two VMs, each VM will
+not get IP, so then how you put those two VMs in cable network, so this for each VM you want
+communication, right each VM should be an internet, if you want to set up the internet,
+VM is an internet unit, IP address to VM, further you go and talk to security team, they have to,
+they have to recreate the security exception, then only we can come with one computer with multiple
+VMs, like this lot of discussions, last one week we still it is undergoing, the daily have a
+discussion, the next person, okay, VM we set up, what you want to install in VM blue
+is blue prism, your own software or standard software for our company or separate software,
+no it is a third party software, again security exception, I know you have the license,
+you have purchased the license, but you cannot install the third party license like that,
+so they are proved to be blue prism, excellent, now to install blue prism in VM you need operating system
+to VM, right, so what operating system you want to install Windows 7, get the license, now you have
+Windows 7 and you have blue prism, everything is installed, but this multiple clients to talk to
+server, IIS has to install, so the most difficult part in my RPI journey I am working in RPI
+from last more than one year, the most difficult part is infrastructure, development is easy,
+use case understanding, process assessment is also easy, development is easy, deployment is
+it, testing is easy, tools selection also is easy, the difficult part in RPI is infrastructure,
+okay, how many VMs you want then install 10, excellent, then you know this server is cannot
+support it, so if you want more than this capacity, again go on talk to 1, so 10, they have only
+installed this kind of server, they can use the capacity of the server, so if you want to install
+all the VMs in physical server, you write the ticket today, up 90 days it will be approved,
+okay, you want to approve the ticket by 15 days, then go for cloud server, cloud server can be
+installed in 15 days, so lot of discussions, why the problem is there is no dedicated RPI
+admins in the market loop, it is RPI adventure, unfortunately currently RPI developers are doing
+that is a confusing, I do not know about your career part, but if you are from admin background,
+you learn blue algorithm admin course, I do not know who is offering that course, no one is offering
+that course, but you do little bit R India and blue algorithm admin, you will be having very
+bright future, very rare, in entire India I am working in one of the biggest embassy,
+my company has lot of automation developers and we have hardly 10s of admins are available,
+below 10 admins, we have 1000 hardware developers in my company, but 10 admins,
+very rare, for admin it is very easy, blue algorithm setup, server setup, all these are very
+easy for admin, anyway, okay, now slowly we will try to understand you know architecture for,
+any blue algorithm follows three-dare architecture, client server database, client server database,
+so what do you mean by client, so this is a typical simple communication blue algorithm,
+client speaks to server, server channelize the connection to database to pull the data and
+use it back to client, so what do you mean by client here, client means it can be a control room,
+it can be interactive client or it can be runtime systems, these three are the clients only,
+these are the clients only, these clients, you know, so this is easy, you know environment setup,
+I will draw one more thing, bot 1, bot 1 VM, bot 2, bot 3, we go with three bots,
+so these are installed in server 1, server 1 or machine 1, so why it is a confusion,
+if one call it as a machine 1, and here in this machine 2 you install the control room,
+you install the control room, and in machine 3 you install the database, generally database is
+a SQL server, so typical database is SQL server, so bot 1 is executing a process called extract
+the data from excel sheet, extract data from excel sheet, so when it is executing the process,
+when it is executing the process, it will talk to control room, control room interacts with the
+database server, it fetches the required data, it gives the data back to control room,
+control room gives data back to, you know, so bot 1 to complete the process execution,
+so that is why, no you call it as a three-tier architecture, multiple bots are in one machine,
+control room is in one machine, and database server is in other machine,
+sir, we are not having three computers in my company, our company is small company,
+can I install all three in one machine you can install, that is what you are doing in your laptop,
+but typically, so based on the number of bots, so you know, this is one machine 1,
+just go, don't go with client server, you will confuse, machine 1, machine 2, machine 3,
+here you have the database, you have the control room, you have the bots,
+okay, logically, these are the three different physical servers,
+this is one physical server, this is physical server 2, physical server 3,
+what is the first physical server purpose to install VMs and install bots,
+what you have, what is this control room installation, this is Gaby server,
+how communication happens, this is installation, see installation is different,
+communication is different, so installation is different, communication is different,
+how installation happens, so this is the installation for season,
+how communication happens, so bots will execute, according to the schedule,
+you have mentioned in the control room, and while executing it, it talks to control room,
+control room will send the requested to DB server, control room will send the requested to
+DB server, so this is you know tire 1, tire 2, tire 3, so clients are restricted from accessing
+the database directly, so clients can talk to control room, control room can talk to database server,
+so even you can do this complete setup even in two machines, even in two machines you can do,
+in one machine you can install the clients on, you know bots on control room,
+in other machine you can install the database servers, installation is different, communication is
+different, please don't get confused, okay, so for all your questions, I will discuss later,
+just give me some time, okay, so coming to communication pod, see what happens in
+typical clients on our architecture, whenever bots send a requested to, whenever bots send a request,
+control room, you know, will send the requested to, control room is installed in IAS machine,
+so it will send requested to IAS is a web server here, and you know from the request will be
+possible to load balancer, which is in application server, and load balancer will send,
+will get the data from the database and use it back to client, so typical three-tier architecture,
+it's a typical, so group rhythm follows, typical three-tier architecture, you see this diagram,
+see these all are my clients, these all are my clients, it is a dev client, it is an interactive
+client, so all these will send no requested to application server, all these will send requested
+to application server, application server request, this is the request from these clients,
+and it sends requested to database server, database server will execute and it gets data,
+it will give it will give back to application server, application server give back to client,
+so client will complete the process, a typical three-tier architecture, any RPA technology
+follows typical three-tier architecture, so client speaks to server, server
+channelize the collection to database to pull the data and use it back to client,
+so how many type of clients may have two clients, one is interact to client and runtime resource,
+so these two are the clients in the architecture, you can see different, you know,
+this is the infrastructure required, but we will go with this,
+some infrastructure blueprint, so see just see the diagram, so I will understand the text,
+see the diagram, a different view, a different view, see if you understand this then it is
+more easy, your blue prism runtime resources and a blue prism interactive client,
+you know, so they will send requested to application server,
+application server will send requested to database server, it sends response back to application
+server, application server will respond back to client, this is the typical three-tier architecture,
+this is interactive client, this is interactive client, this is runtime resource,
+so this is for developing the script, this is to run the script, so you draw this diagram,
+so if you want even even get this liberty from Google also, it is a typical blue prism architecture
+diagram, so typical blue prism architecture diagram, yeah, now we will start understanding one by one,
+what is interactive client, what is runtime resource, what is application server,
+what is database server, so these four components will try to understand one by one,
+you know, this, see if anyone asks you to explain any RPA architecture,
+blue prism interact to client, blue prism runtime resource, blue prism application server,
+SQL server database, virtualization technology, active directory domain controller,
+these are the six components which you have to explain and you have to draw this diagram,
+so what is blue prism interact to client, what kind of no operating system we should have,
+what is runtime resource, what is application server, what is database server,
+what is virtualization technology, so what is active directory domain controller, so
+that is my next one hour class, next one hour I am going to talk about only the components of
+RPA architecture, till now I have given introduction to RPA architecture, kind of technology
+principles, assumptions, key requirements, basic thing, now next one hour I am going to talk about
+these six components, what is interactive client, what is runtime resource, what is application
+server, what is database server, what is virtualization technology, what is active directory domain controller,
+the next session is after discussing these components, so next one hour will be security,
+security and disaster recovery of the blue prism, security and disaster recovery of the blue prism,
+so now, so let us go for a break for nearly you know, now the time is 426, go for 20 minutes break,
+after the break we will continue the discussion, see architecture and a class,
+little bit tricky, okay, so you have to be very active in the class,
+life is a challenge of opening, as a client in the server ever, so these are very very important
+points and now we are going to next one hour is the actual architecture class, first of all
+you will understand the client components, first you will understand the client components,
+blue brism, blue brism, interactive client, plus blue brism, runtime resource,
+our control room, all these three are the client components only, if it can be blue brism,
+interactive client, our runtime resource, our control room, all these three are the client's only,
+so generally what is the process, no interactive client sends requested to control room,
+runtime resource also sends request to control room, control room will try to talk to database,
+okay, see, again, say please try to understand, you know, for me you know there are three types of
+clients, there are three types of clients, you know, client one where you develop the script,
+it will talk to control room, okay, so of developing the script you can deploy in the control room,
+right, then interactive, so runtime resource which executes the process, how it executes the process
+by interacting with the control room, so logically your server will receive request only from control room,
+see, your server will receive request only from control room, because there is no
+direct correction between runtime resource and the server, there is no direct correction between
+runtime resource and the server, runtime resource interacts with control room, control room
+will send the request to database, the request, so is it clear now, so the request which is sent
+by the control room will be received by application server, who will receive the request,
+application server, so please don't get confused between control room and application server,
+which is sent request to server, so which server will receive the request,
+application server, application server receives the request from control room, this is
+only in the script, you have to understand, then there will not be any confusion,
+generally why, why, even even in real time my colleagues are also get confused, because
+they think that this is server 1, server 2, server 3, no, see, these are the server set up for
+installation, not for communication, if you have this clarity then story will be very easy,
+understand architecture, logically I have installed my clients, my servers in three components,
+three machines, for me machine 1, machine 2, machine 3, machine 1, I installed the course,
+machine 2 control room, machine 3 database, machine 3 database, now,
+which will try to talk to database control room, so now there will be control room is
+client or server client, it is a client, you install a server, say server, why we are talking about
+server, server is a physical component, server is a physical component where you install control room,
+somewhere you have to install control room, so you install control room on physical server,
+right, so control room, control room or control center, control room or control center,
+it sends request to applications server, it sends request to applications server,
+why application server required control room, see very, so for the late journey,
+say I am talking about simple topic, because this is this needs, this understanding is required,
+can runtime resource, can runtime resource try to talk to database, no,
+who will send request to database control room, so interactive client and interactive client,
+runtime environment, these are not sending request to server, so I have two components
+in architecture, there it will be very easy to understand, component one is control room,
+component two is database, I have two components, how control room sends request to database,
+it requires a medium, that medium is called application server, in your application server,
+there is a physical hardware called load balancer, there is a component called load balancer,
+what is the purpose of the load balancer, or I will give you one more very, very general example
+to understand this architecture, you open a browser, use enter google.com, your browser is
+client, your browser is client, you are sending request to server, what is the, which server
+receives request, DB server or application server, so server or application server, so these will receive
+the request, so in the same way, just you replace browser with bot or control room, you replace
+the browser with control room, control room sends request to database server, but database server
+cannot handle threats, so which will, which will component will receive application server,
+in application server, there is a concept called load balancer, which automatically receives
+the request, send the response to database, or send response back to clients, I do not know
+the complexity in this topic, very simple concept, control room interacts to app server,
+apps are our interacts to database, apps are our interacts to database, control room,
+application server, database server, no, we will discuss one by one, no multiple, no more details
+about each component, so let us start our discussion about interactive client, so what is
+interactive client, so interactive client means, no it typically requires standard windows
+desktop operating system emails, with business client applications and blockers installed,
+so who will use this interactive client, developers, rp8 developers,
+use interactive client to develop the script by automating the processors,
+so what is required, so what is required, what is required, standard windows operating system emails,
+with the business client applications and blockers installed, what you mean by business client
+applications, what you mean by business client applications, business client applications means,
+your excel, your web, your PDF, your SAP, what your automate, so all this has to be installed
+in the interactive client, okay, so used by blockers developers, in one is to one ratio,
+one group reason developer must have, one interactive client installed,
+to build a test to the process in development and test environment, use it by process controllers
+to control and monitor the runtime resources in production environment, so see you develop
+the script, so you have to deploy it to control room, so the control room can execute in runtime,
+so virtualization is can be recommended, even you know these blockers interact with client
+also can install in the VM, and this is the minimum configuration, this configuration may
+change from version to version, so now you are using version 5 point, the latest version of
+blockers in 5 point, 0 point 8 something, in my company we are using 5 point, 0 point, 0 or 1,
+I think 1, 0 point 1 we are using, so but the latest is 0 point 8 something, the recent
+version is wrong, 5 point 0 point 8 some new version is 1 8, so in there, so these are the
+configuration, minimum configuration required for your machine to install the interactive client,
+now by canceling the youngest industry RPA, this is a question now, but later you know everyone
+knows, this is not a point to do business, so these are the, you know here you can see this
+diagram, so you know control room, you know developer, see blue brism developer can develop
+this script in interactive client, you can do scheduling through control room, so if it will
+interact with, you know there will, you can see this, this line, you can see this, you know
+your blue brism interactive client has direct connectivity to automobiles, but you see this line,
+so you are automating this application, but your blue brism interactive client is not having
+direct connectivity to automobiles, it has to integrate with the, it has to interact with
+the circuits, then only interact with the application, so to automate these kind of applications,
+you need to use surface automation, where you extract the image and work on image operations,
+right, so this is an example for surface automation, so interactive client have two types of
+connectivity to automation, one is direct connectivity, other one is surface automation,
+so any questions on this point, blue brism interactive client means a software which you will
+start in your workstation, which will use for develop the strips, blue brism interactive client,
+okay, I have a question here, then I use blue brism interactive client as runtime resource,
+yes, but it is more fast, by using interactive client you can develop, you can test, you can run,
+but why you use runtime resource just to execution, so I can say runtime resource is having
+the subset of features compared to interactive client, interactive client is having more features,
+you can develop, you can test and you can run, but in runtime resource you can only execute,
+so basic point, but still I am stressing, some students may not understand it clearly,
+so can I move on to next slide, this is one component in architecture, see this is architecture
+diagram, I am talking about this component, these are the clients, why we use clients,
+develop, test, schedule, monitor, report, execute, we use these two, so when I say client means,
+client means interactive client control room runtime, these three are the clients,
+so most of the students are having confusion, control room client or serverer client,
+it is a client, but it is installed in some server, it communicates to application server,
+it communicates to application server, so any clarity you want the organism interactive client,
+any questions, so how many types of automation we can do by using interactive client,
+direct connectivity, surface automation, direct connectivity, surface automation,
+so basically control room in a very good question, the question is control room comes with interactive
+client license or it is a separate license or it comes with runtime resource, that is the question,
+in blue prison, you will get one setup means, they will view license, let us say if they if you
+buy one port in blue prison, they will give you one interactive client, one control room,
+which is back to one database, so there is no separate cost for interactive client and runtime port
+and you know control room, but in automation in a way, in automation in a way, even to initial setup
+of your RPA, you need to buy interactive client separately, runtime resource separately, control room
+supply, but in scaling them, in scaling them, so now I have initial setup, in blue prison,
+I have initial setup, I have five developers, we bought five interactive clients, which are
+integrated to one or control room, but I want more blue prison runtime resources, then you can
+scale it up, okay, see in automation in a way, each component you have to pay the money,
+so each bought each control room, you have to pay the money license, license cost will be there,
+but in in blue prison, initial setup will come if you buy one port in blue prison, one interact
+token, they will give you control room, but scaling them, but scaling them means, you know if you
+want 10 runtime resources in groupness, you need to pay each groupness in cost, each runtime
+resource cost, and one more point here, how many control see, I have no, I have 10 bots which are
+connected to control room, I have 10 bots which are connected to one control room, can I maintain
+Tauyan bots to one control room? No, it affects their performance, so logically according to
+RPS standards, one control room can see, can be one control room, can control 100 bots,
+that is the RPS standard, for example you have 200 bots, each bot is doing very simple process
+automation, even 200 bots also can be connected to one control, that is the standard, so next question
+okay, so you have 100 bots which is integrated to one control room, then one application server is in
+you have more bots, more transactions, and more control rooms, so then you need to maintain more
+than one application server, based on the number of bots, how many control rooms are required,
+how many applications are required, based on the bots, and its transaction, and its load,
+yes, because it is the client, you can connect 10 control rooms also to one
+application server, or multiple application servers, so all these are no architecture, design is
+important actually, these has to be considered, okay, so any questions are interactive client,
+then I have more to runtime resource, so this is my interactive client, so what we do with interactive
+client, develop the script, test script, run the script, monitor the script, okay, so
+what is runtime resources, here you see runtime resource, so the purpose of the runtime resource is
+you know which executes the process in real time, here you see the diagonal, no need to go in the
+text, so you see the diagonal, which executes the process, which executes the process in real time,
+okay, so it will do process execution, so it will interact with you know source and
+nonprofit applications, direct connectivity or septic selectivity, no it will receive the request,
+and it will you know it will talk to control room, control room will send a request to the
+application server, application server will send request to database server, so the runtime
+resource purpose is, for the people who are not able to see this, so this is the runtime resource
+purpose, it runs only unattended auto-maker process, again as target applications often referred
+to as the robot on a single virtual machine, in one within one VM you can install one bot,
+how many bots are required, how many runtime resources are required, how many runtime resources are
+required, based it on the number of processes you have, based on the volume of the applications you
+have, that is the first point we discussed in today's class, how many runtime resources we have,
+so can see one bot that executes 500 applications per day, in 24 hours, can we ask the same
+bot that executes 500 applications, no, targeting my point, see, you have five developers in
+your company, so five interactive clients, one control room, but how many bots I need, how many
+run, when I say bot runtime resource, how many runtime resources I need, that depends upon the
+number of processes you have automated, and no process execution time and volume, process execution
+time and volume, again I am telling, this is important point, any runtime resources license this
+for Ali, E person where you, any interact to, how to understand the difference, if you go
+or can go with the engine, I am trying my level best, sorry, if one bot is receiving only
+item, remaining what is it means, we can use for other course, yes, we will go to the
+discussion, see the concept is, no, I have one bot which is installed in one being, the bot job is
+continuously check the email, if you get the email, then copy the email, content, copy the email
+attachments to open the email attachment, copy the data to excel ship, you know, this is the job,
+this is the process, I have one bot, it has to do 24 hours the same job, it has to continuously
+do the same job, so I have one process, the process is the same process and it is installed in
+one bot, the script is installed in one bot, the bot is busy, 24 hours on the bot is busy,
+it is running throughout the day, can you use the same bot to automate to run other job,
+no, can one bot execute two processes simultaneously, no, because this RBA technology works on
+presentation layer automation, what do you mean the presentation layer automation,
+bot will exactly interact like a human to application, it is not interacting with database,
+it is not interacting with middle level, middle layer, what is bot, what is RPA, RPA bot interacts
+with any application like a human, so like a human means like FTA means open email, read,
+check for the mail, if you get the email download the attachment, copy the data, load into
+accession, that is what your bank employee is doing, so any RPA technology it works on,
+it works on presentation layer automation, so the very very important interview question
+can one bot execute two processes simultaneously, no means one bot is talking to excel sheet,
+at the same time can it up to outlook, no, it can do execution step by step, here I have a
+difference in our unit, I have one bot which has to execute one process daily morning 9 AM
+and execution time one hour, the bot work will over 10 AM, so 10 to tomorrow 9 o'clock
+the bot is free, it is not doing any, it is not assigned to execute any other process,
+I have the second bot which is overloaded today, can bot 1 execute bot 2 work that is a person,
+sometimes no, you can conflict like that but no means in your company there is a HR bot,
+there is a finance bot, today HR guy is not having any one, can you can you use him to
+process salaries, no it is not his skill, in some companies there is a restriction,
+there is department wise bots, a bot which has to execute only HR processes,
+a bot which has to execute only admin process, so even though HR department bot is free today,
+finance process bot is busy today, still you have to go for second finance bot only, you
+cannot utilize this, because this process is controlled restricted not to execute finance process,
+bot 1 is restricted from not to execute other department process, in your program settings,
+but logical answer I have 5 bots, one bot is overloaded, other bot is free,
+so your scripts can be executed by any bot, logically true,
+logically true, but there can be restrictions in real time, so all these things has to be
+considered by technical architect, while designing the architecture, how this bot has to be
+communicated to Sarmat, it depends upon the no scheduling of the process, initially it is not
+tough question, but later on, next year if you come, most of the interview persons will be on this
+point, because currently you know, currently we have, no we have taken one bot that bot is in
+order, that is executing all the processes, because we automated only 10 use cases,
+but in scenario your company has automated 1000 use cases,
+can one bot execute all the only use cases, no, then how many bots are required,
+which bot is available, it is a very good discussion list,
+hope you got me, but it is not blindly, no one bot is free, so that the bot can execute
+other process, no, sometimes there is a restriction at a bot level, bot 1 only allowed to execute
+these systems, so already we discussed this point, the next point virtualization, so this is the
+so this is the virtualization is recommended, so may able to quickly scale out and to have an
+interview environment, that is fully virtualized an environment, so already we discussed this point,
+so that you know it is better instead of installing your bot directly laptop or computer,
+it is better to install it, so on we are all VMs in one computer as it is hyperb technology.
+So, under these bots in the connectivity and access to all business applications,
+so using for development and testing, typically runtime resource has to be you know,
+typically it requires silent windows desktop operating system image with the business client
+applications and group is installed, but can installed on windows server OS, so these are some
+of the points about the runtime resources, any questions on runtime resource, can runtime
+resource directly talk to application server, no, runtime resource will talk to application server,
+no, so through control room, so these are the minimum requirements,
+so these are the minimum requirements to set up the VM,
+these are the minimum, so it is not an interview question, just like you know for non-adjumpity,
+even I cannot remember right distance, okay, so if you have any questions please let me know,
+otherwise we will move on to the next topic, that is called you know application server,
+application server, so if I have 100 plus bots, then it is better to have two control rooms,
+it is better to have two control rooms, 100 plus bots, not only even two control rooms,
+right, let us say, let us say, I have 1000 bots, tell me, so in our architecture we design like this,
+each 100 bot one application server, like that we design for 100 bots one application server,
+so how many bots we have no 1000, and how many applications are also required,
+10, in a positive scenario, but suddenly in 10 applications server, there is a chance that
+one application server may get trash, hardware failure, one application server may be
+structured due to any issue, so it is always better to maintain n plus one application servers
+to receive the request from the clients, so first one, n plus one, that means ideally unit 10,
+but it is better to put on the level of application servers, so any one application server is known,
+that work will be distributed in other current servers, it is not like that plus one is for
+download server, n application servers, what any one server is known, that server work will be
+distributed to other 10, total level, one is known, so many are available 10,
+so blue prism application server, even you can say this, so how it receives the request,
+see here you can see in this diagram, how many applications servers we have,
+two applications server one, applications server two, why, if this server fails, this is a backup,
+this is a backup, so every time when clients send a request, it will go to main server
+and backup server also, suddenly if it is down due to any no decent disaster happened in
+hurricane in the US, so one of the city banks servers are in that location,
+entire city bank operations, admin station work is happening from that location,
+so they should have a business continuity plan from Singapore or some way,
+so this is the main server, this is the backup server, so in minimum case also, worst case also,
+how many applications are also required, two, n plus one, one is minimum number two,
+one is for active, one is for backup,
+suddenly if this is the main server, this is down, how this boss will communicate to this server,
+based you have to manual connection or if you can set it as automatic process,
+it means heavier of this job, so this is a typical architecture, so this is for main scenario,
+this is for disaster scenario, okay, now let us talk about the important points of
+application server, should talk about, see, Balaji, again now you are getting confused,
+control room is one client, it is kind of a interactive client, no it is a client, control room is
+a client, which is since requested to application server, control room is a client, which is since
+requested to application server, if you want to see, you know Balaji has to see control room,
+so wait Balaji, I will show you, can you see control room here, it is a client, that is not
+empty, so fine, okay, so these are the points about the application server,
+so what is application server, so always it is better to maintain and plus one application server,
+and you know one server can service 100 clients, that means one application server can
+receive request from 100 runtime bots, via control room, via control room, if more bots are connected
+to one control room, or you know then more control rooms are sending request to application server,
+then one application server is not enough, it is better to maintain multiple parallel
+application servers, to improve the performance, to improve the performance, application servers are
+using the same queue from a single database, that means you have more than one application server,
+but one database, see, two application servers are connected to one database, so how they receive
+the, they receive the response from the database, they maintain the same queue, use this word,
+application servers using the same queue from the single database, so suddenly one application
+server is down, so other application servers are also using the same queue, then so there is no
+complaint, see this, so application servers using the same queue from the single database,
+provides point to tolerance, since if one application server is shut down,
+another application server can become the toss from the same queue, and retrieve the toss that
+have the status incomplete, this is guarantee introducing, guarantee introducing, I have 10 bots,
+10 bots are connected to application server 1, see we will go with some bigger picture,
+I have 10 bots, lemon application servers, one database, suddenly randomly one application server
+is down, but the application server is in middle of handling one toss, it is giving some response
+back to client, it is down, whenever it is down, in application server all these application servers
+are connected to same queue, if any application server is down, the jobs which are hand-in-path
+application server will be marked as a incomplete, so that other application server can complete that job,
+this is the question, guarantee goes in, application servers using the same queue from a single database
+provides point to tolerance, since if one application server shut down, another application server
+can pick up the toss from the same queue, and retrieve the toss that have a status incomplete,
+you can't see it's automatic, there is a load balance set, there is a load balance set,
+so application server configuration job, that is, in application server, how to configure
+the application server, it is a force actual, web logic, you know there are so many application
+servers, so that guy will take care of it, so application server configuration, internal talk with the
+this, so application server can be configured manually or automatically, so where we call it as a
+load balance set, they use different algorithms called round drive and algorithm,
+there are different algorithms on which server is handling on which toss,
+how the toss is allocated, see queue miss bucket, so there are different tosses,
+which server has to work on which toss, they have each application server has a some algorithms
+called round drive in kind of algorithms, so that means a way of it, so that's the internal
+configuration applications, but you got the clarity rate, control room is different,
+application server is different, control room is a client, which sends requested to,
+application server or servers, based upon the number of ports each control room is having,
+and one more point about application server, the blue prism server,
+service installed, which shields database connection, details from the connected clients,
+implements encryption and holds the scheduler, what is the purpose of it, blue prism server,
+service installed, which shields database correction, so why we are sending to, why clients are sending
+requested to application, why clients are sending request to database server, why application server,
+because security, main business security, see the blue prism server service installed, which
+shields database connection, details from the connected clients, so can any client directly
+interacts with database, no that is called three type, client app server, then database server,
+that is called three type, so this is the reason why we are sending request from clients to
+application server, then to database server,
+yeah, see she gone, second application server will continue from where first application server
+left, see just, just consider there is a queue, there is a bucket or queue, where multiple
+people working on that, suddenly one people fail to complete the job, then the job will still
+in the queue, it will remain as a incomplete, because it failed to complete it, so other three people
+will complete the job, the same concept, if application server completes the task, then it
+marks as complete, so other application server will not touch it, right, so the same concept,
+there is no other complex topic here, so if any job, see suddenly one application server is executing
+one process, it is incomplete, so why it is incomplete, server is clash, so that it will be marked as
+incomplete in the bucket, queue, we call it as a queue, server queue, so other servers will pick it,
+other servers will pick it, all incomplete jobs will be picked by other server,
+where it is left, it will continue, so hope that address you around, you will answer to your
+questions, right, so this is the purpose, why we have send, why clients are sending requests to
+application server, fine, so on your application server, you know, it is one server can handle 100
+even, see this, one application server failover can happen, basic level of failover contingency
+in case of application server failuries supported by using multiple application server, don't go
+by one application server, n plus 1, n plus 1, so what is the minimum configuration required,
+dual intel processor, if other servers are also busy while collapsing one server, how
+what will execute the task, so you need to see, that is why we are going with n plus 1,
+so we are going with n plus 1, we are not going with n server, I want one server, but I want
+another backup to n plus 1, so that is one assumption we should go while setting up the infrastructure,
+so yes, hope yes work, hope it is clear to you, so always it is better to go for additional servers,
+fine, so this is the minimum infrastructure required to set up the application server,
+4GB RAM, 200GB free disk space, this is the minimum requirement,
+see this statement, very good statement, see all these concepts trust me,
+so very few people in real time will use, because see in my project I am the RPA lead or manager
+whatever it is, so it is my responsibility to set up the infrastructure, I am working with
+30 plus team, they are not bothered about it, I am raising the request, I am talking to
+admin team, I am talking to server setup team, I am talking to security team, because it is my job
+as a lead, but I have 30 developers under me, they are coming to office, they do automation
+they need, for them they are least bothered about improv, so it is only leads job to set up the
+infrastructure, but again I am telling most of people are here to put some at least one year fake
+experience in RPA, so if you know life cycle architecture infrastructure, tools compares
+to live projects, you will get a good story, so that you can explain to interviewer, right, so
+just a second, first you understand this one, but the multiple program application servers
+using a single database, a failover, a failure in one application server,
+can automatically fail over to another application server,
+if you are not able to understand this statement, then join spoken English classes in a minute,
+it does not deal with anything with IT, okay, depending on the complexity of the robot,
+it may still require manual steps to investigate at which step the failure occurred,
+and if manual steps are needed to complete the robot task, that is why, if any client to fails,
+if any transaction, if any script fails, if any server fails, immediately RPA support
+team and RPA info team, RPA developer team will get email, to fix that problem,
+so any confusion on application server, client server communication,
+like that application server also in another server or any other these three missions,
+yes perfectly fine, now you got the point, installation is different, communication is different,
+you can install all these three in one computer, but if computer is gone, then you will
+lost everything, so you will start everything in one physical server, your bots, you will start,
+your application server, you will start your database server, all three components you will start
+in one computer, if that clash happens, then everything you will lose, so it is better to physically
+install in three missions, all clients in one server, control room in one server, and app server
+is in one DB server in another mission port, yes fine, that is why I am I am stressing one point,
+installation, communication is different, even I am not admit, even I am not expert in admit,
+I am trying my level quest to tell you infrastructure, because that is my job in my company now,
+especially last one week I am struggling like anything, they are asking different different
+puzzles, which I am not aware of it, what is Hyper-V, what is VM, what operating system you have
+to install, what is load balancer, this all are not my subject, okay, so this answers your question,
+is it automatic configuration manual?
+See, the redundancy and failover needs, the redundancy and failover needs,
+needs of the application server needs to be analyzed at the application server level,
+but also at the database server level plus the fault tolerance capabilities means,
+you know see while setting up infrastructure you have to analyze, you know how many application
+servers are required, how this has to be interacted with client, so what is the few concept,
+that is why they given the extra statement, so you may use, you know third party mechanisms,
+you have to use, so to maintain application servers are to divert, you know to interact
+and articulate one multiple client's application server, use DNS round-drawing network load balancing
+can be supported by blue prism application servers to offer automatic failover capabilities,
+so if you want to learn what is DNS round-drawing and network load balancer because it works
+with J boss, Tomcat courses, so these are the internal algorithm supported by blue prism application
+server, not only blue prism, just for name, I am talking about blue prism, any server,
+see this, this is also a very good point, for example, you have 100 bots, each bot is executing
+one process, each process is very critical to the business like, you know a very critical process,
+if that bot phase, the server phase, the business is gone, very important to client,
+like running any critical system like, you know, aeroplane or related softwares are kind of
+very critical business, it has to be treated like any cost, so then the redundancy and failover
+features, how many additional servers are required to set up, it depends upon the critical robots
+there and the criticality of their associated process, based on that even you can maintain
+n plus 2 application servers, n plus 2 application servers also can maintain,
+that depends upon the criticality of the business and budget you have, it is the perfect
+reason, so, couple of any, any person on that voting, so far nothing,
+run, run, run, so there is no complexity here, bots are integrated to application server,
+our application servers we have to maintain, that depends upon the what are the parameters,
+how many critical bots you have and depends upon the associated criticality of their associated
+business process, so this is called high availability, if you have more application servers,
+then server town time will be 0, if you remember principles availability,
+scalability, security, these are all the principles, so can I mount other component,
+so clear, is it clear, see, what you mean by client, control room, see, control room is connected
+to, finally, who is exhibiting the process bots, how they are exhibiting, they communicate
+to control room, control room communicate to server, server means application server, it will send
+to database, so if you are clear with the application server, I will move on to fourth topic
+called database server, the next component, database server,
+so this is database server, you know here you can see database server or data center,
+you call it as a data center or database server, whatever it is,
+so we will let you point the server,
+the blue algorithm, you know database is a central repository, which holds process definitions
+and audit information, as well as configuration data, such as anywhere on a wide spectrum sentence,
+you know in blue prism, everything will be stored in database, including your blue prism code,
+XML, including code, in automation everywhere, code can be integrated to SVN,
+but user information, data, all that, no process data, so example, example,
+first of all, you know first you try to log into no control room or any client, see who will
+validate, so once you click on client and try to enter some, you will try to enter some user
+ID password, so try to log into control room or try to enter some user ID or password,
+when you try to enter user ID and password, if you are authenticated then only you are allowed to
+log in, so how it is authenticating, how it is authenticating, so you enter some user ID
+and password, it will match this information to database, but you should have, so your user
+details in the database, how you log into source application, source application is Gmail,
+so Gmail log in details will be stored in the database, so any data,
+so in blue prism, even the code is also directly stored in the database, in blue prism everything
+is integrated to database only, entire XML files also will be in database, so the point is very
+clear, so what is the purpose of the database server, so blue prism database is a central repository,
+which holds process definition, all ever process information, any data and audit information,
+login details, configuration of the data, such as environment-wide systems settings,
+so all this data will be stored in the database server, database server, so database server,
+database performance and capacity can be easily scaled up, so you can add it, so the database
+is specific to blue prism environment and therefore within an organization there may be a requirement
+to host number of databases based on the number of independent production environments,
+this is important point, okay, I have two projects for HSBC, project one is auto-mitting the
+loan process, project two is auto-mitting some other finance process, so automatic loan process
+and auto-mitting the finance process, I have two different different projects altogether,
+so you can set up, you know, you can set up different, you know, database servers,
+so complete environment set up can be different, so only to maintain one data center for all
+blue prism types, so you may set up multiple environments, so this is one classification,
+other one, I have one other scenario, scenario is, I have only one project, but dev environment,
+extra environment, UI dev environment, production environment, all these four environments
+need database, for all those four environments you can integrate to one database server,
+where database server can be partitioned into different regions, dev environment database,
+so there can be partitioned into different regions, so can we maintain multiple database servers,
+yes, because you have two different projects in our company, you have created two different database
+servers, but can we need multiple database servers, can we need multiple database servers,
+for one project not required, testing also can be configured, so only then database has to be
+partitioned into different regions, so generally blue prism or any RPA tools, they are built on
+SQL server database, so close proximity of the SQL server to blue prism application server,
+another blue prism resources, so what is the size, no capacity required for the database server,
+you can see here, so we will try to understand important points, for example, for example,
+database, data center itself is crashed, then see in this diagram how many data servers you have,
+it is also installed in one computer, right, so if it crashes,
+then can any port can run, can we run any port, no, so again, so to address this point,
+we have, this is the scenario, so where we call it as, these are the developer clients,
+they are interactive client control room, okay, so these are the runtime resources,
+integrated to multiple application servers, and even each application server can be integrated to
+show you one more diagram, see, see this is your main scenario, this is your disaster recovery,
+that means in my, in my project we are maintaining two database servers, each request will pass through
+two database servers, but one will be in main front, and I mean one is main active scenario,
+other one is the backup, we suddenly main data center down, then we can, on this spot,
+we can directly connect to, the other one because it is an Italy of,
+Italy of the main data center every second, it is a every second replica,
+so each request will pass through two data centers,
+so it is just an Italy cover, right, so this is the scenario you have to explain,
+so this is the high availability and disaster recovery scenario,
+high availability and disaster recovery scenario,
+so this is the main scenario, even in the main scenario itself,
+if any application server crash happens, it was an additional server,
+so the entire post down, data center is down,
+so this is the production environment, if you are working on a critical process automation,
+critical RPA project, this is the scenario you have to propose to connect,
+like this they have to set up the infrastructure,
+a critical banking project, if you want to decide to RPA implementation,
+so I really do relate this, it is a costly process, additional infrastructure,
+if this goes down, if this goes down, then you know the backup, if this is down,
+if this entire setup is wrong, so this is the business continuity plan,
+so this is the infrastructure server, you have to propose to clients,
+really persons, this should be the production environment,
+so these are all the parts which are executing, so if any work is fine,
+then these bots will additional bots, this entire story is down, this is the disaster scenario,
+disaster recovery scenario, so I want the setup which should work 24 by 7,
+always my bots should continuously executing, no down 10, but it is a costly process,
+and this is not a new topic in RPA, this is a typical topic in administration,
+gaining project infrastructure, yes, now we discussed about the power movements,
+so open to discussion, then I will move on to the next topic called security,
+which is very very important in RPA, so RPA and security, so this is what I am interested in,
+so security, connectivity, so there are some points in, I want, I carried some time,
+at least half an hour to 45 minutes time I need, so in terms of infrastructure and mainly security
+topic I want to cover, with this you will understand the architecture part, no, so any
+questions on these four components, in RPA administration, so any questions on the
+RPA administration, so you understand you know DB component, so if you have more than 100 robots,
+so we maintain two different applications server, but these two applications are also
+collected to one common database server, can we install client, our applications are
+in same machine, yes you can install but not recommend them, if you have more than 100 robots
+then what should be the infrastructure, so this is the internal process,
+so we discussed about all these components, all the 100 robots work at the same time, yes,
+not 24 by 7, 3 hours down time, so see, our 100 robots can execute different processes,
+but one robot cannot execute more than one process at a time,
+can we learn 15 processes from plate same plate in parallel, no,
+can we learn 15 processes from same plate, no, more than one process, no,
+but only there is exception in mind frames, so because see why we cannot execute more than one
+process from one robot, because all these bots work on UI thread,
+all these bots work on UI thread, the exception is sometimes it is executing old mind frames,
+so you can keep and ask your bot to execute two processes also, that is only exceptions are you,
+generally can one bot, can we learn more than one process from the same plate in parallel,
+this is the question, they are not the interview question, can we learn more than one process
+from same kind in the in parallel, no, so surface talenters will talk about that,
+these are the architecture components we are discussing, so these topics are, this topic is
+spending active directory domain controller, auto login agent, security, this topics I am
+going to cover, but basic components but is specifically what is interactive line,
+what is runtime resource, what is application server, so what are the cloud requirements,
+you know for RPA full cloud no problem, but hybrid cloud is a problem, so entire infrastructure
+either you have to maintain in cloud or you have to maintain in the local, don't go into hybrid
+cloud, that means 10 patients are in edu, 10 patients are in other cloud is not
+go with one cloud setup, so this is the database, so what is the size of the database server,
+so what is size of the database server, size of the database server based on the transaction law,
+transaction law, so how much time if we have taken to store the process data, so transaction law,
+so if you have already used transaction law then it is go for more database servers,
+I mean it is the size of the database server, so while robot types are installed in virtual
+machine, is this capability and is in maintainability, I want to create 10,000 robots, do I need 10,000
+laptops to install, no go for virtualization, that is called virtualization technology,
+VM, so VDA or VM, so active directory, controller, security, this drop itself,
+so how RPA tools ensures the security, I need some time,
+this points also with this, see this document we are giving as a material to you,
+so this is the material I have prepared RPA administration, so this material we are giving
+as a material to you, so for online students we will upload in our website or some way you can
+browse it, I cannot send a software, you will say I am not, see this technologist will continuously
+change and even I know I will change continuously, I will upgrade my knowledge of continuously,
+but the problem will be in time, so whenever we send this software is some students are
+misusing it, so we have some bad experiences earlier, in 2012 when I started this
+industry with agile methodology, I have prepared excellent material for agile methodology,
+and the agile methodology is one selling point to 40 thought because of agile so many
+students joined in 40 thought, some of the students who learnt agile from me, they started
+teaching other institutes, and they are using my material, but they are telling to same thing to me,
+this are only material worth knowing, you are taught,
+so I do not know, I see, I am okay with that, but still, see RPA or DevOps are any automation
+to continuously evolve once in a while, it is not a static topic, any automation tool.

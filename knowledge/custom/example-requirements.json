@@ -1,0 +1,37 @@
+{
+  "projectName": "Invoice Processing Automation",
+  "businessProblem": "Manual processing of 500+ invoices per day takes 10 FTE hours and has 15% error rate. Need automated solution to reduce processing time by 80% and errors to < 2%.",
+  "goals": [
+    "Reduce invoice processing time from 10 hours to 2 hours per day",
+    "Decrease error rate from 15% to < 2%",
+    "Enable real-time invoice status tracking",
+    "Integrate with existing SAP and Salesforce systems"
+  ],
+  "systems": [
+    {
+      "name": "Email Gateway",
+      "type": "Input System",
+      "role": "Receives invoices via email attachments (PDF, XML)"
+    },
+    {
+      "name": "Document Understanding",
+      "type": "UiPath Component",
+      "role": "Extracts invoice data using ML models and OCR"
+    },
+    {
+      "name": "SAP ERP",
+      "type": "Target System",
+      "role": "Stores validated invoice data and triggers payment"
+    },
+    {
+      "name": "Salesforce",
+      "type": "CRM System",
+      "role": "Updates customer records with invoice status"
+    }
+  ],
+  "processType": "unattended",
+  "volumes": {
+    "itemsPerDay": 500,
+    "peakLoad": 800
+  }
+}

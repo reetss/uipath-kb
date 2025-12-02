@@ -1,0 +1,75 @@
+In this series, we are discussing about the best practices we can follow while writing
+a code in RPA UI path.
+And today I am going to talk about the documentation.
+We are going to speak that what are the best practices we can follow when we are documenting
+our code in robotics process automation project.
+First of all, it is important to understand what exactly is documentation and why do we
+need it.
+So documentation is an important aspect in any of the software development including
+the RPA.
+It simply refers to creating a document where you document everything.
+You put some screenshots, images.
+The idea is to have a single place where I want to know everything about the product.
+I can simply refer to that documentation.
+This document can be used by the other developers to understand your code.
+It can be used to troubleshoot the issues.
+It can be used whenever you have some enhancements or some modifications which are coming that
+where to fix what.
+So this is why documentation is important.
+When we talk about the best practices, the first one is that you should use clear and
+concise language.
+Whenever I am writing something, it should be in a simple words.
+Avoid using the technical jargons, avoid using the hard words, stuff words or the things
+which the others cannot understand.
+The idea is to make it simple so that anybody who is reading the document understand that
+what you wanted to convey.
+So use clear and concise language.
+The next thing is includes comments in your code.
+This is also a part of your documentation.
+Whenever we are writing code in UI path, we create a lot of workflow.
+We create a lot of variables, we write a big logic.
+But I am writing the logic, so I understand what I am doing.
+But if some other developer has to revisit the code or if somebody else has to revisit the
+code for troubleshooting, how would they know?
+So it is the best practice to include comments in your code.
+It can be at the top of your workflow.
+It can be in a form of annotation.
+But the idea is you should have comments that should explain what your code is doing, why
+it was needed and how does the code works.
+The next is use diagram and flow chart.
+Whenever we are explaining a process, it is better to put it in some illustration, in some
+diagrams, in some flow chart.
+The visual actually helps the developer to understand the flow and then get more insights.
+Along with writing all the details, it would be good if we can simply put some diagrams
+and some flow charts.
+The next thing is create a user manual.
+Once your automation has been completed, you have developed it, deployed it completely.
+If somebody has to use that automation, if somebody has to use that product, how would
+they know that what is required?
+That is where you have to create something which is called manual.
+It will require details such as how do you install it, how do you configure it, what are
+the software required, what are the different versions required, what do I do in case there
+is some exception, what should I do in case I am getting this error, create a user manual.
+It would be mostly for the end user, when I say end user, it is your business.
+For example, what is the business supposed to do when it gets a business exception?
+How would they know whether they have to raise a support ticket, whether they have to
+reach to the developer, whether they have to go to our administrator or anything.
+You have to create a user manual where you explain about the RPA solution.
+The last and the important, it is not a one time job.
+Once you have created the documentation, it is a responsibility to update the document
+with the latest and the relevant information.
+It is not a one time job, whenever there is some enhancement which is happening, whenever
+there are some modifications, some changes, all of that has to be documented accordingly.
+Not only this, let's say when we are running the process during the hypercare, when
+we are running the process with the business, anytime there are some business exception
+occurring which are unexpected and what you did to solve them or what the business did
+to solve them, all of that has to be documented.
+So the simple idea of having a documentation is that, whenever I get some issues, some
+errors, some exception and I want to know how does the product work, what is the code,
+how to mitigate it, I should get all these details.
+Not only this, if the developers are moved to some different project, then when the new
+developers are on boarded, you would always require something to give them to read so
+that they can understand, that is where your documentation will helpful.
+So the best practice for today was that please create the documentation for your project.
+The complete playlist for the best practices which can follow as a developer in UI path
+is available in the link or in the bio, thank you for watching and happy automation.

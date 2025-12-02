@@ -1,0 +1,20 @@
+{
+  "name": "REFramework Best Practices",
+  "category": "technical",
+  "problem": "Many developers struggle with properly implementing and customizing the Robotic Enterprise Framework (REFramework) for their automation projects, leading to inefficient error handling, poor logging, and difficult maintenance.",
+  "motivation": "Understanding REFramework best practices enables developers to build robust, scalable, and maintainable automation solutions that follow industry standards and can handle production workloads reliably.",
+  "components": [
+    "Config Management",
+    "Exception Handling",
+    "Transaction Processing",
+    "Logging & Reporting",
+    "State Machine Design"
+  ],
+  "tags": [
+    "reframework",
+    "best-practices",
+    "architecture",
+    "error-handling",
+    "enterprise"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-12-02T18:23:23.656011",
+  "source": "r/UiPath",
+  "categories": {
+    "common_problems": [
+      {
+        "title": "API Call Management",
+        "problem": "Multiple HTTP requests (10+) with try-catch blocks are hard to read and maintain",
+        "sentiment": "Frustration with RPA approach vs traditional SWE",
+        "votes": 3,
+        "comments": 4
+      },
+      {
+        "title": "AS400 Legacy Integration",
+        "problem": "Need to integrate AS400 inventory data with modern CRM systems",
+        "question": "Developer needed or Business Analyst capable?",
+        "votes": 4,
+        "comments": 9
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Agentic Automation Associate Certification",
+        "question": "Study resources beyond UiPath Academy",
+        "votes": 5,
+        "comments": 8
+      }
+    ],
+    "best_practices": [],
+    "tools_and_features": []
+  },
+  "trending_topics": [
+    "API integration challenges",
+    "Legacy system automation (AS400)",
+    "Certification preparation",
+    "Code readability and maintainability"
+  ]
+}

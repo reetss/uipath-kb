@@ -1,0 +1,453 @@
+All right. Thank you, everyone for joining. My name is Craig Jacobson. For those that don't know me, I'm, I leave the UI path Chicago chapter. I work at productivity as a manager in our intelligent process automation practice.
+And part of what I do is solution architect code reviews stuff like that. So, you know, when it comes to, you know, solution architecture, best practices, all of that.
+I mean, it's probably the less exciting, but more important topics that I'm, I'm a huge proponent of, right. You got to walk before you can run. And
+with all of the new features that you have that's coming out with because it feels like every day there's a new feature. It's easy to get distracted with, you know, playing around with the new features and lose kind of the fundamentals.
+That's why, you know, when I do code reviews or, you know, just helping somebody with their code even something as simple as using the right click menu instead of keyboard shortcuts.
+I'll call it out because, you know, these little things they start to add up. And if you can stick to the best practices, it'll like increase your productivity and save you headaches later down the road. So, so that's my quick spiel and why I'm very excited to introduce Ian, if you want to take it from that.
+No, sounds great. I appreciate great. Thanks for the opportunity to join everybody here today. So I'll start with a little background about myself as well. And then I will get into some of the content shortly thereafter that so.
+So yeah, to get things started. My name is Ian Wycline. I'm actually a senior trainer here within UIPAS partner enablement division. Definitely most excited to be here. Hopefully each of you are as well.
+So I'm an experienced IT professional over 20 plus years in the industry, IT industry.
+In addition to my daytime role here at UIPAS actually serve as an adjunct professor specializing in computer science information technology.
+As well as business management here to handful the universities here in the St. Louis, Missouri area where my home location is at.
+I have a additional university back in my home hometown halfway back to Chicago, Decatur, Illinois, where I was born and raised to actually teach a adjunct class at milk and university located there.
+So long story short, that's a say my deep rooted passion lies in imparting knowledge and others witnessing people enhance their understanding within a given specific top of our domain as well.
+So that said, it's definitely a pleasure to have had the opportunity to guide each of you through our content here today.
+So a little bit about more just my professional career. I've got an extensive background primarily focused and software development to date myself a little bit.
+I actually started my my career out on the mainframe way back in the day.
+And as the career progressed, I started started to get into a lot of the more modern day web developments, technologies and solutions as well as a handful of various data analytics roles as well.
+Guys, I got to the point in my career, I was burned out, you know, I lost the excitement, the passion, the enthusiasm I once had for the IT industry and fortunately a few years ago along came an opportunity to begin exploring the development.
+Because you'll hear me oftentimes say the training of UI path based robots. So soon as that moment hit, you know, the experience revitalized my excitement, the passion for the IT industry, obviously leading me to where I'm at present day today.
+So prior to my employment at UI path, I actually held a position of a lead automation engineer or the large Catholic hospital systems here within the St. Louis metropolitan area.
+And my role there as actually accountable for the development of numerous UI path based automations took charge of solution architecture and design for many more UI path based automations.
+In addition to the design development work solution architecture work that I was doing, I also had the honor and privilege of designing and subsequently delivering a comprehensive five day training program specifically tailored to educating the new citizen developers in our departments.
+The revenue financial financial analysts and even doctors and nurses how to build their first production based grade automation. So guys, I share all that to say that I'm drawn my from the extensive professional experiences, especially the last several years wrapped in and around the UI path based technologies over the last several years, trying to again share a lot of those professional experiences insights and knowledge with each of you on our call today.
+That all said let's go ahead and kick things off and get things started. So so today we're going to specifically cover several different topics as it pertains to all things you have past solution architecture.
+So we'll start out by really just introducing you know what are we talking about from a solution architecture point of view.
+You know really that you know comprehensive structure approach for again implementing you know the RPA projects obviously utilizing the UI path platforms so you know hopefully it's true to say you know we're definitely in a rapidly evolving landscape right now obviously more normal organizations you increasingly turning to RPA and
+selfish plug for UI path here and obviously the whole goal behind it they're trying to streamline the business process is trying to gain that competitive edge and advantage in respective industries.
+So you know that said obviously trying to ensure the success and scalability of automation solutions, you know it's crucial that we have a well defined architecture in place.
+So you know UI path solution architecture just kind of getting a baseline to it you know this idea of it being an invaluable resource for organizations that are embarking on RPA projects.
+You know trying to enable you know the different organizations to establish that strong foundation being able to design scalable solutions be able to streamline.
+You know the development testing you know will sustain automation initiatives effectively and then you know by following that structured approach trying to maximize the benefits RPA and ultimately trying to drive that transformative change throughout the different business operations.
+And once we kind of get that baseline understanding out of the way we'll really dive into more of a focused in depth conversation in the concept that we refer to as the sixth stages of an RPA project and to kind of break these out at kind of a broad high level now we'll get deeper into each of these here in just a couple of moments.
+The enable stage the whole idea of trying to set the stage or the foundation for our successful arcade project and arcade projects.
+You know down the road you know what are some of the key activities in the stage you know trying to identify processes that are suitable for automation you know trying to assess you know organizational readiness and ultimately trying to set up the actual UI path platform the actual technical platform.
+Starts to become some of the conversational points that will be into in the enable stage.
+Well also get into talking about you know just some of the importance you know trying to you know the importance of a lining automation objectives with business goals.
+And obviously trying to obtain the necessary buy-in from all the different stakeholders must be some of the things that will get into talking about specifically into the enable stage.
+From a preparation stage you know point of view think about the detailed analysis and some of the initial planning that needs to go on you know towards the RPA projects.
+You know starting to think about you know gathering of the different requirements document the current state of the process you know identifying opportunities you know we might potentially be able to improve existing.
+You know processes you know that the key here trying to you know understand and emphasize the significance of you know scoping out a project doing the project estimation you know bringing in the resources in the thought you know ultimately trying to define what success ultimate looks like for a successful project implementation down the road.
+Then we'll get into the design stage you know ultimately where the project team starts to create the automation solution albeit it kind of a conceptual level at this point but starting to draw that vision you know what's that actual solution going to look like.
+You know starting to think about what the individual process workloads the individuals and files in our world might start to look like.
+You know what are some of the user inner you know inner interface interactions ultimately going to start looking like as well as obviously starting to get into thinking about what are those data inputs and data outputs all different types of things that we'll get into in the design stage.
+One other thing that we need to also start thinking about when we start talking about the design stages thinking about exceptions what you know what that exception handling is going to start looking like you know the air processing air management.
+You know what about some of the security requirements as well these are all things that we'll get into talking about when we start getting deeper into our conversation in and around the design stage.
+The build stage where the actual development of our automation takes place you know we'll start talking about you know what that means to the project team you know as it specifically utilizes the bypass platform ultimately trying to implement those design workflows back from our design stage.
+You know what's that development actually look like in all the lives that's needed to go with it.
+So a little bit of what you know Greg was alluding to you know starting to think about those best practices you know what you know think about all the different modules that we're going to develop the reusability of all the different components and workflows that we might have as well as the maintainability.
+You know for being able to create that robust automation solution so we'll get into some deeper dives and conversations in around the build stage accordingly when we get there in a few moments.
+The test stage you know ultimately that you know quality assurance stage you know are the is the solutions that we've engineered and design you know is the functionality you'll meet expectation.
+You know think about all the different testing techniques that are ultimately going to be employed we'll get into talking about some unit testing and integration testing and probably more important the most important of all when we get into the test stage the user acceptance testing.
+That goes on into that particular stage you know ultimately trying to validate the expected outcomes addressing any of the defects or problem their issues that might be there prior to going into production which takes us to the final stage the sustained stage.
+Again focused here on the deployment of the automation solution again ensuring that it's you know ongoing you know the it's supported appropriately it's meeting the expectations you know as we finally roll into a production on the state.
+Today six months from now a year from now you know so we'll get into talking about you know some of the different needs from a training perspective you know training the different end users with the change management.
+That goes along with dropping in a with an automation solution you know all the different support documentation that's ultimately going to be needed as well as all the different monitoring mechanisms techniques that need to go into and apply.
+Once we deploy our solutions in a production and definitely we'll get into talking about you know that ongoing maintenance here we talk about that six months year from now 18 months two years down the road you know how do we handle those updates you know manage all the different exceptions that will eventually some look for us.
+And then ultimately the be all end all trying to optimize you know the overall solution performance on the backend side so.
+Any initial comments thoughts questions concerned with kind of what we've outlined is kind of the road map for conversations today.
+Everybody okay.
+Just quiet and if you don't want to speak up on microphone you can always put any questions you have in the chat as well.
+All right so it's going to baseline and then we'll dive into the stages in more depth and detail so again you have past solution architecture crucial aspect you know that organizations got to consider when they get into implementing automation projects.
+And encompassing the design the structure the integration all the different components you know ultimately trying to create that efficient scalable automation solution or should say solutions.
+The key here focusing on developing a well thought out solution architecture organizations will hopefully build a derived numerous benefits from the U.I. path based implementations you know the significance of solution architecture lies in the ability.
+To enable successful automation implementations the design ultimately be able to design efficient scalable solutions ensuring the maintainability the security the compliance trying to drive operational excellence and obviously ultimately the digital transformation that many organizations are seeking to attain today.
+So to break this down a little bit further you know focusing on a handful of ideas or concepts here this whole idea of enabling successful automation implementations you know the U.I. path solution architecture trying to play that pivotal role.
+And ensuring the success of automation projects trying to provide that strategic framework all the guiding principles trying to set that foundation for the entire automation journey.
+Well the fine solution architecture is going to help the organization plan organize and executes their automation initiatives effectively.
+Ultimately trying to align the automation objectives with business goals trying to identify those potential risks challenges and ultimately outlines you know outlining the necessary steps to overcome all those challenges.
+Our goal is to try to be proactive you know coming up with this proactive approach trying to minimize the chances you know that a project might fail trying to increase the likelihood of achieving the desired outcomes.
+Giving in the designing efficient and scalable automation solutions so efficiency and scalability or critical factors for automation solutions.
+You know U.I. path solution architecture trying to enable organizations to design automation solutions that are optimized for performance and resource utilization.
+You know leveraging best practices the different design patterns you know modular approaches.
+You know the architecture trying to ensure that automation components can be reused across multiple processes.
+You know the idea of reusability not only saving developmental efforts, but also trying to promote consistency standardization trying to lead to an improved overall efficiency.
+Additionally the architecture incorporating you know the scalability considerations allowing organizations to seamlessly expand their automation initiatives as the demand of the platform ultimately grows.
+You know try to ensure maintainability security and compliance.
+Huge huge factors that you need to take into consideration in your automation projects.
+And the whole idea of solution architecture trying to emphasize these aspects to create those robust reliable automation solutions.
+All about trying to promote the use of standardized practices coding conventions and you know the ultimate documentation that goes into it all trying to make it easier for developers administrators to maintain.
+And an ultimately enhance the solutions over a period of time you know the whole idea of the architecture trying to incorporate the security measures.
+You know all the different access controls that are out there encryption security data handling.
+You know trying to predict you know protect sensitive information.
+You know prevent the unauthorized access to you know parties that should not otherwise have access to that sensitive content or information.
+You know furthermore getting into some of the compliance requirements you know some of the data privacy regulations that are out there different industry standards, obviously depending on the industry that you might be working within.
+You know ultimately trying to integrate all that into the architecture and ultimately ensuring the adherence.
+You know and being able to mitigate potential risk accordingly.
+Second to last driving operational excellence.
+The whole idea of you know you have past solution architecture trying to contribute to that driving of operational excellence within an organization trying to streamline and automate repetitive type of tasks rule based tasks.
+You know ultimately the automation solutions built on the idea of a solid architecture trying to enable employees to focus on the value added activities and the strategic initiatives of the organization.
+All about trying to enhance productivity reducing the human air improving the overall operational efficiency of the organization.
+You know the whole idea that architecture behind is trying to facilitate that process optimization you know providing insights into the different bottlenecks the inefficiencies as well as the opportunities for potential process improvements.
+You know organizations ultimately trying to leverage all these insights to optimize the workflows enhance customer experiences and be all and all achieve the cost savings that are desired.
+And finally achieving digital transformation goals.
+Hopefully it's true story everybody could probably agree in today's digital era organizations are striving for digital transformation trying to remain competitive and be able to adapt to be evolving market dynamics.
+You have past solution architecture is really trying to act as an enabler for the digital transformation initiatives that are out there trying to leverage you have past automation capabilities with any well designed architecture.
+Organizations hopefully have the ability then to build automate the end to end business processes integrating the spirit systems enabling that data driven decision making that's needed ultimately trying to empower organizations to unlock new efficiencies accelerate the innovation.
+Delivering in the enhanced customer experiences.
+The architecture being you know that that pillar behind it ensuring that all automation solutions are again are aligned with that broader digital transformation strategy trying to foster that culture of continuous improvement innovation accordingly.
+So to kind of recap you know you have past solution architecture essential component for the successful implementation automation projects trying to provide that necessary framework to design efficient scalable adaptable automation solutions while ensuring maintainability security and compliance.
+So by investing in a well designed solution architecture organizations can maximize the benefits.
+Of you I pass automation capabilities driving that operational excellence and ultimately achieving their digital transformation goals.
+Any questions thoughts comments here guys.
+So the six stages let's start to get into kind of broad maybe 5,000 we did 10,000 put you let's get 5,000 put you and then we'll dive into kind of the 2500 foot to ground level view of each individual stage here next so kind of an easy way to break down solution architecture is to look at the six stages really trying to provide that structural approach to implementing an RPA organization and environment.
+Ensuring again that organizations can effectively identify design build and maintain automated processes in order to drive operational efficiency and productivity.
+So first and foremost you have past solution architecture trying to enable organizations to design automation solutions that are efficient scalable and adaptable.
+So by carefully considering the processes that are suitable for automation and assessing the organizational readiness the enable stage is all about setting that foundation for a successful project and really projects.
+You know the stage here trying to help identify the right automation opportunities and be able to provide or prioritize them based on their impact and their ultimate feasibility at that points.
+The preparation stage talking about conducting a detailed analysis of the selected processes trying to gather all the requirements you know this particular stage is really trying to align the business goals with automation objectives trying to ensure the projects scope the resources and success criteria are all clearly defined.
+So by investing time and thorough preparation the idea here being that organizations can set realistic expectations ultimately trying to avoid potential pitfalls during the implementation phase.
+Moving into the design stage the design stage is crucial for creating an optimal automation solution ultimately involving the designing of the actual process workflows.
+You know the user interface interactions the data ends the data outs of our animations so by considering all the aspects you know thinking of air you know air and exception handling air management you know security requirements the idea here being that organizations can ensure that automation solutions are developed and design as robust as possible and obviously in an alignment with the specific needs that have been put forth.
+The build stage you know this is where we actually bring the UI path UI path platform and begin to implement the actual design workflows and the actual business logic at hand the actual solutions.
+You know configuring the activities creating the actual automation sequences all of our workflows and ultimately then that integration with all the different external systems and or applications that we're ultimately trying to automate up and against.
+You know the key here trying to adhere to the best practices as Greg alluded to at the very beginning of our call today.
+You know thinking about the different modules the idea reuse ability again the maintainability that comes along with it trying to ensure that that automation solutions well structured.
+You know easier to manage easier to maintain and enhance long term down the road.
+Then we switch into the test stage you know crucial for validating the functionality the reliability the performance of the automation solution that's been built prior in the build stage.
+You know conducting rigorous testing the idea here being that organizations can then identify rectify any defects or issues all about trying to ensure high quality automation solutions meeting the defined requirements have been put forth.
+So thorough testing trying to help build the confidence in the solution and reducing the risk of the errors once we finally deploy in the full production use.
+And then last but at least the sustained stage focusing on the actual deployment of the automation solution into the production environment ensuring it's ongoing operation and maintenance is there providing the necessary training the support documentation establishing all the monitoring mechanisms that are needed.
+You know the idea here is you know organizations can then effectively manage and optimize the solutions performance over period of time you know the whole idea of ongoing maintenance here.
+You know handling updates managing exceptions addressing the evolving business needs.
+You know everything essential for sustaining the benefit of the entire automation solution that's been developed and designed.
+So you have a solution architecture critical component and achieving successful automation implementations enabling organizations to design those efficient scalable adaptable automation solutions while ensuring maintainability security and compliance.
+You know investing in a well designed solution architecture organizations able to maximize the benefits of you I pass automation capabilities drive and operational excellence and achieving again the digital transformation goals.
+So now let's take it down a little bit deeper on a stage by stage basis.
+So the enable stage crucial phase again in establishing that solid foundation for the solution architecture you know in the process within an organization.
+So during the enable stage the organization focuses on setting up the necessary infrastructure that's the big here you're thinking about all the different resources that are needed.
+For an entire are you know process and department organization.
+You know all the different environments that are needed to support the implementation of your path technologies.
+You know ultimately trying to expand further on the key considerations and steps in here here next.
+So when designing the server architecture for your path several important factors that we need to take into consideration and into an account here.
+The first scalability.
+It's essential that we design our architecture in such a way that we can accommodate the future growth and increase demands on our platform.
+You know to achieve scalability we've got to employ techniques you think low balancers clustering that are out there distributed different distributed architecture that's out there.
+You know through these different approaches all about trying to distribute that workload across multiple servers.
+Ultimately trying to ensure that efficient resource utilization and obviously then the ability to handle the larger automation processes further down the road.
+This whole idea of availability you know trying to engineer a platform that's fault tolerant.
+You know crucial to minimizing the downtime ensuring uninterrupted operations of our platform.
+You know think redundancy here.
+The whole idea of achieving redundancy you know through different multiple servers.
+You know redundant network connections redundancy from a storage point of view.
+You know having some type of you know backup system in place trying to mitigate the impact of any type of hardware failure ultimately trying to maintain you know continuity of our technical stack.
+Obviously securities a huge factor that needs to be considered as well.
+You know trying to protect the sensitive data that were ultimately processing through the infrastructure ensuring the privacy of information is of utmost importance.
+You know to enhance security making sure that we set up the appropriate firewalls you know the improve the appropriate implementation of access controls.
+You know making sure that we utilize you know necessary inappropriate security protocols for the different data transmissions that will be a part of.
+The adopting robust security measures trying to safeguard against unauthorized access and potential data breaches.
+You know from a performance point of view trying to optimize the architecture in such a way that we can deliver the high performance results that are essential for the efficient automation processing.
+Involving high performance servers optimizing network configurations implementing you know the appropriate you know cashing mechanisms trying to reduce as much latency as possible trying to improve the response times.
+You know ultimately working on fine tuning if you will the architecture performance ensuring that smooth execution of all of our automation workflows.
+Finally along those lines this whole idea of integration capabilities.
+You know the whole idea of U.I.Path needing to interact with databases APIs or other enterprise systems or platforms.
+It's crucial that we consider that integration requirements.
+You want to ensure that the architecture supports seamless integration data exchange across all those different platforms.
+Now this might involve designing appropriate connectors establishing secure communication channels.
+You know ensuring the compatibility with the different target systems that might ultimately be needed.
+So once we have the server architecture design the next step we need to think about is the installation and configure the necessary components.
+So several of the key things that we need to think about here obviously server provisioning.
+You know making sure here that we've got and set up you know the required physical or virtual servers based on the architecture design that's been selected.
+Install the operating system configure the network settings appropriately and obviously providing a stable foundation for the U.I.Path infrastructure.
+You know setting up our different databases you know one of the key things from a U.I.Path orchestrator perspective is a Microsoft SQL server.
+You know making sure that we follow the specific instructions directions guidance.
+Making sure you know with the appropriate database system you know ensuring again that reliable well performing database environments you know appropriately configured and set up.
+You know the actual installation of orchestrator you know making sure that you know with the installation and configure a you know configuring a U.I.Path orchestrator on the designated servers.
+You know involving running the actual installer specifying the different database connection details.
+You know configuring the different various settings email notifications you know some of the SSL certificates some of the user authentication.
+And hopefully everybody's pretty well into an orchestrator really being that's you know being the central control points for managing all of our automation processes.
+The robot installations you know the robots on the actual machines that'll execute the actual automation workflows.
+Make sure that you get the robots properly configured to connect the orchestrator you know specifying the you know the correct you know orchestrator you know the appropriate authentication details etc.
+Robots obviously acting as execution agents in our for automation tasks.
+You know the licensing and the activation from that perspective you know making sure that we provide the necessary license keys and activating them appropriately to orchestrator.
+Ultimately ensuring you know that the organizations got the legal access it's needed and ultimately required access to different U.I.Path functionalities.
+Then one of the last items to think about here establishing separate you know dev test and production environment so now we got the technical stack out of the way.
+You know start thinking about you know what that dev test and production you know platforms ultimately want to look like so obviously you know setting up a dev environment.
+Creating that you know dedicated environment for development purposes where developers got the ability to create test debug their automation workflows.
+You know the environment here being isolated from production you know make sure that we're not going to have any disruptions by making accidental mistakes in our development environment.
+You know the key here is given the developers the ability to have their own individual machines with studio ultimately U.I.Path assistant installed allowing them to work on you know the development of their different automation projects.
+You know then we moved to test you know another separate environment closely resembling production in the terms of an infrastructure and you know the necessary configurations.
+Now the whole idea you know including orchestrator the robots you know the different relevant components.
+You know making sure that we've got a controlled space for testing and validating automation workflows before we ultimately deploy them into production.
+Which takes us to production you know that configuring the production environment you know everything's been finalized tested.
+This is where automation will effectively you know run execute from from a from a day to day normal operations you know point of view.
+You know carefully managed environments you know access should be very restricted to only the necessary authorize personnel you have dedicated production servers highly available or highly available scalable architecture needs to be you know brought into consideration here.
+You know appropriate security measures you definitely need to be taken into account again production environment where the automated processes perform their actual intended processing.
+You know as you start to think about how do we move from dev to test to prod you need to establish a process accordingly for that promotion of the workflows from dev test to prod.
+You know involve some type of version control system is kind of what comes to mind here you know some type of release management process change management process starts coming into mind here.
+Ensuring that controlled and well documented workflow promotion process all about trying to maintain again consistency and raw reliability across all of our environments.
+So by following all these steps the key here is the organization can really establish a well structured infrastructure setup with separate environments for developing testing and ultimately to plan solutions into a production move or states.
+You know trying to enable efficient collaboration amongst the development teams rigorous testing and ultimately that smooth deployment of that finalized processes again in their production environments.
+Hey and you've got some questions in the chat one of the do you have tools to recommend for each step of the solution design process.
+Man there's all kinds of options.
+It's.
+At the time we got.
+It didn't be hard to get into the weeds of them all but within the bypass you know ecosystem we've got all kinds of different you know different tools that you could potentially consider bringing to bring into the tables so.
+But it's what I always recommend folks maybe to keep it really simple is find something that works effectively for you and your team.
+You know the like I said you have passed got a handful but even you know broader than that just kind of industry there's all kinds of tools that are out there find something that works for you and the team.
+Don't let this be a self centered decision either though.
+You can allow us to be something that you know you in the multiple you know folks on the team you can collaborate on and find something that works efficiently and robust for you and the team.
+Thank you and then trace yes whose responsibility is it to document test cases, especially in the case of a production invite or sorry that got sense in the middle of while I'm talking.
+The case of a non sophisticated and or non technical client I guess I can kind of take a crack at this too.
+It's sort of a joint effort I mean this is mostly for folks in consulting where you know we are working with the client but in a perfect world of the client knows their data inside and out and can build test cases to kind of cover every logical path.
+That's the perfect scenarios never really the reality right so in my experience it's you you kind of have to guide the client.
+By you know I'll provide a few examples like okay here are a couple of different scenarios that can possibly happen during this bot process and we want to make sure that we're covered.
+Through those logical paths so we can test those individual branches of logic and usually once you provide like I'll provide them in Excel file with a list of a couple and say can you just add to this so that gives them an idea of what what we're looking for.
+I don't know if you want to have anything on to that yeah what I what I always try to think about especially in the context of solution architecture you know your solution architect.
+Conceptually you know take it to you know kind of you know loosely as I say it this way your solution architect in theory should be able to sit down and do the job that's being automated manually themselves there they're deeply ingrained in the business process essentially whoever's asking you know for the automation to be built.
+They need to be able to train or teach the solution architect how to actually do the manual task at hand.
+And the idea there being is obviously business you know whoever's asking for the automation to be built rightfully should be the one accountable for putting the test cases together because again they know the business process at end what they want automated.
+But since the solution architect has been trained and brought up to speed on what that process is essentially the point the in theory could perform the work themselves.
+That allows the solution architect to plug in all the gaps that you know business may not potentially brought to the table.
+So it's a it's a it's a it's a it's a it's a it's a Greg's point it's a collaborative effort between you know the actual requester as well as solution architect on the opposite side of the coin so,
+but if you the solution architect don't get barbed up to speed on understanding the ins and outs of the actual business process you'll never be able to film those gaps.
+And those gaps are going to lead their way or lead their way into the production build
+at that point, which is just going to lead into the old proverbial wheel that we're constantly
+spinning all the time or constantly maintaining and going back to the drawing board,
+putting in the enhancements. With the B-all end-all goal is you're trying to deploy that pristine
+solution one time into production and hopefully allow it for the most part to be self-sufficient
+so we can move on to the next solution closely behind that.
+Right, and if you just kind of tell a client, hey, we need test cases without providing
+anything for them to work off of, that's not how you're never getting that back
+and we'll just put it off because they don't know where to begin. There's one more question
+before we jump into preparation. How can we make sure we use our resources?
+IAAS, Sess-AAS, Pass on promise wisely when it comes to enabling all those different dev,
+test and production environments given time costs etc.
+I would say make sure you loop in the smoothies
+and rather than doing email changes better just kind of get everyone all the subject matter-experts
+on a call who are intimately familiar with infrastructure side and then a lot of time you can let them
+hash it out if you're less technical, but that's kind of the most efficient way of doing that.
+Yeah, one of the things I always think about, especially when you start getting into production,
+think about, you know, how critical are your automations to the business and the day-to-day grind?
+You know, yeah, if it's, you know, it's tricky to, you know, try to articulate here on,
+you know, a broad call like this, but, you know, if you've got a business process that's,
+you know, there's not, you know, mission critical, you know, processing involved,
+you probably don't need a super sophisticated production environment at that point.
+You know, if an automation doesn't run for a day, a week, you know, a couple weeks,
+what's the negative ramification on the business? You know, if it's minor, you don't need
+this really sophisticated, elaborate environment. But now, if you've got that mission critical automation,
+you know, if we're down for an hour and that automation can't run, that's where this idea of redundancy
+and, you know, the robustness of the technical stack becomes critically important at that point.
+So it's, you got to think of it as it kind of a continuum. Don't think you've got to have this
+huge sophisticated deployment if it's not necessarily needed. But then, what that also said,
+be ready to scale it though, you know, if all of a sudden you drop that, you know, critical automation
+out of the stack, you know, business is finally, you know, growing to accept an adoptive platform,
+be able to scale it at that point and be able to grow, you know, into much more robust,
+maintainable, you know, fault tolerant type system at that point.
+All right, let's dig guys, we got 20 minutes and we got quite a bit of content to get through here.
+So preparation stage, you know, the whole idea here, bringing in project governance,
+you know, several key activities kind of lay the groundwork for, you know, our successful
+efficient automation project. So expanding on each of these a little bit more. So this whole idea
+of agreeing on the project development approach, you know, spending some time understanding and
+establishing, you know, that centralized consistent framework for executing the actual automation
+project, you know, define the guidelines, the standards, you know, how the project to be managed,
+developed, and ultimately delivered. You know, this is where we start thinking about project
+management methodologies, you know, agile waterfall, assigning the key roles,
+responsibilities to the different different team members, you know, coming up with the communication
+strategies, their collaboration, you know, protocols, you know, making sure that we've got effective
+coordination amongst all the different stakeholders. You know, thinking about the project timelines,
+this is where we need to establish the agreement, you know, expectations, you know, the different
+project milestones, the different deliverables that are going to be out there. So by aligning on all
+the different, you know, project development approaches, the idea here that all the team members can
+gain that clear understanding of their responsibilities, ensuring the efficient collaboration, risk
+management, you know, ultimately trying to, you know, have that successful project outcome and
+to be all involved. You know, this is where we begin to establish RPA best practices that setting
+guidelines or recommendations, trying to promote the effective implementation of our automation
+projects, you know, trying to encompass various aspects of our deployment, you know, different design
+principles, coding standards, air handling, security measures, version control, deployment
+strategies, you know, all that kind of gets wrapped up and rolled into this idea of RPA best practices.
+You know, being able to review and follow those best practices, you know, project governance teams
+can ensure that the development team adheres to industry level, recognize standards and leverages,
+you know, prove a methodologies, trying to ultimately minimize technical debt,
+enhancing maintainability, facilitating the knowledge sharing and collaboration amongst all the
+developers and ultimately team members, you know, regularly update your best practices.
+Obviously, based on, you know, evolving industry trends or emerging technology, all that important
+to stay aligned with the latest advancements in the whole RPA segments. You know, set up process
+pipelines, you know, the process, process pipeline analysis, evaluating, optimizing, you know,
+the sequence of processes, you know, in our automation projects. You know, objectives here,
+trying to, you know, identify potential bottlenecks in different dependencies, areas for improvement
+within our process pipeline. You know, that process pipeline really trying to talk about the flow
+of activities and, you know, the tasks that RPA bots follow to complete, you know, a specific automation
+process, you know, through all the different analysis, you know, project governance teams trying to
+assess the, you know, efficiency and effectiveness of each process, examining all the dependencies,
+resource allocation and different automation opportunities. So by identifying all the optimization
+opportunities, streamlining our process pipeline, the whole idea here being that the team can
+enhance the overall efficiency of the entire automation project, minimizing delays, optimizing our
+resource utilization. You know, this analysis, trying to ensure that, you know, our bots operate
+smoothly and seamlessly within the defined pipeline. Again, all about trying to lead to the improved
+automation outcomes. You know, this idea of process walkthroughs, you know, this interactive session
+where the project team and the stakeholders actually sit down and review and validate the automated
+processes before we effectively move to deployment. You know, the, you know, the, the dev team trying
+to present, you know, the automation workflows, providing that step-by-step demonstration and how the
+processes will ultimately be executed via, you know, robots actions. You know, the purpose of
+a process walkthrough trying to gather the feedback and ensuring that the automation processes,
+you know, accurately reflect the desired business outcome, trying to address any potential
+concerns or issues via our stakeholders at that point. You know, in these sessions, allowing the
+stakeholders to try to visualize or understand, you know, how this automation is ultimately going
+to impact their day-to-day operations. Be able to provide that opportunity to make necessary
+adjustments, enhancements, tweaks, improvements before that final deployment ultimately comes
+to fruition. So the idea of process walkthroughs, all about promoting transparency, collaboration,
+and stakeholder engagement, trying to, again, align those expectations, you know, ensuring the
+automation processes are going to meet the defined requirements and objectives.
+So, you know, the whole idea here, project, you know, governance, you know, the preparation stage,
+agreeing on the development approach, reviewing RTA best practices, conducting those, you know,
+process pipeline analysis, facilitating, you know, process walkthroughs, trying to provide that
+solid foundation for successful automation implementation, the effective and efficient collaboration
+and our continuous improvements of all of our RTA initiatives.
+Taking us into the design stage, probably in the world, the solution architecture of all of them,
+if there is one, the most important of all of them. This is where automation solutions, you know,
+begin to focus on creating a comprehensive solution architecture that outlines the structure,
+the components, the integration points of this automation solution that we're ultimately putting
+together. This stage involves designing of the actual workflows, not building them, but designing
+them, designing, you know, and defining the specific roles and responsibilities for each component.
+Identifying the data flows, all the different dependencies that the automation ultimately is going
+to have. And the design stage focused in on encompassing and defining that air handling mechanism,
+security considerations, as well as some of the scalability requirements that come along with it.
+Specifically, one of the most important documents that you'll ever stumble across, the process,
+design, and document of the PDD. Crucial artifact in the development process, providing that detailed
+description of the automation process. So when filling out the PDD, important to provide that
+comprehensive and clear overview of the actual business process at hand, so things to think about
+here, you know, that process overview, providing that overview of the process, including,
+you know, what's the purpose and the objectives of this process, you know, explaining the context in
+which the automation is ultimately going to be implemented, you know, that I'm trying to
+highlight if you're the key stakeholders and to and or dependencies at that point. You've all
+the individual process steps breaking down that larger process into the sequential steps,
+being able to clearly outline each action and decision point along the way, you know,
+understanding all the inputs and outputs to each step, ensuring that complete understanding of
+the entire end-to-end process flow. Something that easily gets lost in a PDD, so be careful here.
+It's important to ensure that we also include into the PDD exception handling.
+The potential exceptions are air scenarios that may arise during the automation,
+make sure that those are clearly documented, and more pointedly or more importantly,
+I should say, the specific actions are the alternative paths that should be taken when these
+scenarios occur. You know, making sure that our automation can handle those, you know,
+the process can handle those various situations when and where they do occur.
+You know, some of the actual business rules at that point, you know, the actual business rules
+are logic needs to be clearly defined inside the PDD, trying to help the developer to understand
+the decision making process, so they ultimately can implement the rules accurately in the actual,
+you know, developed solution at that point. And inside the PDD, kind of lastly,
+all different data requirements, all the different input data sources and formats required
+for automation, being able to define any of the transformations or validations that might be needed
+and apply to that data during our process. This next one throws a lot of people for a loop. We're
+in design, but we're talking about creating test cases. Yes, we do that here. And the idea being
+of creating our test cases inside the development process to ensure the automation solution
+functions as intended, you know, test cases trying to validate the expected behavior of the
+process, helping to identify all the defects or issues. Then we get into the solution design
+document, trying to provide that in-depth explanation of the actual technical design and architecture
+of the automation solution that blueprints that developers are ultimately going to take to
+implement the automation effectively. And once we get both those documents put together,
+we'll get into a PDD or SDD sign-off, essentially a formal sign-off where we take the stakeholders,
+making sure everybody's in alignment and agreement with the proposed design, you know, the functionality
+of the automation solution at that point, that sign-off signifying mutual agreement understanding
+between both parties. Business are, you know, the requester and the RPA team, making sure that
+everything's approved, the documented approach is in mutual agreements. So it's important to remember
+sign-off process is obviously going to vary depending on organizations, you know, specific
+procedures, project governments. It's essential to follow, you know, the company guidelines
+obtaining the necessary rules before proceeding with the developments and subsequent implementation of
+the different automation solutions that we're going to bring to the table.
+Finally, we get into the build stage, you know, inside being the crucial phase where the actual
+development of the workflows takes place. Essentially involves building out the actual workflows,
+getting into actually performing the unit and functional testing. Why do we do the testing in
+design right here? We finally can get into that unit and functional level testing as part of the build
+here, ultimately creating what we refer to as the development specification document on the back
+inside of it all. So obviously the biggie here, building out the workflows, the core activity of
+the build stage, obviously designing and developing the actual automation processes inside of UIPath
+Studio. Obviously our IDE within the world of UIPath. You know, once we get the solution built,
+that's when we can then get into performing unit and functional level testing, ensuring the
+quality and reliability of the developed workflows. Try and identify and fix as many defects or
+issues before we move into the next stages, especially tests. And then on the opposite side,
+the idea of creating the development specification document, a comprehensive document really trying
+to serve as a reference for the developed automated, or I should say automation solution.
+Try and provide detailed information about the design, the functionality and the actual
+implementation of the workflows. You know, the DSD is it's typically a state of for short.
+Try to serve as a comprehensive reference for developers, the testers, and other stakeholders
+involved in the automation solution. Try to really bring the clarity, consistency, and
+documentation of the actual developed workflows at that point. Try to facilitate easier maintenance,
+troubleshooting, and obviously when we get into future enhancements later on down the road.
+So the build stage of UIPath's solution architecture, critical phase where the actual
+development of the workflows takes place, involves building out the workflows inside studio performing
+again the unit functional testing, and ultimately then creating the development specification
+document on the backend site. Again, that comprehensive reference document of the actual final
+developed automation solution. So again, crucial step or stage in the end solution architecture,
+all about trying to ensure successful implementation of our automation processes,
+ultimately laying the foundation for the subsequent stages, such as our deployment testing and
+maintenance stages ahead. So from a solution architecture perspective, the testing stage,
+crucial stage focused here on validating the developed solution up and against the defined
+requirements and ultimately the expected outcomes. You know, involving here testing activities
+such as unit integration testing, and most importantly here, user acceptance testing as well as
+getting into some of the performance testing here. The goal, ensuring that the automation solution
+functions as intended, you know, handling exceptions properly, meeting the desired performance benchmarks
+on the opposite side. You know, the big takeaway here, you get into what we refer to as the go and
+no go decision, the critical milestone in our quality assurance process, determining whether the
+UI automation is ready for deployment or not. You know, are we need to go back and do some further
+testing improvements, etc. You know, so careful consider, you know, considering execution at test cases,
+reporting results, making that go no go decision, organizations here can ensure the successful
+implementation and deployment of the high quality UI path based automations. So all these steps here,
+trying to contribute to building the reliable efficient solutions that meet the defined
+requirements and ultimately deliver the value to the stakeholders that are involved.
+And then last but not least, we get into the sustained stage where we focus on the deployment of
+the actual automation solution in the production and ultimately trying to ensure it's ongoing
+operation and long-term maintenance. Now, this stage focused on focused in on activities such as
+version control, release management, monitoring and support. So all the different regular updates,
+the enhancements that are needed to adapt the solution to the different ongoing and changing business
+needs, as well as obviously some of the continuous improvement efforts trying to optimize performance
+scalability and reliability. You know, the UI path hypercare is typically a term that you might
+hear, you know, a term used to describe that post-implementation phase of UI path based automations
+in the different projects that we deploy. All about playing that crucial role in sustaining,
+you know, our solution. So to kind of bring things to a closure, I'm watching my clock here and it's
+flying by on me. We got about four minutes, so it kind of wrapped everything here. The whole idea,
+again, with UI path solution architecture, that whole idea, you know, consisting of our six stages,
+a naval preparation design build test and sustain. Each playing obviously a very, you know,
+vital and unique role in ensuring that success of our project, you know, and ultimately,
+all the development of that efficient, reliable automation solution at the end.
+So by following the stages, obviously, trying to ensure that structured systematic approach
+to UI path based solution architecture, you know, resolving in the development of robust, scalable,
+maintainable automation solutions. You know, adhering to the framework, the key year where organizations
+can, you know, successfully implement RPA projects, be able to achieve their automation goals,
+you know, ultimately, the be all end all leading to the development of robust, scalable, maintainable
+automation solutions. So that all said, hopefully by embracing this systematic approach to UI path,
+the solution architecture, you guys will be well on your way to harnessing the full power of UI
+path revolutionize your organization's operations. Obviously, this framework presented today will
+hopefully empower you to be able to take you and your team and obviously be able to better identify,
+design, develop automation solutions that are robust, scalable, and efficient.
+And obviously with the UI path solution architecture, as your guide, it's my hope that obviously,
+you guys hopefully are now more equipped. Now that you were about an hour ago, obviously,
+architect success and ultimately unleash transformative potential of RPA as well as being able to
+develop your organization towards a future of unparalleled productivity and growth. So guys,
+it has been my honor privilege and pleasure to have had the opportunity to hang out with everybody
+today. All the very best at each of you and the traditional spirit of UI path. Happy automation,
+everybody. Thank you, Ian. Hey, I do want to throw something out there. This is really good. It's a
+great, you know, foundational level for how to do this. I'm just kind of curious with the audience
+today. If there's any topics that they would like us to do in the future based on what was
+presented today, if you wanted to get into more detail on any issue or roles that are associated
+with these areas or anything else, please just put them in chat so we can follow up on that.
+One hour session, I need stays.
+Exactly. This is, yeah, there's a lot more to each one of these areas, I know.
+Yeah, do you give you guys an idea of the content that a lot of this is kind of hinged and derived
+itself on as actually part of a much larger two day all day experience. So obviously we do go deep,
+deep into each of these individual topics. So you guys got just literally the cliff notes version
+of a much larger conversation that is behind all of this. So yeah, so if you want to hear more,
+please let us know. Yep, definitely. Thanks. So Greg, did we get all the questions?
+Um, it looks like it. Great.
+Yeah, Rick was actually in the two day courses of partner IELT. Yes, it is. I don't know if they've
+got anything outside of the partner side of the house on that off end though. I know that there
+is there are some courses out on the academy site though to address that question. So
+and believe if you get into that particular course, you'll probably see some of the similar
+graphics here that you've seen here. So definitely have a good spot to start to maybe go a
+little bit deeper than what we concluded with here. Yeah, this is fantastic. Any other questions
+from anybody? And you can open your mics.
+Well, it looks like we did not have enough time for sure. So we're going to have
+you back in. There you go. Don't be glad to let me do it. Great.
+All right. Well, thank you everybody. Thank you, Greg and Ian for today's session.
+That was great. I appreciate it. The opportunity again. Thank you everybody for joining
+today's call. Yep. All the best guys. Cheers.
+Uh-huh. Take care, everyone.

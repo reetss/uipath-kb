@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-02T18:24:21.314709",
+    "source": "r/UiPath",
+    "posts_analyzed": 3
+  },
+  "categories": {
+    "common_problems": [
+      {
+        "title": "Dealing w API calls",
+        "author": "PureMud8950",
+        "problem": "10+ HTTP requests with try-catch blocks are unreadable",
+        "tags": [
+          "api",
+          "http",
+          "readability",
+          "best-practices"
+        ],
+        "upvotes": 3,
+        "comments": 4,
+        "category": "common_problems",
+        "sentiment": "frustrated"
+      }
+    ],
+    "integration": [
+      {
+        "title": "On As400 and want to tie in inventory data to crm's",
+        "author": "Amazing_rocness",
+        "problem": "AS400 legacy system integration with modern CRMs for real-time inventory",
+        "question": "Developer needed or Business Analyst capable?",
+        "tags": [
+          "as400",
+          "legacy",
+          "crm",
+          "integration"
+        ],
+        "upvotes": 4,
+        "comments": 9,
+        "category": "integration"
+      }
+    ],
+    "certification": [
+      {
+        "title": "Agentic Automation Associate Certification",
+        "author": "RT_04",
+        "question": "Study resources beyond UiPath Academy needed",
+        "tags": [
+          "certification",
+          "learning",
+          "agentic-automation"
+        ],
+        "upvotes": 5,
+        "comments": 8,
+        "category": "certification"
+      }
+    ]
+  },
+  "trending_topics": [
+    "api",
+    "http",
+    "readability",
+    "best-practices",
+    "as400",
+    "legacy",
+    "crm",
+    "integration",
+    "certification",
+    "learning"
+  ],
+  "summary": {
+    "top_problems": [
+      {
+        "title": "On As400 and want to tie in inventory data to crm's",
+        "author": "Amazing_rocness",
+        "problem": "AS400 legacy system integration with modern CRMs for real-time inventory",
+        "question": "Developer needed or Business Analyst capable?",
+        "tags": [
+          "as400",
+          "legacy",
+          "crm",
+          "integration"
+        ],
+        "upvotes": 4,
+        "comments": 9,
+        "category": "integration"
+      },
+      {
+        "title": "Dealing w API calls",
+        "author": "PureMud8950",
+        "problem": "10+ HTTP requests with try-catch blocks are unreadable",
+        "tags": [
+          "api",
+          "http",
+          "readability",
+          "best-practices"
+        ],
+        "upvotes": 3,
+        "comments": 4,
+        "category": "common_problems",
+        "sentiment": "frustrated"
+      }
+    ],
+    "most_discussed": [
+      {
+        "title": "On As400 and want to tie in inventory data to crm's",
+        "author": "Amazing_rocness",
+        "problem": "AS400 legacy system integration with modern CRMs for real-time inventory",
+        "question": "Developer needed or Business Analyst capable?",
+        "tags": [
+          "as400",
+          "legacy",
+          "crm",
+          "integration"
+        ],
+        "upvotes": 4,
+        "comments": 9,
+        "category": "integration"
+      },
+      {
+        "title": "Agentic Automation Associate Certification",
+        "author": "RT_04",
+        "question": "Study resources beyond UiPath Academy needed",
+        "tags": [
+          "certification",
+          "learning",
+          "agentic-automation"
+        ],
+        "upvotes": 5,
+        "comments": 8,
+        "category": "certification"
+      },
+      {
+        "title": "Dealing w API calls",
+        "author": "PureMud8950",
+        "problem": "10+ HTTP requests with try-catch blocks are unreadable",
+        "tags": [
+          "api",
+          "http",
+          "readability",
+          "best-practices"
+        ],
+        "upvotes": 3,
+        "comments": 4,
+        "category": "common_problems",
+        "sentiment": "frustrated"
+      }
+    ],
+    "quick_wins": []
+  }
+}
