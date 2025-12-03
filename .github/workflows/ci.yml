@@ -160,7 +160,7 @@ jobs:
           import argparse
           from pathlib import Path
           from datetime import datetime
-          print('✅ All standard library imports available')
+          print('All standard library imports available')
           "
 
   setup-check:
