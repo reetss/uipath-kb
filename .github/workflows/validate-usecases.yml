@@ -1,0 +1,183 @@
+name: Validate Use Cases
+
+on:
+  push:
+    paths:
+      - 'knowledge/usecases/**'
+  pull_request:
+    paths:
+      - 'knowledge/usecases/**'
+
+jobs:
+  validate-usecases:
+    name: Validate Use Case Structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Use Case folder structure
+        shell: bash
+        run: |
+          echo "🔍 Validating Use Case structure..."
+          echo ""
+          
+          errors=0
+          warnings=0
+          usecases_checked=0
+          
+          # Find all use case folders (uc-XXX-*)
+          for uc_dir in knowledge/usecases/uc-*/; do
+            if [ -d "$uc_dir" ]; then
+              uc_name=$(basename "$uc_dir")
+              usecases_checked=$((usecases_checked + 1))
+              echo "📁 Checking $uc_name..."
+              
+              # Check README.md exists
+              if [ -f "${uc_dir}README.md" ]; then
+                echo "  ✅ README.md exists"
+                
+                # Check required sections (minimal)
+                required_sections=("Problem" "Ziele" "Systeme")
+                for section in "${required_sections[@]}"; do
+                  if ! grep -qi "$section" "${uc_dir}README.md"; then
+                    echo "  ⚠️  WARNING: Missing section '$section'"
+                    warnings=$((warnings + 1))
+                  fi
+                done
+                
+              else
+                echo "  ❌ ERROR: README.md missing!"
+                errors=$((errors + 1))
+              fi
+              
+              # Check analysis.md exists (optional - may not be generated yet)
+              if [ -f "${uc_dir}analysis.md" ]; then
+                echo "  ✅ analysis.md exists"
+                
+                # Check analysis.md has Rückfragen section
+                if grep -q "Rückfragen\|Offene Fragen\|Questions" "${uc_dir}analysis.md"; then
+                  echo "  ✅ analysis.md has questions section"
+                else
+                  echo "  ⚠️  WARNING: analysis.md missing questions section"
+                  warnings=$((warnings + 1))
+                fi
+                
+                # Check analysis.md has architecture section
+                if grep -q "Architektur\|Architecture" "${uc_dir}analysis.md"; then
+                  echo "  ✅ analysis.md has architecture section"
+                else
+                  echo "  ⚠️  WARNING: analysis.md missing architecture section"
+                  warnings=$((warnings + 1))
+                fi
+                
+                # Check for Mermaid diagrams
+                if grep -q "mermaid" "${uc_dir}analysis.md"; then
+                  echo "  ✅ analysis.md has Mermaid diagrams"
+                else
+                  echo "  ⚠️  WARNING: analysis.md missing Mermaid diagrams"
+                  warnings=$((warnings + 1))
+                fi
+                
+                # Check link back to README
+                if grep -q "README.md" "${uc_dir}analysis.md"; then
+                  echo "  ✅ analysis.md links to README.md"
+                else
+                  echo "  ⚠️  WARNING: analysis.md doesn't link to README.md"
+                  warnings=$((warnings + 1))
+                fi
+                
+                # Count open questions
+                open_questions=$(grep -c "⏳ Offen\|⏳ Open\|Status.*Offen" "${uc_dir}analysis.md" 2>/dev/null || echo "0")
+                if [ "$open_questions" -gt 0 ]; then
+                  echo "  ℹ️  INFO: $open_questions open questions found"
+                fi
+                
+              else
+                echo "  ℹ️  INFO: analysis.md not yet created"
+              fi
+              
+              # Check assets folder
+              if [ -d "${uc_dir}assets" ]; then
+                asset_count=$(ls -1 "${uc_dir}assets" 2>/dev/null | wc -l)
+                echo "  ✅ assets/ folder exists ($asset_count files)"
+              fi
+              
+              echo ""
+            fi
+          done
+          
+          # Summary
+          echo "======================================"
+          echo "📊 Validation Summary"
+          echo "======================================"
+          echo "Use Cases checked: $usecases_checked"
+          echo "Errors: $errors"
+          echo "Warnings: $warnings"
+          echo ""
+          
+          if [ $errors -gt 0 ]; then
+            echo "❌ Validation FAILED with $errors error(s)"
+            exit 1
+          elif [ $warnings -gt 0 ]; then
+            echo "⚠️  Validation PASSED with $warnings warning(s)"
+            exit 0
+          else
+            echo "✅ All validations passed!"
+            exit 0
+          fi
+
+  check-analysis-completeness:
+    name: Check Analysis Completeness
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Generate Use Case Report
+        shell: bash
+        run: |
+          echo "📋 Use Case Status Report"
+          echo "========================="
+          echo ""
+          
+          total=0
+          with_analysis=0
+          with_open_questions=0
+          
+          for uc_dir in knowledge/usecases/uc-*/; do
+            if [ -d "$uc_dir" ]; then
+              uc_name=$(basename "$uc_dir")
+              total=$((total + 1))
+              
+              status="📝 Draft"
+              
+              if [ -f "${uc_dir}analysis.md" ]; then
+                with_analysis=$((with_analysis + 1))
+                
+                # Count critical questions
+                critical=$(grep -c "Kritisch\|Critical" "${uc_dir}analysis.md" 2>/dev/null || echo "0")
+                open=$(grep -c "⏳ Offen\|⏳ Open" "${uc_dir}analysis.md" 2>/dev/null || echo "0")
+                
+                if [ "$open" -gt 0 ]; then
+                  with_open_questions=$((with_open_questions + 1))
+                  status="🔴 $open open questions"
+                else
+                  status="✅ Ready for implementation"
+                fi
+              else
+                status="⏳ Awaiting analysis"
+              fi
+              
+              echo "$uc_name: $status"
+            fi
+          done
+          
+          echo ""
+          echo "======================================"
+          echo "Total Use Cases: $total"
+          echo "With Analysis: $with_analysis"
+          echo "With Open Questions: $with_open_questions"
+          echo "Ready for Implementation: $((with_analysis - with_open_questions))"

@@ -1,136 +1,129 @@
 # UIPath Knowledge Base
 
-Eine umfassende Knowledge-Base für UIPath mit MCP-Server Integration, YouTube-Scraping und Dokumentations-Management.
+Eine lokale Knowledge-Base für UIPath mit MCP-Server Integration für Claude Desktop.
+
+## 🚀 Schnellstart (2 Minuten)
+
+```bash
+# 1. Repository klonen
+git clone https://github.com/TheTrustedAdvisor/uipath-kb.git
+cd uipath-kb
+
+# 2. Setup ausführen
+npm run setup
+
+# 3. MCP-Konfiguration kopieren (siehe Output von setup)
+```
+
+**Fertig!** Claude Desktop neu starten und loslegen.
+
+## 📋 Voraussetzungen
+
+| Tool | Version | Installation |
+|------|---------|--------------|
+| Node.js | 18+ | [nodejs.org](https://nodejs.org) |
+| Python | 3.10+ | [python.org](https://python.org) |
+| yt-dlp | (optional) | `brew install yt-dlp` / `pip install yt-dlp` |
+| ffmpeg | (optional) | `brew install ffmpeg` / [ffmpeg.org](https://ffmpeg.org) |
+
+> **yt-dlp + ffmpeg** werden nur für Video-Transkription benötigt.
 
 ## 🏗️ Architektur
 
 ```
 uipath-kb/
-├── mcp-servers/           # MCP Server Implementierungen
-│   ├── uipath-docs/       # UIPath Dokumentations-Server
-│   ├── youtube-scraper/   # YouTube Video Scraping mit fabric-ai & Whisper
-│   ├── local-knowledge/   # Lokale Dokumentations-Suche
-│   └── reddit-search/     # r/UiPath Community Search
-├── knowledge/             # Wissens-Repository
-│   ├── official/          # Gecachte UIPath Docs
-│   ├── videos/            # Video-Transkripte & Metadaten
-│   ├── reddit/            # Reddit Community Insights
-│   ├── custom/            # Eigene Dokumentation
-│   └── generated/         # Generierte Architekturen & Konzepte
-├── scripts/               # Utility-Scripts
-│   ├── transcribe-video.py        # Whisper Transcription
-│   ├── batch-transcribe.py        # Batch Processing
-│   └── monitor-reddit.py          # Reddit Monitoring
-├── templates/             # Vorlagen für Dokumentation
-│   ├── architecture/      # Architektur-Templates
-│   └── concepts/          # Konzept-Templates
-└── validators/            # Validierungs-Tools
+├── mcp-servers/              # MCP Server für Claude Desktop
+│   ├── uipath-docs/          # Offizielle UIPath Dokumentation
+│   ├── youtube-scraper/      # YouTube Video Transkription
+│   ├── local-knowledge/      # Lokale Dokumentations-Suche
+│   └── reddit-search/        # r/UiPath Community Search
+├── knowledge/                # Wissens-Repository
+│   ├── videos/               # Video-Transkripte
+│   ├── reddit/               # Community Insights
+│   ├── usecases/             # Business Use Cases
+│   └── custom/               # Eigene Dokumentation
+├── scripts/                  # Utility-Scripts
+│   ├── setup.js              # Cross-Platform Setup
+│   ├── transcribe-video.py   # Video Transkription
+│   └── batch-transcribe.py   # Batch Processing
+└── logs/                     # Log-Dateien
 ```
 
-## 🚀 Features
+## 🔧 MCP Server
 
-### MCP-Server
-- **UIPath Docs**: Durchsucht und cached die offizielle UIPath Dokumentation
-- **YouTube Scraper**: Extrahiert Transkripte (Whisper) und Metadaten aus UIPath Videos
-- **Local Knowledge**: Semantische Suche über lokale Dokumentation
-- **Reddit Search**: On-Demand Suche in r/UiPath für Community-Insights
+### 1. UIPath Docs (`uipath-docs`)
+Durchsucht die offizielle UIPath Dokumentation.
 
-### Knowledge-Base Management
-- Strukturierte Ablage von offizieller und eigener Dokumentation
-- Versionierung mit Git
-- Metadaten-Tracking für alle Dokumente
+```
+"Suche in UIPath Docs nach REFramework"
+"Erkläre Orchestrator Queue Management"
+```
 
-### Generierung & Validierung
-- Automatische Generierung von Architekturen und Konzepten
-- Validierung gegen die Knowledge-Base
-- Template-basierte Dokumentationserstellung
+### 2. YouTube Scraper (`youtube-scraper`)
+Extrahiert Transkripte und Insights aus YouTube Videos.
 
-## 📋 Voraussetzungen
+```
+"Transkribiere dieses UIPath Video: https://youtube.com/..."
+"Extrahiere die Key Points aus diesem Tutorial"
+```
 
-- Python 3.10+
-- Node.js 18+
-- yt-dlp (via Homebrew: `brew install yt-dlp`)
-- ffmpeg (via Homebrew: `brew install ffmpeg`)
-- faster-whisper (in Python venv: `.venv-whisper`)
+### 3. Local Knowledge (`local-knowledge`)
+Durchsucht die lokale Knowledge-Base.
 
-## 🔧 Installation
+```
+"Suche in der Knowledge Base nach Invoice Processing"
+"Zeige alle Use Case Dokumentationen"
+```
+
+### 4. Reddit Search (`reddit-search`)
+Live-Suche auf r/UiPath für Community-Insights.
+
+```
+"Suche auf Reddit nach API Integration Problemen"
+"Zeige die Top-Probleme aus der UIPath Community"
+```
+
+## 📝 Befehle
 
 ```bash
-# 1. Repository klonen
-git clone <repository-url>
-cd uipath-kb
+# Setup & Installation
+npm run setup           # Komplettes Setup (Node + Python + Build)
+npm run setup:check     # Status prüfen ohne Änderungen
 
-# 2. Python Environment für Whisper
-python3 -m venv .venv-whisper
-source .venv-whisper/bin/activate
-pip install faster-whisper
+# Entwicklung
+npm run build           # Alle MCP Server bauen
+npm run test            # Alle Tests ausführen
+npm run test:reddit     # Nur Reddit-Server testen
+npm run logs            # Live Logs anzeigen
 
-# 3. MCP-Server Abhängigkeiten installieren
-cd mcp-servers/uipath-docs && npm install && cd ../..
-cd mcp-servers/youtube-scraper && npm install && cd ../..
-cd mcp-servers/local-knowledge && npm install && cd ../..
-cd mcp-servers/reddit-search && npm install && cd ../..
-
-# 4. MCP-Server bauen
-cd mcp-servers/uipath-docs && npm run build && cd ../..
-cd mcp-servers/youtube-scraper && npm run build && cd ../..
-cd mcp-servers/local-knowledge && npm run build && cd ../..
-cd mcp-servers/reddit-search && npm run build && cd ../..
-
-# 5. MCP-Server in Claude Desktop konfigurieren
-# Siehe: docs/mcp-configuration.md
+# Video Transkription (benötigt yt-dlp + ffmpeg)
+source .venv-whisper/bin/activate  # macOS/Linux
+python scripts/transcribe-video.py <youtube-url>
 ```
 
-## 📚 Verwendung
+## 🖥️ Plattform-Support
 
-### MCP-Server starten
+| Feature | macOS | Windows | Linux |
+|---------|-------|---------|-------|
+| MCP Server | ✅ | ✅ | ✅ |
+| Setup Script | ✅ | ✅ | ✅ |
+| Video Transkription | ✅ | ✅ | ✅ |
+| Claude Desktop | ✅ | ✅ | ❌ |
 
-Die MCP-Server werden automatisch von Claude Desktop gestartet, wenn sie in der Konfiguration eingetragen sind.
+## 📚 Dokumentation
 
-### YouTube Videos transkribieren
+- [Schnellstart-Anleitung](QUICKSTART.md) - Detaillierte Installationsanleitung
+- [MCP Konfiguration](docs/mcp-configuration.md) - Claude Desktop Setup
+- [Use Case Workflow](docs/usecase-workflow.md) - Dokumentations-Workflow
+- [ADR Index](docs/adr/README.md) - Architektur-Entscheidungen
 
-```bash
-# Einzelnes Video mit Whisper
-source .venv-whisper/bin/activate
-python3 scripts/transcribe-video.py <video-url>
+## 🤝 Beitragen
 
-# Batch-Processing
-python3 scripts/batch-transcribe.py
-```
-
-### Reddit Community durchsuchen
-
-Über Claude Desktop mit aktiviertem reddit-search MCP-Server:
-- "Suche auf Reddit nach API-Integration-Problemen"
-- "Zeige aktuelle Trending-Topics aus r/UiPath"
-- "Was sind die häufigsten Community-Probleme?"
-
-### Dokumentation generieren
-
-```bash
-# Architektur generieren
-./validators/generate-architecture.sh --input knowledge/custom/requirements.md
-
-# Konzept validieren
-./validators/validate-concept.sh --input knowledge/generated/architecture.md
-```
-
-## 🛠️ Konfiguration
-
-Siehe [docs/configuration.md](docs/configuration.md) für Details zur Konfiguration der MCP-Server und Tools.
-
-## 📖 Dokumentation
-
-- [MCP-Server Konfiguration](docs/mcp-configuration.md)
-- [YouTube Scraping Guide](docs/youtube-scraping.md)
-- [Reddit Integration](docs/reddit-integration.md)
-- [Architektur-Generierung](docs/architecture-generation.md)
-- [Validierungs-Framework](docs/validation-framework.md)
-
-## 🤝 Contributing
-
-Beiträge sind willkommen! Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Details.
+1. Feature-Branch erstellen
+2. Änderungen committen
+3. Tests hinzufügen
+4. Pull Request öffnen
 
 ## 📄 Lizenz
 
-[MIT](LICENSE)
+MIT

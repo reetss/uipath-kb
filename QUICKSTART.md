@@ -1,219 +1,221 @@
-# 🚀 Quick Start Guide
+# Schnellstart-Anleitung
 
-Schnelleinstieg in die UIPath Knowledge Base.
+Diese Anleitung führt dich durch die Installation der UIPath Knowledge Base auf Windows und macOS.
 
-## 📋 Voraussetzungen
+## 📋 Voraussetzungen prüfen
 
-Vor dem Start sicherstellen:
+### Node.js installieren
 
-- ✅ **Node.js 18+** installiert
-- ✅ **Python 3.10+** installiert (für zukünftige Erweiterungen)
-- ✅ **fabric-ai** via Homebrew installiert: `brew install fabric-ai`
-- ✅ **Claude Desktop** installiert
-- ✅ **Git** für Versionskontrolle
-
-## 🏁 Installation
-
-### 1. Repository Setup
-
+**macOS:**
 ```bash
-cd /Users/mfalland/git/uipath-kb
+# Mit Homebrew
+brew install node
 
-# Dependencies installieren
-npm install
-npm run install-servers
-
-# MCP-Server bauen
-npm run build
+# Oder von nodejs.org herunterladen
 ```
 
-### 2. Server testen
+**Windows:**
+1. Gehe zu [nodejs.org](https://nodejs.org)
+2. Lade die LTS-Version herunter
+3. Führe den Installer aus
+4. Starte eine neue PowerShell
 
+**Prüfen:**
 ```bash
-# UIPath Docs Server
-node mcp-servers/uipath-docs/dist/index.js <<< '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
-
-# YouTube Scraper
-node mcp-servers/youtube-scraper/dist/index.js <<< '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
-
-# Local Knowledge
-node mcp-servers/local-knowledge/dist/index.js <<< '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+node --version  # Sollte v18+ anzeigen
+npm --version
 ```
 
-Alle sollten JSON-Responses mit verfügbaren Tools zurückgeben.
+### Python installieren
 
-### 3. Claude Desktop konfigurieren
-
-Öffne: `~/Library/Application Support/Claude/claude_desktop_config.json`
-
-Füge hinzu:
-
-```json
-{
-  "mcpServers": {
-    "uipath-docs": {
-      "command": "node",
-      "args": [
-        "/Users/mfalland/git/uipath-kb/mcp-servers/uipath-docs/dist/index.js"
-      ]
-    },
-    "youtube-scraper": {
-      "command": "node",
-      "args": [
-        "/Users/mfalland/git/uipath-kb/mcp-servers/youtube-scraper/dist/index.js"
-      ],
-      "env": {
-        "FABRIC_PATH": "/opt/homebrew/opt/fabric-ai/bin/fabric-ai"
-      }
-    },
-    "local-knowledge": {
-      "command": "node",
-      "args": [
-        "/Users/mfalland/git/uipath-kb/mcp-servers/local-knowledge/dist/index.js"
-      ]
-    }
-  }
-}
-```
-
-### 4. Claude Desktop neu starten
-
-1. Claude Desktop **komplett beenden**
-2. Neu starten
-3. MCP-Server sollten automatisch laden
-
-## ✅ Verifizierung
-
-In Claude Desktop testen:
-
-```
-Liste alle verfügbaren UIPath Produkte auf
-```
-
-Sollte `uipath_docs_list_products` Tool verwenden.
-
-```
-Zeige mir alle gecachten YouTube-Videos
-```
-
-Sollte `youtube_list_cached` Tool verwenden.
-
-```
-Durchsuche die lokale Knowledge Base nach "best practices"
-```
-
-Sollte `knowledge_search` Tool verwenden.
-
-## 📚 Erste Schritte
-
-### Dokumentation erstellen
-
+**macOS:**
 ```bash
-# 1. Beispiel-Requirements nutzen
-node validators/generate-architecture.js knowledge/custom/example-requirements.json
+# Mit Homebrew
+brew install python@3.12
 
-# 2. Generiertes Dokument prüfen
-node validators/validate-documentation.js knowledge/generated/architecture-invoice-processing-automation.md
-
-# 3. In docs verschieben
-mv knowledge/generated/architecture-invoice-processing-automation.md docs/
+# Oder von python.org herunterladen
 ```
 
-### YouTube-Video scrapen
+**Windows:**
+1. Gehe zu [python.org](https://python.org)
+2. Lade Python 3.10+ herunter
+3. **Wichtig:** Aktiviere "Add Python to PATH" im Installer
+4. Starte eine neue PowerShell
 
-In Claude:
-```
-Extrahiere die wichtigsten Insights aus diesem UIPath Tutorial:
-https://www.youtube.com/watch?v=[VIDEO_ID]
-```
-
-### UIPath Docs durchsuchen
-
-In Claude:
-```
-Suche in der UIPath Dokumentation nach "REFramework best practices"
-```
-
-## 🔧 Troubleshooting
-
-### Server starten nicht
-
+**Prüfen:**
 ```bash
-# Check Build
-npm run build
-
-# Test manually
-cd mcp-servers/uipath-docs
-node dist/index.js
-# Sollte "UIPath Docs MCP Server running on stdio" ausgeben
+python --version  # Sollte 3.10+ anzeigen
 ```
-
-### fabric-ai nicht gefunden
-
-```bash
-# Prüfen
-which fabric-ai
-ls /opt/homebrew/opt/fabric-ai/bin/fabric-ai
-
-# Ggf. neu installieren
-brew reinstall fabric-ai
-```
-
-### Tools nicht sichtbar in Claude
-
-1. Check Claude Desktop Logs: `~/Library/Logs/Claude/`
-2. Prüfe JSON-Syntax in config
-3. Stelle sicher alle Pfade sind absolut
-4. Claude komplett neu starten
-
-## 📖 Weiterführend
-
-- [MCP Configuration](docs/mcp-configuration.md) - Detaillierte Setup-Anleitung
-- [YouTube Scraping](docs/youtube-scraping.md) - Video-Processing Guide
-- [Copilot Instructions](.github/copilot-instructions.md) - Workflows & Best Practices
-- [ADR Index](docs/adr/README.md) - Architecture Decision Records
-
-## 🎯 Nächste Schritte
-
-1. **Erkunde die Knowledge Base**
-   ```
-   In Claude: "Zeige mir alle verfügbaren Dokumente in der Knowledge Base"
-   ```
-
-2. **Erste Architektur erstellen**
-   - Requirements definieren
-   - Generator nutzen
-   - Validieren
-   - In docs ablegen
-
-3. **YouTube-Videos sammeln**
-   - Relevante UIPath Tutorials finden
-   - Mit fabric-ai verarbeiten
-   - Insights extrahieren
-
-4. **Eigene Dokumentation hinzufügen**
-   ```bash
-   # Markdown-Datei in knowledge/custom/ erstellen
-   # Index neu aufbauen
-   In Claude: "Baue den Knowledge Base Index neu auf"
-   ```
-
-## 💡 Tipps
-
-- **ADRs nutzen**: Bei wichtigen Entscheidungen ADR erstellen
-- **Validieren**: Immer `validate-documentation.js` vor Commit
-- **Templates**: Bestehende Templates als Basis nutzen
-- **MCP-Server**: Bei Änderungen immer `npm run build`
-- **Cache**: YouTube und UIPath Docs werden automatisch gecacht
-
-## 🆘 Support
-
-Bei Problemen:
-1. Check Logs in `~/Library/Logs/Claude/`
-2. Test Server einzeln mit `tools/list`
-3. Prüfe [ADRs](docs/adr/) für Architektur-Details
-4. Review [Copilot Instructions](.github/copilot-instructions.md)
 
 ---
 
-**Viel Erfolg mit der UIPath Knowledge Base! 🚀**
+## 🚀 Installation
+
+### Schritt 1: Repository klonen
+
+```bash
+git clone https://github.com/TheTrustedAdvisor/uipath-kb.git
+cd uipath-kb
+```
+
+### Schritt 2: Setup ausführen
+
+```bash
+npm run setup
+```
+
+Das Setup-Script macht automatisch:
+- ✅ Verzeichnisse erstellen
+- ✅ Node.js Dependencies installieren
+- ✅ MCP Server bauen
+- ✅ Python venv erstellen (falls yt-dlp + ffmpeg vorhanden)
+- ✅ Tests ausführen
+- ✅ Claude Desktop Konfiguration generieren
+
+### Schritt 3: Claude Desktop konfigurieren
+
+Das Setup erstellt eine Datei `claude-desktop-config.json`. Kopiere den Inhalt in deine Claude Desktop Konfiguration:
+
+**macOS:**
+```bash
+# Öffne die Konfigurationsdatei
+open ~/Library/Application\ Support/Claude/claude_desktop_config.json
+
+# Kopiere den Inhalt von claude-desktop-config.json hinein
+```
+
+**Windows:**
+```powershell
+# Öffne die Konfigurationsdatei
+notepad "$env:APPDATA\Claude\claude_desktop_config.json"
+
+# Kopiere den Inhalt von claude-desktop-config.json hinein
+```
+
+### Schritt 4: Claude Desktop neu starten
+
+1. Claude Desktop komplett beenden
+2. Claude Desktop starten
+3. In einem neuen Chat testen:
+
+```
+"Suche auf Reddit nach UIPath API Problemen"
+```
+
+---
+
+## 🎥 Video-Transkription einrichten (Optional)
+
+Für die Transkription von YouTube-Videos brauchst du zusätzlich yt-dlp und ffmpeg.
+
+### macOS
+
+```bash
+brew install yt-dlp ffmpeg
+```
+
+### Windows
+
+```powershell
+# yt-dlp installieren
+pip install yt-dlp
+
+# ffmpeg von https://ffmpeg.org/download.html herunterladen
+# Entpacken und den bin-Ordner zum PATH hinzufügen
+```
+
+### Setup erneut ausführen
+
+```bash
+npm run setup
+```
+
+Das Script erstellt jetzt automatisch das Python venv mit faster-whisper.
+
+### Video transkribieren
+
+**macOS/Linux:**
+```bash
+source .venv-whisper/bin/activate
+python scripts/transcribe-video.py https://www.youtube.com/watch?v=VIDEO_ID
+```
+
+**Windows:**
+```powershell
+.venv-whisper\Scripts\Activate.ps1
+python scripts\transcribe-video.py https://www.youtube.com/watch?v=VIDEO_ID
+```
+
+---
+
+## ✅ Installation prüfen
+
+```bash
+npm run setup:check
+```
+
+Alle Punkte sollten ✅ anzeigen:
+
+```
+✅ Node.js v18+
+✅ npm
+✅ Python
+✅ yt-dlp (optional)
+✅ ffmpeg (optional)
+✅ Python venv (optional)
+✅ MCP Server uipath-docs: built
+✅ MCP Server youtube-scraper: built
+✅ MCP Server local-knowledge: built
+✅ MCP Server reddit-search: built
+```
+
+---
+
+## 🔧 Fehlerbehebung
+
+### "npm: command not found"
+
+Node.js ist nicht installiert oder nicht im PATH. Installiere Node.js und starte ein neues Terminal.
+
+### "python: command not found" (Windows)
+
+1. Python neu installieren mit "Add Python to PATH"
+2. Oder manuell zum PATH hinzufügen:
+   - Systemsteuerung → System → Erweiterte Systemeinstellungen
+   - Umgebungsvariablen → PATH bearbeiten
+   - Python-Pfad hinzufügen (z.B. `C:\Python312`)
+
+### MCP Server werden nicht erkannt
+
+1. Prüfe ob die Server gebaut sind: `npm run build`
+2. Prüfe die Claude Desktop Konfiguration
+3. Claude Desktop komplett neu starten (nicht nur das Fenster schließen)
+
+### Video-Transkription funktioniert nicht
+
+1. Prüfe: `yt-dlp --version` und `ffmpeg -version`
+2. Prüfe ob das venv existiert: `ls .venv-whisper`
+3. Setup erneut ausführen: `npm run setup`
+
+---
+
+## 📞 Support
+
+- GitHub Issues: [TheTrustedAdvisor/uipath-kb/issues](https://github.com/TheTrustedAdvisor/uipath-kb/issues)
+- Dokumentation: [docs/](docs/)
+
+---
+
+## Nächste Schritte
+
+1. **MCP Server testen:**
+   - "Suche in der UIPath Dokumentation nach Queues"
+   - "Zeige trending Topics auf r/UiPath"
+
+2. **Knowledge Base nutzen:**
+   - Eigene Dokumentation in `knowledge/custom/` ablegen
+   - Use Cases in `knowledge/usecases/` dokumentieren
+
+3. **Videos transkribieren:**
+   - UIPath Tutorial-Videos transkribieren
+   - Transkripte landen automatisch in `knowledge/videos/`

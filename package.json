@@ -1,6 +1,6 @@
 {
   "name": "uipath-kb",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "UIPath Knowledge Base with MCP Server Integration",
   "type": "module",
   "private": true,
@@ -8,13 +8,19 @@
     "mcp-servers/*"
   ],
   "scripts": {
+    "setup": "node scripts/setup.js",
+    "setup:check": "node scripts/setup.js --check",
     "install-all": "npm install && npm run install-servers",
     "install-servers": "npm install --workspaces",
-    "build": "npm run build --workspaces",
-    "test": "npm run test --workspaces",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:reddit": "cd mcp-servers/reddit-search && npx tsx test/reddit-api.test.ts",
     "dev:uipath-docs": "npm run dev --workspace=mcp-servers/uipath-docs",
     "dev:youtube": "npm run dev --workspace=mcp-servers/youtube-scraper",
-    "dev:local": "npm run dev --workspace=mcp-servers/local-knowledge"
+    "dev:local": "npm run dev --workspace=mcp-servers/local-knowledge",
+    "dev:reddit": "npm run dev --workspace=mcp-servers/reddit-search",
+    "clean": "rm -rf node_modules mcp-servers/*/node_modules mcp-servers/*/dist",
+    "logs": "tail -f logs/*.log"
   },
   "keywords": [
     "uipath",
@@ -22,10 +28,13 @@
     "mcp",
     "documentation"
   ],
-  "author": "",
+  "author": "UIPath Knowledge Base Team",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.0",
     "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

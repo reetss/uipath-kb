@@ -2,101 +2,140 @@
 
 **Erstellt:** YYYY-MM-DD  
 **Autor:** [Name]  
-**Status:** Draft | In Progress | Documented  
-**Priorität:** Low | Medium | High | Critical
+**Status:** Draft  
+**Priorität:** High
 
 ---
 
 ## Geschäftskontext
 
 ### Problem / Herausforderung
-<!-- Was ist das Problem, das gelöst werden soll? -->
+
+<!-- 
+Beschreibe das Problem so, wie es dir der Fachbereich erzählt hat.
+Es muss nicht perfekt sein - schreibe auf was du weißt!
+-->
 
 
 ### Ziele
-<!-- Was soll erreicht werden? -->
+
+<!-- Was soll erreicht werden? Auch ungefähre Angaben sind ok. -->
 
 - 
 - 
 
 ### Erfolgskriterien
-<!-- Woran erkennst du, dass der Use Case erfolgreich umgesetzt wurde? -->
 
-- 
-- 
-
-## Beschreibung
-
-### Ausgangssituation
-<!-- Wie sieht der Prozess aktuell aus? (Falls vorhanden) -->
-
-
-### Gewünschtes Verhalten
-<!-- Wie soll der automatisierte Prozess ablaufen? -->
-
-
-### Beteiligte Systeme
-<!-- Welche Anwendungen, APIs, Datenbanken werden benötigt? -->
-
-- 
-- 
-
-## Anforderungen
-
-### Funktionale Anforderungen
-<!-- Was muss der Prozess können? -->
-
-1. 
-2. 
-
-### Nicht-funktionale Anforderungen
-<!-- Performance, Sicherheit, Verfügbarkeit -->
-
-- **Performance**: 
-- **Fehlerbehandlung**: 
-- **Logging**: 
-- **Sicherheit**: 
-
-## Input / Output
-
-### Input
-<!-- Welche Daten / Dateien werden benötigt? -->
-
-| Input | Format | Quelle | Validierung |
-|-------|--------|--------|-------------|
-| | | | |
-
-### Output
-<!-- Was wird erzeugt? -->
-
-| Output | Format | Ziel | Kriterien |
-|--------|--------|------|-----------|
-| | | | |
-
-## Besonderheiten / Randbedingungen
-
-### Technische Constraints
-<!-- Gibt es Einschränkungen? (z.B. System-Zugriff, Lizenzen) -->
-
-
-### Business Rules
-<!-- Wichtige Geschäftsregeln -->
-
-
-### Abhängigkeiten
-<!-- Von welchen anderen Prozessen oder Use Cases hängt dieser ab? -->
-
-
-## Offene Fragen
-
-- 
-- 
-
-## Notizen
-
-<!-- Weitere Anmerkungen, Links zu relevanten Dokumenten -->
+<!-- Falls bekannt. Sonst "Noch zu definieren" -->
 
 
 ---
 
-**Nächster Schritt:** Im Chat beauftragen mit "Dokumentiere bitte UC-XXX technisch"
+## Beschreibung
+
+### Ausgangssituation (AS-IS)
+
+<!-- 
+Wie läuft der Prozess heute ab?
+- Wer macht was?
+- Welche Schritte gibt es?
+- Was sind die Probleme dabei?
+-->
+
+
+### Gewünschtes Verhalten (TO-BE)
+
+<!-- 
+Wie soll es nach der Automatisierung laufen?
+Auch grobe Beschreibungen sind ok!
+-->
+
+
+---
+
+## Beteiligte Systeme
+
+<!-- 
+Liste die Systeme auf, die du kennst.
+Bei Unsicherheiten: einfach aufschreiben was du weißt!
+
+Beispiele:
+- SAP SuccessFactors - HR-Stammdaten
+- Active Directory - Windows-Accounts (on-premise? cloud?)
+- "irgendein altes SAP" - Zeiterfassung
+-->
+
+- 
+- 
+
+---
+
+## Anforderungen
+
+### Funktionale Anforderungen
+
+<!-- Was soll der Bot können? Einfach als Liste. -->
+
+1. 
+2. 
+3. 
+
+### Nicht-funktionale Anforderungen
+
+<!-- Falls bekannt. Sonst weglassen. -->
+
+- 
+- 
+
+---
+
+## Input / Output
+
+### Input
+
+<!-- Welche Daten bekommt der Prozess? Woher kommen sie? -->
+
+
+### Output
+
+<!-- Was kommt am Ende raus? Wer bekommt was? -->
+
+
+---
+
+## Besonderheiten / Randbedingungen
+
+### Bekannte Probleme oder Einschränkungen
+
+<!-- 
+Was weißt du schon über potenzielle Schwierigkeiten?
+Z.B. "SAP hat keine API", "System XY ist oft nicht erreichbar"
+-->
+
+
+### Offene Punkte
+
+<!-- 
+Was weißt du NICHT?
+Was muss noch geklärt werden?
+-->
+
+- 
+- 
+
+---
+
+## Notizen
+
+<!-- 
+Hier kannst du alles reinschreiben:
+- Zitate aus Meetings
+- Namen von Ansprechpartnern
+- Links zu Dokumenten
+- Vermutungen und Ideen
+-->
+
+
+---
+
+**Nächster Schritt:** Technische Analyse beauftragen mit "Dokumentiere bitte UC-XXX technisch"

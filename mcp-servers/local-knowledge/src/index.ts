@@ -19,7 +19,7 @@ const KNOWLEDGE_BASE = join(__dirname, "../../../knowledge");
 interface Document {
   path: string;
   relativePath: string;
-  category: "official" | "custom" | "generated" | "videos";
+  category: "official" | "custom" | "generated" | "videos" | "usecases";
   title: string;
   content: string;
   metadata: {
@@ -85,7 +85,7 @@ class LocalKnowledgeServer {
               },
               category: {
                 type: "string",
-                enum: ["official", "custom", "generated", "videos", "all"],
+                enum: ["official", "custom", "generated", "videos", "usecases", "all"],
                 description: "Filter by document category (default: all)",
               },
               limit: {
@@ -121,7 +121,7 @@ class LocalKnowledgeServer {
             properties: {
               category: {
                 type: "string",
-                enum: ["official", "custom", "generated", "videos", "all"],
+                enum: ["official", "custom", "generated", "videos", "usecases", "all"],
                 description: "Filter by category (default: all)",
               },
             },
@@ -160,6 +160,30 @@ class LocalKnowledgeServer {
             properties: {},
           },
         },
+        {
+          name: "knowledge_list_usecases",
+          description:
+            "List all Use Cases with their status (has technical.md or not). Use Cases are stored in knowledge/usecases/uc-XXX-name/ folders.",
+          inputSchema: {
+            type: "object",
+            properties: {},
+          },
+        },
+        {
+          name: "knowledge_get_usecase",
+          description:
+            "Get complete information about a specific Use Case including README.md (business) and technical.md (if exists).",
+          inputSchema: {
+            type: "object",
+            properties: {
+              usecaseId: {
+                type: "string",
+                description: "Use Case ID (e.g., 'uc-001' or 'uc-001-onboarding')",
+              },
+            },
+            required: ["usecaseId"],
+          },
+        },
       ] as Tool[],
     }));
 
@@ -183,6 +207,10 @@ class LocalKnowledgeServer {
             return await this.handleAddDocument(args);
           case "knowledge_rebuild_index":
             return await this.handleRebuildIndex();
+          case "knowledge_list_usecases":
+            return await this.handleListUsecases();
+          case "knowledge_get_usecase":
+            return await this.handleGetUsecase(args);
           default:
             throw new Error(`Unknown tool: ${name}`);
         }
@@ -206,7 +234,7 @@ class LocalKnowledgeServer {
     console.error("[Index] Loading documents...");
     this.documents = [];
 
-    const categories = ["official", "custom", "generated", "videos"];
+    const categories = ["official", "custom", "generated", "videos", "usecases"];
 
     for (const category of categories) {
       const categoryPath = join(KNOWLEDGE_BASE, category);
@@ -497,6 +525,142 @@ class LocalKnowledgeServer {
           text: `Index rebuilt successfully. Loaded ${this.documents.length} documents.`,
         },
       ],
+    };
+  }
+
+  private async handleListUsecases() {
+    console.error("[List Use Cases] Scanning use case folders...");
+    
+    const usecasesDir = join(KNOWLEDGE_BASE, "usecases");
+    const usecases: Array<{
+      id: string;
+      name: string;
+      path: string;
+      hasReadme: boolean;
+      hasTechnical: boolean;
+      status: string;
+    }> = [];
+
+    try {
+      const entries = await readdir(usecasesDir, { withFileTypes: true });
+      
+      for (const entry of entries) {
+        if (entry.isDirectory() && entry.name.startsWith("uc-")) {
+          const ucPath = join(usecasesDir, entry.name);
+          
+          // Check for README.md and technical.md
+          let hasReadme = false;
+          let hasTechnical = false;
+          
+          try {
+            await stat(join(ucPath, "README.md"));
+            hasReadme = true;
+          } catch {}
+          
+          try {
+            await stat(join(ucPath, "technical.md"));
+            hasTechnical = true;
+          } catch {}
+          
+          // Determine status
+          let status = "❌ Missing README";
+          if (hasReadme && hasTechnical) {
+            status = "✅ Documented";
+          } else if (hasReadme) {
+            status = "⏳ Needs technical.md";
+          }
+          
+          usecases.push({
+            id: entry.name,
+            name: entry.name.replace(/^uc-\d+-/, "").replace(/-/g, " "),
+            path: `usecases/${entry.name}`,
+            hasReadme,
+            hasTechnical,
+            status,
+          });
+        }
+      }
+    } catch (error) {
+      console.error("[List Use Cases] Error:", error);
+    }
+
+    if (usecases.length === 0) {
+      return {
+        content: [{ type: "text", text: "No Use Cases found in knowledge/usecases/" }],
+      };
+    }
+
+    const text = usecases
+      .sort((a, b) => a.id.localeCompare(b.id))
+      .map((uc) => {
+        return `**${uc.id}** - ${uc.name}\n` +
+          `Status: ${uc.status}\n` +
+          `Path: ${uc.path}/`;
+      })
+      .join("\n\n---\n\n");
+
+    return {
+      content: [{ type: "text", text: `# Use Cases\n\n${text}` }],
+    };
+  }
+
+  private async handleGetUsecase(args: any) {
+    const usecaseId = args.usecaseId as string;
+    console.error(`[Get Use Case] ID: ${usecaseId}`);
+    
+    const usecasesDir = join(KNOWLEDGE_BASE, "usecases");
+    
+    // Find matching use case folder
+    let ucFolder: string | null = null;
+    try {
+      const entries = await readdir(usecasesDir, { withFileTypes: true });
+      for (const entry of entries) {
+        if (entry.isDirectory() && entry.name.startsWith(usecaseId)) {
+          ucFolder = entry.name;
+          break;
+        }
+      }
+    } catch (error) {
+      throw new Error(`Use Cases directory not found`);
+    }
+
+    if (!ucFolder) {
+      throw new Error(`Use Case not found: ${usecaseId}`);
+    }
+
+    const ucPath = join(usecasesDir, ucFolder);
+    let result = `# Use Case: ${ucFolder}\n\n`;
+
+    // Read README.md (Business Use Case)
+    try {
+      const readme = await readFile(join(ucPath, "README.md"), "utf-8");
+      result += `## Business Use Case (README.md)\n\n${readme}\n\n`;
+    } catch {
+      result += `## Business Use Case (README.md)\n\n⚠️ README.md not found\n\n`;
+    }
+
+    // Read technical.md (Technical Documentation)
+    try {
+      const technical = await readFile(join(ucPath, "technical.md"), "utf-8");
+      result += `---\n\n## Technical Documentation (technical.md)\n\n${technical}\n\n`;
+    } catch {
+      result += `---\n\n## Technical Documentation (technical.md)\n\n⏳ technical.md not yet created. Use "Dokumentiere bitte ${usecaseId} technisch" to generate it.\n\n`;
+    }
+
+    // List assets if present
+    try {
+      const assetsPath = join(ucPath, "assets");
+      const assets = await readdir(assetsPath);
+      if (assets.length > 0) {
+        result += `---\n\n## Assets\n\n`;
+        assets.forEach((asset) => {
+          result += `- ${asset}\n`;
+        });
+      }
+    } catch {}
+
+    return {
+      content: [{ type: "text", text: result }],
     };
   }
 
