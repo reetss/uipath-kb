@@ -1,6 +1,6 @@
 # Use Cases
 
-Dieses Verzeichnis enthält Business-Use-Cases, die als Grundlage für die technische Dokumentation dienen.
+Dieses Verzeichnis enthält Business-Use-Cases mit technischer Analyse.
 
 ## 📁 Ordnerstruktur
 
@@ -11,12 +11,12 @@ knowledge/usecases/
 ├── README.md                    # Diese Datei
 ├── usecase-template.md          # Template für neue Use Cases
 ├── uc-001-onboarding/           # UC-001: Employee Onboarding
-│   ├── README.md                # Business Use Case (WAS & WARUM)
-│   ├── technical.md             # Technische Dokumentation (WIE)
-│   └── assets/                  # Screenshots, Diagramme
-├── uc-002-invoice-processing/   # UC-002: Invoice Processing
+│   ├── README.md                # Business Use Case (Input vom User)
+│   ├── analysis.md              # Technische Analyse + Rückfragen (von Copilot)
+│   └── assets/                  # Screenshots, Diagramme, etc.
+├── uc-002-invoice-processing/   # UC-002: (Beispiel)
 │   ├── README.md
-│   ├── technical.md
+│   ├── analysis.md
 │   └── assets/
 └── ...
 ```
@@ -24,9 +24,17 @@ knowledge/usecases/
 ## 🔄 Workflow
 
 1. **Ordner erstellen**: `mkdir -p knowledge/usecases/uc-XXX-titel/assets`
-2. **README.md erstellen**: Business Use Case vom Template kopieren
-3. **Im Chat beauftragen**: "Dokumentiere bitte UC-XXX technisch"
-4. **Copilot erstellt**: `technical.md` im selben Ordner
+2. **README.md erstellen**: Business Use Case vom Template kopieren (muss NICHT perfekt sein!)
+3. **Im Chat beauftragen**: "Analysiere bitte UC-XXX technisch"
+4. **Copilot erstellt**: `analysis.md` im selben Ordner mit:
+   - 🔴 Offene Rückfragen (priorisiert)
+   - Vorläufige Architektur
+   - Risiko-Assessment
+   - MVP-Empfehlung
+5. **Rückfragen klären**: Meetings mit Fachbereich/IT
+6. **Iterieren**: README.md ergänzen → analysis.md neu generieren
+
+**Wichtig:** Der Use Case muss NICHT perfekt sein! Copilot identifiziert Lücken und formuliert Rückfragen.
 
 ## 📝 Neuen Use Case anlegen
 
@@ -37,62 +45,62 @@ mkdir -p knowledge/usecases/uc-002-invoice-processing/assets
 # 2. Template kopieren
 cp knowledge/usecases/usecase-template.md knowledge/usecases/uc-002-invoice-processing/README.md
 
-# 3. Bearbeiten und ausfüllen
+# 3. Bearbeiten und ausfüllen (grob ist OK!)
 code knowledge/usecases/uc-002-invoice-processing/README.md
 
-# 4. Technische Doku beauftragen
-# Im VS Code Chat: "Dokumentiere bitte UC-002 technisch"
+# 4. Technische Analyse beauftragen
+# Im VS Code Chat: "Analysiere bitte UC-002 technisch"
 ```
 
 ## 📊 Use Case Index
 
-| Nr | Titel | Status | Ordner |
-|----|-------|--------|--------|
-| 001 | Employee Onboarding/Offboarding | ✅ Documented | [uc-001-onboarding/](./uc-001-onboarding/) |
+| Nr | Titel | Status | Offene Fragen | Ordner |
+|----|-------|--------|---------------|--------|
+| 001 | Employee Onboarding/Offboarding | 🔴 13 Fragen offen | Q1-Q13 | [uc-001-onboarding/](./uc-001-onboarding/) |
 
 ### Status-Legende
 
-- 📝 **Draft**: Use Case in Bearbeitung
-- 🔄 **In Progress**: Technische Doku wird erstellt
-- ✅ **Documented**: Vollständig dokumentiert
-- 🔍 **Review**: In Review durch Team
+- 📝 **Draft**: README.md vorhanden, keine Analyse
+- 🔴 **Fragen offen**: analysis.md mit offenen Rückfragen
+- 🟡 **In Klärung**: Rückfragen werden bearbeitet
+- ✅ **Ready**: Alle kritischen Fragen geklärt, bereit für Implementierung
 
 ## ✅ Validierung
 
 GitHub Actions validiert automatisch bei jedem Push:
 - Ordnerstruktur korrekt (README.md vorhanden)
-- Links zwischen README.md und technical.md funktionieren
-- Pflichtfelder ausgefüllt
-- Keine [Platzhalter] mehr vorhanden
+- analysis.md hat Rückfragen-Sektion
+- Anzahl offener Fragen wird gezählt
+- Status-Report wird generiert
 
 ## 📚 Struktur eines Use Case
 
-### README.md (Business Use Case)
+### README.md (Business Use Case - Input)
 
-Beschreibt das **WAS** und **WARUM**:
-- Geschäftskontext & Problem
-- Ziele & Erfolgskriterien
-- Beteiligte Systeme
-- Anforderungen (funktional & nicht-funktional)
-- Input/Output
+Beschreibt das **WAS** und **WARUM** (aus Sicht des Fachbereichs):
+- Problem / Herausforderung
+- Ziele (auch ungefähre)
+- Beteiligte Systeme (soweit bekannt)
+- Meeting-Notizen, Zitate, Ansprechpartner
 
-### technical.md (Technische Dokumentation)
+**Tipp:** Es ist OK wenn Details fehlen, Zahlen geschätzt sind oder Prozesse unklar sind!
 
-Beschreibt das **WIE**:
-- Architektur-Übersicht (Mermaid-Diagramme)
-- Detaillierte Prozessbeschreibung
-- UIPath Komponenten (Workflows, Activities)
-- Exception Handling
-- Testing & Deployment
-- Monitoring
+### analysis.md (Technische Analyse - Output)
+
+Wird von Copilot generiert und enthält:
+- **🔴 Offene Rückfragen** (Kritisch/Wichtig/Nice-to-have)
+- Vorläufige Architektur (Mermaid-Diagramme)
+- Identifizierte Risiken
+- Empfohlenes Vorgehen (MVP-Phasen)
+- Vorläufige Metriken
 
 ### assets/ (Zusätzliche Dateien)
 
-- Screenshots
+- Screenshots aus Meetings
 - Export-Dateien
-- Zusätzliche Diagramme
+- Prozess-Diagramme vom Fachbereich
 - Test-Daten
 
 ---
 
-**Hinweis:** Nutze `usecase-template.md` als Vorlage für die README.md eines neuen Use Cases.
+**Siehe auch:** [Use Case Workflow](../../docs/usecase-workflow.md) für den vollständigen Prozess.

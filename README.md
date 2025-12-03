@@ -38,10 +38,15 @@ uipath-kb/
 │   ├── local-knowledge/      # Lokale Dokumentations-Suche
 │   └── reddit-search/        # r/UiPath Community Search
 ├── knowledge/                # Wissens-Repository
+│   ├── usecases/             # Use Cases (README.md + analysis.md)
 │   ├── videos/               # Video-Transkripte
 │   ├── reddit/               # Community Insights
-│   ├── usecases/             # Business Use Cases
-│   └── custom/               # Eigene Dokumentation
+│   └── custom/               # Best Practices & Referenzen
+├── docs/                     # Projekt-Dokumentation
+│   ├── adr/                  # Architecture Decision Records
+│   └── usecase-workflow.md   # Use Case Prozess
+├── templates/                # Dokumentations-Templates
+├── validators/               # Validierungs-Tools
 ├── scripts/                  # Utility-Scripts
 │   ├── setup.js              # Cross-Platform Setup
 │   ├── transcribe-video.py   # Video Transkription
@@ -119,10 +124,10 @@ python scripts/transcribe-video.py <youtube-url>
 
 ## 🤝 Beitragen
 
-1. Feature-Branch erstellen
-2. Änderungen committen
-3. Tests hinzufügen
-4. Pull Request öffnen
+Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für:
+- Branch-Naming-Konvention
+- Commit-Message-Format
+- Pull Request Prozess
 
 ## 📄 Lizenz
 
