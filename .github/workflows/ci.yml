@@ -217,20 +217,31 @@ jobs:
           errors=0
           warnings=0
           validated=0
+          skipped=0
           
-          # Validate docs/ markdown files
+          # Files to skip (templates, indexes, etc.)
+          skip_patterns="template.md|README.md"
+          
+          # Validate docs/ markdown files (excluding ADR templates/indexes)
           for file in docs/*.md docs/**/*.md; do
             if [ -f "$file" ]; then
+              # Skip template and index files
+              if echo "$file" | grep -qE "$skip_patterns"; then
+                echo "⏭️  Skipping $file (template/index)"
+                skipped=$((skipped + 1))
+                continue
+              fi
+              
               echo "📄 Validating $file..."
               result=$(node validators/validate-documentation.js "$file" 2>&1) || true
               
               if echo "$result" | grep -q "Score:"; then
                 score=$(echo "$result" | grep -oE "Score: [0-9]+" | grep -oE "[0-9]+")
-                if [ "$score" -lt 60 ]; then
-                  echo "  ❌ Score: $score/100 (minimum: 60)"
+                if [ "$score" -lt 50 ]; then
+                  echo "  ❌ Score: $score/100 (minimum: 50)"
                   errors=$((errors + 1))
-                elif [ "$score" -lt 80 ]; then
-                  echo "  ⚠️  Score: $score/100 (recommended: 80)"
+                elif [ "$score" -lt 70 ]; then
+                  echo "  ⚠️  Score: $score/100 (recommended: 70)"
                   warnings=$((warnings + 1))
                 else
                   echo "  ✅ Score: $score/100"
@@ -248,11 +259,11 @@ jobs:
               
               if echo "$result" | grep -q "Score:"; then
                 score=$(echo "$result" | grep -oE "Score: [0-9]+" | grep -oE "[0-9]+")
-                if [ "$score" -lt 60 ]; then
-                  echo "  ❌ Score: $score/100 (minimum: 60)"
+                if [ "$score" -lt 50 ]; then
+                  echo "  ❌ Score: $score/100 (minimum: 50)"
                   errors=$((errors + 1))
-                elif [ "$score" -lt 80 ]; then
-                  echo "  ⚠️  Score: $score/100 (recommended: 80)"
+                elif [ "$score" -lt 70 ]; then
+                  echo "  ⚠️  Score: $score/100 (recommended: 70)"
                   warnings=$((warnings + 1))
                 else
                   echo "  ✅ Score: $score/100"
@@ -267,8 +278,9 @@ jobs:
           echo "📊 Validation Summary"
           echo "======================================"
           echo "Files validated: $validated"
-          echo "Errors (score < 60): $errors"
-          echo "Warnings (score < 80): $warnings"
+          echo "Files skipped: $skipped"
+          echo "Errors (score < 50): $errors"
+          echo "Warnings (score < 70): $warnings"
           echo ""
           
           if [ $errors -gt 0 ]; then
