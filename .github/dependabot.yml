@@ -1,0 +1,95 @@
+# Dependabot configuration for automated dependency updates
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  # Root package.json (workspaces config)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "deps"
+    groups:
+      typescript:
+        patterns:
+          - "typescript"
+          - "@types/*"
+      mcp:
+        patterns:
+          - "@modelcontextprotocol/*"
+
+  # UIPath Docs MCP Server
+  - package-ecosystem: "npm"
+    directory: "/mcp-servers/uipath-docs"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "mcp-server"
+      - "uipath-docs"
+    commit-message:
+      prefix: "deps(uipath-docs)"
+
+  # YouTube Scraper MCP Server
+  - package-ecosystem: "npm"
+    directory: "/mcp-servers/youtube-scraper"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "mcp-server"
+      - "youtube-scraper"
+    commit-message:
+      prefix: "deps(youtube-scraper)"
+
+  # Local Knowledge MCP Server
+  - package-ecosystem: "npm"
+    directory: "/mcp-servers/local-knowledge"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "mcp-server"
+      - "local-knowledge"
+    commit-message:
+      prefix: "deps(local-knowledge)"
+
+  # Reddit Search MCP Server
+  - package-ecosystem: "npm"
+    directory: "/mcp-servers/reddit-search"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "mcp-server"
+      - "reddit-search"
+    commit-message:
+      prefix: "deps(reddit-search)"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"

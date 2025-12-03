@@ -178,6 +178,10 @@
   },
   "active": "4a2afe741ce360f9",
   "lastOpenFiles": [
+    "templates/examples/example-requirements.json",
+    "templates/examples/example-concept-input.json",
+    "templates/examples",
+    "templates/README.md",
     "knowledge/usecases/uc-001-onboarding/analysis.md",
     "knowledge/custom/uc-001-onboarding-technical.md",
     "knowledge/usecases/uc-001-onboarding/technical.md",

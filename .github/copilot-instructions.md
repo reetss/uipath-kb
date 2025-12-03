@@ -30,11 +30,15 @@ uipath-kb/
 │   ├── local-knowledge/                 # Lokale Dokumentationssuche
 │   └── reddit-search/                   # r/UiPath Community Search
 ├── knowledge/                           # Zentrale Knowledge Base
-│   ├── usecases/                        # Business Use Cases (User-Input)
+│   ├── usecases/                        # Use Cases (Business + Analyse)
+│   │   └── uc-XXX-name/                 # Pro Use Case ein Ordner
+│   │       ├── README.md                # Business-Input (vom User)
+│   │       ├── analysis.md              # Technische Analyse (von Copilot)
+│   │       └── assets/                  # Zusätzliche Dateien
 │   ├── official/                        # Gecachte UIPath Docs
 │   ├── videos/                          # Video Transkripte & Metadaten
 │   ├── reddit/                          # Reddit Community Insights
-│   ├── custom/                          # Eigene Dokumentation (aus Use Cases)
+│   ├── custom/                          # Eigene Best Practices & Referenzen
 │   └── generated/                       # Generierte Dokumente
 ├── docs/                                # Projekt-Dokumentation
 │   ├── adr/                             # Architecture Decision Records
@@ -62,15 +66,21 @@ uipath-kb/
 Siehe **[Use Case Workflow](../docs/usecase-workflow.md)** für den vollständigen Prozess:
 
 ```
-1. User legt Use Case in knowledge/usecases/ ab
-2. User beauftragt: "Dokumentiere bitte UC-XXX technisch"
+1. User legt Use Case in knowledge/usecases/uc-XXX-name/README.md ab
+2. User beauftragt: "Analysiere bitte UC-XXX technisch"
 3. Copilot:
-   - Use Case analysieren
+   - README.md analysieren (Lücken identifizieren)
    - MCP-Server Recherche (UIPath Docs, Reddit, Videos, Local KB)
-   - Technische Dokumentation erstellen (knowledge/custom/)
-   - Validierung (Score ≥ 80)
-   - Cross-Referenzen setzen
+   - analysis.md erstellen (im selben UC-Ordner)
+   - Rückfragen formulieren (Kritisch/Wichtig/Nice-to-have)
+   - Vorläufige Architektur skizzieren
 ```
+
+**Output:** `knowledge/usecases/uc-XXX-name/analysis.md` mit:
+- 🔴 Offene Rückfragen (priorisiert)
+- Vorläufige Architektur (Mermaid)
+- Risiko-Assessment
+- MVP-Empfehlung
 
 **Dieser Workflow hat PRIORITÄT** bei allen Use-Case-bezogenen Requests!
 
