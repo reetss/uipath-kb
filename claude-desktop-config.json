@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "uipath-docs": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\steer\\Workbenches\\uipath-kb\\mcp-servers\\uipath-docs\\dist\\index.js"
+      ],
+      "env": {}
+    },
+    "youtube-scraper": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\steer\\Workbenches\\uipath-kb\\mcp-servers\\youtube-scraper\\dist\\index.js"
+      ],
+      "env": {}
+    },
+    "local-knowledge": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\steer\\Workbenches\\uipath-kb\\mcp-servers\\local-knowledge\\dist\\index.js"
+      ],
+      "env": {}
+    },
+    "reddit-search": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\steer\\Workbenches\\uipath-kb\\mcp-servers\\reddit-search\\dist\\index.js"
+      ],
+      "env": {}
+    }
+    ,
+    "uipath-forum": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\steer\\Workbenches\\uipath-kb\\mcp-servers\\uipath-forum\\dist\\index.js"
+      ],
+      "env": {}
+    }
+  }
+}
