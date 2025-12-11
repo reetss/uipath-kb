@@ -1,0 +1,15 @@
+{
+  "fetchedAt": "2025-12-11T00:00:00Z",
+  "source": "https://forum.uipath.com/latest.json",
+  "topics": [
+    {
+      "id": 123456,
+      "title": "UiPath Community Forum Year in Review 2025",
+      "slug": "uipath-community-forum-year-in-review-2025",
+      "url": "https://forum.uipath.com/t/uipath-community-forum-year-in-review-2025/123456",
+      "category": "Announcements",
+      "tags": ["community", "year-in-review"],
+      "created": "2025-12-10T12:34:56Z"
+    }
+  ]
+}
