@@ -1,0 +1,43 @@
+{
+  "entity_defs": [
+    { "id": "f_first_name", "title": "FirstName", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract candidate first name" },
+    { "id": "f_last_name", "title": "LastName", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract candidate last name" },
+    { "id": "f_email", "title": "Email", "data_type": "text", "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$", "inherits_from": [], "trainable": false, "instructions": "Extract candidate email" },
+    { "id": "f_phone", "title": "Phone", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract candidate phone" },
+    { "id": "f_location", "title": "Location", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract candidate location" },
+
+    { "id": "f_birthdate", "title": "BirthDate", "data_type": "date", "inherits_from": [], "trainable": false, "instructions": "Extract date of birth if present" },
+    { "id": "f_nationality", "title": "Nationality", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract nationality" },
+    { "id": "f_languages", "title": "Languages", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract languages" },
+
+    { "id": "f_current_title", "title": "CurrentTitle", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract current job title" },
+    { "id": "f_years_experience", "title": "YearsExperience", "data_type": "number", "inherits_from": [], "trainable": false, "instructions": "Extract years of experience" },
+    { "id": "f_prev_employers", "title": "PreviousEmployers", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract previous employers" },
+
+    { "id": "f_highest_degree", "title": "HighestDegree", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract highest degree" },
+    { "id": "f_institution", "title": "Institution", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract education institution" },
+    { "id": "f_graduation_year", "title": "GraduationYear", "data_type": "number", "inherits_from": [], "trainable": false, "instructions": "Extract graduation year" },
+
+    { "id": "f_core_skills", "title": "CoreSkills", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract core skills" },
+    { "id": "f_tech_stack", "title": "TechStack", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract tech stack" },
+
+    { "id": "f_target_position", "title": "TargetPosition", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract target position" },
+    { "id": "f_salary_expectation", "title": "SalaryExpectation", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract salary expectation" },
+    { "id": "f_availability", "title": "Availability", "data_type": "text", "inherits_from": [], "trainable": false, "instructions": "Extract availability" }
+  ],
+
+  "label_groups": [
+    { "id": "fg_01_header", "title": "01_Header", "labels": ["f_first_name", "f_last_name", "f_email", "f_phone", "f_location"] },
+    { "id": "fg_02_personal", "title": "02_Personal", "labels": ["f_birthdate", "f_nationality", "f_languages"] },
+    { "id": "fg_03_experience", "title": "03_Experience", "labels": ["f_current_title", "f_years_experience", "f_prev_employers"] },
+    { "id": "fg_04_education", "title": "04_Education", "labels": ["f_highest_degree", "f_institution", "f_graduation_year"] },
+    { "id": "fg_05_skills", "title": "05_Skills", "labels": ["f_core_skills", "f_tech_stack"] },
+    { "id": "fg_06_jobfit", "title": "06_JobFit", "labels": ["f_target_position", "f_salary_expectation", "f_availability"] }
+  ],
+
+  "documents": [
+    { "id": "dt_cv", "title": "CV", "label_groups": [
+      "fg_01_header", "fg_02_personal", "fg_03_experience", "fg_04_education", "fg_05_skills", "fg_06_jobfit"
+    ], "languages": ["en", "de"] }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "languages": ["en", "de"],
+  "documentTypes": [
+    {
+      "id": "dt_cv",
+      "name": "CV",
+      "description": "Curriculum Vitae / Resume",
+      "fieldGroups": [
+        {
+          "id": "fg_01_header",
+          "name": "01_Header",
+          "fields": [
+            { "id": "f_first_name", "name": "FirstName", "type": "string", "required": true },
+            { "id": "f_last_name", "name": "LastName", "type": "string", "required": true },
+            { "id": "f_email", "name": "Email", "type": "string", "pattern": "^[^@\\n\\r]+@[^@\\n\\r]+\\.[^@\\n\\r]+$" },
+            { "id": "f_phone", "name": "Phone", "type": "string" },
+            { "id": "f_location", "name": "Location", "type": "string" }
+          ]
+        },
+        {
+          "id": "fg_02_personal",
+          "name": "02_Personal",
+          "fields": [
+            { "id": "f_birthdate", "name": "BirthDate", "type": "date" },
+            { "id": "f_nationality", "name": "Nationality", "type": "string" },
+            { "id": "f_languages", "name": "Languages", "type": "string" }
+          ]
+        },
+        {
+          "id": "fg_03_experience",
+          "name": "03_Experience",
+          "fields": [
+            { "id": "f_current_title", "name": "CurrentTitle", "type": "string" },
+            { "id": "f_years_experience", "name": "YearsExperience", "type": "number" },
+            { "id": "f_prev_employers", "name": "PreviousEmployers", "type": "string" }
+          ]
+        },
+        {
+          "id": "fg_04_education",
+          "name": "04_Education",
+          "fields": [
+            { "id": "f_highest_degree", "name": "HighestDegree", "type": "string" },
+            { "id": "f_institution", "name": "Institution", "type": "string" },
+            { "id": "f_graduation_year", "name": "GraduationYear", "type": "number" }
+          ]
+        },
+        {
+          "id": "fg_05_skills",
+          "name": "05_Skills",
+          "fields": [
+            { "id": "f_core_skills", "name": "CoreSkills", "type": "string" },
+            { "id": "f_tech_stack", "name": "TechStack", "type": "string" }
+          ]
+        },
+        {
+          "id": "fg_06_jobfit",
+          "name": "06_JobFit",
+          "fields": [
+            { "id": "f_target_position", "name": "TargetPosition", "type": "string" },
+            { "id": "f_salary_expectation", "name": "SalaryExpectation", "type": "string" },
+            { "id": "f_availability", "name": "Availability", "type": "string" }
+          ]
+        }
+      ]
+    }
+  ]
+}
