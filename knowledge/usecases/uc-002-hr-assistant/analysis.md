@@ -112,3 +112,4 @@ flowchart TB
 - Prozess-Workflow: `docs/usecase-workflow.md`  
 - Best Practices: `knowledge/custom/best-practices.md`  
 - Forum/Community: `knowledge/forum/`, `knowledge/reddit/`  
+ - Architektur-Entscheidung: `docs/adr/uc2-titel.md` (Status: Accepted)

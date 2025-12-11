@@ -41,6 +41,7 @@ Ein ADR kann folgende Status haben:
 | [0001](0001-mcp-server-architecture.md) | MCP Server Architecture | 2024-12-02 | Accepted |
 | [0002](0002-knowledge-base-structure.md) | Knowledge Base Structure | 2024-12-02 | Accepted |
 | [0003](0003-documentation-validation.md) | Documentation Validation Framework | 2024-12-02 | Accepted |
+| [UC-002-A1](uc2-titel.md) | Architektur für UC-002 (HR Assistant) | 2025-12-11 | Accepted |
 
 ### Proposed
 
