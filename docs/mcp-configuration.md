@@ -56,6 +56,13 @@ Die MCP-Server werden in der Claude Desktop Konfigurationsdatei eingetragen:
       ],
       "env": {}
     },
+    "uipath-forum": {
+      "command": "node",
+      "args": [
+        "/Users/mfalland/git/uipath-kb/mcp-servers/uipath-forum/dist/index.js"
+      ],
+      "env": {}
+    },
     "reddit-search": {
       "command": "node",
       "args": [
@@ -128,6 +135,13 @@ Du kannst Server einzeln aktivieren, indem du nur die gewünschten Server in die
 - `knowledge_rebuild_index` - Suchindex neu aufbauen
 
 ### Reddit Search Server
+### UiPath Forum Server
+- `forum_latest` - Neueste Themen
+- `forum_top` - Top-Themen nach Zeitraum
+- `forum_get_topic` - Details zu einem Thema
+- `forum_search` - Forum-Suche
+
+Siehe: `docs/uipath-forum-scraper.md`
 - `reddit_search_uipath` - Suche r/UiPath für Probleme und Lösungen
 - `reddit_get_trending` - Aktuelle Trending-Topics aus r/UiPath
 - `reddit_get_top_problems` - Meist diskutierte Probleme aus der Community

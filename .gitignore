@@ -40,3 +40,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Local cleanup clone - keep out of repo
+clean-uipath-kb/
+
+# Ignore specstory history (contained a leaked key previously)
+.specstory/

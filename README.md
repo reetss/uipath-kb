@@ -41,6 +41,7 @@ uipath-kb/
 │   ├── usecases/             # Use Cases (README.md + analysis.md)
 │   ├── videos/               # Video-Transkripte
 │   ├── reddit/               # Community Insights
+│   ├── forum/                # UiPath Forum Insights
 │   └── custom/               # Best Practices & Referenzen
 ├── docs/                     # Projekt-Dokumentation
 │   ├── adr/                  # Architecture Decision Records
@@ -88,6 +89,16 @@ Live-Suche auf r/UiPath für Community-Insights.
 "Zeige die Top-Probleme aus der UIPath Community"
 ```
 
+### 5. UiPath Forum (`uipath-forum`)
+Abfrage des offiziellen UiPath Community Forums (Discourse) für aktuelle Themen.
+
+```
+"Zeige die neuesten Themen aus dem UiPath Forum"
+"Suche im Forum nach REFramework Fragen"
+```
+
+Siehe Leitfaden: `docs/uipath-forum-scraper.md`
+
 ## 📝 Befehle
 
 ```bash
@@ -121,6 +132,8 @@ python scripts/transcribe-video.py <youtube-url>
 - [MCP Konfiguration](docs/mcp-configuration.md) - Claude Desktop Setup
 - [Use Case Workflow](docs/usecase-workflow.md) - Dokumentations-Workflow
 - [ADR Index](docs/adr/README.md) - Architektur-Entscheidungen
+- [UiPath Forum Scraper](docs/uipath-forum-scraper.md) - Nutzung & Beispiele
+- [Changelog](docs/changelog.md) - Änderungen und Releases
 
 ## 🤝 Beitragen
 
