@@ -67,27 +67,27 @@ Unklar sind aktuell vor allem: führendes Stammdatensystem, exakte Namenskonvent
 ### High-Level-Flow (Mermaid)
 
 ```mermaid
-flowchart TD
-    A[Watch-Folder überwachen]
-    B[Neuer Produktordner erkannt]
-    C[RPA Ordnerstruktur und Dateinamen anlegen]
-    D[RPA Lightroom Sync und Photoshop Batch starten]
-    E[Human Bildkontrolle und Produktdaten ergänzen]
-    F[Agent Vision-KI Designbild analysieren]
-    G[RPA Produkt in WooCommerce anlegen (privat)]
-    H[RPA URL an verantwortliche Person senden]
-    I[Human finale Freigabe und Veröffentlichung]
-    K[Logging und Reporting im Orchestrator]
+graph TD;
+  A[Watch-Folder überwachen];
+  B[Neuer Produktordner erkannt];
+  C[RPA Ordnerstruktur und Dateinamen anlegen];
+  D[RPA Lightroom Sync und Photoshop Batch starten];
+  E[Human Bildkontrolle und Produktdaten ergänzen];
+  F[Agent Vision-KI Designbild analysieren];
+  G[RPA Produkt in WooCommerce anlegen (privat)];
+  H[RPA URL an verantwortliche Person senden];
+  I[Human finale Freigabe und Veröffentlichung];
+  K[Logging und Reporting im Orchestrator];
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    G --> K
+  A --> B;
+  B --> C;
+  C --> D;
+  D --> E;
+  E --> F;
+  F --> G;
+  G --> H;
+  H --> I;
+  G --> K;
 ```
 
 ### Systemübersicht
