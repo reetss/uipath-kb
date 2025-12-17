@@ -68,16 +68,26 @@ Unklar sind aktuell vor allem: führendes Stammdatensystem, exakte Namenskonvent
 
 ```mermaid
 flowchart TD
-    A[Watch-Folder überwachen] --> B[Neuer Produktordner erkannt]
-  B --> C[RPA Ordnerstruktur & Dateinamen anlegen]
-  C --> D[RPA Lightroom Sync & Photoshop Batch starten]
-  D --> E[Human Bildkontrolle & Produktdaten ergänzen]
-  E --> F[Agent Vision-KI Designbild analysieren]
-  F --> G[Agent Text-KI Produkttext generieren]
-  G --> H[RPA Produkt in WooCommerce anlegen (privat)]
-  H --> I[RPA URL an verantwortliche Person senden]
-  I --> J[Human Finale Freigabe & Veröffentlichung]
-  H --> K[Logging & Reporting im Orchestrator]
+    A[Watch-Folder überwachen]
+    B[Neuer Produktordner erkannt]
+    C[RPA Ordnerstruktur und Dateinamen anlegen]
+    D[RPA Lightroom Sync und Photoshop Batch starten]
+    E[Human Bildkontrolle und Produktdaten ergänzen]
+    F[Agent Vision-KI Designbild analysieren]
+    G[RPA Produkt in WooCommerce anlegen (privat)]
+    H[RPA URL an verantwortliche Person senden]
+    I[Human finale Freigabe und Veröffentlichung]
+    K[Logging und Reporting im Orchestrator]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    G --> K
 ```
 
 ### Systemübersicht
