@@ -44,8 +44,9 @@ Ein ADR kann folgende Status haben:
 | [UC-002-A1](uc2-titel.md) | Architektur für UC-002 (HR Assistant) | 2025-12-11 | Accepted |
 
 ### Proposed
-
-_Keine zur Zeit_
+| Nr | Titel | Datum | Status |
+|----|-------|-------|--------|
+| [UC-003-A1](uc3-textile-design-architecture.md) | Architektur für UC-003 (Textile Design & Produktanlage) | 2025-12-17 | Proposed |
 
 ### Superseded
 
