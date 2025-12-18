@@ -49,7 +49,7 @@ Konkrete Probleme:
 
 ### Gewünschtes Verhalten (TO-BE)
 
-- **Human**: Anlage eines Produktordners nach definierter Ordner- und Namenskonvention (z. B. Artikelnummer-Variante-01a-1 usw.) und Ablage von ca. 5 vorab manuell bearbeiteten Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases) sowie 1–2 Designbildern. Wenn der Ordner vollständig vorbereitet ist, legt der Mitarbeiter eine Marker-Datei (z. B. `READY.txt`) im Produktordner an; diese Datei signalisiert, dass der Ordner zur Verarbeitung freigegeben ist.
+- **Human**: Anlage eines Produktordners nach definierter Ordner- und Namenskonvention (z. B. Artikelnummer-Variante-01a-1 usw.) und Ablage von ca. 5 vorab manuell bearbeiteten Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases) sowie 1–2 Designbildern. Zusätzlich beantwortet der Mitarbeiter für dieses konkrete Produkt einen definierten Fragenkatalog (z. B. Formular/Sheet) zu produktspezifischen Zusatzinformationen (z. B. Kollektion, Designer, besondere Story, Pflegehinweise, Zielgruppe) und legt die daraus entstehende Metadaten-Datei ebenfalls im Produktordner ab. Wenn der Ordner vollständig vorbereitet ist, legt der Mitarbeiter eine Marker-Datei (z. B. `READY.txt`) im Produktordner an; diese Datei signalisiert, dass der Ordner zur Verarbeitung freigegeben ist.
 - **RPA**: Überwachung des Watch-Folders auf neue, vollständig vorbereitete Produktordner, die eine Marker-Datei `READY.txt` enthalten, und Validierung der Ordner- und Dateinamen-Konvention (Fehlermeldung/Hint bei Abweichungen, perspektivisch optional automatisches Anlegen/Korrigieren der Struktur).
 - **Human-in-the-Loop**: Kontrolle der bearbeiteten Fotos und Erfassung zusätzlicher Produktdaten (Grammatur, Materialzusammensetzung, Preis, Lagerbestand etc.)
 - **Agent (KI)**: Bildanalyse der Designbilder mittels Vision-LLM zur Erkennung von:
@@ -81,12 +81,13 @@ Konkrete Probleme:
 1. Überwachung eines Watch-Folders auf neu angelegte, vollständig vorbereitete Produktordner mit vorab manuell bearbeiteten Produktfotos und Designbildern, die eine Marker-Datei (z. B. `READY.txt`) als explizites Freigabe-Signal enthalten.
 2. Validierung der Ordnerstrukturen und Dateinamen gegen eine definierte Konvention (inkl. Feedback an den Mitarbeiter bei Abweichungen; perspektivisch optional automatisches Anlegen/Korrigieren der Struktur durch RPA).
 3. Technische Prüfung der bereitgestellten Bilder (z. B. Dateiformat, Auflösung, Mindestanzahl) für alle Produktordner, die ein gültiges Freigabe-Signal (Marker-Datei `READY.txt`) besitzen – ohne Eingriff in die vorab manuelle, kreative Bildbearbeitung.
-4. Bildanalyse der Designbilder (dominante Farben, Muster, Stil etc.) durch Vision-KI
-5. Generierung von Produkttexten basierend auf KI-Analyse und manuellen Produktdaten
-6. Anlage des Produkts in WooCommerce als „privat“ per API oder CSV-Import
-7. Versand der Produkt-URL zur finalen Freigabe
-8. Logging aller Schritte und Ergebnisse im Orchestrator
-9. Möglichkeit zur manuellen Nachbearbeitung bei niedriger KI-Confidence
+4. Erfassung und Verarbeitung produktspezifischer Zusatzinformationen auf Basis eines strukturierten Fragenkatalogs/Metadaten-Formulars je Produktordner.
+5. Bildanalyse der Designbilder (dominante Farben, Muster, Stil etc.) durch Vision-KI
+6. Generierung von Produkttexten basierend auf KI-Analyse, den Antworten aus dem Fragenkatalog und manuellen Produktdaten
+7. Anlage des Produkts in WooCommerce als „privat“ per API oder CSV-Import
+8. Versand der Produkt-URL zur finalen Freigabe
+9. Logging aller Schritte und Ergebnisse im Orchestrator
+10. Möglichkeit zur manuellen Nachbearbeitung bei niedriger KI-Confidence
 
 ### Nicht-funktionale Anforderungen
 
@@ -105,7 +106,8 @@ Konkrete Probleme:
 - Ca. 5 Produktfotos und 1–2 Designbilder (JPG/PNG/TIFF) im Watch-Folder
 - Manuell erfasste Produktdaten (Grammatur, Preis, Material, Lagerbestand etc.)
 - Definierte Namenskonventionen, Ordnerstrukturen und Textvorlagen
- - Marker-Datei (z. B. `READY.txt`) im Produktordner als explizites Freigabe-Signal für die Verarbeitung
+- Metadaten-Datei/Fragebogen mit produktspezifischen Zusatzinformationen je Produktordner
+- Marker-Datei (z. B. `READY.txt`) im Produktordner als explizites Freigabe-Signal für die Verarbeitung
 
 ### Output
 

@@ -39,13 +39,94 @@ Stand: 2025-12-18 (basierend auf aktualisiertem README und neuen Assets)
 
 ---
 
+## ✅ Antworten auf Rückfragen (Platzhalter)
+
+> Hier werden später die Antworten zu den Fragen Q1–Q15 dokumentiert.
+
+### A1 – Antwort zu Q1
+**Frage (Kurzfassung):** Führendes System für Produktstammdaten.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q1 hier eintragen]
+
+### A2 – Antwort zu Q2
+**Frage (Kurzfassung):** Finale Namenskonvention für Produktordner und Dateien.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q2 hier eintragen]
+
+### A3 – Antwort zu Q3
+**Frage (Kurzfassung):** Bevorzugte WooCommerce-Schnittstelle (REST / CSV / Plugin).  
+**Antwort (Platzhalter):**  
+[Antwort zu Q3 hier eintragen]
+
+### A4 – Antwort zu Q4
+**Frage (Kurzfassung):** Erlaubte KI-Plattformen (Cloud vs. On-Prem) und Umgang mit Bilddaten.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q4 hier eintragen]
+
+### A5 – Antwort zu Q5
+**Frage (Kurzfassung):** Einschränkungen/Abhängigkeiten rund um Adobe bzw. vorgelagerte Tools.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q5 hier eintragen]
+
+### A6 – Antwort zu Q6
+**Frage (Kurzfassung):** Erwartetes Volumen an neuen Produkten (Pro Woche / Monat).  
+**Antwort (Platzhalter):**  
+[Antwort zu Q6 hier eintragen]
+
+### A7 – Antwort zu Q7
+**Frage (Kurzfassung):** MUSS-Felder im WooCommerce-Produkt und Referenz-Schema.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q7 hier eintragen]
+
+### A8 – Antwort zu Q8
+**Frage (Kurzfassung):** Verfügbare Text- und SEO-Guidelines für KI-Texte.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q8 hier eintragen]
+
+### A9 – Antwort zu Q9
+**Frage (Kurzfassung):** Varianten-Handling im MVP und heutige Abbildung in WooCommerce.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q9 hier eintragen]
+
+### A10 – Antwort zu Q10
+**Frage (Kurzfassung):** Sprachumfang (DE / EN / weitere) und Priorität im MVP.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q10 hier eintragen]
+
+### A11 – Antwort zu Q11
+**Frage (Kurzfassung):** Detaillierter Human-in-the-Loop-Prozess (Rollen, Tool, SLA).  
+**Antwort (Platzhalter):**  
+[Antwort zu Q11 hier eintragen]
+
+### A12 – Antwort zu Q12
+**Frage (Kurzfassung):** Benötigte Logs und Reports (KPI-Sicht).  
+**Antwort (Platzhalter):**  
+[Antwort zu Q12 hier eintragen]
+
+### A13 – Antwort zu Q13
+**Frage (Kurzfassung):** Automatisches Generieren von SEO-Tags und Kombination mit Fix-Keywords.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q13 hier eintragen]
+
+### A14 – Antwort zu Q14
+**Frage (Kurzfassung):** Geplante zusätzliche Vertriebskanäle und Auswirkungen auf das Datenmodell.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q14 hier eintragen]
+
+### A15 – Antwort zu Q15
+**Frage (Kurzfassung):** Geplanter Feedback-Loop zur Verbesserung von Prompts/Modellen.  
+**Antwort (Platzhalter):**  
+[Antwort zu Q15 hier eintragen]
+
+---
+
 ## 📋 Zusammenfassung des Use Cases (technische Sicht)
 
 - Ziel ist ein halb- bis weitgehend automatisierter End-to-End-Prozess für das Anlegen neuer Designerstoffe im WooCommerce-Shop.
-- Eingang sind von Menschen vorab manuell bearbeitete Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases), 1–2 Designbilder, manuelle Produktstammdaten sowie ein strukturierter Produktordner.
+- Eingang sind von Menschen vorab manuell bearbeitete Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases), 1–2 Designbilder, manuelle Produktstammdaten sowie ein strukturierter Produktordner mit einer Metadaten-Datei, in der der User einen Fragenkatalog mit produktspezifischen Zusatzinformationen beantwortet.
 - Der Prozess startet explizit, sobald im Produktordner eine Marker-Datei (z. B. `READY.txt`) angelegt wird – sie trennt klar die manuelle Vorbereitungsphase von der automatisierten Verarbeitung.
-- UiPath übernimmt primär die Orchestrierung von Dateioperationen (inkl. Validierung von Struktur und Dateinamen), technische Bildprüfungen (z. B. Format/Größe/Anzahl), KI-Aufrufen (Vision + Text), WooCommerce-Integration (REST/CSV) und Benachrichtigungen.
-- KI-Komponenten (Vision-LLM + Text-LLM) liefern Bildanalyse (Farben, Muster, Stil, Saison, Use-Cases, Zielgruppe) und generierte Produkttexte, basierend auf vordefinierten Vorlagen und einer expliziten Muster-/Stil-Taxonomie aus dem README.
+- UiPath übernimmt primär die Orchestrierung von Dateioperationen (inkl. Validierung von Struktur und Dateinamen), technische Bildprüfungen (z. B. Format/Größe/Anzahl), Einlesen und Verarbeiten der Metadaten-Datei, KI-Aufrufen (Vision + Text), WooCommerce-Integration (REST/CSV) und Benachrichtigungen.
+- KI-Komponenten (Vision-LLM + Text-LLM) liefern Bildanalyse (Farben, Muster, Stil, Saison, Use-Cases, Zielgruppe) und generierte Produkttexte, basierend auf vordefinierten Vorlagen, der Muster-/Stil-Taxonomie aus dem README und den im Fragenkatalog erfassten produktspezifischen Zusatzinformationen.
 - Ein Human-in-the-Loop-Schritt stellt sicher, dass Bilder, Attribute und Texte fachlich korrekt sind, bevor das Produkt veröffentlicht wird.
 
 Die im assets-Ordner hinterlegten Ressourcen spielen eine zentrale Rolle für das Design:
@@ -134,8 +215,8 @@ Die Assets (Bilder, Screenshots, Export-CSV) können für frühe End-to-End-Test
   - Datei-basierter Trigger über Watch-Folder: Jeder Produktordner mit Marker-Datei `READY.txt` wird als neue Transaction in einer Orchestrator-Queue erfasst (Queue „UC-003-ProductOnboarding“ o. ä.).
   - Jede Transaction repräsentiert genau einen Stoff (inkl. Bilder & Stammdaten), identifiziert über Ordnername/Artikelnummer.
 - **Dateistruktur & Validierung**:
-  - Produktordner enthält: vorbereitete Produktfotos, Designbilder, optional eine kleine Metadaten-Datei (z. B. CSV/JSON) + `READY.txt`.
-  - RPA validiert anhand der definierten Namenskonvention (aus README + Assets), ob alle benötigten Dateien vorhanden und korrekt benannt sind.
+  - Produktordner enthält: vorbereitete Produktfotos, Designbilder, eine Metadaten-Datei mit Antworten auf den produktspezifischen Fragenkatalog (z. B. CSV/JSON/Excel) sowie `READY.txt`.
+  - RPA validiert anhand der definierten Namenskonvention (aus README + Assets), ob alle benötigten Dateien (inkl. Metadaten-Datei) vorhanden und korrekt benannt sind.
 - **Photoshop-Integration**:
   - Start einer vordefinierten Action/Batch (z. B. über Droplet, Skript oder Menü), die die im Ordner enthaltenen Bilder in die benötigten Formate/Größen überführt.
   - Ergebnisbilder werden im gleichen oder in einem definierten Unterordner abgelegt.
