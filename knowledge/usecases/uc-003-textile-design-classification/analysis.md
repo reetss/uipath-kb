@@ -12,113 +12,45 @@ Stand: 2025-12-18 (basierend auf aktualisiertem README und neuen Assets)
 | #  | Frage | Ansprechpartner | Status |
 |----|--------|-----------------|--------|
 | Q1 | Was ist das führende System für Produktstammdaten (Preis, Material, Lagerbestand, Artikelnummer)? Gibt es bereits eine „Single Source of Truth“ (z. B. ERP/WAWi) oder ist WooCommerce aktuell führend? | Business / IT (Shop, ERP) | ⏳ Offen |
+| A1 | **Antwort zu Q1:** [Antwort zu Q1 hier eintragen] | - | - |
 | Q2 | Wie genau sieht die finale, verbindliche Namenskonvention für Produktordner und Dateien aus (Pattern, Pflichtfelder, erlaubte Zeichen)? Die Beispiel-Dateien im assets-Ordner (z. B. `Viskose-Elastan-Jersey-Stoff-0002189-0090024-0000102-5-768x768.jpg`, `Bild1.jpg`–`Bild4.jpg`) und der WooCommerce-Export (`wc-product-export-18-12-2025-1766073940551.csv`) deuten auf ein bestehendes Schema hin – wie sind die einzelnen Segmente (Basisname, Artikelnummer, Farb-/Variantencode, Bildvariante/Größe) fachlich definiert und wie strikt muss dies eingehalten werden? | Shop-Owner / Prozessverantwortliche:r | ⏳ Offen |
+| A2 | **Antwort zu Q2:** [Antwort zu Q2 hier eintragen] | - | - |
 | Q3 | Über welche technische Schnittstelle soll WooCommerce im MVP angebunden werden (REST API, CSV-Import auf Basis der Export-Struktur, Plugin)? Gibt es produktive API-Credentials bzw. ein dediziertes Testsystem? | IT / WooCommerce-Admin | ⏳ Offen |
+| A3 | **Antwort zu Q3:** [Antwort zu Q3 hier eintragen] | - | - |
 | Q4 | Welche Vision-/Text-KI dürfen aus Compliance- und Kostensicht verwendet werden (Cloud-Dienste vs. On-Prem/selbst gehostet)? Müssen Bilddaten zwingend on-prem/intern bleiben, oder dürfen Designbilder über einen Cloud-KI-Dienst laufen? | IT Security / Datenschutz / Management | ⏳ Offen |
+| A4 | **Antwort zu Q4:** [Antwort zu Q4 hier eintragen] | - | - |
 | Q5 | Gibt es Limitierungen oder Abhängigkeiten bei Adobe (Lizenzmodell, erlaubte Automatisierung, Headless/CLI-Verwendung), die den automatisierten Start der Photoshop-Stapelverarbeitung durch RPA einschränken? | Design-Verantwortliche / IT | ⏳ Offen |
+| A5 | **Antwort zu Q5:** [Antwort zu Q5 hier eintragen] | - | - |
 | Q6 | Wie viele neue Produkte (Designerstoffe) fallen typischerweise pro Woche/Monat an? Daraus ergeben sich Anforderungen an Durchsatz, Batch-Fenster, maximale parallele Läufe und Skalierung der Robots. | Business (Einkauf / Sortiment) | ⏳ Offen |
+| A6 | **Antwort zu Q6:** [Antwort zu Q6 hier eintragen] | - | - |
 
 ### Wichtig (Vor Go-Live klären)
 
 | #  | Frage | Ansprechpartner | Status |
 |----|--------|-----------------|--------|
 | Q7 | Welche Felder im WooCommerce-Produkt sind MUSS-Felder für den Go-Live (Titel, Kurzbeschreibung, Beschreibung, Attribute, Variationen, Tags, Kategorien, Meta, Bilder)? Kann der beigefügte WooCommerce-Export als „Referenz-Schema“ für das MVP dienen? | Shop-Owner | ⏳ Offen |
+| A7 | **Antwort zu Q7:** [Antwort zu Q7 hier eintragen] | - | - |
 | Q8 | Gibt es bereits Text- und SEO-Guidelines (Tonality, Stichworte, Mindestlänge, Struktur), an denen sich die KI-Texte orientieren müssen? Falls nein: sollen aus den bestehenden Produkttexten (Export/Screenshots im assets-Ordner) implizite Regeln abgeleitet werden? | Marketing / Content | ⏳ Offen |
+| A8 | **Antwort zu Q8:** [Antwort zu Q8 hier eintragen] | - | - |
 | Q9 | Sollen Varianten (z. B. unterschiedliche Farbstellungen oder Breiten) bereits im MVP automatisiert angelegt werden oder zunächst nur einfache Produkte ohne Varianten? Wie werden Varianten heute im WooCommerce-Export abgebildet? | Shop-Owner | ⏳ Offen |
+| A9 | **Antwort zu Q9:** [Antwort zu Q9 hier eintragen] | - | - |
 | Q10 | Welche Sprachen müssen unterstützt werden (nur Deutsch oder DE/EN, ggf. weitere)? Hat Mehrsprachigkeit Priorität im MVP oder kann sie in eine spätere Phase verschoben werden? | Business / Marketing | ⏳ Offen |
+| A10 | **Antwort zu Q10:** [Antwort zu Q10 hier eintragen] | - | - |
 | Q11 | Wie soll der Human-in-the-Loop-Prozess genau aussehen (wer prüft, in welchem Tool – direkt im WooCommerce-Backend oder in separaten Formularen –, in welchem Zeitfenster, wie wird Freigabe dokumentiert)? | Fachbereich / Prozessowner | ⏳ Offen |
+| A11 | **Antwort zu Q11:** [Antwort zu Q11 hier eintragen] | - | - |
 | Q12 | Welche Logs und Reports werden benötigt (z. B. Liste neuer Produkte, KI-Confidence, manueller Korrekturaufwand, Durchlaufzeiten, Erkennungsqualität der Muster/Farben)? | Management / Prozessowner | ⏳ Offen |
+| A12 | **Antwort zu Q12:** [Antwort zu Q12 hier eintragen] | - | - |
 
 ### Nice-to-have (Kann später geklärt werden)
 
 | #  | Frage | Ansprechpartner | Status |
 |----|--------|-----------------|--------|
 | Q13 | Sollen SEO-Tags (Meta-Title, Meta-Description, Keywords) ebenfalls automatisch generiert und gepflegt werden, und falls ja: ausschließlich aus KI oder kombiniert mit fixen Shop-Keywords? | Marketing / SEO | ⏳ Offen |
+| A13 | **Antwort zu Q13:** [Antwort zu Q13 hier eintragen] | - | - |
 | Q14 | Gibt es mittelfristig Pläne für weitere Vertriebskanäle (z. B. Marktplätze, Vergleichsportale), die vom gleichen Produkt-Feed profitieren sollen, sodass das Datenmodell von Anfang an kanalübergreifend gedacht werden sollte? | Management / Vertrieb | ⏳ Offen |
+| A14 | **Antwort zu Q14:** [Antwort zu Q14 hier eintragen] | - | - |
 | Q15 | Soll später ein Feedback-Loop implementiert werden, der auf Basis manueller Korrekturen (z. B. im WooCommerce-Backend) Prompts/Modelle verbessert und die Muster-/Stil-Taxonomie iterativ schärft? | IT / Data / Business | ⏳ Offen |
-
----
-
-## ✅ Antworten auf Rückfragen (Platzhalter)
-
-> Hier werden später die Antworten zu den Fragen Q1–Q15 dokumentiert.
-
-### A1 – Antwort zu Q1
-**Frage (Kurzfassung):** Führendes System für Produktstammdaten.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q1 hier eintragen]
-
-### A2 – Antwort zu Q2
-**Frage (Kurzfassung):** Finale Namenskonvention für Produktordner und Dateien.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q2 hier eintragen]
-
-### A3 – Antwort zu Q3
-**Frage (Kurzfassung):** Bevorzugte WooCommerce-Schnittstelle (REST / CSV / Plugin).  
-**Antwort (Platzhalter):**  
-[Antwort zu Q3 hier eintragen]
-
-### A4 – Antwort zu Q4
-**Frage (Kurzfassung):** Erlaubte KI-Plattformen (Cloud vs. On-Prem) und Umgang mit Bilddaten.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q4 hier eintragen]
-
-### A5 – Antwort zu Q5
-**Frage (Kurzfassung):** Einschränkungen/Abhängigkeiten rund um Adobe bzw. vorgelagerte Tools.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q5 hier eintragen]
-
-### A6 – Antwort zu Q6
-**Frage (Kurzfassung):** Erwartetes Volumen an neuen Produkten (Pro Woche / Monat).  
-**Antwort (Platzhalter):**  
-[Antwort zu Q6 hier eintragen]
-
-### A7 – Antwort zu Q7
-**Frage (Kurzfassung):** MUSS-Felder im WooCommerce-Produkt und Referenz-Schema.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q7 hier eintragen]
-
-### A8 – Antwort zu Q8
-**Frage (Kurzfassung):** Verfügbare Text- und SEO-Guidelines für KI-Texte.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q8 hier eintragen]
-
-### A9 – Antwort zu Q9
-**Frage (Kurzfassung):** Varianten-Handling im MVP und heutige Abbildung in WooCommerce.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q9 hier eintragen]
-
-### A10 – Antwort zu Q10
-**Frage (Kurzfassung):** Sprachumfang (DE / EN / weitere) und Priorität im MVP.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q10 hier eintragen]
-
-### A11 – Antwort zu Q11
-**Frage (Kurzfassung):** Detaillierter Human-in-the-Loop-Prozess (Rollen, Tool, SLA).  
-**Antwort (Platzhalter):**  
-[Antwort zu Q11 hier eintragen]
-
-### A12 – Antwort zu Q12
-**Frage (Kurzfassung):** Benötigte Logs und Reports (KPI-Sicht).  
-**Antwort (Platzhalter):**  
-[Antwort zu Q12 hier eintragen]
-
-### A13 – Antwort zu Q13
-**Frage (Kurzfassung):** Automatisches Generieren von SEO-Tags und Kombination mit Fix-Keywords.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q13 hier eintragen]
-
-### A14 – Antwort zu Q14
-**Frage (Kurzfassung):** Geplante zusätzliche Vertriebskanäle und Auswirkungen auf das Datenmodell.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q14 hier eintragen]
-
-### A15 – Antwort zu Q15
-**Frage (Kurzfassung):** Geplanter Feedback-Loop zur Verbesserung von Prompts/Modellen.  
-**Antwort (Platzhalter):**  
-[Antwort zu Q15 hier eintragen]
-
----
+| A15 | **Antwort zu Q15:** [Antwort zu Q15 hier eintragen] | - | - |
 
 ## 📋 Zusammenfassung des Use Cases (technische Sicht)
 
