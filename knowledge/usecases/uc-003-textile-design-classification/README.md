@@ -49,9 +49,8 @@ Konkrete Probleme:
 
 ### Gewünschtes Verhalten (TO-BE)
 
-- **Human**: Anlage eines Produktordners nach definierter Ordner- und Namenskonvention (z. B. Artikelnummer-Variante-01a-1 usw.) und Ablage von ca. 5 bereits in Lightroom manuell bearbeiteten Produktfotos sowie 1–2 Designbildern. Wenn der Ordner vollständig vorbereitet ist, legt der Mitarbeiter eine Marker-Datei (z. B. `READY.txt`) im Produktordner an; diese Datei signalisiert, dass der Ordner zur Verarbeitung freigegeben ist.
+- **Human**: Anlage eines Produktordners nach definierter Ordner- und Namenskonvention (z. B. Artikelnummer-Variante-01a-1 usw.) und Ablage von ca. 5 vorab manuell bearbeiteten Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases) sowie 1–2 Designbildern. Wenn der Ordner vollständig vorbereitet ist, legt der Mitarbeiter eine Marker-Datei (z. B. `READY.txt`) im Produktordner an; diese Datei signalisiert, dass der Ordner zur Verarbeitung freigegeben ist.
 - **RPA**: Überwachung des Watch-Folders auf neue, vollständig vorbereitete Produktordner, die eine Marker-Datei `READY.txt` enthalten, und Validierung der Ordner- und Dateinamen-Konvention (Fehlermeldung/Hint bei Abweichungen, perspektivisch optional automatisches Anlegen/Korrigieren der Struktur).
-- **RPA**: Start der vordefinierten Stapelverarbeitung in Photoshop (z. B. Skalierung, Freistellen, Exportvarianten) auf Basis der vom Mitarbeiter vorbereiteten Bilder; die eigentliche Bildbearbeitung/Vorbereitung in Lightroom bleibt vorerst ein manueller Schritt außerhalb des Automatisierungs-Scopes.
 - **Human-in-the-Loop**: Kontrolle der bearbeiteten Fotos und Erfassung zusätzlicher Produktdaten (Grammatur, Materialzusammensetzung, Preis, Lagerbestand etc.)
 - **Agent (KI)**: Bildanalyse der Designbilder mittels Vision-LLM zur Erkennung von:
   - 5 dominanten Farben (inkl. Hex-Codes)
@@ -67,7 +66,6 @@ Konkrete Probleme:
 ## Beteiligte Systeme
 
 - Watch-Folder / Netzwerk-Share (Quelle für neue Produktfotos und Designbilder)
-- Adobe Lightroom & Photoshop (Bildverarbeitung)
 - UiPath Orchestrator, Studio & Robots (RPA-Automatisierung)
 - Vision-LLM / KI-Service (z. B. GPT-4o, Claude, Grok oder internes Modell) für Bildanalyse
 - Text-Generierungs-LLM (für Produktbeschreibungen)
@@ -80,9 +78,9 @@ Konkrete Probleme:
 
 ### Funktionale Anforderungen
 
-1. Überwachung eines Watch-Folders auf neu angelegte, vollständig vorbereitete Produktordner mit manuell in Lightroom bearbeiteten Produktfotos und Designbildern, die eine Marker-Datei (z. B. `READY.txt`) als explizites Freigabe-Signal enthalten.
+1. Überwachung eines Watch-Folders auf neu angelegte, vollständig vorbereitete Produktordner mit vorab manuell bearbeiteten Produktfotos und Designbildern, die eine Marker-Datei (z. B. `READY.txt`) als explizites Freigabe-Signal enthalten.
 2. Validierung der Ordnerstrukturen und Dateinamen gegen eine definierte Konvention (inkl. Feedback an den Mitarbeiter bei Abweichungen; perspektivisch optional automatisches Anlegen/Korrigieren der Struktur durch RPA).
-3. Start und Überwachung der Photoshop-Stapelverarbeitung auf Basis der bereitgestellten Bilder für alle Produktordner, die ein gültiges Freigabe-Signal (Marker-Datei `READY.txt`) besitzen; Lightroom-Vorverarbeitung bleibt vorerst ein manueller Schritt.
+3. Technische Prüfung der bereitgestellten Bilder (z. B. Dateiformat, Auflösung, Mindestanzahl) für alle Produktordner, die ein gültiges Freigabe-Signal (Marker-Datei `READY.txt`) besitzen – ohne Eingriff in die vorab manuelle, kreative Bildbearbeitung.
 4. Bildanalyse der Designbilder (dominante Farben, Muster, Stil etc.) durch Vision-KI
 5. Generierung von Produkttexten basierend auf KI-Analyse und manuellen Produktdaten
 6. Anlage des Produkts in WooCommerce als „privat“ per API oder CSV-Import
@@ -94,7 +92,7 @@ Konkrete Probleme:
 
 - Verarbeitung eines neuen Produkts in unter 30 Minuten (ohne manuelle Kontrollzeiten)
 - Hohe Genauigkeit der KI-Bildanalyse (mind. 90 % akzeptable Ergebnisse bei Testmustern)
-- Stabile Integration mit Adobe-Software und WooCommerce
+- Stabile Integration mit WooCommerce und den angebundenen KI-Services
 - Datenschutz: Designbilder und Fotos bleiben im internen Netzwerk, keine unkontrollierte Cloud-Nutzung falls möglich
 - Versionierung von Textvorlagen und Prompt-Templates für die KI
 
@@ -126,7 +124,7 @@ Konkrete Probleme:
 
 - Qualität und Konsistenz der eingereichten Produktfotos kann variieren
 - KI-Bildanalyse funktioniert bei komplexen Mustern unterschiedlich gut (aktuell „missbräuchlich“ über LLMs, aber effektiv)
-- Abhängigkeit von Adobe-Software (Lizenz, Stabilität der Stapelverarbeitung)
+- Abhängigkeit von vorgelagerten manuellen Bildbearbeitungs-Workflows (Qualität, Konsistenz, verfügbare Kapazitäten)
 - WooCommerce-Import per CSV kann bei vielen Variationen komplex werden
 
 ### Offene Punkte
@@ -145,7 +143,7 @@ Konkrete Probleme:
 - Die aktuelle Lösung mit Vision-LLMs für Design-Analyse hat sich bereits als überraschend effektiv erwiesen (Beispiel: Schmetterlingsmuster)
 - Mögliche spätere Erweiterung: Automatische Tag-Generierung für SEO oder Filter im Shop
 - Potenzial für Feedback-Loop: Korrekturen der KI-Texte fließen in Prompt-Verbesserungen ein
- - Der Einsatz einer einfachen Marker-Datei (z. B. `READY.txt`) reduziert das Risiko, dass halbfertige Ordner verarbeitet werden, und trennt klar zwischen manueller Vorbereitungsphase (Lightroom etc.) und automatisierter Verarbeitung (Photoshop, KI, WooCommerce).
+ - Der Einsatz einer einfachen Marker-Datei (z. B. `READY.txt`) reduziert das Risiko, dass halbfertige Ordner verarbeitet werden, und trennt klar zwischen manueller Vorbereitungsphase (manuelle Bildbearbeitung etc.) und automatisierter Verarbeitung (KI, WooCommerce).
 
 ---
 

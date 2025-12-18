@@ -42,9 +42,9 @@ Stand: 2025-12-18 (basierend auf aktualisiertem README und neuen Assets)
 ## 📋 Zusammenfassung des Use Cases (technische Sicht)
 
 - Ziel ist ein halb- bis weitgehend automatisierter End-to-End-Prozess für das Anlegen neuer Designerstoffe im WooCommerce-Shop.
-- Eingang sind von Menschen in Lightroom vorbereitete Produktfotos, 1–2 Designbilder, manuelle Produktstammdaten sowie ein strukturierter Produktordner.
+- Eingang sind von Menschen vorab manuell bearbeitete Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases), 1–2 Designbilder, manuelle Produktstammdaten sowie ein strukturierter Produktordner.
 - Der Prozess startet explizit, sobald im Produktordner eine Marker-Datei (z. B. `READY.txt`) angelegt wird – sie trennt klar die manuelle Vorbereitungsphase von der automatisierten Verarbeitung.
-- UiPath übernimmt primär die Orchestrierung von Dateioperationen, Photoshop-Stapelverarbeitung, KI-Aufrufen (Vision + Text), WooCommerce-Integration (REST/CSV) und Benachrichtigungen.
+- UiPath übernimmt primär die Orchestrierung von Dateioperationen (inkl. Validierung von Struktur und Dateinamen), technische Bildprüfungen (z. B. Format/Größe/Anzahl), KI-Aufrufen (Vision + Text), WooCommerce-Integration (REST/CSV) und Benachrichtigungen.
 - KI-Komponenten (Vision-LLM + Text-LLM) liefern Bildanalyse (Farben, Muster, Stil, Saison, Use-Cases, Zielgruppe) und generierte Produkttexte, basierend auf vordefinierten Vorlagen und einer expliziten Muster-/Stil-Taxonomie aus dem README.
 - Ein Human-in-the-Loop-Schritt stellt sicher, dass Bilder, Attribute und Texte fachlich korrekt sind, bevor das Produkt veröffentlicht wird.
 
@@ -61,10 +61,10 @@ Unklar sind aktuell vor allem: führendes Stammdatensystem, finale Namenskonvent
 
 ### Empfohlenes Pattern
 
-- Orchestrierung mit REFramework (oder Agentic-Variante), um Datei-Trigger, KI-Aufrufe und WooCommerce-Schritte als robuste Transactions abzubilden.
+- Orchestrierung mit REFramework (oder Agentic-Variante), um Datei-Trigger, Validierung, KI-Aufrufe und WooCommerce-Schritte als robuste Transactions abzubilden.
 - UiPath als „Klammer“ um:
   - Dateisystem / Watch-Folder inklusive Marker-Datei `READY.txt` als Trigger,
-  - Photoshop-Stapelverarbeitung (Lightroom bleibt explizit manuell außerhalb des Scopes),
+  - Validierung und technische Prüfung der bereitgestellten Bilder,
   - KI-Services (Vision + Text),
   - WooCommerce API/CSV-Schnittstelle,
   - Benachrichtigung (E-Mail / Teams / Slack) für Human-in-the-Loop.
@@ -75,8 +75,8 @@ Unklar sind aktuell vor allem: führendes Stammdatensystem, finale Namenskonvent
 graph TD;
   A[Watch-Folder überwachen<br/>Produktordner mit READY.txt erkennen];
   B[Produktordner validieren<br/>Struktur & Dateinamen prüfen];
-  C[Photoshop-Stapelverarbeitung starten<br/>Bilder für Web aufbereiten];
-  D[Human Bildkontrolle<br/>Produktdaten ergänzen/prüfen];
+  C[Technische Bildprüfung<br/>Format, Auflösung, Mindestanzahl prüfen];
+  D[Human Bild- und Datenkontrolle<br/>Produktstammdaten ergänzen/prüfen];
   E[Agent Vision-KI<br/>Designbilder analysieren<br/>Farben, Muster, Stil, Merkmale];
   F[Agent Text-KI<br/>Produkttexte generieren];
   G[RPA Produkt in WooCommerce anlegen<br/>Status: privat];
@@ -101,8 +101,7 @@ graph TD;
 
 - **UiPath Orchestrator / Robots**: zentrale Steuerung, Queue-Handling, Logging, Retry-Strategien.
 - **File Storage / Watch-Folder**: Wurzelverzeichnis für Produktordner; Marker-Datei `READY.txt` dient als expliziter Prozess-Trigger.
-- **Adobe Lightroom**: bleibt im MVP ein rein manueller Schritt (Vorbereitung der Bilder durch den Menschen).
-- **Adobe Photoshop**: wird über RPA (UI-Automation oder Scripts/Actions) für wiederkehrende Bildbearbeitung (z. B. Skalierung, Zuschnitt, Exportvarianten) angesteuert.
+- **Vorgelagerte manuelle Bildbearbeitung**: erfolgt außerhalb dieses Use Cases (Tool-agnostisch, z. B. Lightroom, Photoshop oder andere Werkzeuge) und liefert fertig bearbeitete Produktfotos in den Watch-Folder.
 - **Vision-LLM**: via HTTP-API (REST) angebunden; Input = Designbilder, Output = strukturierte Beschreibung (Farben/Hex, Mustertyp, Stil, Saison, Use-Cases, Zielgruppe) gemappt auf die im README definierte Taxonomie.
 - **Text-LLM**: via HTTP-API; Input = Vision-Output + Produktstammdaten + Textvorlagen; Output = Titel, Kurzbeschreibung, Beschreibung, Meta-Texte.
 - **WooCommerce**: bevorzugt via REST-API (für Anlage/Update von Produkten, Bildern, Attributen); alternativ/ergänzend CSV-Import basierend auf der Struktur des vorhandenen Exports.
@@ -118,8 +117,8 @@ Die Assets (Bilder, Screenshots, Export-CSV) können für frühe End-to-End-Test
   - Gegenmaßnahmen: Confidence-Schwellen, Möglichkeit für manuelle Korrektur der Tags, Logging der KI-Vorschläge, spätere Feinjustierung der Taxonomie.
 - **Abhängigkeit von Drittdiensten (KI)**: Cloud-KI-APIs können Latenz- und Verfügbarkeitsprobleme oder Kostenspitzen verursachen.
   - Gegenmaßnahmen: Rate-Limits berücksichtigen, Fallback-Strategien (Retry, Degradation auf „Minimaltexte“), Kosten-Monitoring.
-- **Adobe-Automatisierung (Photoshop)**: UI-Automation ist anfällig für UI-Änderungen, Pop-ups oder Performance-Probleme.
-  - Gegenmaßnahmen: Nutzung von Actions/Scripts wo möglich, klare Testfälle auf Basis der Beispielbilder im assets-Ordner, Monitoring von Laufzeiten.
+- **Qualität der vorgelagerten Bildbearbeitung**: Schlechte oder inkonsistente manuelle Bildbearbeitung (z. B. Belichtung, Zuschnitt) kann die KI-Analyse und Wahrnehmung im Shop beeinträchtigen.
+  - Gegenmaßnahmen: klare Guidelines für Bildbearbeitung, Stichprobenkontrollen, Rückmeldeschleifen an verantwortliche Personen.
 - **Daten- und IP-Schutz**: Designerstoffe sind IP-kritisch; Nutzung von Cloud-KI für Bilder muss datenschutzrechtlich und vertraglich geklärt werden.
   - Gegenmaßnahmen: Klare Vorgaben, ob Designbilder extern verarbeitet werden dürfen; ggf. nur Text-/Meta-Daten in die Cloud geben.
 - **WooCommerce-Varianten & Datenmodell**: Varianten (z. B. Farbstellungen, Breiten) können in WooCommerce komplex werden; der bestehende Export muss sauber interpretiert werden.
@@ -174,7 +173,7 @@ Die Assets (Bilder, Screenshots, Export-CSV) können für frühe End-to-End-Test
 - Implementierung eines stabilen RPA-Basisszenarios:
   - Watch-Folder + `READY.txt`-Trigger → Queue-Befüllung.
   - Validierung der Ordnerstruktur und Dateinamen.
-  - Start der Photoshop-Stapelverarbeitung und Upload der Bilder nach WooCommerce.
+  - Technische Prüfung der Bilder (Formate, Auflösung, Mindestanzahl) und Upload der gelieferten Bilder nach WooCommerce.
   - Anlage eines Produkts als „privat“ mit Grunddaten (Titel/Platzhaltertexte) und Bildern.
 - Ziel: Messbarer, robuster End-to-End-Prozess für 1–2 Beispielprodukte aus dem assets-Ordner.
 
@@ -201,6 +200,6 @@ Die Assets (Bilder, Screenshots, Export-CSV) können für frühe End-to-End-Test
   - Akzeptanzquote der KI-generierten Texte (Bewertungsskala, z. B. 1–5).
 - **Fehlerquote WooCommerce-Integration**: Anzahl fehlgeschlagener Produktanlagen / Gesamtanlagen.
 - **Manueller Aufwand**: durchschnittlicher Zeitaufwand pro Produkt im Human-in-the-Loop-Schritt.
-- **Prozessstabilität**: Anzahl technischer Fehler pro X Produkte (z. B. Photoshop-Fehler, API-Fehler, Timeouts).
+- **Prozessstabilität**: Anzahl technischer Fehler pro X Produkte (z. B. API-Fehler, Timeouts).
 
 Diese KPIs sollten bereits in der MVP-Phase mitgeloggt und ausgewertet werden, um den Nutzen des Use Cases gegenüber dem heutigen Prozess transparent und messbar zu machen.
