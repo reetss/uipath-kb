@@ -77,12 +77,12 @@ graph TD;
   B[Produktordner validieren<br/>Struktur & Dateinamen prüfen];
   C[Photoshop-Stapelverarbeitung starten<br/>Bilder für Web aufbereiten];
   D[Human Bildkontrolle<br/>Produktdaten ergänzen/prüfen];
-  E[Agent Vision-KI<br/>Designbilder analysieren<br/>(Farben, Muster, Stil, Merkmale)];
+  E[Agent Vision-KI<br/>Designbilder analysieren<br/>Farben, Muster, Stil, Merkmale];
   F[Agent Text-KI<br/>Produkttexte generieren];
   G[RPA Produkt in WooCommerce anlegen<br/>Status: privat];
   H[RPA URL an verantwortliche Person senden];
   I[Human finale Freigabe<br/>Veröffentlichung im Shop];
-  K[Logging und Reporting<br/>(Orchestrator, KPI-Logs)];
+  K[Logging und Reporting<br/>Orchestrator-Logs und KPI-Logs];
 
   A --> B;
   B --> C;
@@ -94,6 +94,8 @@ graph TD;
   G --> K;
   H --> I;
 ```
+
+> Hinweis: In den Mermaid-Knotenbeschriftungen werden bewusst keine runden Klammern `()` verwendet, da diese in einigen Renderern (z. B. Markdown-Preview in bestimmten Setups) zu Problemen führen können.
 
 ### Systemübersicht
 
