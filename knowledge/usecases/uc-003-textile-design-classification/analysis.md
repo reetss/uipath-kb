@@ -74,7 +74,7 @@ graph TD;
   D[RPA Lightroom Sync und Photoshop Batch starten];
   E[Human Bildkontrolle und Produktdaten ergänzen];
   F[Agent Vision-KI Designbild analysieren];
-  G[RPA Produkt in WooCommerce anlegen (privat)];
+  G[RPA Produkt in WooCommerce anlegen privat];
   H[RPA URL an verantwortliche Person senden];
   I[Human finale Freigabe und Veröffentlichung];
   K[Logging und Reporting im Orchestrator];
