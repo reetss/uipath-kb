@@ -7,29 +7,20 @@
  * the knowledge base and templates.
  */
 
-import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile, mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-interface ConceptInput {
-  name: string;
-  category: 'technical' | 'business' | 'process';
-  problem: string;
-  motivation: string;
-  components?: string[];
-  tags?: string[];
-}
-
-async function generateConcept(inputPath: string): Promise<void> {
+async function generateConcept(inputPath) {
   console.log('📝 UIPath Concept Generator\n');
 
   // Load input
   console.log('📖 Loading concept input...');
   const inputContent = await readFile(inputPath, 'utf-8');
-  const input: ConceptInput = JSON.parse(inputContent);
+  const input = JSON.parse(inputContent);
 
   console.log(`   Concept: ${input.name}`);
   console.log(`   Category: ${input.category}`);
@@ -73,9 +64,11 @@ async function generateConcept(inputPath: string): Promise<void> {
   }
 
   // Output path
+  const outputDir = join(__dirname, '../knowledge/generated');
+  await mkdir(outputDir, { recursive: true });
+
   const outputPath = join(
-    __dirname,
-    '../knowledge/generated',
+    outputDir,
     `concept-${input.name.toLowerCase().replace(/\s+/g, '-')}.md`
   );
 

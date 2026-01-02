@@ -1,0 +1,436 @@
+Thank you, everyone, for joining. Today, I'm excited to be holding this chat with Kevin
+Muni of UI Path and talking about RPA and Cybersecurity. My name is Ahmed Zadi. I'm your host
+today. I'm the Chief Automation Officer and CEO here at Accelerate. We are a Diamond
+Partner of UI Path. We've been partners with UI Path. Kevin, I don't know if you know it yet,
+but you might not have joined. 2017 is when we partnered with UI Path when you're a first
+partner manager, a US partner manager arrived and you hired three people in the US. We've
+both grown since then. It's been a very fruitful partnership. We really appreciate it. Kevin,
+if you want to introduce yourself to the audience. Yeah, absolutely. Thanks, Ahmed.
+So, my name is Kevin Muni. You're right. You predate me at UI Path by just a little bit,
+so I've been with UI Path around three and a half years, focusing on security.
+And I'm the global security compliance lead for UI Path. It essentially means that I handle all
+of these security questions, concerns for all of our customers and partners across all of our
+product areas and around the globe. Perfect. So, look, from the audience, if you made it to this
+thing today, I am very, very, very certain that you already know what RPA is and you want to hear
+about what the security concerns might be. But for those three people who might not have heard about
+what RPA is so far, the RPA automation is software that makes it easy to build deploy managed robots
+emulate human actions. They interact with various systems and it's a platform for process automation.
+I know this might look like a trivial thing, but if you've ever used it and it's
+a UI Path product and makes it look easy, but it's a lot of moving parts underneath.
+Interestingly, software emulating humans is not new. It's been done before, this type of test
+automation and even in 32, 70 emulators, that type of automation has been around. What's different
+this time around with RPA is that it's managed and it's enterprise scaled centrally managed and
+governed. So, the beauty with robots is not only can they mimic human actions like clicking and
+seeing what's on screen, but it's software so it can also access interfaces to applications and
+systems that humans might not be able to, for example, APIs and other forms of SDKs and web service
+calls and things like that that humans may not be able to do. But that's in a nutshell, RPA,
+if you're really interested, if you don't know what it is, go to uipath.com, go to our website,
+and there's tons of material on what it is and how it works. But I think one of the big things
+that we've been seeing with folks who've been adopting RPA, especially those in the IT space
+who it's being introduced to, I think it's very common for them to compare to usual applications
+and automation application platforms. But I think what we feel is showing the architecture of the
+system opens it up to the discussion of what the various components of a RPA platform are
+and where data sits on and so forth. So, what you're seeing on the screen right now is a
+on-prem implementation of RPA platform. This is Uipath specific, so on the in the middle you see
+Uipath server components, on the right middle and the right hand side, these are all server components
+for various parts of the platform, which manages on the left hand side you see here in green,
+these are robots. What's interestingly unique about RPA platforms and it's going to change soon,
+but is that all execution of processes happens on these agent machines. Now these agent
+machines are generally running the same OS as end users except that they're virtual virtualized
+either in the cloud or in a virtual platform internally to the to the organization of something like
+a VMware or Citrix virtualization platform. So, that's slightly different than when people think about
+the actual execution of work which happens on a server. This maybe you can liken this to distributed
+computing however there's these agents that work on various on machines that are managed and
+communicate their status back to the server component. That's really kind of a uniqueness within
+the RPA paradigm that I feel is fairly different from the traditional app dev architecture that you
+may be used to. You open up a port from a server to go out to do some to another application, you make
+a route from one server to another to to call an API or to you give it access to various file shares
+to be able to do something. There's this layer of agent that sits in between the server components of
+the platform and the applications that you may already have internally. So, I feel that it's important
+for people to understand what the what the architectures look like and this is the same thing in the
+cloud. Again, one of the interesting things in Kevin I'd love for your opinion on it. I talk to folks
+a lot and they go, hey I have bought the cloud. I don't need any in-house infrastructure or
+security reviews or architecture reviews for any in-house architecture and infrastructure and then
+we have to tell them yes there are these agents that do sit internally. There are of course even if
+you're in the cloud the execution happens on a machine. You've bought a manager. That infrastructure
+still needs to be provisioned now. You have had does provide a cloud service where they would be
+able to provide you these these VMs but it's that's something to be thought of. Kevin have you seen
+have you seen a lot of folks struggle with having to provision internal infrastructure even though
+they bought some cloud platforms? Yeah, I mean certainly you know we we often think about it like
+you're you're hiring a digital worker when you're you know deploying a robot and just like hiring an
+actual worker you have to provision in a machine. You want to put some controls around it and you know
+put some bounds on what they're actually doing and connect it into your IT systems. I don't hire
+anybody and just say well here's a laptop. Go at it. Good luck. You know that same is true here
+for robots and you know we we are seeing it's interesting you mentioned you know UI path is this
+starting to come out with a service where we can you know provision the VM for you we can run the robot
+essentially for you and what we're seeing more and more of is sort of this hybrid approach for customers
+because they they want some things automated within their network and then they also have
+automations that you know we're we're all using SAS so if it's only connecting to these SAS
+platforms why not put the robot itself is a SAS platform so. Perfect. So Kevin I you know I don't know
+if you've ever sat on in one of my one of my pitches or one of my conversations with with folks
+that's exactly I mean it's it's it's really interesting I think and it hits home very quickly
+I think it'll be it'll be helpful for everyone else as well that that analogy of hiring a worker
+any RP vendor what they're selling you is a digital worker right and that's a just a worker now
+you have licenses to or whatever model you use you have licensed X number of workers
+just like any human worker you were higher your temp agency might say or your your the the recruiter
+that finds you might say hey I also have offices and I can also give you machines if you would like
+me to right but that doesn't mean that you all your software will run in somebody else's network so
+if you start thinking about it in those terms of I'm hiring a worker and I need to give them the
+machines and I need to give them the credentials and I need to give them the applications and I need
+to treat it very much so like like workers it becomes a much easier thing to understand throughout the
+organization I think which is which is really interesting and I'll talk about talk about interesting
+ways people approach that one of the other things that as you saw the architecture I think it's important
+to understand what components and what data is where this is really important and again our
+purpose today was to make sure that everybody understands what these components are where the data is
+and different organizations different industries will have different requirements for what can happen
+to data and what types of what types of security needs to apply to what things so the three big
+portions of it and there this is by no means an exhaustive list of every single product and
+component that that UI path has but the three main ones that you always talk about is the studio whether
+it be the studio that the developer uses to develop an automation or the studio x component which
+the citizen developer uses to develop their automation as a studio it's a development environment it's
+an IDE for those in those in IT to understand what IDs are but basically it's the place where you go
+in and you develop your automation, configure it basically a sequence of actions and give it the
+parameters that it needs in order to branch out and so on and so forth so that's where the development
+IDE comes in usually in a the development IDE sits on a machine that the developer uses
+usually they use test versions of applications underneath and the code that they generate
+is generally integrated with some source code version control system and I say this
+is generally because you can do it without but just like you wouldn't write code without actually
+doing source code control we would highly recommend that you don't try to write automations without
+doing source code control however UI path actually has it built into their platform so even if you didn't
+want to do it you automatically will get some level of source code control through environments and
+their version control that the UI path does so that's your UI path studio and it also has test logs which
+is when the robots run they log everything that they do I am opening this application I have gotten to
+this part in the application I'm entering this data in this field and developers love to log these
+things so they can test and say okay they got the right places and they got the right data so on and so
+forth they're all local test logs that remain on the local machine. The orchestrator is your server
+component to go back to the analogy of human workers this is sort of the manager a manager that
+doesn't necessarily do the work it manages all the workers but it doesn't do the work so it can
+sit outside your network you can sit inside your network and so you can be on the cloud or inside
+because it doesn't do any work it doesn't need access to any of their applications it doesn't need
+access to any of your data it doesn't need access to pretty much anything other than the workers
+that's it the only thing that it needs to communicate with is the workers hence it needs to communicate
+with the robots and the network routes that need to open are to the network to the to the robots
+what's in the orchestrator because it's a manager it has the credentials the robots talk to the
+orchestrator continuously and say I am here and I'm sitting on this machine I'm simplifying it and Kevin
+might be like oh there are different models on that so don't hold me to it but the general the general
+deployment model is I am a robot I'm sitting here I'm on this machine and I'm a lot that's all it's
+telling the orchestrator all the time it just says there's a heartbeat that says I'm alive I'm ready
+and what I'm what I'm doing I'm either idle or I'm doing something or there's something wrong with me
+or I'm not even available so that's what the orchestrator does every the orchestrator is the one
+that actually decides what needs to run where so you create a schedule or you have a trigger whatever
+that that initial trigger would be either time-based or event-based trigger the orchestrated decides
+that this a particular process needs to be run based on certain rules a particular robot and says
+robot xyz I want you to run this and here so the robot says I give me the credentials to log
+into the machine it logs into the machine it knows what it has to run so that sort of I'm simplifying
+it and we can go into technical details with that but that's pretty much how it happens internally
+so the login credentials for the robot sit in the orchestrator and you have the ability to
+retrieve it from a IAM system cyber arc integrations built in and Kevin to talk about other
+integrations as well the other thing that the orchestrator gets is logs it's no different than any other
+log that any other developer writes when the developer says I am doing something you can very specifically
+log a a set of a text and that text could be anything when that happens that log also goes to
+orchestrated now there's ways to control what level of logs you want to go in there you might say hey
+only give me errors and fatals don't give me debug and trace information over both stuff or info
+debug craze so you have the ability to bifurcate based on the level what information what level of messages
+you want to go to the orchestrator versus some other logging mechanism yeah it should
+us measure you know because this gets brought up all the time for us is well you know my my robot
+is is working on my most sense of application right we're dealing with finance I want to know what it
+does I want to be able to audit it but I don't want numbers exposed to some IT person running my
+orchestrator and we actually provide a mechanism for that so you can actually take any log statement
+and say you know I want to log the event but I don't want to log the data even if I'm troubleshooting
+I've got for post logs running you know I I want to be able to audit it but I don't want to have an
+audit problem by having sensitive data in the wrong place we provide that mechanism too absolutely
+and it's pretty cool you can you can mark variables as private they don't go anywhere it's actually
+pretty cool the way it's done so thank you so much Kevin that's that's absolutely very very helpful
+and then so that's the other data that's in the orchestrator assets are think of them as configuration
+items these are you know where's the how many times should I retry something or what is the path where
+I'd find a file or what is the you know what is the email address that I should send a particular
+notification to so on and so forth so assets those are assets and assets can be either numbers text
+Boolean the interesting type another interesting type of asset is a credential asset which is I need
+to log in to my underlying let's say loan origination system just like I remember think of it as a
+as a worker they need to get an asset they need to get a credential to log into the applications
+that they need to go into that's also within within the assets but they're stored in the database
+encrypted and can be retrieved from cyber arc or any other I am Kevin you want to talk a little bit
+about the the asset security and UI path sure yeah and you know so UI path is taking a pretty strong
+approach around data security right all of our encryption throughout all of our products if it's
+encrypted at rest it's encrypted using a yes 256 that's just period that's our default for everything
+and we want to take the best in standard you know we it's good you mentioned cyber arc I really like
+cyber arc I actually talked to their team yesterday but not every company uses cyber arc we understand
+that and so you know the module within orchestrator that integrates with cyber arc is actually completely
+customizable so we offer cyber arc and Azure key vault out the box for for what we support but there
+are other vendors out there like psychotic beyond trust and hashi core all of which you can have
+integration between orchestrator and those platforms as well and you will find that a bunch of
+those are are also on our near term roadmap and you're going to see supported directly by UI path
+pretty soon as well perfect and and by the way we've we've done integration with all the
+ones that you mentioned Kevin very easily doable yeah the next item that's on the on the list is
+two in action items so when work needs to be distributed usually there's a robot that says oh now I
+see a file here that file has let's say 5,000 rows and all these 5,000 rows represent 5,000 transactions
+that need to be input into another system within the next 30 minutes right that means one worker
+isn't enough to be able to input all these transactions into the into the system I need 10
+the way you distribute that is to take each one of those transactions and actually put them on a
+queue on queue and then tell 5, 10 robots that go get the next item from the queue and process the
+transaction and that's the queue queue a portion of the of the data so you can distribute anything that
+you'd like so I've had customers who who who wanted some encryption on it we did actually we'd
+just put encrypted data on there and then each robot knows to decrypt it using the key that they have
+right but you can decide what you want to put in that queue item we've done things like you can just
+put the transaction ID and all of that on there the whole transaction on there or you could
+obfuscate it or you could then you could actually abstract it and have it somewhere else and just put
+a key on on the on the queue item so those are their ways to make sure that what data goes in there
+but generally speaking that data is plain text on the database within the orchestrator the developers
+the one who decides what data you want to put on the queue in order for the transaction to be able to be
+done the other thing the other two big things that are on the orchestrator are what I call the process
+execution instructions you would you would liken them to your job age or the document that contains
+how you process an invoice for instance right that's it's the same security level as that right it's
+it's basically you go into this system you click these buttons you go into that system you click those
+buttons you validate this to that and that's that's your code that is the process execution instruction
+it is in the form of a package which is which is sort of you know which is zipped up a bunch of files
+that represent the code that that the robots understand to execute no data is included here
+the unless somebody very silly thing to do but you know it's it's pretty much code right you never
+never have any data in the code you never have any any very specific data instructions in the code right
+the job schedules and triggers also live on the uipath orchestrator which is when to run a job
+where to run the job and what the triggers are to run the job so if you think about the server
+component of it and we get a lot of questions about it because of the cloud right oh I'm on the
+cloud is all my data exposed is all my all my applications exposed to the to the to the vendors cloud
+the answer is no not really right the there's only a few things there and even when they're they are
+there it's fairly fairly secure the last thing is the robot machine itself which is the runtime
+environment what's on there the the uipath robot gets the code which is the process code the uipath
+orchestrator pushes that code to the robot and it has a also has a local history and log of what
+it was doing those are the two things and this is on a machine that has all the all the applications
+so I know I went through a lot of this but I think it was important because a lot of times folks don't
+have an understanding of these three major components of the of the of the of the of RPA platforms
+which leads to difficult conversations so having said that I'll remind everyone if you have any
+questions feel free to ask in the Q&A session we have quite a few participants here so I'm sure
+there are questions coming soon of course there are and number of security risks out there that
+people worry about today fishing in DDOS and all sorts of Kevin knows more of them than I do
+I don't do this for a living but as being Kevin we're we're talking about this we think that these are
+the most common ones that come up in conversation with CISOs and and IT folks under RPA are sort of
+these concerns right one data breach data going out somewhere right that's number one
+the malware ransomware injection and the unauthorized system access are sort of interrelated
+something somehow gets into my network either injects it through one of the robot machines or somehow
+gets access to a system and does something a fair use with that system and the fourth one is kind
+of interesting it's you know these RPA platforms are also used as citizen development programs so one
+of the big things that that folks are worried about are shadow IT so Kevin you want to give some color
+on these things and I love a lot is because most of them all stem from sort of a single point which is
+I have this software it's doing great things but I don't feel I have the visibility into it that I
+should right or I don't know what it's doing and what I find fascinating a lot of times when I talk
+to security professionals about this is there's this assumption that I have an understanding of what all
+my users are doing first off right and that somehow I'm gonna have less visibility for robots I think all
+these kind of go along that theme but you know for data breaches look a lot of these are just the scary
+things that keeps us off at night right where is my data how am I preventing it from going out
+how am I managing secrets to make sure that we can get a hold of it to get access to my data right
+when we're talking about automation and the ability to to do nearly anything with a robot then
+it gets sort of concerning where secrets may be stored or where data is being stored right
+because part of RPA is actually being able to empower regular users business users who are not
+necessarily developers are trained to write code to automate part of their job make their job
+easier so one of those concerns is well you know they may stick data in some place they should
+and we can get into that a little bit more I I generally find that you know if I do a task a
+thousand times as part of my regular job in any year then I pretty well know where I'm supposed to stick
+things or where I'm not what I don't necessarily know is well how the platform works and that's kind
+of sort of where we get IT involved and sort of make sure that we we understand the guardrails right
+I think ransomware malware injection is on everybody's mind
+it we see it in the news all the time someone got hit by a ransomware breach they they
+intake proper precautions now they're locked down and they're they're facing a you know
+payment to some shadow we figure off in a country that you know we're not aware of right
+you know this is for RPA really it's not any bigger of a concern than
+other IT systems but it's there right and and it's a big scary thing that we hear about a lot
+in the news and so we we do want to talk about it and really this comes down to robots are going to
+be accessing things potentially without human involvement so if we don't put safeguards around how
+they pick up files or say access emails or websites or these sort of things then we have a concern
+that there's no human checking that that file now I say that knowing full well a robot can spot a
+fishing email a lot better than I can right you know I may not recognize an email with it's from
+uipath with two keys dot com right but a robot would so you know there are things to take into account
+there and of course unauthorized system access is is a big one because when we start talking about
+automation there's always a concern in identity architecture that I could potentially give somebody
+more access than they have inherently by giving them the ability to run something right run some
+piece of IT right so and this comes up a lot with developers as well where we have to have developers
+work alongside the actual business user and owner you you talked about developers working off of test
+applications right makes a lot of sense because if I'm automating something in my finance department my
+HR department you know I don't want the developer to go and pull down everybody's salary information or
+you know what what our company bank account info is looks like so you know there is a risk there
+that we have to manage and lastly shadow IT I think we we kind of talked about this already but
+this gets brought up to me all the time and it I think it really stems from the the numerous
+RPA or automation like vendors and applications they're out there now you know when I interview
+people a lot of times they they will tell me oh yeah if you smart P.A. it was a it's a browser-based
+extension that I just installed and ran and you know pulled some things from from Twitter for me or
+sales force and I was like and that you know when you hear that you hear that being called RPA right
+for automation or you hear about some of these applications that get thrown in for free you know
+that do RPA you do kind of have a risk of shadow IT here yeah you you have a concern that my users
+are going off they're building something I don't know what it looks like I don't know what it does I
+may not even know you know what the program they're using is and so as an IT department that that
+affects the stability of my environment my end machines and as a as a SISO I look at this and go well I
+no longer know what's installed on the user's machine where data is flowing in and out what visibility
+I have into the programs they're running there's a lot of potential concerns there so it it is a
+risk especially for if you're not looking at an enterprise RPA platform that your users can can
+end up creating workflows that you don't know what's going on and you no longer have a clear distinction
+of what IT systems are connecting dollars so yeah absolutely a couple of things and I like to give
+you know in our webinars just pointed very pragmatic advice to all our listeners right so I as you
+were talking I was going through in my head I'm like oh all right there are these four things and
+people are going to ask these questions so the how how at least from our perspective and UI path
+having done multiple implementations the things that that put these concerns to sort of ease
+again remember when people talk about data breach right the machines that that data is on
+are no different than the machines that you have people working on hence it's not you're not adding
+to the surface area of attack right it's the same thing it's the same type of machine
+as long as you put the same controls that you put on humans on those machines you're just at least
+just as safe as humans right so so the data breach is not as big a deal because you can control
+what goes on the server side and and usually the servers are residing in the same sort of data centers
+and under the same security regime as as the rest of your environment so if somebody gets that far in
+I don't think the orchestrator server is the one that you need to worry about being breached all right
+it's there's multiple layers even if the server's breached to actually be able to get to anything
+of use other than the logs which you can control right again it also goes so data breaches are
+are you know in my opinion from us I look at it from a have I just increased the surface area
+by default by adding another server you have but it's no different than adding any other
+application it's not like you're you know even in the cloud and you know you're you're in a sure
+if you're if you're if you're using Office 365 you're already out in the cloud and it's you know
+if somebody has blessed that and so it's again from a surface area perspective I don't think you're
+increasing it that much what do you think Kevin no I I think it's a great point um it and it
+speaks to something I hear all the time which you know now that I have this robot it's it's almost
+seems to users who are who haven't dealt with RPA a lot that you know installing this is it's
+going to be standalone and it's going to be separate from all my IT trolls when you hit it on the
+head when really all my endpoint protection that I've already included all my EDRs all my you know
+anti malware at all the global policy controls that I put in place for user well they apply for
+these robots working too um you know that's that's actually one of the good things is our software works
+just like a user on a machine allows us to integrate a lot more also allows us to take advantage
+of all of the security and policy that you've already put in place on the on the other two things one
+of the interesting things that you know I read all these things in Kevin you're you're security guys
+I'm sure you know more data about this database evidence on this than I do but from what I always
+hear malware and ransomware most times is injected into the into the into an organization because
+somebody somewhere clicked on something right yeah some person clicked on it laying some person got an
+email some person went to a website in an enterprise I think it's it's it is much much much much much
+more likely that a human causes that type of stuff and a robot does because my robot inbox could get
+all the emails in the world about uh about an account in Wells Fargo that has an overground
+something right but if it's not from the right email address with the right text in the right format
+with a specific set of rules that it's trying to do by the way it's not designed to click on links it says
+when an email comes from here go to the Wells Fargo website and then go there's an even so the risks
+are extremely low and in fact um you know robots don't write down their passwords under the desk
+and or on the on a sticky note and paste it over there or write it and explain text file and say here
+all my logins for all the all the state websites that I need to go there to do to file the tax returns
+and so on and so forth um you know those credentials are extremely extremely extremely um guarded if you
+may either through integration through the third party iam or just the pure uh encryption
+behind layers and layers of firewalls uh in the in the in the in the in the data store of the actual
+of orchestrator so I think malware ads were injection you kind of safe and you can say again these
+these are these are practical things that we talk about unauthorized system access that's interesting
+there is a full set of permissioning that goes along with who has access to what
+within within the within these platforms I think the bottom two I will say
+are pretty interesting I think as you know when we started we talked about the the macros and access
+you know um sort of the the the automations that were built into 32 to 70 emulators for
+instance succeed hummingbird at this beautiful thing I used to use it all the time yeah you know
+go fill out my uh test data in my mainframe application that I will have to put in my first job was
+a test engineer and I had to put in you know 200 test cases every day into my systems I made
+little automation to do it but either way the problem with all of those things were those are
+unmanaged right we I come from capital markets we we had uh excel macros galore everybody in finance
+is probably pulling out the hair like oh my every one of my guys has a has a macro the problem with
+those macros is you don't know when they run you don't know what's inside it until you get to the
+machine and actually open up the code and take a look at it you don't know what it does um these three
+four things I think RPA RPA's adoption and the enterprise was really due to the governance the
+central governance that the orchestrator or the platform brought to automation right it is it is
+that one central place where you can go and say who has access to what you can see what's being run
+when it's being run where it's being run what is being accessed and actually there's a lot of granular
+control that you can put to to de-risk yourself from having that shadow IT um it's been done you
+and we we didn't touch on it too much but you know if you look into the way orchestrators actually
+managed the way the the role-based access controls and the sort of organizational structures
+are set up it mimics a very familiar paradigm and that's an active director um or any LDAP for that
+matter you know we have it's multi-tenant we have folders that function exactly like organizational
+units this is a paradigm that's been around for a long time uh and we we modeled it because it made a
+lot of sense to us and if I look back at UI path um you know seven years ago right uh we were selling
+sort of studio initially getting RPA off the ground and then you know we started to have customers who
+were yelling at us once they got going um and it's because their their IT teams came along and said
+what are you doing right more than exactly you know and we we look at it and said okay what are all
+of the pieces that an IT team needs to mimic what they're already doing integrate into their enterprise
+IT integrate into all the checks and balances their change management their controls their policies
+to make this successful and now we we actually preach with our account managers with our CSM's to say
+you know with our partner teams that the first thing you do is you get your your proof of concept rolling
+and then you go talk to IT to say well how do we design this for for you to be successful yeah
+good good segue into the next thing and and and Smitha I have your question here uh of uh workflow
+visibility definitely we'll get to it when we get to get to question answers hang on just just a few
+minutes um the answers yes the short answer uh but if we look at uh some of the mitigations right I think
+I think we've talked about quite a few things and Kevin you that was that was a good segue
+because I think that conversation after the POC you guys are on the vendor side so you do that
+POC you've already convinced the customer then they contact us and say hey we just we just got we just
+got UI path right Ken can we just get going and to be very honest I think what we do and that's this
+is really really important to do upfront which have seen programs not be successful when this is not
+done so establish a governance framework I put that up front but I what I what I mean by that is
+at least know what you're going to do and the best way to do that is to get at this point it's easier
+to get people in the market who have already done it before right five years ago it was difficult
+to find somebody who knows how a governance good governance framework for our PA right there was only
+a few people out there who had done this but now you talk to your partner vendor whoever that is
+Kevin can can point you to resources within UI path will give you a good operating model and all
+of that they have the AOM right but establish a quickly establish a governance framework that says
+how are going to eventually going to be happening how is and to be very honest I'll tell you guys
+if you haven't done it yet it's not a long exercise it can be done very quickly if you
+most of the things that you need to establish the governance framework are ready in your organization
+you just need to repurpose them and say we do this for this and document it so that when the
+audit comes you actually have something to show them that says because you're doing them now you
+this is how we credential our bots this is how we request a review of something this is how we have
+we request robot credentials for applications that are not AD SSL right whatever that is so
+so for us Kevin once you're done with the POC before we start our engagement especially on new
+implementations are there two meetings that we have one is with the IT infrastructure folks to
+actually go through the infrastructure the second one is security and compliance right the slides I
+actually gave you are out of that slide deck that we go through the first slide that are out of that
+security and compliance slide deck we we go through here are the different components what are your
+concerns and both in terms of IT security as well as compliance and audit right how long do you want
+to keep the logs what type of data do you want to keep the logs from a from a security perspective what
+zone should these components go in once it's different the answer is always different it's not like
+one size fits all for everyone right as Kevin said you have a SaaS application that's publicly
+available don't need to be on the VPN for it and you need to do it all the time you could have a
+dummy machine out in Azure and just run your things right but you have an internal application that
+does you know compensation and or bank statements for your transactions for your business you probably
+need something inside your network and or something that deals with PII or or you know medical data that
+needs to be hippocomplied things like that the the the important thing is having that security review
+and the last one is talk to your RP vendor and you know I'll have Kevin rat love some of the some
+of the some of the verifications that they have then some of the certifications that they have
+varicode and ISO and so on and so forth but I think that's also very important Kevin your thoughts on
+these mitigations yeah so I like to hear that you know where the first things you do is go talk to the
+IT department talk to the security I I think it's really important and I think establishing governance
+is is right up there too many times we see customers come in and say well we're buying software we're
+going to take it in oh we got to develop a whole new process for for how we deal with this right and
+you're exactly right is typically you know especially established organizations or enterprise
+customers they already have something in place for well how do I you know write a standard
+offering procedure you know get it approved who actually runs it what you know what permissions to
+those people need who who's doing oversight of those automation really isn't all that different
+than writing an SOP it's just potentially being executed by a robot instead of a user and that
+doesn't mean you have to fully hand it over to a robot either you know a lot of times we get into
+sort of a hybrid automation where a user starts something they kick off a robot and then another
+user comes back and checks and verifies things and sending these things up front are all great because
+then I can tell my developers hey meet these process you know check marks right make sure you you go
+through a scanner of the workflow you include logs statements for these sort of activities so that we
+we can audit it later you know if you're hitting these systems or dealing with this data do it on
+these machines we will set something up separate for you and once you sort of set those guidelines
+your users your developers can go full speed and they can start getting you that ROI and back and
+I like the compliance and audit review I I have talked to probably
+easily a thousand of our customers about security and whenever I get into a customer that deals with
+a regulated industry whether that be finance or healthcare or government or even just a public
+company where they have to do reporting you know they have Sarbanes Oxley they're always worried about
+this idea of audit how do I audit a robot and at every single time I tell them well go run an automation
+and go through a mock audit and invariably the first time they do it they come back and they say
+I have so much data on what my robots did when and under what user and you know I can follow it all
+and it's all right there my socks audit got a thousand times easier and it's like you have more
+visibility because the robot you know tells you every time it starts a process as opposed to a user who
+you know we forget sometimes I know I do imagine somebody having to pick up a notebook every time
+they're doing it and say I am just logging in oh right then I just did this and I did this and I did
+this and I'm done exactly which is what the robot does the robot literally does just that I am looking at
+this I'm going to be doing this and this is when I started this is what I ended and by the way
+here is an exact audit of all the decisions that I took and why
+yeah absolutely and yeah so validating your RPA vendor you know UIPath we like to be humble as we
+say so we'll try and brag about ourselves too much that being said security is very very important to
+us we understand that you know regulated industries are going to use our software major enterprise
+customers are going to be using our software and even your your mom and pop shop you know this could
+be vital to them we want to make sure that our software is secure out of the box and not only that
+that we give you all of the options to connect our software into your security stack into your IT stack
+so you can take advantage of all the good practices that you already haven't played so
+yeah our our cloud you know we've gone through sock two type two we we just really start our first
+hip out of stations you know we're working on FedRAMP at the moment and you'll see on a six-month
+cycle we'll just be putting out new certifications new audit reports and these will just keep coming
+we're very committed to it you know we as a company probably release a major feature or a
+product every two months now which is a massive growth cycle but that's also why we have a six-month
+audit cycle now where you'll see a lot of other vendors they go full year or maybe they don't maybe
+they just have you know a certification that's static and we we do six months so we can add those
+new services every single time and keep expanding our scope and so you know I will talk about every
+certification thing we have in there but have to answer any questions around our our security
+security software development life cycle at our audit program perfect thank you so much Kevin I
+really enjoyed our conversation today folks are our email addresses are right there if you have any
+additional questions feel free to ask it now or feel free to send out an email to either one of us
+you can you can find us wherever you found this the registration link for this webinar
+I'm sure if you're if you are here you know how to how to get in touch with us but Kevin I really
+appreciate it we value our partnership and thank you so much for giving us your time today and
+having this chat with me yeah thank you for having me this is great to chat connect with one of our partners
+perfect Jamie we'll get back to you our question actually I'll pass it along to Kevin and we'll get
+back to you on the applicability of J Frog for your path projects have a good one Kevin thanks have a good

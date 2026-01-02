@@ -1,0 +1,44 @@
+{
+  "projectName": "UC-003 Automatisierte Produktanzeige von Designerstoffen",
+  "processType": "Unattended RPA with Human-in-the-Loop",
+  "businessProblem": "Das Anlegen neuer Designerstoffe im WooCommerce-Webshop ist aktuell sehr manuell, zeitintensiv und fehleranfällig, was zu langen Durchlaufzeiten und inkonsistenten Produktbeschreibungen führt.",
+  "goals": [
+    "Deutliche Beschleunigung des Produkt-Onboarding-Prozesses für neue Designerstoffe",
+    "Automatisierte Verarbeitung der vorbereiteten Produktordner inklusive Validierung der Struktur und Dateinamen",
+    "Automatisierte Bildanalyse der Designbilder zur Erkennung von Farben, Mustern und Stilen",
+    "Generierung konsistenter, ansprechender Produkttexte auf Basis von KI und vordefinierten Vorlagen",
+    "Stabile und nachvollziehbare Anlage neuer Produkte in WooCommerce mit Logging und Reporting"
+  ],
+  "systems": [
+    {
+      "name": "UiPath Orchestrator und Robots",
+      "type": "RPA-Plattform",
+      "role": "Orchestrierung des End-to-End-Prozesses, Queue-Handling, Logging und Fehlerbehandlung"
+    },
+    {
+      "name": "Watch-Folder / Netzwerk-Share",
+      "type": "Dateisystem",
+      "role": "Ablageort für vorbereitete Produktordner mit Bildern, Metadaten und Marker-Datei als Trigger"
+    },
+    {
+      "name": "Vision-LLM-Service",
+      "type": "KI-Service",
+      "role": "Analyse der Designbilder zur Erkennung dominanter Farben, Muster, Stile und weiterer Merkmale"
+    },
+    {
+      "name": "Text-LLM-Service",
+      "type": "KI-Service",
+      "role": "Generierung von Produkttexten (Titel, Kurzbeschreibung, Beschreibung, optional Meta-Texte) basierend auf Analyse- und Stammdaten"
+    },
+    {
+      "name": "WooCommerce Webshop",
+      "type": "E-Commerce-Plattform",
+      "role": "Führendes System für Produktstammdaten und Veröffentlichung der angelegten Produkte"
+    },
+    {
+      "name": "Benachrichtigungs- und Review-Kanal",
+      "type": "Messaging/Collaboration",
+      "role": "Bereitstellung von Links zu neu angelegten Produkten und Unterstützung des Human-in-the-Loop-Freigabeprozesses"
+    }
+  ]
+}

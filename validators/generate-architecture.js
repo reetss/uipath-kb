@@ -7,36 +7,20 @@
  * the knowledge base and templates.
  */
 
-import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile, mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-interface Requirements {
-  projectName: string;
-  businessProblem: string;
-  goals: string[];
-  systems: Array<{
-    name: string;
-    type: string;
-    role: string;
-  }>;
-  processType: 'attended' | 'unattended' | 'hybrid';
-  volumes?: {
-    itemsPerDay?: number;
-    peakLoad?: number;
-  };
-}
-
-async function generateArchitecture(requirementsPath: string): Promise<void> {
+async function generateArchitecture(requirementsPath) {
   console.log('🏗️  UIPath Architecture Generator\n');
 
   // Load requirements
   console.log('📖 Loading requirements...');
   const requirementsContent = await readFile(requirementsPath, 'utf-8');
-  const requirements: Requirements = JSON.parse(requirementsContent);
+  const requirements = JSON.parse(requirementsContent);
 
   console.log(`   Project: ${requirements.projectName}`);
   console.log(`   Type: ${requirements.processType}`);
@@ -75,9 +59,11 @@ async function generateArchitecture(requirementsPath: string): Promise<void> {
   }
 
   // Output path
+  const outputDir = join(__dirname, '../knowledge/generated');
+  await mkdir(outputDir, { recursive: true });
+
   const outputPath = join(
-    __dirname,
-    '../knowledge/generated',
+    outputDir,
     `architecture-${requirements.projectName.toLowerCase().replace(/\s+/g, '-')}.md`
   );
 
