@@ -112,10 +112,30 @@ npm run test            # Alle Tests ausführen
 npm run test:reddit     # Nur Reddit-Server testen
 npm run logs            # Live Logs anzeigen
 
+# Dokumentations-Export (mit Qualitätsprüfung)
+node scripts/export-docs.js                         # Interaktiv: Use Case auswählen
+node scripts/export-docs.js uc-003-textile... docx  # Direkt exportieren
+
 # Video Transkription (benötigt yt-dlp + ffmpeg)
 source .venv-whisper/bin/activate  # macOS/Linux
 python scripts/transcribe-video.py <youtube-url>
 ```
+
+## 📄 Dokumentations-Export
+
+Use-Case-Dokumentationen können automatisch zu DOCX exportiert werden – inklusive integrierter Qualitätsprüfung:
+
+- ✅ **Interaktive Auswahl** von Use Cases
+- ✅ **Automatische Validation** vor dem Export
+- ✅ **Qualitäts-Score** (100-Punkte-System)
+- ✅ **Intelligente Nachfrage** bei niedrigem Score
+
+**Quick Start:**
+```bash
+node scripts/export-docs.js
+```
+
+Siehe [docs/export-documentation.md](docs/export-documentation.md) für Details.
 
 ## 🖥️ Plattform-Support
 

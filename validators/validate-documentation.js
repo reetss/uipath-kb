@@ -174,21 +174,26 @@ async function printResults(result) {
   }
 }
 
-// CLI
-const args = process.argv.slice(2);
-if (args.length === 0) {
-  console.error('Usage: validate-documentation.js <document.md>');
-  console.error('\nExample:');
-  console.error('  node validate-documentation.js ./knowledge/generated/architecture-myproject.md');
-  process.exit(1);
-}
+// Export functions for use in other scripts
+export { validateDocument, printResults };
 
-validateDocument(args[0])
-  .then(result => {
-    printResults(result);
-    process.exit(result.valid ? 0 : 1);
-  })
-  .catch(error => {
-    console.error('Error during validation:', error);
+// CLI
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const args = process.argv.slice(2);
+  if (args.length === 0) {
+    console.error('Usage: validate-documentation.js <document.md>');
+    console.error('\nExample:');
+    console.error('  node validate-documentation.js ./knowledge/generated/architecture-myproject.md');
     process.exit(1);
-  });
+  }
+
+  validateDocument(args[0])
+    .then(result => {
+      printResults(result);
+      process.exit(result.valid ? 0 : 1);
+    })
+    .catch(error => {
+      console.error('Error during validation:', error);
+      process.exit(1);
+    });
+}

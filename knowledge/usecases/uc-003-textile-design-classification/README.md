@@ -43,21 +43,20 @@ Konkrete Probleme:
 
 - Neue Stoffe werden manuell mit Produktfotos (ca. 5 Stück) und Designbildern versehen
 - Ordner und Dateinamen werden manuell angelegt und benannt
-- Bildbearbeitung erfolgt manuell oder halbautomatisch in Lightroom/Photoshop
+- Bildbearbeitung erfolgt manuell oder halbautomatisch in Lightroom/Photoshop 
 - Technische Daten und Texte werden von Hand erfasst und formuliert
 - Produkt wird manuell in WooCommerce angelegt und veröffentlicht
 
 ### Gewünschtes Verhalten (TO-BE)
 
-- **Human**: Ablage von ca. 5 Produktfotos und Designbild(ern) in einem definierten Watch-Folder
-- **RPA**: Automatisches Anlegen der Produktordnerstruktur, Benennen der Fotos nach Konvention (z. B. Artikelnummer-Variante-01a-1 usw.)
-- **RPA**: Synchronisation mit Adobe Lightroom und Start der vordefinierten Stapelverarbeitung in Photoshop
+- **Human**: Anlage eines Produktordners nach definierter Ordner- und Namenskonvention (z. B. Artikelnummer-Variante-01a-1 usw.) und Ablage von ca. 5 vorab manuell bearbeiteten Produktfotos (Tool-agnostisch, außerhalb dieses Use Cases) sowie 1–2 Designbildern. Zusätzlich beantwortet der Mitarbeiter für dieses konkrete Produkt einen definierten Fragenkatalog (z. B. Formular/Sheet) zu produktspezifischen Zusatzinformationen (z. B. Kollektion, Designer, besondere Story, Pflegehinweise, Zielgruppe) und legt die daraus entstehende Metadaten-Datei ebenfalls im Produktordner ab. Wenn der Ordner vollständig vorbereitet ist, legt der Mitarbeiter eine Marker-Datei (z. B. `READY.txt`) im Produktordner an; diese Datei signalisiert, dass der Ordner zur Verarbeitung freigegeben ist.
+- **RPA**: Überwachung des Watch-Folders auf neue, vollständig vorbereitete Produktordner, die eine Marker-Datei `READY.txt` enthalten, und Validierung der Ordner- und Dateinamen-Konvention (Fehlermeldung/Hint bei Abweichungen, perspektivisch optional automatisches Anlegen/Korrigieren der Struktur).
 - **Human-in-the-Loop**: Kontrolle der bearbeiteten Fotos und Erfassung zusätzlicher Produktdaten (Grammatur, Materialzusammensetzung, Preis, Lagerbestand etc.)
 - **Agent (KI)**: Bildanalyse der Designbilder mittels Vision-LLM zur Erkennung von:
   - 5 dominanten Farben (inkl. Hex-Codes)
-  - Mustertyp (z. B. Blumen, Tiere/Insekten, Streifen, Geometrisch, Ornamente, Allover etc.)
-  - Stil (z. B. verspielt, elegant, grafisch, extravagant)
-  - Weitere mögliche Merkmale (Saison, Use-Cases)
+  - Mustertyp (z. B. Blumen, Tiere/Insekten, Streifen, Geometrisch, Ornamente, Allover, Punkte, Karos, Animal-Print, Paisley, Retro, Maritim, Kinder-/Babymotive etc.)
+  - Stil (z. B. verspielt, elegant, grafisch, extravagant, minimalistisch, romantisch, modern, vintage, skandinavisch, boho, sportlich, luxuriös)
+  - Weitere mögliche Merkmale (z. B. Saison: Frühling/Sommer, Herbst/Winter; Use-Cases: Kinderkleidung, Heimtextilien, Dekostoffe, Bekleidung, Accessoires; Zielgruppe: Damen, Herren, Kinder, Unisex)
 - **Agent (KI)**: Generierung ansprechender Produkttexte basierend auf Bildanalyse, technischen Daten und vordefinierten Textbausteinen/Vorlagen
 - **RPA**: Anlage des Produkts in WooCommerce (per API oder CSV-Import) als „privat“ (nicht veröffentlicht)
 - **RPA/Human-in-the-Loop**: Versand der Produkt-URL an verantwortliche Person zur finalen Prüfung und Freigabe (Veröffentlichung)
@@ -67,7 +66,6 @@ Konkrete Probleme:
 ## Beteiligte Systeme
 
 - Watch-Folder / Netzwerk-Share (Quelle für neue Produktfotos und Designbilder)
-- Adobe Lightroom & Photoshop (Bildverarbeitung)
 - UiPath Orchestrator, Studio & Robots (RPA-Automatisierung)
 - Vision-LLM / KI-Service (z. B. GPT-4o, Claude, Grok oder internes Modell) für Bildanalyse
 - Text-Generierungs-LLM (für Produktbeschreibungen)
@@ -80,21 +78,22 @@ Konkrete Probleme:
 
 ### Funktionale Anforderungen
 
-1. Überwachung eines Watch-Folders auf neue Produktfotos und Designbilder
-2. Automatisches Anlegen von Ordnerstrukturen und Benennen von Dateien nach definierter Konvention
-3. Start und Überwachung der Lightroom-Synchronisation und Photoshop-Stapelverarbeitung
-4. Bildanalyse der Designbilder (dominante Farben, Muster, Stil etc.) durch Vision-KI
-5. Generierung von Produkttexten basierend auf KI-Analyse und manuellen Produktdaten
-6. Anlage des Produkts in WooCommerce als „privat“ per API oder CSV-Import
-7. Versand der Produkt-URL zur finalen Freigabe
-8. Logging aller Schritte und Ergebnisse im Orchestrator
-9. Möglichkeit zur manuellen Nachbearbeitung bei niedriger KI-Confidence
+1. Überwachung eines Watch-Folders auf neu angelegte, vollständig vorbereitete Produktordner mit vorab manuell bearbeiteten Produktfotos und Designbildern, die eine Marker-Datei (z. B. `READY.txt`) als explizites Freigabe-Signal enthalten.
+2. Validierung der Ordnerstrukturen und Dateinamen gegen eine definierte Konvention (inkl. Feedback an den Mitarbeiter bei Abweichungen; perspektivisch optional automatisches Anlegen/Korrigieren der Struktur durch RPA).
+3. Technische Prüfung der bereitgestellten Bilder (z. B. Dateiformat, Auflösung, Mindestanzahl) für alle Produktordner, die ein gültiges Freigabe-Signal (Marker-Datei `READY.txt`) besitzen – ohne Eingriff in die vorab manuelle, kreative Bildbearbeitung.
+4. Erfassung und Verarbeitung produktspezifischer Zusatzinformationen auf Basis eines strukturierten Fragenkatalogs/Metadaten-Formulars je Produktordner.
+5. Bildanalyse der Designbilder (dominante Farben, Muster, Stil etc.) durch Vision-KI
+6. Generierung von Produkttexten basierend auf KI-Analyse, den Antworten aus dem Fragenkatalog und manuellen Produktdaten
+7. Anlage des Produkts in WooCommerce als „privat“ per API oder CSV-Import
+8. Versand der Produkt-URL zur finalen Freigabe
+9. Logging aller Schritte und Ergebnisse im Orchestrator
+10. Möglichkeit zur manuellen Nachbearbeitung bei niedriger KI-Confidence
 
 ### Nicht-funktionale Anforderungen
 
 - Verarbeitung eines neuen Produkts in unter 30 Minuten (ohne manuelle Kontrollzeiten)
 - Hohe Genauigkeit der KI-Bildanalyse (mind. 90 % akzeptable Ergebnisse bei Testmustern)
-- Stabile Integration mit Adobe-Software und WooCommerce
+- Stabile Integration mit WooCommerce und den angebundenen KI-Services
 - Datenschutz: Designbilder und Fotos bleiben im internen Netzwerk, keine unkontrollierte Cloud-Nutzung falls möglich
 - Versionierung von Textvorlagen und Prompt-Templates für die KI
 
@@ -107,6 +106,8 @@ Konkrete Probleme:
 - Ca. 5 Produktfotos und 1–2 Designbilder (JPG/PNG/TIFF) im Watch-Folder
 - Manuell erfasste Produktdaten (Grammatur, Preis, Material, Lagerbestand etc.)
 - Definierte Namenskonventionen, Ordnerstrukturen und Textvorlagen
+- Metadaten-Datei/Fragebogen mit produktspezifischen Zusatzinformationen je Produktordner
+- Marker-Datei (z. B. `READY.txt`) im Produktordner als explizites Freigabe-Signal für die Verarbeitung
 
 ### Output
 
@@ -125,7 +126,7 @@ Konkrete Probleme:
 
 - Qualität und Konsistenz der eingereichten Produktfotos kann variieren
 - KI-Bildanalyse funktioniert bei komplexen Mustern unterschiedlich gut (aktuell „missbräuchlich“ über LLMs, aber effektiv)
-- Abhängigkeit von Adobe-Software (Lizenz, Stabilität der Stapelverarbeitung)
+- Abhängigkeit von vorgelagerten manuellen Bildbearbeitungs-Workflows (Qualität, Konsistenz, verfügbare Kapazitäten)
 - WooCommerce-Import per CSV kann bei vielen Variationen komplex werden
 
 ### Offene Punkte
@@ -144,6 +145,7 @@ Konkrete Probleme:
 - Die aktuelle Lösung mit Vision-LLMs für Design-Analyse hat sich bereits als überraschend effektiv erwiesen (Beispiel: Schmetterlingsmuster)
 - Mögliche spätere Erweiterung: Automatische Tag-Generierung für SEO oder Filter im Shop
 - Potenzial für Feedback-Loop: Korrekturen der KI-Texte fließen in Prompt-Verbesserungen ein
+ - Der Einsatz einer einfachen Marker-Datei (z. B. `READY.txt`) reduziert das Risiko, dass halbfertige Ordner verarbeitet werden, und trennt klar zwischen manueller Vorbereitungsphase (manuelle Bildbearbeitung etc.) und automatisierter Verarbeitung (KI, WooCommerce).
 
 ---
 
