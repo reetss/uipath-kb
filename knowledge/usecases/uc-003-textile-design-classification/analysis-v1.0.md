@@ -1,5 +1,11 @@
 # UC-003: Automatisierte Produktanzeige von Designerstoffen im Webshop – Technische Analyse
 
+**Version:** 1.0  
+**Erstellt:** 2025-12-18  
+**Status:** Archiviert (ersetzt durch v2.0)
+
+> **Hinweis:** Diese Version basiert auf README-Analyse ohne Bestandscode. Siehe [analysis-v2.0.md](analysis-v2.0.md) für aktuelle Version mit Code-Analyse.
+
 Stand: 2025-12-18 (basierend auf aktualisiertem README und neuen Assets)
 
 ---
