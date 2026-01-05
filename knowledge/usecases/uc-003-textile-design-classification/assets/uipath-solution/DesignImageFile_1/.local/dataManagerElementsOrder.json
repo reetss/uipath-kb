@@ -1,0 +1,27 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "varfileBytes&Sequence_1",
+        "strSelectedFolderPath&Sequence_1",
+        "strFilesInFolder&Sequence_1",
+        "strFirstFile&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "argFile"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
