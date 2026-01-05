@@ -19,6 +19,10 @@
     "dev:youtube": "npm run dev --workspace=mcp-servers/youtube-scraper",
     "dev:local": "npm run dev --workspace=mcp-servers/local-knowledge",
     "dev:reddit": "npm run dev --workspace=mcp-servers/reddit-search",
+    "export:docs": "node scripts/export-docs.js",
+    "export:uc": "node scripts/export-docs.js --uc",
+    "export:pdf": "node scripts/export-docs.js --format pdf",
+    "export:docx": "node scripts/export-docs.js --format docx",
     "clean": "rm -rf node_modules mcp-servers/*/node_modules mcp-servers/*/dist",
     "logs": "tail -f logs/*.log"
   },
@@ -36,5 +40,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "glob": "^13.0.0"
   }
 }
