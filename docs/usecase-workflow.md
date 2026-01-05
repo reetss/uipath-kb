@@ -30,6 +30,26 @@ cp knowledge/usecases/usecase-template.md knowledge/usecases/uc-002-invoice-proc
 code knowledge/usecases/uc-002-invoice-processing/README.md
 ```
 
+### 1a. Bestehende UiPath-Lösung ablegen (Optional)
+
+**Falls bereits eine UiPath-Lösung existiert:**
+
+```bash
+# Solution-Ordner erstellen
+mkdir -p knowledge/usecases/uc-002-invoice-processing/assets/uipath-solution
+
+# Bestehenden UiPath-Code kopieren
+cp -r /pfad/zur/bestehenden/solution/* knowledge/usecases/uc-002-invoice-processing/assets/uipath-solution/
+```
+
+**Wichtig:** Lege die vollständige UiPath-Solution ab:
+- `Main.xaml` und alle Workflows
+- `project.json`
+- Dependencies
+- Config-Files
+
+➡️ Copilot wird den Code automatisch analysieren!
+
 **README.md ausfüllen - so wie du es vom Fachbereich gehört hast:**
 - Problem / Herausforderung (in eigenen Worten)
 - Ziele (auch ungefähre sind ok)
@@ -60,6 +80,11 @@ oder
 
 **a) Use Case analysieren**
 - `README.md` lesen und verstehen
+- **Falls vorhanden:** `assets/uipath-solution/` analysieren
+  - Bestehende Workflows verstehen
+  - Code-Qualität bewerten (Best Practices, Exception Handling)
+  - Wiederverwendbare Komponenten identifizieren
+  - Verbesserungspotenziale erkennen
 - Lücken und Unklarheiten identifizieren
 - Technische Herausforderungen erkennen
 
@@ -117,9 +142,30 @@ knowledge/usecases/uc-002-invoice-processing/
 - Verstandener Scope
 - Unklare Punkte aus dem README
 
+## 🔍 Analyse bestehender UiPath-Lösung
+> **Nur wenn `assets/uipath-solution/` vorhanden!**
+
+### Code-Übersicht
+- Haupt-Workflows und deren Zweck
+- Dependencies und verwendete Packages
+
+### Qualitäts-Assessment
+- ✅ **Gut umgesetzt**: [z.B. Exception Handling, Config-Management]
+- ⚠️ **Verbesserungsbedarf**: [z.B. Hardcoded Werte, fehlende Logging]
+- ❌ **Kritische Probleme**: [z.B. fehlende Error Recovery]
+
+### Wiederverwendbare Komponenten
+- Workflows, die übernommen werden können
+- Libraries, die weiter genutzt werden
+
+### Empfohlene Refactorings
+- Kurzfristig (vor Go-Live)
+- Mittelfristig (nach MVP)
+
 ## 🏗️ Vorläufige Architektur
 - Empfohlenes Pattern (z.B. REFramework)
 - Systemanbindung (API vs. UI Automation)
+- **Bei Bestandscode:** Wie bestehende Komponenten integriert werden
 - Mermaid-Diagramme
 
 ## ⚠️ Identifizierte Risiken
@@ -260,6 +306,6 @@ HR macht Onboarding manuell, dauert ewig.
 
 ---
 
-**Version:** 2.0  
-**Letzte Aktualisierung:** 2025-12-03  
-**Änderung:** Neues Format mit Rückfragen (analysis.md statt technical.md)
+**Version:** 3.0  
+**Letzte Aktualisierung:** 2026-01-05  
+**Änderung:** Integration von Bestandscode-Analyse (assets/uipath-solution/)

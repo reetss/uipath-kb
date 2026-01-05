@@ -67,17 +67,24 @@ Siehe **[Use Case Workflow](../docs/usecase-workflow.md)** für den vollständig
 
 ```
 1. User legt Use Case in knowledge/usecases/uc-XXX-name/README.md ab
-2. User beauftragt: "Analysiere bitte UC-XXX technisch"
-3. Copilot:
+2. (Optional) User legt bestehende UiPath-Solution in assets/uipath-solution/ ab
+3. User beauftragt: "Analysiere bitte UC-XXX technisch"
+4. Copilot:
    - README.md analysieren (Lücken identifizieren)
+   - Falls vorhanden: assets/uipath-solution/ prüfen und Code analysieren
+     * Workflows untersuchen (Main.xaml, Subfolder)
+     * Best Practices checken (Exception Handling, Config, Logging)
+     * Verbesserungspotenziale identifizieren
+     * Wiederverwendbare Komponenten markieren
    - MCP-Server Recherche (UIPath Docs, Reddit, Videos, Local KB)
    - analysis.md erstellen (im selben UC-Ordner)
    - Rückfragen formulieren (Kritisch/Wichtig/Nice-to-have)
-   - Vorläufige Architektur skizzieren
+   - Vorläufige Architektur skizzieren (inkl. Bestandscode-Integration)
 ```
 
 **Output:** `knowledge/usecases/uc-XXX-name/analysis.md` mit:
-- 🔴 Offene Rückfragen (priorisiert)
+- � Bestandscode-Analyse (falls Solution-Files vorhanden)
+- �🔴 Offene Rückfragen (priorisiert)
 - Vorläufige Architektur (Mermaid)
 - Risiko-Assessment
 - MVP-Empfehlung

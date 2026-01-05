@@ -14,10 +14,17 @@ knowledge/usecases/
 │   ├── README.md                # Business Use Case (Input vom User)
 │   ├── analysis.md              # Technische Analyse + Rückfragen (von Copilot)
 │   └── assets/                  # Screenshots, Diagramme, etc.
+│       ├── uipath-solution/     # Bestehende UiPath-Workflows (optional)
+│       │   ├── Main.xaml
+│       │   ├── project.json
+│       │   └── ...
+│       ├── screenshots/         # Meeting-Screenshots, UI-Mockups
+│       └── exports/             # CSV/Excel-Exporte, Testdaten
 ├── uc-002-invoice-processing/   # UC-002: (Beispiel)
 │   ├── README.md
 │   ├── analysis.md
 │   └── assets/
+│       └── uipath-solution/
 └── ...
 ```
 
@@ -39,17 +46,24 @@ knowledge/usecases/
 ## 📝 Neuen Use Case anlegen
 
 ```bash
-# 1. Ordner erstellen
-mkdir -p knowledge/usecases/uc-002-invoice-processing/assets
+# 1. Ordner erstellen mit Unterstrukturen
+mkdir -p knowledge/usecases/uc-002-invoice-processing/assets/uipath-solution
+mkdir -p knowledge/usecases/uc-002-invoice-processing/assets/screenshots
+mkdir -p knowledge/usecases/uc-002-invoice-processing/assets/exports
 
 # 2. Template kopieren
 cp knowledge/usecases/usecase-template.md knowledge/usecases/uc-002-invoice-processing/README.md
 
-# 3. Bearbeiten und ausfüllen (grob ist OK!)
+# 3. (Optional) Bestehende UiPath-Lösung ablegen
+# Kopiere den kompletten Projekt-Ordner nach assets/uipath-solution/
+# Das ermöglicht Code-Analyse, Verbesserungsvorschläge und Weiterentwicklung
+
+# 4. Bearbeiten und ausfüllen (grob ist OK!)
 code knowledge/usecases/uc-002-invoice-processing/README.md
 
-# 4. Technische Analyse beauftragen
+# 5. Technische Analyse beauftragen
 # Im VS Code Chat: "Analysiere bitte UC-002 technisch"
+# Falls UiPath-Code vorhanden: "Analysiere UC-002 inkl. bestehendem Code"
 ```
 
 ## 📊 Use Case Index
@@ -89,8 +103,13 @@ Beschreibt das **WAS** und **WARUM** (aus Sicht des Fachbereichs):
 
 Wird von Copilot generiert und enthält:
 - **🔴 Offene Rückfragen** (Kritisch/Wichtig/Nice-to-have)
-- Vorläufige Architektur (Mermaid-Diagramme)
-- Identifizierte Risiken
+**Unterordner:**
+- **uipath-solution/** – Bestehende UiPath-Workflows (optional)
+  - Kompletter Projekt-Ordner mit Main.xaml, project.json, etc.
+  - Ermöglicht Code-Analyse, Refactoring-Vorschläge, Weiterentwicklung
+  - LLM kann bestehenden Code lesen und darauf aufbauen
+- **screenshots/** – Meeting-Screenshots, UI-Mockups, Prozess-Skizzen
+- **exports/** – CSV/Excel-Exporte aus Systemen, Testdaten, WooCommerce-Exports Risiken
 - Empfohlenes Vorgehen (MVP-Phasen)
 - Vorläufige Metriken
 

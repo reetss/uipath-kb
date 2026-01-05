@@ -1,0 +1,42 @@
+# UiPath Solution Folder
+
+Dieser Ordner ist für **bestehende UiPath-Workflows** gedacht, falls bereits eine Lösung existiert.
+
+## Verwendung
+
+1. **Kompletten Projekt-Ordner hierher kopieren**:
+   ```
+   assets/uipath-solution/
+   ├── Main.xaml
+   ├── project.json
+   ├── Workflows/
+   │   ├── GetTransactionData.xaml
+   │   ├── Process.xaml
+   │   └── ...
+   ├── Data/
+   ├── Config/
+   └── ...
+   ```
+
+2. **Im Chat erwähnen**:
+   ```
+   "Analysiere UC-003 inkl. bestehendem Code in assets/uipath-solution"
+   ```
+
+## Nutzen
+
+- **Code-Analyse**: LLM kann bestehenden Code analysieren
+- **Verbesserungsvorschläge**: Refactoring, Best Practices, Performance
+- **Weiterentwicklung**: Neue Features auf Basis bestehender Struktur
+- **Dokumentation**: Automatische Dokumentation aus bestehendem Code
+- **Migration**: Analyse für Upgrade auf neue UiPath-Versionen
+
+## .gitignore
+
+Falls der Code sensibel ist oder zu groß, füge ihn zu `.gitignore` hinzu:
+```
+# In .gitignore
+knowledge/usecases/*/assets/uipath-solution/
+```
+
+Dann bleibt der Code lokal, wird aber nicht ins Repository committed.
