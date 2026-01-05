@@ -133,9 +133,13 @@ Hier kannst du alles reinschreiben:
 - Namen von Ansprechpartnern
 - Links zu Dokumenten
 - Vermutungen und Ideen
+- Hinweise auf abgelegte Dateien:
+  - Screenshots aus Meeting → siehe assets/screenshots/
+  - Bestehende UiPath-Lösung → siehe assets/uipath-solution/
+  - Exports aus Systemen → siehe assets/exports/
 -->
 
 
 ---
 
-**Nächster Schritt:** Technische Analyse beauftragen mit "Dokumentiere bitte UC-XXX technisch"
+**Nächster Schritt:** Technische Analyse beauftragen mit "Analysiere bitte UC-XXX technisch" bzw. Erstellung von analysis.md für Architektur, Rückfragen und Risiko-Assessment.

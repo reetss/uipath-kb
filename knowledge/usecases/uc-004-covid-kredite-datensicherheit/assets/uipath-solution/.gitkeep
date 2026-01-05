@@ -1,0 +1,9 @@
+# UiPath Solution Folder
+
+Dieser Ordner ist für **bestehende UiPath-Workflows** gedacht, falls bereits eine Lösung existiert.
+
+## Verwendung
+
+Kopiere den kompletten UiPath-Projekt-Ordner hierher, um Code-Analyse und Verbesserungsvorschläge zu erhalten.
+
+Siehe: [knowledge/usecases/uc-001-onboarding/assets/uipath-solution/.gitkeep](../uc-001-onboarding/assets/uipath-solution/.gitkeep) für Details.
