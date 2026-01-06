@@ -46,3 +46,9 @@ clean-uipath-kb/
 
 # Ignore specstory history (contained a leaked key previously)
 .specstory/
+
+# Generated documentation exports
+knowledge/usecases/**/exports/*.docx
+
+# Local scratch files
+test.docx
